@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "Montserrat Regular";
+  font-weight: 400;
+  src: local("Montserrat Regular"),
+    url(../public/fonts/montserrat/Montserrat-Regular.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Montserrat Bold";
+  font-weight: 700;
+  src: local("Montserrat Bold"),
+    url(../public/fonts//montserrat/Montserrat-Bold.woff2) format("woff2");
+}
+
+@font-face {
+  font-family: "Tiempos Headline Regular";
+  font-weight: 400;
+  src: local("Tiempos Headline Regular"),
+    url(../public/fonts/tiemposheadline/TiemposHeadline-Regular.woff2) format("woff2");
+}
+
+html,
+body,* {
+  padding: 0;
+  margin: 0;
+  font-family: "Montserrat Regular";
+}
+
+h1,
+h2,
+h3,
+h4,
+h5, 
+h6 { 
+  font-size: inherit;
+  font-weight: inherit;
+
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    color-scheme: dark;
+  }
+
+  body {
+    color: white;
+    background: black;
+  }
+}
+
+button{
+  outline: none;
+  border: none;
+}
+
+.container {
+
+}
+@media screen and (min-width: 1538px) {
+  .container {
+    max-width: 1250px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+}
+// @import "../styles/variables.module.scss";
+// @import "../components/Contact/Contact.module.scss";
+
+

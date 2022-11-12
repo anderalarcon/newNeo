@@ -1,0 +1,147 @@
+@import "../../styles/variables.module.scss";
+
+.contact {
+    background-color: map-get($color, accent);
+    padding-top: 36px;
+    padding-left: 15px;
+    padding-right: 15px;
+    color: map-get($color, white);
+
+    @include breakpoint(widescreen) {
+        padding-left: 144px;
+        padding-right: 144px;
+        padding-top: 17px;
+    }
+
+    &_container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+
+        @include breakpoint(widescreen) {
+            flex-direction: row;
+            gap: 4%;
+        }
+
+        @include breakpoint(max) {
+            gap: 173px;
+        }
+
+
+        &_left {
+            @include breakpoint(widescreen) {
+                width: 48%;
+
+            }
+
+            @include breakpoint(max) {
+                width: 507px;
+
+            }
+
+            &_title {
+                font-weight: 500;
+                font-size: 24px;
+                line-height: 28px;
+                text-align: center;
+                margin-bottom: 16px;
+                font-family: 'Tiempos Headline Regular';
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    font-weight: 500;
+                    font-size: 48px;
+                    line-height: 56px;
+                    margin-bottom: 32px;
+                }
+            }
+
+            &_description {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                text-align: center;
+                margin-bottom: 24px;
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    margin-bottom: 48px;
+                }
+            }
+
+            &_button {
+                text-align: center;
+                margin-bottom: 47px;
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                }
+
+                &_container {
+                    margin-left: 0 !important;
+                    &_btn {
+                        text-align: center;
+                        margin-left: auto;
+                        margin-right: auto;
+                        display: block;
+                        font-weight: 400;
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding: 8px 38px;
+                        width: 190px;
+                        border-radius: 4px;
+                        color: map-get($color, accent);
+                        cursor: pointer;
+                        background-color: map-get($color, white);
+
+                        @include breakpoint(widescreen) {
+
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            padding-top: 16px;
+                            padding-bottom: 16px;
+                            width: 272px;
+                            margin: 0;
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        &_right {
+            @include breakpoint(widescreen) {
+                width: 48%;
+            }
+
+            @include breakpoint(max) {
+                width: 570px;
+            }
+
+
+            &_image {
+                text-align: center;
+
+                &_img {
+                    height: 260px;
+                    max-width: 100%;
+                    width: 301px;
+
+                    @include breakpoint(widescreen) {
+                        width: 100%;
+                        height: auto;
+                        max-width: 570px;
+                    }
+                }
+            }
+        }
+    }
+
+}

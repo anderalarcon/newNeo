@@ -1,0 +1,43 @@
+{
+  "hosting": {
+    "public": "out",
+    "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+    "rewrites": [
+      {
+        "source": "/",
+        "destination": "/localized_files_2/es_pe/index.html"
+      },
+      {
+        "source": "/pe",
+        "destination": "/localized_files_2/es_pe/pe/index.html"
+      },
+      {
+        "source": "/",
+        "destination": "/localized_files_2/es_co/index.html"
+      },
+      {
+        "source": "/co",
+        "destination": "/localized_files_2/es_co/co/index.html"
+      },
+      {
+        "source": "/",
+        "destination": "/localized_files_2/es_cl/index.html"
+      },
+      {
+        "source": "/cl",
+        "destination": "/localized_files_2/es_cl/cl/index.html"
+      },
+      {
+        "source": "/",
+        "destination": "/localized_files_2/es_mx/index.html"
+      },
+      {
+        "source": "/mx",
+        "destination": "/localized_files_2/es_mx/mx/index.html"
+      }
+    ],
+    "i18n": {
+      "root": "/localized_files_2"
+    }
+  }
+}
