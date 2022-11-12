@@ -5,7 +5,7 @@ import Link from 'next/link'
 const Contact = () => {
   return (
     <div className={style.contact}>
-      <div className={`${style.contact_container} container`}>
+      <div className={`${style.contact_container}`}>
         <div className={style.contact_container_left}>
           <h2 className={style.contact_container_left_title}>
             Estamos listos para conversar contigo
