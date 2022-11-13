@@ -13,6 +13,13 @@
 }
 
 @font-face {
+  font-family: "Montserrat Medium";
+  font-weight: 500;
+  src: local("Montserrat Medium"),
+    url(../public/fonts//montserrat/Montserrat-Medium.ttf) format("truetype");
+}
+
+@font-face {
   font-family: "Tiempos Headline Regular";
   font-weight: 400;
   src: local("Tiempos Headline Regular"),
@@ -61,19 +68,8 @@ button{
   outline: none;
   border: none;
 }
+@import "../components/Contact/Contact.module.scss";
 
-.container {
-
-}
-@media screen and (min-width: 1538px) {
-  .container {
-    max-width: 1250px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-}
-// @import "../styles/variables.module.scss";
-// @import "../components/Contact/Contact.module.scss";
+@import "../styles/variables.module.scss";
 
 

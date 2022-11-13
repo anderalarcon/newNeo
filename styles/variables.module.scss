@@ -13,6 +13,11 @@ $breakpoint: (
     max: 1538px,
 );
 
+$padding:(
+    mobile:16px,
+    widescreen:144px
+);
+
 // Breakpoints
 @mixin breakpoint($point) {
 
@@ -70,17 +75,21 @@ $breakpoint: (
 
     /* At least 1200px */
     @if $point ==widescreen {
-
-
         /* stylelint-disable-next-line */
         @media only screen and (min-width: map-get($breakpoint, desktop)) {
             @content;
         }
 
     }
+
+    @if $point ==xl {
+        /* stylelint-disable-next-line */
+        @media only screen and (min-width: map-get($breakpoint, xl-screen)) {
+            @content;
+        }
+
+    }
     @if $point ==max{
-
-
         /* stylelint-disable-next-line */
         @media only screen and (min-width: map-get($breakpoint, max)) {
             @content;
