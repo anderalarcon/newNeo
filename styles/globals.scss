@@ -1,3 +1,5 @@
+@import '/styles/variables.module.scss';
+
 @font-face {
   font-family: "Montserrat Regular";
   font-weight: 400;
@@ -27,7 +29,8 @@
 }
 
 html,
-body,* {
+body,
+* {
   padding: 0;
   margin: 0;
   font-family: "Montserrat Regular";
@@ -37,8 +40,8 @@ h1,
 h2,
 h3,
 h4,
-h5, 
-h6 { 
+h5,
+h6 {
   font-size: inherit;
   font-weight: inherit;
 
@@ -64,12 +67,37 @@ a {
   }
 }
 
-button{
+button {
   outline: none;
   border: none;
 }
-@import "../components/Contact/Contact.module.scss";
 
-@import "../styles/variables.module.scss";
+//Swiper custom styles
+.swiper {
+  padding-bottom: 60px !important;
+  position: relative !important;
 
+  @include breakpoint(widescreen) {
+    padding-bottom: 51px !important;
+  }
+}
 
+.swiper-pagination {
+  bottom: 0px !important;
+}
+
+.swiper-pagination-bullet {
+  background-color: white !important;
+  width: 24px !important;
+  height: 4px !important;
+  border-radius: 4px !important;
+  @include breakpoint(widescreen) {
+    width: 54px !important;
+    height: 8px !important;
+  }
+
+}
+
+.swiper-button-disabled {
+  opacity: 0.5;
+}

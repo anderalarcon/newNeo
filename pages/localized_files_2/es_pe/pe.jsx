@@ -1,6 +1,7 @@
 import React from 'react'
 import Contact from '../../../components/Contact/Contact'
 import Solutions from '../../../components/Solutions/Solutions'
+import SuccessCase from '../../../components/SuccessCase/SuccessCase'
 
 const pe = () => {
   return (
@@ -9,7 +10,7 @@ const pe = () => {
       <p>Hero</p>
       <Solutions/>
       <p>Partners</p>
-      <p>CDE</p>
+      <SuccessCase/>
       <p>Clientes</p>
       <p>Empresas</p>
       <p>regional</p>
