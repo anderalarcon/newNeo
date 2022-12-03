@@ -3,12 +3,12 @@
 .success {
     background-color: map-get($color , accent);
 
-    padding-top: 59px;
-    padding-bottom: 59px;
+    // padding-top: 59px;
+    // padding-bottom: 59px;
 
     @include breakpoint(widescreen) {
-        padding-top: 82px;
-        padding-bottom: 82px;
+        // padding-top: 82px;
+        // padding-bottom: 82px;
     }
 
     &_container {
@@ -25,7 +25,7 @@
 
         &_swiper_button {
             position: absolute;
-            bottom: 0;
+            bottom: 40px;
             z-index: 10;
             cursor: pointer;
             color: map-get($color, white);
@@ -34,6 +34,10 @@
                 display: flex;
                 align-items: center;
                 gap: 8px;
+            }
+            @include breakpoint(max) {
+                bottom: 128px;
+
             }
 
             &_span {

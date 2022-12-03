@@ -27,7 +27,14 @@ const SuccessCase = () => {
             prevEl: `.${style.swiper_button_prev_cases}`,
             disabledClass: 'swiper-button-disabled'
           }}
-          pagination={{ clickable: true }}
+          pagination={{
+            clickable: true,
+            el: '.swiper-pagination-cde',
+            type: 'bullets',
+            renderBullet: function (index, className) {
+              return '<span class="' + className + '"></span>'
+            }
+          }}
           scrollbar={{ draggable: true }}
         >
           <div
@@ -46,14 +53,16 @@ const SuccessCase = () => {
               Anterior
             </span>
           </div>
-          {peruCases.map(({ type, title, description, img, url }) => {
+          <div className="swiper-pagination-cde"></div>
+          {peruCases.map(({ type, title, description, img, imgMob, url }, i) => {
             return (
-              <SwiperSlide key={title}>
+              <SwiperSlide key={title + i}>
                 <Case
                   type={type}
                   title={title}
                   description={description}
                   img={img.src}
+                  imgMob={imgMob.src}
                   url={url}
                 />
               </SwiperSlide>

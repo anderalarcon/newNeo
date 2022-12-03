@@ -1,7 +1,9 @@
 $color: (
     accent: #100FA8,
     white: #FFFFFF,
-    ) !default;
+    bg_page:#F4F2FA,
+    info:#0961AB,
+    primary:#000033) !default;
 
 $breakpoint: (
     small-mobile: 340px,
@@ -13,7 +15,7 @@ $breakpoint: (
     max: 1538px,
 );
 
-$padding:(
+$padding: (
     mobile:16px,
     widescreen:144px
 );
@@ -40,41 +42,19 @@ $padding:(
 
     }
 
-    /* Between 769px and 1200px */
-    @if $point ==tablet-desktop {
-
-
-        /* stylelint-disable-next-line */
-        @media only screen and (min-width: map-get($breakpoint, mobile) + 1) and (max-width: map-get($breakpoint, desktop)) {
-            @content;
-        }
-
-    }
-
-    /* Between 769px and 992px */
-    @if $point ==tablet-only {
-
-
-        /* stylelint-disable */
-        @media only screen and (min-width: map-get($breakpoint, mobile) + 1) and (max-width: map-get($breakpoint, tablet)) {
-            @content;
-        }
-
-
-    }
-
     /* At least 993px */
-    @if $point ==desktop {
+    // @if $point ==desktop {
 
-        /* stylelint-disable-next-line */
-        @media only screen and (min-width: map-get($breakpoint, tablet) + 1) {
-            @content;
-        }
+    //     /* stylelint-disable-next-line */
+    //     @media only screen and (min-width: map-get($breakpoint, tablet) + 1) {
+    //         @content;
+    //     }
 
-    }
+    // }
 
     /* At least 1200px */
     @if $point ==widescreen {
+
         /* stylelint-disable-next-line */
         @media only screen and (min-width: map-get($breakpoint, desktop)) {
             @content;
@@ -83,13 +63,16 @@ $padding:(
     }
 
     @if $point ==xl {
+
         /* stylelint-disable-next-line */
         @media only screen and (min-width: map-get($breakpoint, xl-screen)) {
             @content;
         }
 
     }
-    @if $point ==max{
+
+    @if $point ==max {
+
         /* stylelint-disable-next-line */
         @media only screen and (min-width: map-get($breakpoint, max)) {
             @content;

@@ -28,6 +28,20 @@
     url(../public/fonts/tiemposheadline/TiemposHeadline-Regular.woff2) format("woff2");
 }
 
+@font-face {
+  font-family: "Tiempos Headline Medium";
+  font-weight: 500;
+  src: local("Tiempos Headline Medium"),
+    url(../public/fonts/tiemposheadline/TiemposHeadline-Medium.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Tiempos Headline Bold";
+  font-weight: 500;
+  src: local("Tiempos Headline Bold"),
+    url(../public/fonts/tiemposheadline/TiemposHeadline-Bold.woff) format("woff");
+}
+
 html,
 body,
 * {
@@ -72,32 +86,50 @@ button {
   border: none;
 }
 
-//Swiper custom styles
-.swiper {
-  padding-bottom: 60px !important;
-  position: relative !important;
+//home
+.swiper-pagination-home {
+  position: absolute;
+  bottom: 22px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: auto !important;
+  z-index: 9;
 
   @include breakpoint(widescreen) {
-    padding-bottom: 51px !important;
+    bottom: 64px !important;
   }
 }
 
-.swiper-pagination {
-  bottom: 0px !important;
-}
-
+//global bullets
 .swiper-pagination-bullet {
   background-color: white !important;
   width: 24px !important;
   height: 4px !important;
   border-radius: 4px !important;
+
   @include breakpoint(widescreen) {
+    bottom: 58px !important;
     width: 54px !important;
     height: 8px !important;
   }
 
 }
 
+//global disabled
 .swiper-button-disabled {
   opacity: 0.5;
+}
+
+
+//casos de exito
+.swiper-pagination-cde {
+  position: absolute;
+  bottom: 48px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: auto !important;
+  z-index: 9;
+  @include breakpoint(max) {
+    bottom: 128px !important;
+  }
 }

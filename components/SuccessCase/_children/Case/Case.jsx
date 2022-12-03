@@ -1,7 +1,7 @@
 import style from './Case.module.scss'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-const Case = ({ type, title, description, img, url }) => {
+const Case = ({ type, title, description, img, imgMob, url }) => {
   return (
     <div className={style.case}>
       <div className={style.case_container}>
@@ -9,6 +9,11 @@ const Case = ({ type, title, description, img, url }) => {
           <div className={style.case_container_left_image}>
             <img
               className={style.case_container_left_image_img}
+              src={imgMob}
+              alt={title}
+            />
+            <img
+              className={style.case_container_left_image_img_desk}
               src={img}
               alt={title}
             />
@@ -33,6 +38,7 @@ Case.propTypes = {
   title: PropTypes.string,
   description: PropTypes.string,
   img: PropTypes.string,
+  imgMob: PropTypes.string,
   url: PropTypes.string
 }
 
