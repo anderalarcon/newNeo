@@ -1,0 +1,132 @@
+@import "../../styles/variables.module.scss";
+
+.solutions {
+    background-color: map-get($color , accent);
+    color: white;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-top: 138px;
+
+    &_container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 32px;
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+
+        @include breakpoint(widescreen) {
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            max-width: map-get($breakpoint, max);
+            margin-left: auto;
+            margin-right: auto;
+            gap: 2%;
+            row-gap: 25px;
+        }
+
+        &_solution {
+            width: 100%;
+            position: relative;
+
+            @include breakpoint(widescreen) {
+                width: 49%;
+
+            }
+
+            &_title {
+                font-size: 16px;
+                line-height: 20px;
+                font-family: "Montserrat Bold";
+
+                @include breakpoint(widescreen) {
+                    font-size: 40px;
+                    line-height: 48px;
+                }
+            }
+
+            &_desc {
+                font-family: "Montserrat Medium";
+                font-size: 12px;
+                line-height: 16px;
+                margin-top: 16px;
+                margin-bottom: 70px;
+
+                @include breakpoint(widescreen) {
+                    font-size: 18px;
+                    line-height: 24px;
+                    margin-bottom: 90px;
+                }
+            }
+
+            &_ctn {
+                display: flex;
+                gap: 16px;
+                align-items: center;
+                margin-bottom: 16px;
+                position: absolute;
+                bottom: 0;
+
+                @include breakpoint(widescreen) {
+                    gap: 32px;
+
+                }
+
+                &_talk {
+                    border: 1px solid map-get($color , white);
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    font-family: "Montserrat Medium";
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 18px;
+                        line-height: 24px;
+                    }
+
+                }
+
+                &_more {
+                    display: flex;
+                    align-items: center;
+                    gap: 39px;
+                    padding: 8px 0px;
+                    font-family: "Montserrat Medium";
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 18px;
+                        line-height: 24px;
+                        gap: 7px;
+
+                    }
+
+                }
+            }
+
+            &_hr {
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: map-get($color , white);
+            }
+        }
+    }
+
+    &_title {
+        font-family: "Tiempos Headline Medium";
+        font-size: 24px;
+        line-height: 28px;
+        text-align: center;
+        margin-bottom: 48px;
+
+        @include breakpoint(widescreen) {
+            font-size: 48px;
+            line-height: 56px;
+            margin-bottom: 85px;
+        }
+
+    }
+}

@@ -1,20 +1,32 @@
 import React from 'react'
+import Bcorp from '../../../components/Bcorp/Bcorp'
 import Contact from '../../../components/Contact/Contact'
+
+import Hero from '../../../components/Hero/Hero'
+import Questions from '../../../components/Questions/Questions'
+import Region from '../../../components/Region/Region'
 import Solutions from '../../../components/Solutions/Solutions'
+import SuccessCase from '../../../components/SuccessCase/SuccessCase'
+import { questionsHome } from '../../../utilities/home/questions'
+
 
 const pe = () => {
   return (
     <>
-      <p>Header</p>
-      <p>Hero</p>
-      <Solutions/>
+
+      <h1>Header</h1>
+      <Hero />
+      <Solutions />
+
       <p>Partners</p>
-      <p>CDE</p>
+      <SuccessCase />
       <p>Clientes</p>
       <p>Empresas</p>
-      <p>regional</p>
-      <p>bcorp</p>
-      <p>preguntas frec</p>
+
+      <Region />
+      <Bcorp />
+      <Questions questions={questionsHome} />
+
       <Contact />
       <p>contenido</p>
       <p>footer</p>

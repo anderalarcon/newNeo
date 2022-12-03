@@ -4,7 +4,8 @@ import arrow from '../../../../public/assets/Solutions/arrow.svg'
 import style from './Card.module.scss'
 const Card = ({ iconSrc, service, description, url }) => {
   return (
-    <div className={style.card}>
+    <Link href={url} className={style.card}>
+
       <div className={style.card_container}>
         <div className={style.card_container_subcontainer}>
           <img
@@ -15,16 +16,18 @@ const Card = ({ iconSrc, service, description, url }) => {
           <h3 className={style.card_container_subcontainer_service}>{service}</h3>
         </div>
         <p className={style.card_container_description}>{description}</p>
-        <Link className={style.card_container_link} href={url}>
+        <p className={style.card_container_link} href={url}>
+
           Ver servicios
           <img
             className={style.card_container_link_img}
             src={arrow.src}
             alt='arrow Neo'
           />
-        </Link>
+        </p>
       </div>
-    </div>
+    </Link>
+
   )
 }
 

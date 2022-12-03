@@ -12,6 +12,10 @@
         "destination": "/localized_files_2/es_pe/pe/index.html"
       },
       {
+        "source": "/pe/consultoria-customer-relationship-management",
+        "destination": "/localized_files_2/es_pe/servicios/crm/crm/index.html"
+      },
+      {
         "source": "/",
         "destination": "/localized_files_2/es_co/index.html"
       },
