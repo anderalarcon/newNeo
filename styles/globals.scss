@@ -85,6 +85,7 @@ button {
   outline: none;
   border: none;
 }
+@import "../components/Contact/Contact.module.scss";
 
 //home
 .swiper-pagination-home {
@@ -119,6 +120,7 @@ button {
 .swiper-button-disabled {
   opacity: 0.5;
 }
+
 
 
 //casos de exito

@@ -22,7 +22,9 @@ export const solutionsPeru = [
     iconSrc: icon,
     service: 'Consultoría CRM',
     description: 'Crea, desarrolla y mejora la relación con tus clientes.',
+
     url: '/localized_files_2/es_pe/servicios/crm/crm/'
+
   },
   {
     iconSrc: icon,

@@ -5,6 +5,7 @@ import style from './Card.module.scss'
 const Card = ({ iconSrc, service, description, url }) => {
   return (
     <Link href={url} className={style.card}>
+
       <div className={style.card_container}>
         <div className={style.card_container_subcontainer}>
           <img
@@ -16,6 +17,7 @@ const Card = ({ iconSrc, service, description, url }) => {
         </div>
         <p className={style.card_container_description}>{description}</p>
         <p className={style.card_container_link} href={url}>
+
           Ver servicios
           <img
             className={style.card_container_link_img}
@@ -25,6 +27,7 @@ const Card = ({ iconSrc, service, description, url }) => {
         </p>
       </div>
     </Link>
+
   )
 }
 
