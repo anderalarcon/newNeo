@@ -7,7 +7,8 @@ import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import { crmSolutions } from '../../../../../utilities/global/solutionsChpater'
 import { questionsCrm } from '../../../../../utilities/crm/questions'
-
+import Team from '../../../../../components/Team/Team'
+import { team } from '../../../../../utilities/crm/team'
 const crm = () => {
   return (
     <>
@@ -15,7 +16,7 @@ const crm = () => {
       <Hero />
       <Vision />
       <SolutionsChapter solutions={crmSolutions} />
-      TEAM
+      <Team team={team}/>
       <SuccessCase />
       <Questions questions={questionsCrm} />
       <Contact />

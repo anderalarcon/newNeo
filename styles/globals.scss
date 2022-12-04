@@ -85,6 +85,7 @@ button {
   outline: none;
   border: none;
 }
+
 @import "../components/Contact/Contact.module.scss";
 
 //home
@@ -131,6 +132,25 @@ button {
   transform: translateX(-50%);
   width: auto !important;
   z-index: 9;
+
+  @include breakpoint(max) {
+    bottom: 128px !important;
+  }
+}
+
+//Pagination teams global
+.swiper-pagination-teams {
+  position: absolute;
+  bottom: 0px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: auto !important;
+  z-index: 9;
+
+  & span {
+    background-color: map-get($color, accent) !important;
+  }
+
   @include breakpoint(max) {
     bottom: 128px !important;
   }

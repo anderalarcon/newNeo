@@ -9,11 +9,9 @@ import Solutions from '../../../components/Solutions/Solutions'
 import SuccessCase from '../../../components/SuccessCase/SuccessCase'
 import { questionsHome } from '../../../utilities/home/questions'
 
-
 const pe = () => {
   return (
     <>
-
       <h1>Header</h1>
       <Hero />
       <Solutions />

@@ -1,0 +1,94 @@
+@import '../../../../styles/variables.module.scss';
+
+.profile {
+    border: 1px solid map-get($color , disabled);
+    width: 232px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 8px;
+
+    @include breakpoint(widescreen) {
+        width: 400.5px;
+        height: 491px;
+
+    }
+
+    &_container {
+        &_top {
+            &_img {
+                width: 232px;
+                height: 175px;
+
+                @include breakpoint(widescreen) {
+                    width: 400.5px;
+                    height: 307px;
+                }
+            }
+        }
+
+        &_bottom {
+            padding: 16px;
+            background-color: map-get($color , white );
+            &_fullname {
+                font-size: 16px;
+                line-height: 20px;
+                font-family: "Montserrat Bold";
+                margin-bottom: 8px;
+
+                @include breakpoint(widescreen) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            &_charge {
+                font-family: "Montserrat Medium";
+                font-size: 14px;
+                line-height: 20px;
+                margin-bottom: 16px;
+
+                @include breakpoint(widescreen) {
+                    font-size: 18px;
+                    line-height: 24px;
+                }
+            }
+
+            &_bio {
+                font-family: "Montserrat Medium";
+                font-size: 12px;
+                line-height: 16px;
+                margin-bottom: 16px;
+                display: -webkit-box;
+                -webkit-line-clamp: 4;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+
+                @include breakpoint(widescreen) {
+                    font-size: 16px;
+                    -webkit-line-clamp: 2;
+                    line-height: 20px;
+                }
+            }
+
+            &_social {
+                display: flex;
+                flex-direction: row;
+                gap: 8px;
+                align-items: center;
+
+                &_linked {
+                    font-size: 12px;
+                    line-height: 16px;
+                    font-family: "Montserrat Bold";
+
+                    @include breakpoint(widescreen) {
+
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                }
+            }
+        }
+    }
+}
