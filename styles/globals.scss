@@ -85,6 +85,7 @@ button {
   outline: none;
   border: none;
 }
+
 @import "../components/Contact/Contact.module.scss";
 
 //home
@@ -131,7 +132,38 @@ button {
   transform: translateX(-50%);
   width: auto !important;
   z-index: 9;
+
   @include breakpoint(max) {
     bottom: 128px !important;
   }
+}
+
+//Pagination teams global
+.swiper-pagination-teams {
+  position: absolute;
+  bottom: 0px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: auto !important;
+  z-index: 9;
+
+  & span {
+    background-color: map-get($color, accent) !important;
+  }
+
+  @media (min-width: 384px) {
+    bottom: 10px !important;
+  }
+
+  @include breakpoint(widescreen) {
+    bottom: 32px !important;
+  }
+}
+
+
+.swiper-slide{
+  opacity: .6;
+}
+.swiper-slide-active{
+  opacity: 1;
 }

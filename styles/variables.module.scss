@@ -3,6 +3,7 @@ $color: (
     white: #FFFFFF,
     bg_page:#F4F2FA,
     info:#0961AB,
+    disabled:#CCCCD6,
     primary:#000033) !default;
 
 $breakpoint: (
@@ -17,9 +18,13 @@ $breakpoint: (
 
 
 $padding: (
-
     mobile:16px,
     widescreen:144px
+);
+
+$margin: (
+    mobile:84px,
+    widescreen:128px
 );
 
 // Breakpoints
@@ -73,11 +78,10 @@ $padding: (
 
     }
 
+    @if $point ==max {}
+
     @if $point ==max {
 
-
-    }
-    @if $point ==max{
         /* stylelint-disable-next-line */
         @media only screen and (min-width: map-get($breakpoint, max)) {
             @content;

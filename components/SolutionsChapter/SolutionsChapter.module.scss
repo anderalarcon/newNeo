@@ -5,8 +5,11 @@
     color: white;
     padding-top: 64px;
     padding-bottom: 64px;
-    margin-top: 138px;
+    margin-bottom: map-get($margin , mobile);
 
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
     &_container {
         display: flex;
         flex-wrap: wrap;

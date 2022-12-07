@@ -1,11 +1,18 @@
 @import '../../styles/variables.module.scss';
 
 .questions {
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
     &_container {
         padding-left: map-get($padding, mobile);
         padding-right: map-get($padding, mobile);
         display: flex;
         align-items: center;
+
         @include breakpoint(widescreen) {
             padding-left: map-get($padding, widescreen);
             padding-right: map-get($padding, widescreen);
@@ -13,7 +20,8 @@
             margin-left: auto;
             margin-right: auto;
         }
-        @include breakpoint(max){
+
+        @include breakpoint(max) {
             gap: 46px;
         }
 
