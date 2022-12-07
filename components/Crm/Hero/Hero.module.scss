@@ -1,6 +1,11 @@
 @import "../../../styles/variables.module.scss";
 
 .hero {
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
     &_container {
         padding-left: map-get($padding, mobile);
         padding-right: map-get($padding, mobile);

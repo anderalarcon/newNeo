@@ -7,12 +7,13 @@ import pri from '../../public/assets/Team/pri.jpg'
 
 export const team = [
   {
-    fullname: 'Beellye Huatuco',
+    fullname: 'Priscilla Alvarez',
     charge: 'Gerente de Customer Growth Strategy',
-    bio: 'Ingeniera de Sistemas, con conocimiento en E-commerce y Marketing Digital. Con certificación en comercio electrónico por la NYU y experiencia en definición de funnels de conversión y segmentación de clientes.',
+    bio: 'Especialista en marketing y gestión comercial 8 años de experiencia en marketing y ventas, producto, e-commerce y estrategia de gestión de clientes en canales digitales de diversos sectores en coordinación con agencias y equipos de múltiples disciplinas y países.',
     linkedin: 'https://www.linkedin.com/in/beellye-huatuco-0b0b4a1a/',
-    img: bee.src
+    img: pri.src
   },
+
   {
     fullname: 'Silvana Galletti',
     charge: 'Consultora Senior de CRM',
@@ -21,11 +22,11 @@ export const team = [
     img: sil.src
   },
   {
-    fullname: 'Priscilla Alvarez',
+    fullname: 'Beellye Huatuco',
     charge: 'Gerente de Customer Growth Strategy',
-    bio: 'Especialista en marketing y gestión comercial 8 años de experiencia en marketing y ventas, producto, e-commerce y estrategia de gestión de clientes en canales digitales de diversos sectores en coordinación con agencias y equipos de múltiples disciplinas y países.',
+    bio: 'Ingeniera de Sistemas, con conocimiento en E-commerce y Marketing Digital. Con certificación en comercio electrónico por la NYU y experiencia en definición de funnels de conversión y segmentación de clientes.',
     linkedin: 'https://www.linkedin.com/in/beellye-huatuco-0b0b4a1a/',
-    img: pri.src
+    img: bee.src
   },
   {
     fullname: 'Thais Fernández',

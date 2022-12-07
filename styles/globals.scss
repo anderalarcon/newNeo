@@ -151,7 +151,19 @@ button {
     background-color: map-get($color, accent) !important;
   }
 
-  @include breakpoint(max) {
-    bottom: 128px !important;
+  @media (min-width: 384px) {
+    bottom: 10px !important;
   }
+
+  @include breakpoint(widescreen) {
+    bottom: 32px !important;
+  }
+}
+
+
+.swiper-slide{
+  opacity: .6;
+}
+.swiper-slide-active{
+  opacity: 1;
 }

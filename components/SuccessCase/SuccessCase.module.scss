@@ -5,10 +5,10 @@
 
     // padding-top: 59px;
     // padding-bottom: 59px;
-
+    margin-bottom: map-get($margin , mobile);
     @include breakpoint(widescreen) {
-        // padding-top: 82px;
-        // padding-bottom: 82px;
+        margin-bottom: map-get($margin , widescreen);
+
     }
 
     &_container {
