@@ -1,8 +1,11 @@
 @import "../../styles/variables.module.scss";
 
 .solutions {
-    padding-top: 56px;
-    padding-bottom: 50px;
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
 
     &_container {
         padding-left: map-get($padding, mobile);

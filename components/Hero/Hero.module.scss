@@ -3,6 +3,11 @@
 .hero {
     background-color: map-get($color, accent);
     overflow: hidden;
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
 
     @media screen and (min-width: 418px) {
         height: auto;
