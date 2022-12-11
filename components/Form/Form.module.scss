@@ -1,0 +1,183 @@
+@import "../../styles/variables.module.scss";
+
+.form {
+    &_container {
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+
+        &_logo {
+            margin-top: 24px;
+            margin-bottom: 24px;
+        }
+
+        &_steps {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+        }
+
+
+
+        &_form {
+            &_first {
+
+                display: flex;
+                flex-direction: column;
+                gap: 24px;
+
+                &_title {
+                    font-family: 'Tiempos Headline Medium';
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                }
+
+                &_desc {
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 52px;
+                }
+
+                &_selects {
+                    border: 0.38px solid #CCCCD6;
+                    padding: 26px;
+                    border-radius: 24px;
+
+                    &_left {
+                        &_header {
+                            display: flex;
+                            gap: 16px;
+                            justify-content: center;
+                            margin-bottom: 32px;
+
+                            &_service {
+                                font-family: 'Montserrat Bold';
+                                font-size: 16px;
+                                line-height: 20px;
+                            }
+                        }
+
+                        &_desc {
+                            text-align: center;
+                            font-family: 'Montserrat Medium';
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-bottom: 20px;
+                        }
+                    }
+
+                    &_right {
+                        display: flex;
+                        flex-direction: column;
+                        row-gap: 24px;
+                        margin-top: 24px;
+
+                        &_input {
+                            display: flex;
+                            gap: 16px;
+                            align-items: center;
+
+                            &_checkbox {
+                                accent-color: map-get($color, accent);
+
+                            }
+
+                            &_title {
+                                font-family: 'Montserrat Medium';
+                                font-size: 12px;
+                                line-height: 16px;
+
+                            }
+                        }
+                    }
+                }
+
+
+
+            }
+
+            &_second {
+                &_title {
+                    font-family: 'Tiempos Headline Medium';
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                }
+
+                &_desc {
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                }
+
+                &_inputs {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40px;
+
+                    &_input {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        &_label {
+                            font-family: 'Montserrat Bold';
+                            font-size: 16px;
+                            line-height: 20px;
+                        }
+
+                        &_text {
+                            padding: 16px;
+                            border: none;
+                            border-bottom: 2px solid #000033;
+                            font-family: 'Montserrat Medium';
+                            font-size: 18px;
+                            line-height: 24px;
+                        }
+                    }
+                }
+            }
+
+            &_third {
+                &_title {
+                    font-family: 'Tiempos Headline Medium';
+                    font-size: 24px;
+                    line-height: 28px;
+                    margin-bottom: 16px;
+                }
+
+                &_desc {
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 20px;
+                    margin-bottom: 40px;
+                }
+                &_input{
+                    &_label{
+
+                    }
+                    &_area{
+                        width: 100%;
+                        border: none;
+                        border-bottom: 2px solid #000033;
+                    }
+                }
+            }
+            &_btn {
+                background-color: map-get($color , accent);
+                color: map-get($color , white);
+                padding: 8px 16px;
+                font-family: 'Montserrat Medium';
+                font-size: 14px;
+                line-height: 20px;
+                width: 100%;
+                margin-top: 20px;
+            }
+        }
+
+
+
+    }
+}
