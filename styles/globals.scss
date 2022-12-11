@@ -160,10 +160,29 @@ button {
   }
 }
 
+//Pagination clients global
+.swiper-pagination-clients {
+  position: absolute;
+  bottom: -20px !important;
+  left: 50% !important;
+  transform: translateX(-50%);
+  width: auto !important;
+  z-index: 9;
 
-.swiper-slide{
+  & span {
+    background-color: map-get($color, accent) !important;
+  }
+
+  @include breakpoint(max) {
+    bottom: 90px !important;
+  }
+}
+
+
+.swiper-slide {
   opacity: .6;
 }
-.swiper-slide-active{
+
+.swiper-slide-active {
   opacity: 1;
 }

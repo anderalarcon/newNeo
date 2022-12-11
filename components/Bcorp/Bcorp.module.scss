@@ -1,8 +1,12 @@
 @import '../../styles/variables.module.scss';
 
 .bcorp {
-    margin-top: 130px;
+    // margin-top: 130px;
+    margin-bottom: map-get($margin , mobile);
 
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
     &_container {
         padding-left: map-get($padding, mobile);
         padding-right: map-get($padding, mobile);
