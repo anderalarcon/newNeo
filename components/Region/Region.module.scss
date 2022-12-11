@@ -2,10 +2,14 @@
 
 .region {
     background-color: map-get($color, accent);
-    padding-top: 17px;
+    // padding-top: 17px;
     position: relative;
-    padding-top: 76px;
+    // padding-top: 76px;
+    margin-bottom: map-get($margin , mobile);
 
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
     @include breakpoint(widescreen) {
         padding-top: 0px;
 

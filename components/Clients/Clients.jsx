@@ -5,19 +5,54 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 import { useEffect, useState } from 'react'
 import uuid from 'react-uuid'
 import Recommendation from './_children/Recommendation/Recommendation'
+import rightArrow from '../../public/assets/Swiper/right-arrow-accent.svg'
+import leftArrow from '../../public/assets/Swiper/left-arrow-accent.svg'
 
 const Clients = ({ recommendations }) => {
+  const [isMobile, setIsMobile] = useState(
+    typeof window === 'undefined' ? 0 : window.innerWidth < 1200
+  )
+  const [isMax, setIsMax] = useState(
+    typeof window === 'undefined' ? 0 : window.innerWidth >= 1538
+  )
+  const updateDimensions = (event) => {
+    if (typeof window !== 'undefined') {
+      setIsMobile(event.target.innerWidth < 1200)
+      setIsMax(event.target.innerWidth >= 1538)
+    }
+  }
+  useEffect(() => {
+    window.addEventListener('resize', updateDimensions)
+    return () => window.removeEventListener('resize', updateDimensions)
+  }, [updateDimensions])
   return (
     <div className={style.clients}>
       <h1 className={style.clients_title}>Nuestros clientes nos recomiendan</h1>
       <div className={style.clients_container}>
+        <div
+          className={`${style.clients_container_swiper_button} ${style.swiper_button_next_cases}`}
+        >
+          <span className={style.clients_container_swiper_button_span}>
+            Siguiente
+          </span>
+          <img src={rightArrow.src} alt='Casos de Exito Neo Consulting' />
+        </div>
+        <div
+          className={`${style.clients_container_swiper_button} ${style.swiper_button_prev_cases}`}
+        >
+          <img src={leftArrow.src} alt='Casos de Exito Neo Consulting' />
+          <span className={style.clients_container_swiper_button_span}>
+            Anterior
+          </span>
+        </div>
+        <div className='swiper-pagination-clients'></div>
         <Swiper
-          className={style.team_container_special}
+          className={style.clients_container_special}
           modules={[Navigation, Pagination, EffectCoverflow]}
           effect={'coverflow'}
           grabCursor={true}
           centeredSlides={true}
-          slidesPerView={1}
+          slidesPerView={isMobile ? '1' : '3'}
           coverflowEffect={{
             rotate: 0,
             stretch: 0,
@@ -25,9 +60,8 @@ const Clients = ({ recommendations }) => {
             modifier: 1,
             slideShadows: false
           }}
-          // spaceBetween={24}
-          initialSlide='2'
-          spaceBetween={48}
+          initialSlide='1'
+          spaceBetween={isMax ? 100 : 65}
           navigation={{
             nextEl: `.${style.swiper_button_next_cases}`,
             prevEl: `.${style.swiper_button_prev_cases}`,
@@ -35,7 +69,7 @@ const Clients = ({ recommendations }) => {
           }}
           pagination={{
             clickable: true,
-            el: '.swiper-pagination-teams',
+            el: '.swiper-pagination-clients',
             type: 'bullets',
             renderBullet: function (index, className) {
               return '<span class="' + className + '"></span>'
@@ -53,7 +87,7 @@ const Clients = ({ recommendations }) => {
               url
             }) => {
               return (
-                <SwiperSlide key={uuid()}>
+                <SwiperSlide key={uuid()} className={style.special}>
                   <Recommendation
                     logoCompany={logoCompany}
                     quote={quote}

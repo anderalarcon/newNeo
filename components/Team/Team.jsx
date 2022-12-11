@@ -27,7 +27,6 @@ const Team = ({ team }) => {
     return () => window.removeEventListener('resize', updateDimensions)
   }, [updateDimensions])
 
-  // console.log(width)
   return (
     <div className={style.team}>
       <div className={style.team_container}>

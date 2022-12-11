@@ -1,7 +1,7 @@
 import style from './Recommendation.module.scss'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-
+import arrow from '../../../../public/assets/Clients/arrow.svg'
 const Recommendation = ({
   logoCompany,
   logoClient,
@@ -38,7 +38,13 @@ const Recommendation = ({
             </p>
           </div>
         </div>
-        <Link href={'/'} className={style.recommendation_container_link}>Ver Caso de éxito</Link>
+        <Link href={url} className={style.recommendation_container_link}>
+          Ver Caso de éxito
+          <span>
+            {' '}
+            <img src={arrow.src} alt='Arrow' />
+          </span>
+        </Link>
       </div>
     </div>
   )
