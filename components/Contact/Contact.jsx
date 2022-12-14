@@ -2,7 +2,9 @@ import React from 'react'
 import style from './Contact.module.scss'
 import contactImg from '../../public/assets/Contact/contact.png'
 import Link from 'next/link'
-const Contact = () => {
+import PropTypes from 'prop-types'
+const Contact = ({ param }) => {
+  console.log('param', param)
   return (
     <div className={style.contact}>
       <div className={`${style.contact_container}`}>
@@ -18,7 +20,10 @@ const Contact = () => {
             <div className={style.contact_container_left_button_container}>
               <Link
                 className={style.contact_container_left_button_container_btn}
-                href="/contact"
+                href={{
+                  pathname: '/contact',
+                  query: { service: param }
+                }}
               >
                 Contáctanos
               </Link>
@@ -30,7 +35,7 @@ const Contact = () => {
             <img
               className={style.contact_container_right_image_img}
               src={contactImg.src}
-              alt="Contáctanos Neo Consulting"
+              alt='Contáctanos Neo Consulting'
             />
           </div>
         </div>
@@ -38,5 +43,7 @@ const Contact = () => {
     </div>
   )
 }
-
+Contact.propTypes = {
+  param: PropTypes.string
+}
 export default Contact

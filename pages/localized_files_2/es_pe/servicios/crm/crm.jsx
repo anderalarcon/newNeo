@@ -12,14 +12,13 @@ import { team } from '../../../../../utilities/crm/team'
 const crm = () => {
   return (
     <>
-      Header
       <Hero />
       <Vision />
       <SolutionsChapter solutions={crmSolutions} />
       <Team team={team}/>
       <SuccessCase />
       <Questions questions={questionsCrm} />
-      <Contact />
+      <Contact param={'crm'} />
     </>
   )
 }

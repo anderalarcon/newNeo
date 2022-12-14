@@ -49,15 +49,6 @@ $margin: (
 
     }
 
-    /* At least 993px */
-    // @if $point ==desktop {
-
-    //     /* stylelint-disable-next-line */
-    //     @media only screen and (min-width: map-get($breakpoint, tablet) + 1) {
-    //         @content;
-    //     }
-
-    // }
 
     /* At least 1200px */
     @if $point ==widescreen {
@@ -77,8 +68,6 @@ $margin: (
         }
 
     }
-
-    @if $point ==max {}
 
     @if $point ==max {
 

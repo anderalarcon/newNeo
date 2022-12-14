@@ -1,0 +1,28 @@
+@import "../../../../styles/variables.module.scss";
+
+.formheader {
+    &_container {
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+
+        @include breakpoint(widescreen) {
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            max-width: map-get($breakpoint, max);
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        &_logo {
+
+            margin-top: 24px;
+            margin-bottom: 24px;
+
+            @include breakpoint(widescreen) {
+                width: 123.33px;
+                margin-bottom: 40px;
+                margin-top: 40px;
+            }
+        }
+    }
+}

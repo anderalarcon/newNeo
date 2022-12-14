@@ -1,0 +1,70 @@
+@import "../../../styles/variables.module.scss";
+
+.hero {
+    &_container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+
+        @include breakpoint(widescreen) {
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            max-width: map-get($breakpoint, max);
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row;
+            align-items: center;
+        }
+
+        &_left {
+            text-align: center;
+            @include breakpoint(widescreen) {
+                text-align: center;
+                width: 50%;
+            }
+            &_img {
+                width: 100%;
+                max-width: 300px;
+
+                @include breakpoint(widescreen) {
+                    max-width: 401px;
+                    
+                }
+
+            }
+        }
+
+        &_right {
+            @include breakpoint(widescreen) {
+                width: 50%;
+            }
+
+            &_title {
+                font-family: 'Tiempos Headline Regular';
+                text-align: center;
+
+                @include breakpoint(widescreen) {
+                    text-align: center;
+                    font-size: 48px;
+                    line-height: 56px;
+                    margin-bottom: 74px;
+                }
+            }
+
+            &_desc {
+                text-align: center;
+
+                font-family: 'Montserrat Medium';
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+
+            }
+        }
+    }
+}
