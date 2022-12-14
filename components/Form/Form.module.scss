@@ -5,15 +5,52 @@
         padding-left: map-get($padding, mobile);
         padding-right: map-get($padding, mobile);
 
-        &_logo {
-            margin-top: 24px;
-            margin-bottom: 24px;
+        @include breakpoint(widescreen) {
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            max-width: map-get($breakpoint, max);
+            margin-left: auto;
+            margin-right: auto;
         }
 
         &_steps {
             margin-top: 40px;
             margin-bottom: 40px;
-            display: flex;
+            text-align: center;
+
+            @include breakpoint(widescreen) {
+                margin-top: 64px;
+                margin-bottom: 64px;
+            }
+
+
+
+            &_mobile {
+                display: block;
+
+                & img {
+                    width: 100%;
+                    max-height: 90px;
+                }
+
+                @include breakpoint(widescreen) {
+                    display: none;
+                }
+
+            }
+
+            &_desk {
+                display: none;
+
+                & img {
+                    width: 100%;
+                    max-height: 82px;
+                }
+
+                @include breakpoint(widescreen) {
+                    display: block;
+                }
+            }
         }
 
 
@@ -21,15 +58,16 @@
         &_form {
             &_first {
 
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-
                 &_title {
                     font-family: 'Tiempos Headline Medium';
                     font-size: 24px;
                     line-height: 28px;
                     margin-bottom: 16px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 48px;
+                        line-height: 56px;
+                    }
                 }
 
                 &_desc {
@@ -37,24 +75,61 @@
                     font-size: 14px;
                     line-height: 20px;
                     margin-bottom: 52px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 20px;
+                        line-height: 24px;
+                        margin-bottom: 64px;
+                    }
                 }
 
                 &_selects {
                     border: 0.38px solid #CCCCD6;
                     padding: 26px;
                     border-radius: 24px;
+                    box-shadow: 0px 16px 24px rgba(0, 0, 51, 0.15);
+
+                    @include breakpoint(tablet) {
+                        width: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    @include breakpoint(widescreen) {
+                        width: 100%;
+                        display: flex;
+                        gap: 69px;
+                        padding: 80px 80px;
+                        align-items: center;
+                    }
+
+
 
                     &_left {
+                        @include breakpoint(widescreen) {
+                            width: 40%;
+                        }
+
                         &_header {
                             display: flex;
                             gap: 16px;
                             justify-content: center;
                             margin-bottom: 32px;
 
+                            @include breakpoint(widescreen) {
+                                justify-content: start;
+                            }
+
                             &_service {
                                 font-family: 'Montserrat Bold';
                                 font-size: 16px;
                                 line-height: 20px;
+
+                                @include breakpoint(widescreen) {
+                                    font-size: 20px;
+                                    line-height: 24px;
+                                }
+
                             }
                         }
 
@@ -64,6 +139,12 @@
                             font-size: 14px;
                             line-height: 20px;
                             margin-bottom: 20px;
+
+                            @include breakpoint(widescreen) {
+                                font-size: 18px;
+                                line-height: 24px;
+                                text-align: start;
+                            }
                         }
                     }
 
@@ -72,6 +153,11 @@
                         flex-direction: column;
                         row-gap: 24px;
                         margin-top: 24px;
+
+                        @include breakpoint(widescreen) {
+                            width: 60%;
+                            margin-top: 0;
+                        }
 
                         &_input {
                             display: flex;
@@ -88,6 +174,11 @@
                                 font-size: 12px;
                                 line-height: 16px;
 
+                                @include breakpoint(widescreen) {
+                                    font-size: 16px;
+                                    line-height: 20px;
+                                }
+
                             }
                         }
                     }
@@ -103,6 +194,11 @@
                     font-size: 24px;
                     line-height: 28px;
                     margin-bottom: 16px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 48px;
+                        line-height: 56px;
+                    }
                 }
 
                 &_desc {
@@ -110,6 +206,11 @@
                     font-size: 14px;
                     line-height: 20px;
                     margin-bottom: 40px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 20px;
+                        line-height: 24px;
+                    }
                 }
 
                 &_inputs {
@@ -117,10 +218,21 @@
                     flex-direction: column;
                     gap: 40px;
 
+                    @include breakpoint(widescreen) {
+                        flex-direction: row;
+                        flex-wrap: wrap;
+                        column-gap: 80px;
+
+                    }
+
                     &_input {
                         display: flex;
                         flex-direction: column;
                         gap: 8px;
+
+                        @include breakpoint(widescreen) {
+                            width: 400px;
+                        }
 
                         &_label {
                             font-family: 'Montserrat Bold';
@@ -135,6 +247,7 @@
                             font-family: 'Montserrat Medium';
                             font-size: 18px;
                             line-height: 24px;
+                            outline: none;
                         }
                     }
                 }
@@ -146,6 +259,11 @@
                     font-size: 24px;
                     line-height: 28px;
                     margin-bottom: 16px;
+
+                    @include breakpoint(widescreen) {
+                        font-size: 48px;
+                        line-height: 56px;
+                    }
                 }
 
                 &_desc {
@@ -153,27 +271,89 @@
                     font-size: 14px;
                     line-height: 20px;
                     margin-bottom: 40px;
-                }
-                &_input{
-                    &_label{
 
+                    @include breakpoint(widescreen) {
+                        font-size: 20px;
+                        line-height: 24px;
                     }
-                    &_area{
+
+                }
+
+                &_input {
+                    &_label {
+                        font-family: 'Montserrat Bold';
+                        font-size: 16px;
+                        line-height: 20px;
+                    }
+
+                    &_area {
                         width: 100%;
                         border: none;
                         border-bottom: 2px solid #000033;
+                        outline: none;
+                        color: #4D4D70;
+                        padding: 16px;
+
+                        @include breakpoint(widescreen) {
+                            font-size: 18px;
+                            line-height: 24px;
+
+                        }
                     }
                 }
             }
-            &_btn {
-                background-color: map-get($color , accent);
-                color: map-get($color , white);
-                padding: 8px 16px;
-                font-family: 'Montserrat Medium';
-                font-size: 14px;
-                line-height: 20px;
-                width: 100%;
-                margin-top: 20px;
+
+            &_btns {
+                display: flex;
+                align-items: center;
+                gap: 18px;
+                margin-top: 40px;
+
+                @include breakpoint(widescreen) {
+                    margin-top: 64px;
+
+                }
+
+                &_back {
+                    width: 40%;
+                    border: 1px solid #000033;
+                    border-radius: 4px;
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 20px;
+                    padding: 8px 16px;
+                    background-color: white;
+                    cursor: pointer;
+
+                    @include breakpoint(widescreen) {
+                        max-width: 160px;
+                    }
+                }
+
+                &_next {
+                    width: 60%;
+                    background-color: map-get($color , accent);
+                    color: map-get($color , white);
+                    padding: 8px 16px;
+                    font-family: 'Montserrat Medium';
+                    font-size: 14px;
+                    line-height: 20px;
+                    width: 100%;
+                    border-radius: 4px;
+                    cursor: pointer;
+
+                    @include breakpoint(tablet) {
+                        width: 50%;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    @include breakpoint(widescreen) {
+                        margin-left: 0;
+                        max-width: 398px;
+
+                    }
+                }
             }
         }
 

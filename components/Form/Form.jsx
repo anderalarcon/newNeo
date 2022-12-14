@@ -1,19 +1,148 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import style from './Form.module.scss'
-import logoNeo from '../../public/assets/Form/logo_neo.svg'
 import Breadscrumb from '../Breadscrumb/Breadscrumb'
 import icon from '../../public/assets/Form/icon.svg'
+import axios from 'axios'
+import { servicesData } from '../../utilities/global/services'
+import { useRouter } from 'next/router'
+import firstStepImg from '../../public/assets/Form/step_1.svg'
+import secondStepImg from '../../public/assets/Form/step_2.svg'
+import thirdStepImg from '../../public/assets/Form/step_3.svg'
+
+import firstStepImgMob from '../../public/assets/Form/step_1_mobile.svg'
+import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
+import thirdStepImgMob from '../../public/assets/Form/step_3_mobile.svg'
+
 const Form = () => {
+  const initialValues = {
+    company: '',
+    name: '',
+    phone: '',
+    job: '',
+    email: '',
+    details: ''
+  }
+  const [formValues, setFormValues] = useState(initialValues)
+  const [formErrors, setFormErrors] = useState({})
+
   const [step, setStep] = useState(1)
-  const [test, setTest] = useState('')
+  const [data, setData] = useState('')
+  const [checkedServices, setCheckedServices] = useState([])
+  const [errorServices, setErrorServices] = useState(false)
+  const router = useRouter()
+
+  useEffect(() => {
+    if (!router.isReady) return
+    const getOptions = () => {
+      setData(servicesData.find((e) => e.service === router.query.service))
+    }
+    getOptions()
+  }, [router.isReady])
 
   const handleSteps = (e) => {
     e.preventDefault()
-    setStep(step + 1)
-    setTest('hola')
+    if (step === 1) {
+      if (checkedServices.length > 0) {
+        setStep(2)
+      } else {
+        setErrorServices(true)
+      }
+    }
+    if (step === 2) {
+      setFormErrors(validate(formValues))
+    }
+    if (step === 3) {
+      setFormErrors(validate(formValues))
+    }
   }
-  console.log(step)
-  console.log(test)
+
+  const handleBack = () => {
+    setStep(step - 1)
+  }
+
+  const handleChange = (e) => {
+    const { name, value } = e.target
+    setFormValues({
+      ...formValues,
+      [name]: value
+    })
+  }
+
+  const handleCheckboxes = (e) => {
+    const { value, checked } = e.target
+    if (checked) {
+      setCheckedServices((pre) => [...pre, value])
+    } else {
+      setCheckedServices((pre) => {
+        return [...pre.filter((e) => e !== value)]
+      })
+    }
+  }
+
+  const validate = (values) => {
+    const errors = {}
+    if (!values.company) {
+      errors.company = 'Compañia es requerido'
+    }
+    if (!values.name) {
+      errors.name = 'Nombre es requerido'
+    }
+    if (!values.phone) {
+      errors.phone = 'Celular es requerido'
+    }
+    if (!values.job) {
+      errors.job = 'Cargo es requerido'
+    }
+    if (!values.email) {
+      errors.email = 'Email es requerido'
+    }
+    if (!values.details && step === 3) {
+      errors.details = 'Detalle es requerido'
+    }
+    return errors
+  }
+
+  const handleSubmit = (e) => {
+    e?.preventDefault()
+    // const contactObj = {
+    //   properties: {
+    //     servicios_interesados: checkedServices.join(','),
+    //     company: formValues.company,
+    //     firstname: formValues.name,
+    //     phone: formValues.phone,
+    //     jobtitle: formValues.job,
+    //     email: formValues.email,
+    //     detalle_proyecto: formValues.details,
+    //     p_gina_de_origen__c: 'to do',
+    //     fuente_medio__c: 'to do',
+    //     canal__c: 'to do',
+    //     campa_a__c: 'to do'
+    //   }
+    // }
+
+    // axios
+    //   .post(
+    //     'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
+    //     contactObj
+    //   )
+    //   .then(function (response) {
+    //     console.log(response)
+    //   })
+    //   .catch(function (error) {
+    //     console.log(error)
+    //   })
+    router.push('thanks')
+  }
+
+  useEffect(() => {
+    console.log(formErrors)
+    if (step === 2 && Object.keys(formErrors).length === 0) {
+      setStep(3)
+    }
+    if (step === 3 && Object.keys(formErrors).length === 0) {
+      handleSubmit()
+    }
+  }, [formErrors])
 
   const getFirstStep = () => {
     return (
@@ -34,100 +163,52 @@ const Form = () => {
                   style.form_container_form_first_selects_left_header_img
                 }
                 src={icon.src}
-                alt=''
+                alt='Icon Neo Consulting'
               />
               <p
                 className={
                   style.form_container_form_first_selects_left_header_service
                 }
               >
-                Consultoría CRM
+                {data?.title}
               </p>
             </div>
             <p className={style.form_container_form_first_selects_left_desc}>
-              Crea, desarrolla y mejora la relación con tus clientes.
+              {data?.desc}
             </p>
-            <hr />
+            {/* <hr /> */}
           </div>
           <div className={style.form_container_form_first_selects_right}>
-            <div
-              className={style.form_container_form_first_selects_right_input}
-            >
-              <input
-                className={
-                  style.form_container_form_first_selects_right_input_checkbox
-                }
-                type='checkbox'
-                name=''
-                id=''
-              />{' '}
-              <span
-                className={
-                  style.form_container_form_first_selects_right_input_title
-                }
-              >
-                Quiero que gestionen mi CRM de manera integral
-              </span>
-            </div>
-            <div
-              className={style.form_container_form_first_selects_right_input}
-            >
-              <input
-                className={
-                  style.form_container_form_first_selects_right_input_checkbox
-                }
-                type='checkbox'
-                name=''
-                id=''
-              />{' '}
-              <span
-                className={
-                  style.form_container_form_first_selects_right_input_title
-                }
-              >
-                Quiero que gestionen mi CRM de manera integral
-              </span>
-            </div>{' '}
-            <div
-              className={style.form_container_form_first_selects_right_input}
-            >
-              <input
-                className={
-                  style.form_container_form_first_selects_right_input_checkbox
-                }
-                type='checkbox'
-                name=''
-                id=''
-              />{' '}
-              <span
-                className={
-                  style.form_container_form_first_selects_right_input_title
-                }
-              >
-                Quiero que gestionen mi CRM de manera integral
-              </span>
-            </div>{' '}
-            <div
-              className={style.form_container_form_first_selects_right_input}
-            >
-              <input
-                className={
-                  style.form_container_form_first_selects_right_input_checkbox
-                }
-                type='checkbox'
-                name=''
-                id=''
-              />{' '}
-              <span
-                className={
-                  style.form_container_form_first_selects_right_input_title
-                }
-              >
-                Quiero que gestionen mi CRM de manera integral
-              </span>
-            </div>
+            {data?.options?.map((e, i) => {
+              return (
+                <div
+                  key={i}
+                  className={
+                    style.form_container_form_first_selects_right_input
+                  }
+                >
+                  <input
+                    className={
+                      style.form_container_form_first_selects_right_input_checkbox
+                    }
+                    type='checkbox'
+                    checked={checkedServices.includes(e)}
+                    value={e}
+                    onChange={handleCheckboxes}
+                  />
+                  <span
+                    className={
+                      style.form_container_form_first_selects_right_input_title
+                    }
+                  >
+                    {e}
+                  </span>
+                </div>
+              )
+            })}
           </div>
         </div>
+        {errorServices && <h1>Seleccione por lo menos un servicio</h1>}
       </div>
     )
   }
@@ -152,7 +233,12 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_text}
               type='text'
               placeholder='Escribe aquí la empresa'
+              required
+              name='company'
+              value={formValues.company}
+              onChange={handleChange}
             />
+            <p>{formErrors.company}</p>
           </div>
           <div className={style.form_container_form_second_inputs_input}>
             <label
@@ -165,8 +251,13 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_text}
               type='text'
               placeholder='Escribe aquí tu nombre'
+              required
+              name='name'
+              value={formValues.name}
+              onChange={handleChange}
             />
-          </div>{' '}
+            <p>{formErrors.name}</p>
+          </div>
           <div className={style.form_container_form_second_inputs_input}>
             <label
               className={style.form_container_form_second_inputs_input_label}
@@ -178,8 +269,13 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_text}
               type='text'
               placeholder='999 999 999'
+              required
+              name='phone'
+              value={formValues.phone}
+              onChange={handleChange}
             />
-          </div>{' '}
+            <p>{formErrors.phone}</p>
+          </div>
           <div className={style.form_container_form_second_inputs_input}>
             <label
               className={style.form_container_form_second_inputs_input_label}
@@ -191,8 +287,13 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_text}
               type='text'
               placeholder='Escribe aquí tu cargo'
+              required
+              name='job'
+              value={formValues.job}
+              onChange={handleChange}
             />
-          </div>{' '}
+            <p>{formErrors.job}</p>
+          </div>
           <div className={style.form_container_form_second_inputs_input}>
             <label
               className={style.form_container_form_second_inputs_input_label}
@@ -202,9 +303,14 @@ const Form = () => {
             </label>
             <input
               className={style.form_container_form_second_inputs_input_text}
-              type='text'
+              type='email'
               placeholder='Escribe aquí tu E-mail'
+              required
+              name='email'
+              value={formValues.email}
+              onChange={handleChange}
             />
+            <p>{formErrors.email}</p>
           </div>
         </div>
       </div>
@@ -223,34 +329,37 @@ const Form = () => {
           <label
             className={style.form_container_form_third_input_label}
             htmlFor=''
-          ></label>
+          >
+            Escribe aquí
+          </label>
           <textarea
             className={style.form_container_form_third_input_area}
             type='textarea'
             rows='4'
+            name='details'
+            value={formValues.details}
+            onChange={handleChange}
+            placeholder='Quiero...'
           />
         </div>
+        <p>{formErrors.details}</p>
       </div>
     )
   }
   return (
     <div className={style.form}>
       <div className={style.form_container}>
-        <img
-          className={style.form_container_logo}
-          src={logoNeo.src}
-          alt='Logo Neo Consulting'
-        />
-        <Breadscrumb />
+        <Breadscrumb inside={true} value={data?.title} />
         <div className={style.form_container_steps}>
-          <div>
-            <p>Nuestros Servicios</p>
+          <div className={style.form_container_steps_mobile}>
+            {step === 1 && <img src={firstStepImgMob.src} alt='' />}
+            {step === 2 && <img src={secondStepImgMob.src} alt='' />}
+            {step === 3 && <img src={thirdStepImgMob.src} alt='' />}
           </div>
-          <div>
-            <p>Datos personales</p>
-          </div>
-          <div>
-            <p>Sobre tu proyecto</p>
+          <div className={style.form_container_steps_desk}>
+            {step === 1 && <img src={firstStepImg.src} alt='' />}
+            {step === 2 && <img src={secondStepImg.src} alt='' />}
+            {step === 3 && <img src={thirdStepImg.src} alt='' />}
           </div>
         </div>
         <form className={style.form_container_form}>
@@ -259,17 +368,43 @@ const Form = () => {
           {step === 3 && getThirdStep()}
 
           {step !== 3 && (
-            <button
-              onClick={handleSteps}
-              className={style.form_container_form_btn}
-            >
-              Siguiente
-            </button>
+            <div className={style.form_container_form_btns}>
+              {step !== 1 && (
+                <button
+                  type='submit'
+                  onClick={handleBack}
+                  className={style.form_container_form_btns_back}
+                >
+                  Atras
+                </button>
+              )}
+
+              <button
+                type='submit'
+                onClick={handleSteps}
+                className={style.form_container_form_btns_next}
+              >
+                Siguiente
+              </button>
+            </div>
           )}
           {step === 3 && (
-            <button type='submit' className={style.form_container_form_btn}>
-              Enviar
-            </button>
+            <div className={style.form_container_form_btns}>
+              <button
+                onClick={handleBack}
+                className={style.form_container_form_btns_back}
+              >
+                Atras
+              </button>
+
+              <button
+                type='submit'
+                onClick={handleSteps}
+                className={style.form_container_form_btns_next}
+              >
+                Enviar
+              </button>
+            </div>
           )}
         </form>
       </div>
