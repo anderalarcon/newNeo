@@ -7,14 +7,15 @@ const SolutionsChapter = ({ solutions }) => {
     <div className={style.solutions}>
       <h1 className={style.solutions_title}>Soluciones que impactarán en tu negocio</h1>
       <div className={style.solutions_container}>
-        {solutions.map(({ solution, description, url }) => {
+        {solutions.map(({ solution, description, urlcontact, urlpage }) => {
+          console.log(urlcontact, urlpage)
           return (
             <div className={style.solutions_container_solution} key={solution}>
               <h2 className={style.solutions_container_solution_title}>{solution}</h2>
               <p className={style.solutions_container_solution_desc}>{description}</p>
               <div className={style.solutions_container_solution_ctn}>
-                <Link className={style.solutions_container_solution_ctn_talk} href={'/'}>Conversemos</Link>
-                <Link className={style.solutions_container_solution_ctn_more} href={'/'}>Ver más <img alt='arrow neo consulting' src={arrow.src} width={16} height={16} /> </Link>
+                <Link className={style.solutions_container_solution_ctn_talk} href={urlcontact}>Conversemos</Link>
+                <Link className={style.solutions_container_solution_ctn_more} href={urlpage}>Ver más <img alt='arrow neo consulting' src={arrow.src} width={16} height={16} /> </Link>
               </div>
               <hr className={style.solutions_container_solution_hr} />
             </div>

@@ -18,7 +18,7 @@ const crm = () => {
       <Team team={team}/>
       <SuccessCase />
       <Questions questions={questionsCrm} />
-      <Contact param={'crm'} />
+      <Contact service={'crm'} />
     </>
   )
 }
