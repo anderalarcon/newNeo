@@ -8,6 +8,26 @@ export const servicesData = [
       'Quiero potenciar mi estrategia de CRM en corto plazo',
       'Quiero que me implementen un servicio de CRM.',
       'Quiero que diseñar una estrategia de CRM basado en objetivos'
+    ],
+    solutions: [
+      {
+        solution: 'full-service-crm',
+        title: 'Full Service CRM',
+        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
+        option: 'Quiero el servicio de Full Service CRM'
+      },
+      {
+        solution: 'accelerator',
+        title: 'Accelerator CRM',
+        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
+        option: 'Quiero el servicio Accelerator CRM'
+      },
+      {
+        solution: 'quick-start',
+        title: 'Quick start CRM',
+        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
+        option: 'Quiero el servicio Quick start CRM'
+      }
     ]
   },
   {

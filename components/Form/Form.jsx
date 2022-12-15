@@ -24,20 +24,37 @@ const Form = () => {
   }
   const [formValues, setFormValues] = useState(initialValues)
   const [formErrors, setFormErrors] = useState({})
-
   const [step, setStep] = useState(1)
   const [data, setData] = useState('')
   const [checkedServices, setCheckedServices] = useState([])
   const [errorServices, setErrorServices] = useState(false)
   const router = useRouter()
+  const [direct, setDirect] = useState(false)
 
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
-      setData(servicesData.find((e) => e.service === router.query.service))
+      if (
+        router.query.service !== 'general' &&
+        router.query.solution === 'general'
+      ) {
+        setData(servicesData.find((e) => e.service === router.query.service))
+      }
+      if (
+        router.query.service !== 'general' &&
+        router.query.solution !== 'general'
+      ) {
+        setDirect(true)
+        setStep(2)
+        setCheckedServices(
+          servicesData
+            .find((e) => e.service === router.query.service)
+            .solutions.find((e) => e.solution === router.query.solution).option
+        )
+      }
     }
     getOptions()
-  }, [router.isReady])
+  }, [router.isReady, checkedServices])
 
   const handleSteps = (e) => {
     e.preventDefault()
@@ -104,34 +121,36 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e?.preventDefault()
-    // const contactObj = {
-    //   properties: {
-    //     servicios_interesados: checkedServices.join(','),
-    //     company: formValues.company,
-    //     firstname: formValues.name,
-    //     phone: formValues.phone,
-    //     jobtitle: formValues.job,
-    //     email: formValues.email,
-    //     detalle_proyecto: formValues.details,
-    //     p_gina_de_origen__c: 'to do',
-    //     fuente_medio__c: 'to do',
-    //     canal__c: 'to do',
-    //     campa_a__c: 'to do'
-    //   }
-    // }
+    const contactObj = {
+      properties: {
+        servicios_interesados: direct
+          ? checkedServices
+          : checkedServices.join(', '),
+        company: formValues.company,
+        firstname: formValues.name,
+        phone: formValues.phone,
+        jobtitle: formValues.job,
+        email: formValues.email,
+        detalle_proyecto: formValues.details,
+        p_gina_de_origen__c: 'to do',
+        fuente_medio__c: 'to do',
+        canal__c: 'to do',
+        campa_a__c: 'to do'
+      }
+    }
 
-    // axios
-    //   .post(
-    //     'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
-    //     contactObj
-    //   )
-    //   .then(function (response) {
-    //     console.log(response)
-    //   })
-    //   .catch(function (error) {
-    //     console.log(error)
-    //   })
-    router.push('thanks')
+    axios
+      .post(
+        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
+        contactObj
+      )
+      .then(function (response) {
+        console.log(response)
+        router.push('thanks')
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
   }
 
   useEffect(() => {
@@ -369,7 +388,7 @@ const Form = () => {
 
           {step !== 3 && (
             <div className={style.form_container_form_btns}>
-              {step !== 1 && (
+              {step !== 1 && !direct && (
                 <button
                   type='submit'
                   onClick={handleBack}
