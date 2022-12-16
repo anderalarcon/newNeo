@@ -4,11 +4,10 @@ import Link from 'next/link'
 import arrow from '../../public/assets/Crm/Solutions/arrow.svg'
 const SolutionsChapter = ({ solutions }) => {
   return (
-    <div className={style.solutions}>
+    <div id='solutions' className={style.solutions}>
       <h1 className={style.solutions_title}>Soluciones que impactarán en tu negocio</h1>
       <div className={style.solutions_container}>
         {solutions.map(({ solution, description, urlcontact, urlpage }) => {
-          console.log(urlcontact, urlpage)
           return (
             <div className={style.solutions_container_solution} key={solution}>
               <h2 className={style.solutions_container_solution_title}>{solution}</h2>
