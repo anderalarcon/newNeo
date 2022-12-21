@@ -1,0 +1,50 @@
+@import "../../styles/variables.module.scss";
+
+.companies {
+  padding: 50px 0;
+  padding-left: map-get($padding, mobile);
+  padding-right: map-get($padding, mobile);
+  background-color: map-get($color, white);
+  color: map-get($color, primary);
+  width: 100%;
+
+  @include breakpoint(widescreen) {
+    padding: 100px 0;
+    padding-left: map-get($padding, widescreen);
+    padding-right: map-get($padding, widescreen);
+  }
+
+  &_title {
+    text-align: center;
+    font-family: "Tiempos Headline";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 28px;
+    margin-bottom: 40px;
+
+    @include breakpoint(tablet) {
+      line-height: 48px;
+      font-size: 40px;
+    }
+  }
+
+  &_container {
+    width: 100%;
+    display: flex;
+    gap: 40px;
+    overflow: scroll;
+
+    @include breakpoint(tablet) {
+      justify-content: space-between;
+    }
+
+    &_img > img {
+      height: 32px;
+
+      @include breakpoint(tablet) {
+        height: max-content;
+      }
+    }
+  }
+}
