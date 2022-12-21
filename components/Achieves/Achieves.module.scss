@@ -1,0 +1,177 @@
+@import '../../styles/variables.module.scss';
+
+.achieves {
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
+    &_container {
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(widescreen) {
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            max-width: map-get($breakpoint, max);
+            margin-left: auto;
+            margin-right: auto;
+            flex-direction: row;
+            gap: 24px;
+            align-items: center;
+        }
+
+        &_left {
+            text-align: center;
+
+            @include breakpoint(widescreen) {
+                width: 50%;
+            }
+
+            & img {
+                max-width: 100%;
+            }
+        }
+
+        &_right {
+            @include breakpoint(widescreen) {
+                width: 50%;
+            }
+
+            &_title {
+                text-align: center;
+                font-family: 'Tiempos Headline Medium';
+                font-size: 24px;
+                line-height: 28px;
+                margin: 24px 0;
+
+                @include breakpoint(widescreen) {
+                    font-size: 48px;
+                    line-height: 56px;
+                    text-align: start;
+                    margin-top: 0;
+                    margin-bottom: 32px;
+                }
+            }
+
+            &_bullets {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                @include breakpoint(widescreen) {
+                    gap: 46px;
+                }
+
+                &_bullet {
+                    display: flex;
+                    flex-direction: row;
+                    gap: 16px;
+
+                    &_subtitle {
+                        font-family: 'Montserrat Bold';
+                        font-size: 16px;
+                        line-height: 20px;
+                        margin-bottom: 8px;
+                        @include breakpoint(widescreen) {
+                            font-size: 20px;
+                            line-height: 24px;
+                            margin-bottom: 16px;
+                        }
+                    }
+
+                    &_desc {
+                        font-family: 'Montserrat Medium';
+                        font-size: 14px;
+                        line-height: 20px;
+
+                        @include breakpoint(widescreen) {
+                            font-size: 16px;
+                            line-height: 20px;
+
+                        }
+
+                    }
+
+                    &_img {
+                        & img {
+                            width: 24px;
+                            height: 24px;
+
+                            @include breakpoint(widescreen) {
+                                width: 40px;
+                                height: 40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &_contact {
+                text-align: center;
+                margin-top: 24px;
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    margin-top: 32px;
+
+                }
+
+                & a {
+                    width: 190px;
+                    border-radius: 4px;
+                    font-family: 'Montserrat Bold';
+                    font-size: 14px;
+                    line-height: 16px;
+                    text-align: center;
+                    display: inline-block;
+                    padding: 8px 16px;
+                    background-color: map-get($color , accent);
+                    color: map-get($color , white);
+
+                    @include breakpoint(widescreen) {
+                        width: 294px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding: 16px;
+                    }
+
+                }
+            }
+        }
+    }
+
+}
+
+.reverse {
+    background-color: map-get($color , accent);
+    color: map-get($color , white);
+    padding-top: 64px;
+    padding-bottom: 64px;
+
+    .achieves {
+        &_container {
+            &_left {
+                order: 2;
+
+                & img {
+                    display: none;
+
+                    @include breakpoint(widescreen) {
+                        display: block;
+                    }
+                }
+            }
+
+            &_right {
+                &_title {
+                    margin-top: 0;
+                }
+            }
+        }
+    }
+
+}
