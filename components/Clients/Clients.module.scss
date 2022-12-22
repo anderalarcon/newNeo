@@ -4,15 +4,15 @@
     margin-bottom: map-get($margin , mobile);
 
     @include breakpoint(widescreen) {
-        margin-bottom: calc(map-get($margin , widescreen) - 30px);
+        margin-bottom: calc(map-get($margin , widescreen) + 20px);
     }
 
     @include breakpoint(xl) {
-        margin-bottom: calc(map-get($margin , widescreen) - 90px);
+        margin-bottom: calc(map-get($margin , widescreen) + 10px);
     }
 
     @include breakpoint(max) {
-        margin-bottom: calc(map-get($margin , widescreen) - 120px);
+        margin-bottom: calc(map-get($margin , widescreen) - 90px);
     }
 
     &_container {

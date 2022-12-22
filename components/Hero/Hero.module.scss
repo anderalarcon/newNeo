@@ -48,6 +48,7 @@
             padding-left: map-get($padding , mobile);
             padding-right: map-get($padding , mobile);
             position: relative;
+
             @include breakpoint(widescreen) {
                 padding-left: map-get($padding , widescreen);
                 padding-right: map-get($padding , widescreen);
@@ -153,6 +154,7 @@
                 bottom: 0;
                 right: 0;
                 z-index: -1;
+
                 @include breakpoint(tablet) {
                     display: none;
                 }
@@ -258,6 +260,65 @@
                     }
                 }
 
+            }
+
+            &_second {
+                display: flex;
+                // background-color: red;
+                flex-direction: column;
+
+                @include breakpoint(widescreen) {
+                    flex-direction: row;
+                    gap: 69px;
+                    align-items: center;
+                }
+
+                &_title{
+                    @include breakpoint(widescreen) {
+                        margin-bottom: 46px;
+
+                    }
+                }
+                &_left {
+                    @include breakpoint(widescreen) {
+                        width: 50%;
+                    }
+
+                    &_desc {
+                        margin-bottom: 30px;
+                        font-family: 'Montserrat Medium';
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 46px;
+                            font-size: 20px;
+line-height: 24px;
+                        }
+                    }
+                }
+
+                &_right {
+                    &_img {
+                        text-align: center;
+
+                        // display: none;
+                        & img {
+                            width: 50%;
+                            margin-top: 20px;
+                            max-width: 215px;
+
+                            @include breakpoint(tablet) {
+                                max-width: none;
+                                width: 40%;
+                                max-width: 355px;
+                            }
+
+                            @include breakpoint(widescreen) {
+                                width: 100%;
+                                max-width: 100%;
+                            }
+
+                        }
+                    }
+                }
             }
         }
     }

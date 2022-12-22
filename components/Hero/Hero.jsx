@@ -2,7 +2,7 @@ import Link from 'next/link'
 import style from './Hero.module.scss'
 import view1 from '../../public/assets/Hero/view-1-mobile.png'
 import view1Desk from '../../public/assets/Hero/view-1-desktop.png'
-
+import view2Desk from '../../public/assets/Hero/view-2-desktop.png'
 import arrowRight from '../../public/assets/Hero/arrow-right-white.svg'
 import { Navigation, Pagination, A11y } from 'swiper'
 
@@ -67,9 +67,9 @@ const Hero = () => {
                 >
                   Contáctanos
                 </Link>
-                <Link
+                <a
                   className={style.hero_container_view_buttons_solutions}
-                  href={'/solutions'}
+                  href='#solutions'
                 >
                   Ver Soluciones
                   <span
@@ -79,7 +79,7 @@ const Hero = () => {
                   >
                     <img src={arrowRight.src} alt='' />
                   </span>
-                </Link>
+                </a>
               </div>
               <div className={style.hero_container_view_details}>
                 <div
@@ -203,133 +203,33 @@ const Hero = () => {
                   Anterior
                 </span>
               </div>
-              <h1 className={style.hero_container_view_title}>
-                Unimos la data y el diseño centrado en el usuario para obtener
-                resultados de negocio
-              </h1>
-              <div className={style.hero_container_view_buttons}>
-                <Link
-                  className={style.hero_container_view_buttons_contact}
-                  href={'/contact'}
-                >
-                  Contáctanos
-                </Link>
-                <Link
-                  className={style.hero_container_view_buttons_solutions}
-                  href={'/solutions'}
-                >
-                  Ver Soluciones
-                  <span
-                    className={
-                      style.hero_container_view_buttons_solutions_arrow
-                    }
+              <div className={style.hero_container_view_second}>
+                <div className={style.hero_container_view_second_left}>
+                  <h1 className={`${style.hero_container_view_title} ${style.hero_container_view_second_title}`}>
+                    Reporte Regional Ecommerce | Resumen 2022
+                  </h1>
+                  <p className={style.hero_container_view_second_left_desc}>
+                    Nuestro Reporte te trae un análisis de los más importantes
+                    indicadores digitales y de Ecommerce en latinoamérica, así
+                    como de las tendencias en comercio electrónico. Descarga el
+                    reporte y revisa la información completa.
+                  </p>
+                  <Link
+                    className={style.hero_container_view_buttons_contact}
+                    href={'https://neoconsulting.ai/reporte_regional_ecommerce_2022'}
                   >
-                    <img src={arrowRight.src} alt='' />
-                  </span>
-                </Link>
-              </div>
-              <div className={style.hero_container_view_details}>
-                <div
-                  className={style.hero_container_view_details_subcontainer_1}
-                >
-                  <div
-                    className={
-                      style.hero_container_view_details_subcontainer_title
-                    }
-                  >
-                    <p
-                      className={
-                        style.hero_container_view_details_subcontainer_title_ttl
-                      }
-                    >
-                      21
-                    </p>
-                  </div>
-                  <div
-                    className={
-                      style.hero_container_view_details_subcontainer_description
-                    }
-                  >
-                    <p
-                      className={
-                        style.hero_container_view_details_subcontainer_description_dsc
-                      }
-                    >
-                      años de experiencia
-                    </p>
-                  </div>
+                    Descargar gratis
+                  </Link>
                 </div>
-                <div
-                  className={style.hero_container_view_details_subcontainer_2}
-                >
-                  <div
-                    className={
-                      style.hero_container_view_details_subcontainer_title
-                    }
-                  >
-                    <p
-                      className={
-                        style.hero_container_view_details_subcontainer_title_ttl
-                      }
-                    >
-                      +100
-                    </p>
-                  </div>
-                  <div
-                    className={
-                      style.hero_container_view_details_subcontainer_description
-                    }
-                  >
-                    <p
-                      className={
-                        style.hero_container_view_details_subcontainer_description_dsc
-                      }
-                    >
-                      empresas en más de 15 sectores distintos
-                    </p>
-                  </div>
-                </div>
-                <div
-                  className={style.hero_container_view_details_subcontainer_3}
-                >
-                  <div
-                    className={
-                      style.hero_container_view_details_subcontainer_title
-                    }
-                  >
-                    <p
-                      className={
-                        style.hero_container_view_details_subcontainer_title_ttl
-                      }
-                    >
-                      +800
-                    </p>
-                  </div>
-                  <div
-                    className={
-                      style.hero_container_view_details_subcontainer_description
-                    }
-                  >
-                    <p
-                      className={
-                        style.hero_container_view_details_subcontainer_description_dsc
-                      }
-                    >
-                      proyectos ejecutados en los últimos 5 años
-                    </p>
+                <div className={style.hero_container_view_second_right}>
+                  <div className={style.hero_container_view_second_right_img}>
+                    <img
+                      src={view2Desk.src}
+                      alt=''
+                    />
                   </div>
                 </div>
               </div>
-              <img
-                className={style.hero_container_view_img}
-                src={view1.src}
-                alt=''
-              />
-              <img
-                className={style.hero_container_view_img_desktop}
-                src={view1Desk.src}
-                alt=''
-              />
             </div>
           </SwiperSlide>
         </Swiper>

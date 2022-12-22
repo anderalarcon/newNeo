@@ -35,17 +35,20 @@ const Form = () => {
     if (!router.isReady) return
     const getOptions = () => {
       if (
-        router.query.service !== 'general' &&
-        router.query.solution === 'general'
+        router.query.service !== 'default' &&
+        router.query.solution === 'default'
       ) {
         setData(servicesData.find((e) => e.service === router.query.service))
       }
       if (
-        router.query.service !== 'general' &&
-        router.query.solution !== 'general'
+        (router.query.service !== 'default' &&
+          router.query.solution !== 'default') ||
+        (router.query.service === 'default' &&
+          router.query.solution === 'default')
       ) {
         setDirect(true)
         setStep(2)
+        setData(servicesData.find((e) => e.service === router.query.service))
         setCheckedServices(
           servicesData
             .find((e) => e.service === router.query.service)
@@ -95,6 +98,10 @@ const Form = () => {
       })
     }
   }
+  const validateEmail = (email) => {
+    const re = /^[a-z0-9.]{1,64}@[a-z0-9.]{1,64}$/i
+    return re.test(email)
+  }
 
   const validate = (values) => {
     const errors = {}
@@ -112,6 +119,11 @@ const Form = () => {
     }
     if (!values.email) {
       errors.email = 'Email es requerido'
+    }
+    if (formValues.email !== '') {
+      if (!validateEmail(formValues.email)) {
+        errors.email = 'Ingrese un email valido'
+      }
     }
     if (!values.details && step === 3) {
       errors.details = 'Detalle es requerido'
@@ -154,7 +166,6 @@ const Form = () => {
   }
 
   useEffect(() => {
-    console.log(formErrors)
     if (step === 2 && Object.keys(formErrors).length === 0) {
       setStep(3)
     }

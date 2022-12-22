@@ -1,5 +1,15 @@
 export const servicesData = [
   {
+    service: 'default',
+    title: 'Home',
+    solutions: [
+      {
+        solution: 'default',
+        option: 'Lead from home'
+      }
+    ]
+  },
+  {
     service: 'crm',
     title: 'Consultoría CRM',
     desc: 'Crea, desarrolla y mejora la relación con tus clientes.',

@@ -1,6 +1,6 @@
-import style from "./Content.module.scss";
-import { contentHome } from "../../utilities/home/content";
-import Card from "./_children/Card/Card.jsx";
+import style from './Content.module.scss'
+import { contentHome } from '../../utilities/home/content'
+import Card from './_children/Card/Card.jsx'
 
 const Content = () => {
   return (
@@ -9,11 +9,11 @@ const Content = () => {
 
       <div className={style.content_container}>
         {contentHome.map((content, i) => {
-          return <Card content={content} key={i} />;
+          return <Card content={content} key={i} />
         })}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Content;
+export default Content
