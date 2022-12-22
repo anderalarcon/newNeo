@@ -1,17 +1,18 @@
-import style from "./Accordion.module.scss";
+import style from './Accordion.module.scss'
 
-import arrowDown from "../../../../public/assets/Questions/icon.svg";
-import { useState } from "react";
-import uuid from "react-uuid";
+import arrowDown from '../../../../public/assets/Questions/icon.svg'
+import { useState } from 'react'
+import uuid from 'react-uuid'
+import PropTypes from 'prop-types'
 
 const Accordion = ({ data }) => {
-  const [selected, setSelected] = useState(0);
+  const [selected, setSelected] = useState(0)
   const toggle = (i) => {
     if (selected === i) {
-      return setSelected(null);
+      return setSelected(null)
     }
-    setSelected(i);
-  };
+    setSelected(i)
+  }
 
   return (
     <div className={style.accordion}>
@@ -22,28 +23,30 @@ const Accordion = ({ data }) => {
             onClick={() => toggle(i)}
           >
             <span>{content.title}</span>
-            {content.ul ? (
+            {content.ul
+              ? (
               <img
                 src={arrowDown.src}
-                alt="arrow down"
+                alt='arrow down'
                 className={`
                 ${
                   selected === i || selected === 0
                     ? style.accordion_container_title_icon_show
-                    : ""
+                    : ''
                 } ${style.accordion_container_title_icon}
               `}
                 style={{
-                  transform: selected === i ? "rotate(180deg)" : "rotate(0)",
+                  transform: selected === i ? 'rotate(180deg)' : 'rotate(0)'
                 }}
               />
-            ) : (
-              ""
-            )}
+                )
+              : (
+                  ''
+                )}
           </div>
           <ul
             className={`${style.accordion_container_menu} ${
-              selected === i ? style.show : ""
+              selected === i ? style.show : ''
             }`}
           >
             {content.ul?.map((li) => (
@@ -65,7 +68,9 @@ const Accordion = ({ data }) => {
         </div>
       ))}
     </div>
-  );
-};
-
-export default Accordion;
+  )
+}
+Accordion.propTypes = {
+  data: PropTypes.array
+}
+export default Accordion

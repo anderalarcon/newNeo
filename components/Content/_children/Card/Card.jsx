@@ -1,5 +1,6 @@
-import style from "./Card.module.scss";
-import vector from "../../../../public/assets/SVGs/Vector.svg";
+import style from './Card.module.scss'
+import vector from '../../../../public/assets/SVGs/Vector.svg'
+import PropTypes from 'prop-types'
 
 const Card = ({ content }) => {
   return (
@@ -20,17 +21,19 @@ const Card = ({ content }) => {
                 <p key={i} className={style.tag}>
                   {tag}
                 </p>
-              );
+              )
             })}
           </div>
         </div>
         <button className={style.card_button}>
           <span>Me interesa</span>
-          <img src={vector.src} alt="Me interesa" />
+          <img src={vector.src} alt='Me interesa' />
         </button>
       </div>
     </div>
-  );
-};
-
-export default Card;
+  )
+}
+Card.propTypes = {
+  content: PropTypes.array
+}
+export default Card

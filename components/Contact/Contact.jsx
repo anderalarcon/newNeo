@@ -3,7 +3,7 @@ import style from './Contact.module.scss'
 import contactImg from '../../public/assets/Contact/contact.png'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
-const Contact = ({ service = 'default', solution = 'general' }) => {
+const Contact = ({ service = 'default', solution = 'default' }) => {
   return (
     <div className={style.contact}>
       <div className={`${style.contact_container}`}>

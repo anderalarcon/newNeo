@@ -3,7 +3,7 @@ import { solutionsPeru } from '../../utilities/home/contact'
 import style from './Solutions.module.scss'
 const Solutions = () => {
   return (
-    <section className={style.solutions}>
+    <section id='solutions' className={style.solutions}>
       <div className={style.solutions_container}>
         <h2 className={style.solutions_container_title}>Contamos con soluciones en</h2>
         <div className={style.solutions_container_services}>

@@ -1,7 +1,7 @@
 @import "../../styles/variables.module.scss";
 
 .companies {
-  padding: 50px 0;
+  margin-bottom: map-get($margin , mobile);
   padding-left: map-get($padding, mobile);
   padding-right: map-get($padding, mobile);
   background-color: map-get($color, white);
@@ -9,7 +9,7 @@
   width: 100%;
 
   @include breakpoint(widescreen) {
-    padding: 100px 0;
+    margin-bottom: calc(map-get($margin , widescreen));
     padding-left: map-get($padding, widescreen);
     padding-right: map-get($padding, widescreen);
   }
