@@ -22,7 +22,13 @@ const Accordion = ({ data }) => {
             className={style.accordion_container_title}
             onClick={() => toggle(i)}
           >
-            <span>{content.title}</span>
+            {content.ul
+              ? (
+                <span>{content.title}</span>
+                )
+              : (
+                <a href={content.link}>{content.title}</a>
+                )}
             {content.ul
               ? (
               <img

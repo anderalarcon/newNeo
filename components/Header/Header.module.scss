@@ -61,8 +61,8 @@
           gap: 0.5rem;
           position: relative;
           padding: 1rem;
-
-          & a {
+          cursor: pointer;
+          & p, a {
             font-weight: 700;
             font-size: 18px;
             line-height: 24px;

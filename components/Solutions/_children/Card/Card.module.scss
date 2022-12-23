@@ -5,7 +5,7 @@
     border-radius: 8px;
     height: 160px;
     position: relative;
-
+    box-shadow: 0px 10px 10px rgba(0, 0, 51, 0.15);
     @include breakpoint(widescreen) {
         height: 206px;
 
