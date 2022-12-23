@@ -58,7 +58,7 @@ const Header = () => {
       ]
     },
     {
-      title: 'Recorsos',
+      title: 'Recursos',
       ul: [
         {
           link: '#',
@@ -119,7 +119,7 @@ const Header = () => {
 
         <button
           className={style.header_base_right}
-          onClick={() => setShowMobileMenu(true)}
+          // onClick={() => setShowMobileMenu(true)}
         >
           <a href='#'>Contáctanos</a>
         </button>

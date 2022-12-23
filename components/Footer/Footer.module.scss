@@ -68,7 +68,8 @@
       &_images {
         display: flex;
         align-items: flex-start;
-        gap: 10.82px;
+        justify-content: center;
+        gap: 0.3rem;
 
         & img {
           height: 97.34px;
@@ -137,6 +138,7 @@
 
         & img {
           width: 80px;
+          margin: 0.5rem;
         }
       }
     }

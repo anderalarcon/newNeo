@@ -19,7 +19,6 @@
     margin-bottom: 40px;
     font-family: "Tiempos Headline";
     font-style: normal;
-    font-weight: 500;
 
     @include breakpoint(widescreen) {
       font-size: 48px;
@@ -43,7 +42,8 @@
       max-width: map-get($breakpoint, max);
       margin-left: auto;
       margin-right: auto;
-      gap: 2rem;
+      gap: 3rem;
+      justify-content:center;
     }
 
     &_swiper_button {
