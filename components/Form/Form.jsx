@@ -135,7 +135,8 @@ const Form = () => {
   const handleSubmit = (e) => {
     e?.preventDefault()
     const { chanel, source, medium, campaign } = handleParams()
-    console.log(chanel, source, medium, campaign)
+    // console.log(chanel, source, medium, campaign)
+
     const contactObj = {
       properties: {
         servicios_interesados: direct
@@ -148,7 +149,7 @@ const Form = () => {
         email: formValues.email,
         detalle_proyecto: formValues.details,
         p_gina_de_origen__c: data?.title,
-        fuente_medio__c: source + '/' + medium,
+        fuente_medio__c: (source && medium) ? source + '/' + medium : '',
         canal__c: chanel,
         campa_a__c: campaign
       }
@@ -156,7 +157,7 @@ const Form = () => {
 
     axios
       .post(
-        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
+        'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
         contactObj
       )
       .then(function (response) {

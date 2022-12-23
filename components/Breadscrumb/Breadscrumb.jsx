@@ -9,7 +9,7 @@ const Breadscrumb = ({ value, inside = false }) => {
         className={style.breadscrumb_container}
       >
         <span className={style.breadscrumb_container_root}>
-          <Link href={'/'}>Inicio</Link> /
+          <Link href={'/pe'}>Inicio</Link> /
         </span>
         <span className={style.breadscrumb_container_page}> {value}</span>
       </div>
