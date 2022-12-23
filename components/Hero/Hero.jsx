@@ -63,7 +63,10 @@ const Hero = () => {
               <div className={style.hero_container_view_buttons}>
                 <Link
                   className={style.hero_container_view_buttons_contact}
-                  href={'/contact'}
+                  href={{
+                    pathname: '/contact',
+                    query: { service: 'default', solution: 'default' }
+                  }}
                 >
                   Contáctanos
                 </Link>
@@ -205,7 +208,9 @@ const Hero = () => {
               </div>
               <div className={style.hero_container_view_second}>
                 <div className={style.hero_container_view_second_left}>
-                  <h1 className={`${style.hero_container_view_title} ${style.hero_container_view_second_title}`}>
+                  <h1
+                    className={`${style.hero_container_view_title} ${style.hero_container_view_second_title}`}
+                  >
                     Reporte Regional Ecommerce | Resumen 2022
                   </h1>
                   <p className={style.hero_container_view_second_left_desc}>
@@ -216,17 +221,16 @@ const Hero = () => {
                   </p>
                   <Link
                     className={style.hero_container_view_buttons_contact}
-                    href={'https://neoconsulting.ai/reporte_regional_ecommerce_2022'}
+                    href={
+                      'https://neoconsulting.ai/reporte_regional_ecommerce_2022'
+                    }
                   >
                     Descargar gratis
                   </Link>
                 </div>
                 <div className={style.hero_container_view_second_right}>
                   <div className={style.hero_container_view_second_right_img}>
-                    <img
-                      src={view2Desk.src}
-                      alt=''
-                    />
+                    <img src={view2Desk.src} alt='' />
                   </div>
                 </div>
               </div>

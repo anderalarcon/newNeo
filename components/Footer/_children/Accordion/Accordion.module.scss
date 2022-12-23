@@ -35,10 +35,15 @@
       }
 
       & span {
-        font-weight: 700;
+        font-family: 'Montserrat Bold';
         font-size: 17px;
         line-height: 20px;
-        font-weight: bold;
+
+        @include breakpoint(widescreen) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+
       }
 
       &_icon {
@@ -68,6 +73,7 @@
       }
 
       & a {
+        font-family: 'Montserrat Medium';
         font-size: 12px;
         line-height: 16px;
         list-style: none;

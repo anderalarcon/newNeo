@@ -1,3 +1,4 @@
+/* eslint-disable camelcase */
 import { useEffect, useState } from 'react'
 import style from './Form.module.scss'
 import Breadscrumb from '../Breadscrumb/Breadscrumb'
@@ -133,6 +134,8 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e?.preventDefault()
+    const { chanel, source, medium, campaign } = handleParams()
+    console.log(chanel, source, medium, campaign)
     const contactObj = {
       properties: {
         servicios_interesados: direct
@@ -144,10 +147,10 @@ const Form = () => {
         jobtitle: formValues.job,
         email: formValues.email,
         detalle_proyecto: formValues.details,
-        p_gina_de_origen__c: 'to do',
-        fuente_medio__c: 'to do',
-        canal__c: 'to do',
-        campa_a__c: 'to do'
+        p_gina_de_origen__c: data?.title,
+        fuente_medio__c: source + '/' + medium,
+        canal__c: chanel,
+        campa_a__c: campaign
       }
     }
 
@@ -164,7 +167,52 @@ const Form = () => {
         console.log(error)
       })
   }
-
+  const handleParams = () => {
+    const { utm_source, utm_medium, utm_campaign } = router.query
+    const params = {}
+    if (!utm_source && !utm_medium && !utm_campaign) {
+      params.chanel = 'direct'
+      params.source = ''
+      params.medium = ''
+      params.campaign = ''
+      return params
+    }
+    if (utm_source && utm_medium && utm_campaign) {
+      params.source = utm_source
+      params.medium = utm_medium
+      params.campaign = utm_campaign
+      if (utm_medium === 'social') {
+        params.chanel = 'social'
+        return params
+      }
+      if (utm_medium === 'organic') {
+        params.chanel = 'organic'
+        return params
+      }
+      if (utm_medium === 'paidsocial') {
+        params.chanel = 'paidsocial'
+        return params
+      }
+      if (utm_medium === 'cpc') {
+        if (utm_source === 'google') {
+          params.chanel = 'search'
+          return params
+        }
+        if (utm_source === 'google_pmax') {
+          params.chanel = 'performace max'
+          return params
+        }
+        if (utm_source === 'google_display') {
+          params.chanel = 'display'
+          return params
+        }
+        if (utm_source === 'google_youtube') {
+          params.chanel = 'youtube'
+          return params
+        }
+      }
+    }
+  }
   useEffect(() => {
     if (step === 2 && Object.keys(formErrors).length === 0) {
       setStep(3)
@@ -206,7 +254,6 @@ const Form = () => {
             <p className={style.form_container_form_first_selects_left_desc}>
               {data?.desc}
             </p>
-            {/* <hr /> */}
           </div>
           <div className={style.form_container_form_first_selects_right}>
             {data?.options?.map((e, i) => {

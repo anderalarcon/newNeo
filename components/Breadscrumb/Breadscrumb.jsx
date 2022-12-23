@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import proptypes from 'prop-types'
 import style from './Breadscrumb.module.scss'
 const Breadscrumb = ({ value, inside = false }) => {
@@ -7,7 +8,9 @@ const Breadscrumb = ({ value, inside = false }) => {
         style={{ padding: inside ? '0' : ' ' }}
         className={style.breadscrumb_container}
       >
-        <span className={style.breadscrumb_container_root}>Inicio /</span>
+        <span className={style.breadscrumb_container_root}>
+          <Link href={'/'}>Inicio</Link> /
+        </span>
         <span className={style.breadscrumb_container_page}> {value}</span>
       </div>
     </div>

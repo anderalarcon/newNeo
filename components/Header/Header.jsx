@@ -17,9 +17,10 @@ import rise from '../../public/assets/Header/Rise.svg'
 import stats from '../../public/assets/Header/stats.svg'
 import sync from '../../public/assets/Header/Sync.svg'
 import techInfo from '../../public/assets/Header/tech-info.svg'
-import window from '../../public/assets/Header/window.svg'
+// import window from '../../public/assets/Header/window.svg'
 import videoChat from '../../public/assets/Header/video-chat-line.svg'
 import uuid from 'react-uuid'
+import Link from 'next/link'
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -29,47 +30,78 @@ const Header = () => {
       title: 'Servicios',
       ul: [
         {
-          link: '#',
+          link: 'https://neoconsulting.ai/pe/servicios/canales-digitales-y-growth-hacking',
           text: 'Canales digitales y Growth Haking',
           icon: laptop.src
         },
-        { link: '#', text: 'E-commerce', icon: basket.src },
-        { link: '#', text: 'Headhunting y Mentoring', icon: nodeUser.src },
-        { link: '#', text: 'Consultoría CRM', icon: consult.src },
         {
-          link: '#',
+          link: 'https://neoconsulting.ai/pe/servicios/consultoria-ecommerce',
+          text: 'E-commerce',
+          icon: basket.src
+        },
+        {
+          link: 'https://neoconsulting.ai/pe/servicios/headhunting-y-mentoring',
+          text: 'Headhunting y Mentoring',
+          icon: nodeUser.src
+        },
+        {
+          link: 'https://neoconsulting.ai/pe/servicios/consultoria-customer-relationship-management',
+          text: 'Consultoría CRM',
+          icon: consult.src
+        },
+        {
+          link: 'https://neoconsulting.ai/pe/servicios/analitica-digital-inteligencia-artificial',
           text: 'Analítica Digital e Inteligencia Artificial',
           icon: rise.src
         },
-        { link: '#', text: 'Diseño de experiencia', icon: sync.src },
-        { link: '#', text: 'Publicidad Digital', icon: stats.src },
-        { link: '#', text: 'Marketing Automation', icon: techInfo.src }
+        {
+          link: 'https://neoconsulting.ai/pe/servicios/experience-design',
+          text: 'Diseño de experiencia',
+          icon: sync.src
+        },
+        {
+          link: 'https://neoconsulting.ai/pe/servicios/digital-advertising',
+          text: 'Publicidad Digital',
+          icon: stats.src
+        },
+        {
+          link: 'https://neoconsulting.ai/pe/servicios/marketing-automation',
+          text: 'Marketing Automation',
+          icon: techInfo.src
+        }
       ]
     },
     {
       title: 'Productos',
       ul: [
         {
-          link: '#',
+          link: 'https://neoconsulting.ai/digital-skills',
           text: 'Neo Digital Skills',
           icon: brain.src
-        },
-        { link: '#', text: 'Otros', icon: window.src }
+        }
+        // { link: '#', text: 'Otros', icon: window.src }
       ]
     },
     {
       title: 'Recursos',
       ul: [
         {
-          link: '#',
+          link: 'https://neoconsulting.ai/recursos-digitales/',
           text: 'Descargables',
           icon: download.src
         },
-        { link: '#', text: 'Webinnars', icon: videoChat.src }
+        {
+          link: 'https://neoconsulting.ai/recursos-digitales/#webinars',
+          text: 'Webinnars',
+          icon: videoChat.src
+        }
       ]
     },
-    { title: 'Casos de éxito' },
-    { title: 'Blog' }
+    {
+      title: 'Casos de éxito',
+      link: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/'
+    },
+    { title: 'Blog', link: 'https://neoconsulting.ai/blog-neo' }
   ]
 
   return (
@@ -83,7 +115,7 @@ const Header = () => {
               className={style.header_base_left_menu}
             />
           </button>
-          <a href='#'>
+          <a href='/'>
             <img
               src={logoWhite.src}
               alt='neo'
@@ -95,7 +127,13 @@ const Header = () => {
         <ul className={style.header_base_menu}>
           {AccordionData.map((menu) => (
             <li key={uuid()} className={style.header_base_menu_item}>
-              <a href='#'>{menu.title}</a>
+              {menu.ul
+                ? (
+                <p>{menu.title}</p>
+                  )
+                : (
+                <a href={menu.link}>{menu.title}</a>
+                  )}
 
               {menu.ul ? <img src={arrowDown.src} alt='arrow down' /> : ''}
 
@@ -119,9 +157,11 @@ const Header = () => {
 
         <button
           className={style.header_base_right}
-          // onClick={() => setShowMobileMenu(true)}
         >
-          <a href='#'>Contáctanos</a>
+          <Link href={{
+            pathname: '/contact',
+            query: { service: 'default', solution: 'default' }
+          }}>Contáctanos</Link>
         </button>
       </div>
 
@@ -152,14 +192,6 @@ const Header = () => {
 
         <div className={style.header_mobile_active_body}>
           <Accordion data={AccordionData} />
-          {/* <ul className={style.header_mobile_active_body_menu}>
-            <li className={style.header_mobile_active_body_menu_item}>
-              <a href="#">Casos de éxito</a>
-            </li>
-            <li className={style.header_mobile_active_body_menu_item}>
-              <a href="#">Blog</a>
-            </li>
-          </ul> */}
         </div>
       </div>
     </header>

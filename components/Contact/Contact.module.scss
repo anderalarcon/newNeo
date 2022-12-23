@@ -4,7 +4,11 @@
     background-color: map-get($color, accent);
     padding-top: 36px;
     color: map-get($color, white);
+    margin-bottom: map-get($margin , mobile);
 
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
     @include breakpoint(widescreen) {
         padding-top: 17px;
     }
