@@ -113,7 +113,6 @@ const Footer = () => {
         <div className={style.footer_top_partners}>
           <h5>Somos Partners</h5>
           <div className={style.footer_top_partners_images}>
-            
             <img
               src={googleMarketingPlatform.src}
               alt='googleMarketingPlatform'
@@ -122,7 +121,6 @@ const Footer = () => {
             <img src={hubspot.src} alt='hubspot' />
             <img src={aws.src} alt='aws' />
             <img src={googleCloud.src} alt='googleCloud' />
-            
           </div>
         </div>
 
