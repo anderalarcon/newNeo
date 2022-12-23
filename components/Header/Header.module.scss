@@ -60,6 +60,7 @@
           align-items: center;
           gap: 0.5rem;
           position: relative;
+          padding: 1rem;
 
           & a {
             font-weight: 700;
@@ -69,7 +70,7 @@
 
           &_dropdown {
             position: absolute;
-            top: calc(100% + 0.5rem);
+            top: calc(100% - 0.5rem);
             left: 0;
             width: max-content;
             background-color: map-get($color, white);
@@ -83,10 +84,11 @@
             z-index: 10;
             opacity: 0;
             pointer-events: none;
-            transition: 0.5s;
+            transition: 0.2s;
+            margin-left: -0.5rem;
 
             &::before {
-              content: url("../../public/assets/SVGs/Polygon.svg");
+              // content: url("../../public/assets/SVGs/Polygon.svg");
               position: absolute;
               top: -0.75rem;
               left: 0;
@@ -142,6 +144,7 @@
       & a {
         font-size: 14px;
         line-height: 20px;
+        color: map-get($color, white);
 
         @include breakpoint(widescreen) {
           font-size: 1rem;

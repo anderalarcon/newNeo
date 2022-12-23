@@ -56,7 +56,6 @@ const Footer = () => {
         },
         { link: '#', text: 'Colombia' },
         { link: '#', text: 'Chile' },
-        { link: '#', text: 'Diseño de experiencia' },
         { link: '#', text: 'México' }
       ]
     },
@@ -104,24 +103,24 @@ const Footer = () => {
           </div>
         </div>
 
+        <div className={style.footer_top_afiliations}>
+          <h5>Afiliaciones</h5>
+          <div className={style.footer_top_afiliations_images}>
+            <img src={afiliation.src} alt='afiliation' />
+          </div>
+        </div>
+
         <div className={style.footer_top_partners}>
           <h5>Somos Partners</h5>
           <div className={style.footer_top_partners_images}>
-            <img src={googleCloud.src} alt='googleCloud' />
             <img
               src={googleMarketingPlatform.src}
               alt='googleMarketingPlatform'
             />
             <img src={salesforce.src} alt='salesforce' />
-            <img src={aws.src} alt='aws' />
             <img src={hubspot.src} alt='hubspot' />
-          </div>
-        </div>
-
-        <div className={style.footer_top_afiliations}>
-          <h5>Afiliaciones</h5>
-          <div className={style.footer_top_afiliations_images}>
-            <img src={afiliation.src} alt='afiliation' />
+            <img src={aws.src} alt='aws' />
+            <img src={googleCloud.src} alt='googleCloud' />
           </div>
         </div>
 
