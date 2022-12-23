@@ -36,7 +36,10 @@
                 top: 50%;
                 transform: translateY(-50%);
                 font-family: 'Montserrat Bold';
-
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
                 @include breakpoint(widescreen) {
                     font-weight: 700;
                     font-size: 20px;

@@ -1,24 +1,19 @@
 @import "../../styles/variables.module.scss";
 
 .content {
-  background-color: map-get($color, white);
-  padding: map-get($margin, mobile) 0;
-  color: map-get($color, primary);
+  margin-bottom: map-get($margin , mobile);
 
   @include breakpoint(widescreen) {
-    padding: map-get($margin, widescreen) 0;
+      margin-bottom: map-get($margin , widescreen);
   }
 
   &_heading {
-    font-weight: bold;
     font-size: 24px;
     line-height: 28px;
     text-align: center;
     width: 100%;
-    color: map-get($color, primary);
     margin-bottom: 40px;
-    font-family: "Tiempos Headline";
-    font-style: normal;
+    font-family: 'Tiempos Headline Medium';
 
     @include breakpoint(widescreen) {
       font-size: 48px;
@@ -31,7 +26,7 @@
     padding-right: map-get($padding, mobile);
     display: flex;
     align-items: center;
-    gap: 1rem;
+    gap: 8px;
     width: 100%;
     margin: 0 auto;
     overflow: scroll;
@@ -42,8 +37,10 @@
       max-width: map-get($breakpoint, max);
       margin-left: auto;
       margin-right: auto;
-      gap: 3rem;
       justify-content:center;
+      overflow: unset;
+      gap: 32px;
+
     }
 
     &_swiper_button {
@@ -71,19 +68,6 @@
           display: block;
         }
       }
-    }
-  }
-}
-
-.swiper {
-  width: fit-content;
-  &_button {
-    &_next_cases {
-      right: 36px;
-    }
-
-    &_prev_cases {
-      left: 36px;
     }
   }
 }

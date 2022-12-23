@@ -21,7 +21,6 @@
             margin-left: auto;
             margin-right: auto;
             margin-bottom: 25px;
-
             @include breakpoint(widescreen) {
                 font-size: 48px;
                 width: 100%;
