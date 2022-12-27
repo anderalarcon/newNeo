@@ -34,6 +34,6 @@ export const recommendations = [
     logoClient: rocioMerino.src,
     nameClient: 'Rocío Merino Loredo',
     chargeClient: 'Subgerente de Marketing y CX, Protecta',
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/protecta_aumenta_venta_de_soats'
   }
 ]
