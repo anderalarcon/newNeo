@@ -36,8 +36,8 @@ const Form = () => {
   const [errorServices, setErrorServices] = useState(false)
   const router = useRouter()
   const [direct, setDirect] = useState(false)
-  console.log(step)
-  console.log(formErrors)
+  console.log('step', step)
+  console.log('form error:', formErrors)
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
@@ -58,8 +58,8 @@ const Form = () => {
         setData(servicesData.find((e) => e.service === router.query.service))
         setCheckedServices(
           servicesData
-            .find((e) => e.service === router.query.service)
-            .solutions.find((e) => e.solution === router.query.solution).option
+            ?.find((e) => e.service === router.query.service)
+            ?.solutions.find((e) => e.solution === router.query.solution).option
         )
       }
     }
@@ -86,7 +86,8 @@ const Form = () => {
     }
   }
 
-  const handleBack = () => {
+  const handleBack = (e) => {
+    e.preventDefault()
     setStep(step - 1)
   }
 
@@ -152,7 +153,6 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e?.preventDefault()
-    console.log('entra')
     const { chanel, source, medium, campaign } = handleParams()
 
     const contactObj = {
@@ -477,12 +477,22 @@ const Form = () => {
               onChange={handleChange}
             >
               <option value=''>Seleccione</option>
-              <option value='De 1 a 200'>De 1 a 200</option>
-              <option value='De 201 a 500 personas'>De 201 a 500</option>
-              <option value='De 501 a 1000 personas'>De 501 a 1000</option>
-              <option value='De 1001 a 5000 personas'>De 1001 a 5000</option>
-              <option value='De 5001 a 10000 personas'>De 5001 a 10000</option>
-              <option value='Más de 10000 personas'>Más de 10000</option>
+              <option value='De 1 a 200 '>De 1 a 200</option>
+              <option value='De 201 a  500 personas'>
+                De 201 a 500 personas
+              </option>
+              <option value='De 501 a 1000 personas'>
+                De 501 a 1000 personas
+              </option>
+              <option value='De 1001 a 5000 personas'>
+                De 1001 a 5000 personas
+              </option>
+              <option value='De 5001 a 10000 personas'>
+                De 5001 a 10000 personas
+              </option>
+              <option value='Más de 10000 personas'>
+                Más de 10000 personas
+              </option>
               <option value='Soy independiente'>Soy independiente</option>
             </select>
             <p>{formErrors.employees}</p>
@@ -557,6 +567,79 @@ const Form = () => {
       </div>
     )
   }
+
+  const getBackButton = () => {
+    if (direct) {
+      if (step !== 2) {
+        return (
+          <>
+            <button
+              onClick={handleBack}
+              className={style.form_container_form_btns_back}
+            >
+              Atras
+            </button>
+          </>
+        )
+      }
+    }
+    if (!direct) {
+      if (step !== 1) {
+        return (
+          <button
+            onClick={handleBack}
+            className={style.form_container_form_btns_back}
+          >
+            Atras
+          </button>
+        )
+      }
+    }
+  }
+  const getNextButton = () => {
+    if (direct) {
+      if (step !== 4) {
+        return (
+          <>
+            <button
+              onClick={handleSteps}
+              className={style.form_container_form_btns_next}
+            >
+              Siguiente
+            </button>
+          </>
+        )
+      }
+    }
+    if (step !== 4) {
+      return (
+        <button
+          onClick={handleSteps}
+          className={style.form_container_form_btns_next}
+        >
+          Siguiente
+        </button>
+      )
+    }
+  }
+
+  const getSendButton = () => {
+    if (direct) {
+      if (step === 4) {
+        return (
+          <>
+            <button
+              type='submit'
+              onClick={handleSteps}
+              className={style.form_container_form_btns_next}
+            >
+              Enviar
+            </button>
+          </>
+        )
+      }
+    }
+  }
   return (
     <div className={style.form}>
       <div className={style.form_container}>
@@ -580,45 +663,11 @@ const Form = () => {
           {step === 2 && getSecondStep()}
           {step === 3 && getThirdStep()}
           {step === 4 && getFourthStep()}
-          {step !== 4 && (
-            <div className={style.form_container_form_btns}>
-              {step !== 1 && !direct && (
-                <button
-                  type='submit'
-                  onClick={handleBack}
-                  className={style.form_container_form_btns_back}
-                >
-                  Atras
-                </button>
-              )}
-
-              <button
-                type='submit'
-                onClick={handleSteps}
-                className={style.form_container_form_btns_next}
-              >
-                Siguiente
-              </button>
-            </div>
-          )}
-          {step === 4 && (
-            <div className={style.form_container_form_btns}>
-              <button
-                onClick={handleBack}
-                className={style.form_container_form_btns_back}
-              >
-                Atras
-              </button>
-
-              <button
-                type='submit'
-                onClick={handleSteps}
-                className={style.form_container_form_btns_next}
-              >
-                Enviar
-              </button>
-            </div>
-          )}
+          <div className={style.form_container_form_btns}>
+            {getBackButton()}
+            {getNextButton()}
+            {getSendButton()}
+          </div>
         </form>
       </div>
     </div>
