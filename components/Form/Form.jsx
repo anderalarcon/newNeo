@@ -7,14 +7,14 @@ import axios from 'axios'
 import { servicesData } from '../../utilities/global/services'
 import { useRouter } from 'next/router'
 import firstStepImg from '../../public/assets/Form/step_1.svg'
-import secondStepImg from '../../public/assets/Form/step_2.svg'
+// import secondStepImg from '../../public/assets/Form/step_2.svg'
 import thirdStepImg from '../../public/assets/Form/step_3.svg'
-import fourthStepImg from '../../public/assets/Form/step_4.svg'
+// import fourthStepImg from '../../public/assets/Form/step_4.svg'
 
 import firstStepImgMob from '../../public/assets/Form/step_1_mobile.svg'
-import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
+// import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
 import thirdStepImgMob from '../../public/assets/Form/step_3_mobile.svg'
-import fourthStepImgMob from '../../public/assets/Form/step_4_mobile.svg'
+// import fourthStepImgMob from '../../public/assets/Form/step_4_mobile.svg'
 
 const Form = () => {
   const initialValues = {
@@ -178,7 +178,7 @@ const Form = () => {
 
     axios
       .post(
-        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
+        'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
         contactObj
       )
       .then(function (response) {
