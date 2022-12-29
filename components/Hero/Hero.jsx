@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import style from './Hero.module.scss'
-import view1 from '../../public/assets/Hero/view-1-mobile.png'
+// import view1 from '../../public/assets/Hero/view-1-mobile.png'
 import view1Desk from '../../public/assets/Hero/view-1-desktop.png'
 import view2Desk from '../../public/assets/Hero/view-2-desktop.png'
 import arrowRight from '../../public/assets/Hero/arrow-right-white.svg'
@@ -178,7 +178,7 @@ const Hero = () => {
               </div>
               <img
                 className={style.hero_container_view_img}
-                src={view1.src}
+                src={view1Desk.src}
                 alt=''
               />
               <img

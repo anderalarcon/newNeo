@@ -1,6 +1,12 @@
 @import "../../../styles/variables.module.scss";
 
 .hero {
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
     &_container {
         display: flex;
         flex-direction: column;
@@ -20,17 +26,19 @@
 
         &_left {
             text-align: center;
+
             @include breakpoint(widescreen) {
                 text-align: center;
                 width: 50%;
             }
+
             &_img {
                 width: 100%;
                 max-width: 300px;
 
                 @include breakpoint(widescreen) {
                     max-width: 401px;
-                    
+
                 }
 
             }

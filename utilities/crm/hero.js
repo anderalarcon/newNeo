@@ -11,7 +11,7 @@ export const dataHero = {
   title: 'Somos especialistas en',
   subtitle: 'CRM',
   service: 'crm',
-  solution: 'general',
+  solution: 'default',
   desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
   descCert: 'Nuestros consultores de CRM están certificados en:',
   mainImg: hero.src,

@@ -6,6 +6,17 @@ import alicorpDesktop from '../../public/assets/Cases/alicorp-desktop.jpg'
 export const peruCases = [
   {
     type: 'Caso de éxito',
+    title:
+      'RIMAC Seguros incrementa la venta de producto SOAT con una reducción de inversión en publicidad digital',
+    description:
+      'Descubre cómo la compañía de Seguros Rímac incrementó la venta de su producto SOAT en 3.63% con una reducción de inversión en publicidad digital junto al equipo de Neo Consulting.',
+    img: rimacDesktop,
+    imgMob: rimacDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
+  },
+  {
+    type: 'Caso de éxito',
     title: 'Belcorp hace uso de datos para el Customer Journey',
     description:
       'Belcorp, en el año 2019, construyó junto a Neo Consulting la nueva app, Gana+, una plataforma con diseño UX de altos estándares que les permitiera levantar insights de sus consultoras.',
@@ -22,17 +33,6 @@ export const peruCases = [
     imgMob: soksoDesktop,
 
     url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
-  },
-  {
-    type: 'Caso de éxito',
-    title:
-      'RIMAC Seguros incrementa la venta de producto SOAT con una reducción de inversión en publicidad digital',
-    description:
-      'Descubre cómo la compañía de Seguros Rímac incrementó la venta de su producto SOAT en 3.63% con una reducción de inversión en publicidad digital junto al equipo de Neo Consulting.',
-    img: rimacDesktop,
-    imgMob: rimacDesktop,
-
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
   },
   {
     type: 'Caso de éxito',
