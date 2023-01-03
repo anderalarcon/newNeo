@@ -175,7 +175,8 @@ const Form = () => {
         campa_a__c: campaign
       }
     }
-
+    // 'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
+    // http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact
     axios
       .post(
         'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
@@ -646,15 +647,15 @@ const Form = () => {
         <Breadscrumb inside={true} value={data?.title} />
         <div className={style.form_container_steps}>
           <div className={style.form_container_steps_mobile}>
-            {step === 1 && <img src={firstStepImgMob.src} alt='' />}
+            {step === 1 && <img src={firstStepImgMob.src} alt='Neo Consulting Contacto' />}
             {step === 2 && <img src={secondStepImg.src} alt='Neo Consulting Contacto' />}
-            {step === 3 && <img src={thirdStepImgMob.src} alt='' />}
+            {step === 3 && <img src={thirdStepImgMob.src} alt='Neo Consulting Contacto' />}
             {step === 4 && <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />}
           </div>
           <div className={style.form_container_steps_desk}>
-            {step === 1 && <img src={firstStepImg.src} alt='' />}
+            {step === 1 && <img src={firstStepImg.src} alt='Neo Consulting Contacto' />}
             {step === 2 && <img src={secondStepImg.src} alt='Neo Consulting Contacto' />}
-            {step === 3 && <img src={thirdStepImg.src} alt='' />}
+            {step === 3 && <img src={thirdStepImg.src} alt='Neo Consulting Contacto' />}
             {step === 4 && <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />}
           </div>
         </div>
