@@ -7,9 +7,13 @@ import axios from 'axios'
 import { servicesData } from '../../utilities/global/services'
 import { useRouter } from 'next/router'
 import firstStepImg from '../../public/assets/Form/step_1.svg'
-import secondStepImg from '../../public/assets/Form/step_2.svg'
+// import secondStepImg from '../../public/assets/Form/step_2.svg'
 import thirdStepImg from '../../public/assets/Form/step_3.svg'
+<<<<<<< HEAD
 import fourthStepImg from '../../public/assets/Form/step_4.svg'
+=======
+// import fourthStepImg from '../../public/assets/Form/step_4.svg'
+>>>>>>> 1c1b9e6e66f5941c51bc25f6306d3470b55d3910
 
 import firstStepImgMob from '../../public/assets/Form/step_1_mobile.svg'
 // import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
@@ -647,6 +651,7 @@ const Form = () => {
         <Breadscrumb inside={true} value={data?.title} />
         <div className={style.form_container_steps}>
           <div className={style.form_container_steps_mobile}>
+<<<<<<< HEAD
             {step === 1 && <img src={firstStepImgMob.src} alt='Neo Consulting Contacto' />}
             {step === 2 && <img src={secondStepImg.src} alt='Neo Consulting Contacto' />}
             {step === 3 && <img src={thirdStepImgMob.src} alt='Neo Consulting Contacto' />}
@@ -657,6 +662,18 @@ const Form = () => {
             {step === 2 && <img src={secondStepImg.src} alt='Neo Consulting Contacto' />}
             {step === 3 && <img src={thirdStepImg.src} alt='Neo Consulting Contacto' />}
             {step === 4 && <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />}
+=======
+            {step === 1 && <img src={firstStepImgMob.src} alt='' />}
+            {step === 2 && <img alt='Falta recurso' />}
+            {step === 3 && <img src={thirdStepImgMob.src} alt='' />}
+            {step === 4 && <img alt='Falta recurso' />}
+          </div>
+          <div className={style.form_container_steps_desk}>
+            {step === 1 && <img src={firstStepImg.src} alt='' />}
+            {step === 2 && <img alt='Falta recurso' />}
+            {step === 3 && <img src={thirdStepImg.src} alt='' />}
+            {step === 4 && <img alt='Falta recurso' />}
+>>>>>>> 1c1b9e6e66f5941c51bc25f6306d3470b55d3910
           </div>
         </div>
         <form className={style.form_container_form}>

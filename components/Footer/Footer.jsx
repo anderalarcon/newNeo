@@ -23,50 +23,44 @@ const Footer = () => {
       title: 'Servicios',
       ul: [
         {
-          link: '#',
+          link: 'https://neoconsulting.ai/pe/servicios/analitica-digital-inteligencia-artificial',
           text: 'Analítica Digital e Inteligencia Artificial'
         },
-        { link: '#', text: 'Canales digitales y Growth Haking' },
-        { link: '#', text: 'Consultoría CRM' },
-        { link: '#', text: 'Diseño de experiencia' },
-        { link: '#', text: 'E-commerce' },
-        { link: '#', text: 'Headhunting y Mentoring' },
-        { link: '#', text: 'Marketing Automation' },
-        { link: '#', text: 'Publicidad Digital' }
+        { link: 'https://neoconsulting.ai/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales digitales y Growth Haking' },
+        { link: 'https://neoconsulting.ai/pe/servicios/consultoria-customer-relationship-management', text: 'Consultoría CRM' },
+        { link: 'https://neoconsulting.ai/pe/servicios/experience-design', text: 'Diseño de experiencia' },
+        { link: 'https://neoconsulting.ai/pe/servicios/consultoria-ecommerce', text: 'E-commerce' },
+        { link: 'https://neoconsulting.ai/pe/servicios/headhunting-y-mentoring', text: 'Headhunting y Mentoring' },
+        { link: 'https://neoconsulting.ai/pe/servicios/marketing-automation', text: 'Marketing Automation' },
+        { link: 'https://neoconsulting.ai/pe/servicios/digital-advertising', text: 'Publicidad Digital' }
       ]
     },
     {
       title: 'Somos NEO',
       ul: [
-        {
-          link: '#',
-          text: 'Analítica Digital e Inteligencia Artificial'
-        },
-        { link: '#', text: 'Sobre nosotros' },
-        { link: '#', text: 'Bolsa de trabajo' },
-        { link: '#', text: 'Guia Bcorp' }
+        { link: 'https://neoconsulting.ai/quienes-somos', text: 'Sobre nosotros' },
+        { link: 'https://neoconsulting.ai/bolsa-de-trabajo', text: 'Bolsa de trabajo' },
+        { link: 'https://wordpress.neoconsulting.ai/wp-content/uploads/2022/06/Reporte-de-Sostenibilidad-2021-Neo-Consulting.pdf', text: 'Guía Bcorp' }
       ]
     },
     {
       title: 'Paises',
       ul: [
         {
-          link: '#',
+          link: 'https://neoconsulting.ai/pe',
           text: 'Perú'
         },
-        { link: '#', text: 'Colombia' },
-        { link: '#', text: 'Chile' },
-        { link: '#', text: 'México' }
+        { link: 'https://neoconsulting.ai/co', text: 'Colombia' },
+        { link: 'https://neoconsulting.ai/cl', text: 'Chile' },
+        { link: 'https://neoconsulting.ai/mx', text: 'México' }
       ]
     },
     {
       title: 'Recursos',
       ul: [
         { link: '#', text: 'Blog' },
-        { link: '#', text: 'Descargables' },
-        { link: '#', text: 'Cursos Gratuitos' },
-        { link: '#', text: 'Diseño de experiencia' },
-        { link: '#', text: 'Webinars' }
+        { link: 'https://neoconsulting.ai/descargables', text: 'Descargables' },
+        { link: 'https://www.youtube.com/@neoconsulting/videos', text: 'Webinars' }
       ]
     }
   ]
@@ -79,16 +73,16 @@ const Footer = () => {
         <div className={style.footer_top_social}>
           <h5>Redes sociales</h5>
           <div className={style.footer_top_social_icons}>
-            <a href='#'>
+            <a href='https://www.youtube.com/@neoconsulting'>
               <img src={yt.src} alt={'yt'} />
             </a>
-            <a href='#'>
+            <a href='https://es-la.facebook.com/neoconsulting/'>
               <img src={fb.src} alt={'fb'} />
             </a>
-            <a href='#'>
+            <a href='https://www.linkedin.com/company/neo-consulting?originalSubdomain=pe'>
               <img src={linkedin.src} alt={'linkedin'} />
             </a>
-            <a href='#'>
+            <a href='https://www.instagram.com/neo_digital/?hl=es'>
               <img src={insta.src} alt={'insta'} />
             </a>
           </div>
