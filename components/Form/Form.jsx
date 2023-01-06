@@ -7,18 +7,14 @@ import axios from 'axios'
 import { servicesData } from '../../utilities/global/services'
 import { useRouter } from 'next/router'
 import firstStepImg from '../../public/assets/Form/step_1.svg'
-// import secondStepImg from '../../public/assets/Form/step_2.svg'
+import secondStepImg from '../../public/assets/Form/step_2.svg'
 import thirdStepImg from '../../public/assets/Form/step_3.svg'
-<<<<<<< HEAD
 import fourthStepImg from '../../public/assets/Form/step_4.svg'
-=======
-// import fourthStepImg from '../../public/assets/Form/step_4.svg'
->>>>>>> 1c1b9e6e66f5941c51bc25f6306d3470b55d3910
 
 import firstStepImgMob from '../../public/assets/Form/step_1_mobile.svg'
-// import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
+import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
 import thirdStepImgMob from '../../public/assets/Form/step_3_mobile.svg'
-// import fourthStepImgMob from '../../public/assets/Form/step_4_mobile.svg'
+import fourthStepImgMob from '../../public/assets/Form/step_4_mobile.svg'
 
 const Form = () => {
   const initialValues = {
@@ -40,36 +36,10 @@ const Form = () => {
   const [errorServices, setErrorServices] = useState(false)
   const router = useRouter()
   const [direct, setDirect] = useState(false)
-  console.log('step', step)
-  console.log('form error:', formErrors)
-  useEffect(() => {
-    if (!router.isReady) return
-    const getOptions = () => {
-      if (
-        router.query.service !== 'default' &&
-        router.query.solution === 'default'
-      ) {
-        setData(servicesData.find((e) => e.service === router.query.service))
-      }
-      if (
-        (router.query.service !== 'default' &&
-          router.query.solution !== 'default') ||
-        (router.query.service === 'default' &&
-          router.query.solution === 'default')
-      ) {
-        setDirect(true)
-        setStep(2)
-        setData(servicesData.find((e) => e.service === router.query.service))
-        setCheckedServices(
-          servicesData
-            ?.find((e) => e.service === router.query.service)
-            ?.solutions.find((e) => e.solution === router.query.solution).option
-        )
-      }
-    }
-    getOptions()
-  }, [router.isReady, checkedServices])
-  // console.log(direct)
+  const [isContact, setIsContact] = useState(false)
+  const [isNewContact, setIsNewContact] = useState(false)
+  const [isHandle, setIsHandle] = useState(false)
+
   const handleSteps = (e) => {
     e.preventDefault()
     if (step === 1) {
@@ -155,6 +125,56 @@ const Form = () => {
     return errors
   }
 
+  const searchContact = (email) => {
+    axios
+      .post(
+        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/search',
+        email
+      )
+      .then(function (response) {
+        console.log(response)
+        setIsHandle(true)
+        if (response.data.total > 0) {
+          setIsContact(true)
+        } else {
+          setIsNewContact(true)
+        }
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+  }
+
+  const createContact = (contactObj) => {
+    axios
+      .post(
+        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
+        contactObj
+      )
+      .then(function (response) {
+        console.log(response)
+        // router.push('thanks')
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+  }
+
+  const updateContact = (contactObj) => {
+    const updatedDataObj = contactObj.properties
+    axios
+      .put(
+        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/update',
+        updatedDataObj
+      )
+      .then(function (response) {
+        console.log(response)
+        // router.push('thanks')
+      })
+      .catch(function (error) {
+        console.log(error)
+      })
+  }
   const handleSubmit = (e) => {
     e?.preventDefault()
     const { chanel, source, medium, campaign } = handleParams()
@@ -179,21 +199,29 @@ const Form = () => {
         campa_a__c: campaign
       }
     }
+    const emailObj = {
+      email: formValues.email
+    }
+
+    if (!isHandle) {
+      searchContact(emailObj)
+    }
+
+    if (isContact) {
+      console.log('actualizar')
+      updateContact(contactObj)
+    }
+    if (isNewContact) {
+      console.log('crear')
+      createContact(contactObj)
+    }
+    // else {
+    //   createContact(contactObj)
+    // }
     // 'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
     // http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact
-    axios
-      .post(
-        'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
-        contactObj
-      )
-      .then(function (response) {
-        console.log(response)
-        router.push('thanks')
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
   }
+
   const handleParams = () => {
     const { utm_source, utm_medium, utm_campaign } = router.query
     const params = {}
@@ -240,18 +268,6 @@ const Form = () => {
       }
     }
   }
-  useEffect(() => {
-    console.log(Object.keys(formErrors))
-    if (step === 2 && Object.keys(formErrors).length === 0) {
-      setStep(3)
-    }
-    if (step === 3 && Object.keys(formErrors).length === 0) {
-      setStep(4)
-    }
-    if (step === 4 && Object.keys(formErrors).length === 0) {
-      handleSubmit()
-    }
-  }, [formErrors])
 
   const getFirstStep = () => {
     return (
@@ -482,7 +498,7 @@ const Form = () => {
               onChange={handleChange}
             >
               <option value=''>Seleccione</option>
-              <option value='De 1 a 200 '>De 1 a 200</option>
+              <option value='De 1 a 200'>De 1 a 200</option>
               <option value='De 201 a  500 personas'>
                 De 201 a 500 personas
               </option>
@@ -645,35 +661,85 @@ const Form = () => {
       }
     }
   }
+
+  useEffect(() => {
+    if (!router.isReady) return
+    const getOptions = () => {
+      if (
+        router.query.service !== 'default' &&
+        router.query.solution === 'default'
+      ) {
+        setData(servicesData.find((e) => e.service === router.query.service))
+      }
+      if (
+        (router.query.service !== 'default' &&
+          router.query.solution !== 'default') ||
+        (router.query.service === 'default' &&
+          router.query.solution === 'default')
+      ) {
+        setDirect(true)
+        setStep(2)
+        setData(servicesData.find((e) => e.service === router.query.service))
+        setCheckedServices(
+          servicesData
+            ?.find((e) => e.service === router.query.service)
+            ?.solutions.find((e) => e.solution === router.query.solution).option
+        )
+      }
+    }
+    getOptions()
+  }, [router.isReady, checkedServices])
+
+  useEffect(() => {
+    if (step === 2 && Object.keys(formErrors).length === 0) {
+      setStep(3)
+    }
+    if (step === 3 && Object.keys(formErrors).length === 0) {
+      setStep(4)
+    }
+    if (step === 4 && Object.keys(formErrors).length === 0) {
+      handleSubmit()
+    }
+  }, [formErrors])
+
+  useEffect(() => {
+    if (isHandle) {
+      handleSubmit()
+    }
+  }, [isContact, isNewContact])
+
   return (
     <div className={style.form}>
       <div className={style.form_container}>
         <Breadscrumb inside={true} value={data?.title} />
         <div className={style.form_container_steps}>
           <div className={style.form_container_steps_mobile}>
-<<<<<<< HEAD
-            {step === 1 && <img src={firstStepImgMob.src} alt='Neo Consulting Contacto' />}
-            {step === 2 && <img src={secondStepImg.src} alt='Neo Consulting Contacto' />}
-            {step === 3 && <img src={thirdStepImgMob.src} alt='Neo Consulting Contacto' />}
-            {step === 4 && <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />}
+            {step === 1 && (
+              <img src={firstStepImgMob.src} alt='Neo Consulting Contacto' />
+            )}
+            {step === 2 && (
+              <img src={secondStepImgMob.src} alt='Neo Consulting Contacto' />
+            )}
+            {step === 3 && (
+              <img src={thirdStepImgMob.src} alt='Neo Consulting Contacto' />
+            )}
+            {step === 4 && (
+              <img src={fourthStepImgMob.src} alt='Neo Consulting Contacto' />
+            )}
           </div>
           <div className={style.form_container_steps_desk}>
-            {step === 1 && <img src={firstStepImg.src} alt='Neo Consulting Contacto' />}
-            {step === 2 && <img src={secondStepImg.src} alt='Neo Consulting Contacto' />}
-            {step === 3 && <img src={thirdStepImg.src} alt='Neo Consulting Contacto' />}
-            {step === 4 && <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />}
-=======
-            {step === 1 && <img src={firstStepImgMob.src} alt='' />}
-            {step === 2 && <img alt='Falta recurso' />}
-            {step === 3 && <img src={thirdStepImgMob.src} alt='' />}
-            {step === 4 && <img alt='Falta recurso' />}
-          </div>
-          <div className={style.form_container_steps_desk}>
-            {step === 1 && <img src={firstStepImg.src} alt='' />}
-            {step === 2 && <img alt='Falta recurso' />}
-            {step === 3 && <img src={thirdStepImg.src} alt='' />}
-            {step === 4 && <img alt='Falta recurso' />}
->>>>>>> 1c1b9e6e66f5941c51bc25f6306d3470b55d3910
+            {step === 1 && (
+              <img src={firstStepImg.src} alt='Neo Consulting Contacto' />
+            )}
+            {step === 2 && (
+              <img src={secondStepImg.src} alt='Neo Consulting Contacto' />
+            )}
+            {step === 3 && (
+              <img src={thirdStepImg.src} alt='Neo Consulting Contacto' />
+            )}
+            {step === 4 && (
+              <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />
+            )}
           </div>
         </div>
         <form className={style.form_container_form}>
