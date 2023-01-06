@@ -3,6 +3,7 @@ import { useState } from 'react'
 
 import logoWhite from '../../public/assets/Logos/logo-white.png'
 import logoBlack from '../../public/assets/Logos/logo-black.png'
+import logoSvg from '../../public/assets/Logos/logo-svg.svg'
 import arrowDown from '../../public/assets/SVGs/Arrow-Down.svg'
 import menu from '../../public/assets/SVGs/Menu.svg'
 import close from '../../public/assets/SVGs/Close.svg'
@@ -117,7 +118,7 @@ const Header = () => {
           </button>
           <a href='/'>
             <img
-              src={logoWhite.src}
+              src={logoSvg.src}
               alt='neo'
               className={style.header_base_left_logo}
             />
