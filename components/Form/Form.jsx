@@ -16,6 +16,8 @@ import secondStepImgMob from '../../public/assets/Form/step_2_mobile.svg'
 import thirdStepImgMob from '../../public/assets/Form/step_3_mobile.svg'
 import fourthStepImgMob from '../../public/assets/Form/step_4_mobile.svg'
 
+import { RotatingLines } from 'react-loader-spinner'
+
 const Form = () => {
   const initialValues = {
     name: '',
@@ -39,6 +41,8 @@ const Form = () => {
   const [isContact, setIsContact] = useState(false)
   const [isNewContact, setIsNewContact] = useState(false)
   const [isHandle, setIsHandle] = useState(false)
+  const [contactId, setContactId] = useState('')
+  // const [isLoading, setIsLoading] = useState(false)
 
   const handleSteps = (e) => {
     e.preventDefault()
@@ -50,13 +54,13 @@ const Form = () => {
       }
     }
     if (step === 2) {
-      setFormErrors(validate(formValues))
+      setFormErrors(validateInputs(formValues))
     }
     if (step === 3) {
-      setFormErrors(validate(formValues))
+      setFormErrors(validateInputs(formValues))
     }
     if (step === 4) {
-      setFormErrors(validate(formValues))
+      setFormErrors(validateInputs(formValues))
     }
   }
 
@@ -83,12 +87,13 @@ const Form = () => {
       })
     }
   }
+
   const validateEmail = (email) => {
     const re = /^[a-z0-9.]{1,64}@[a-z0-9.]{1,64}$/i
     return re.test(email)
   }
 
-  const validate = (values) => {
+  const validateInputs = (values) => {
     const errors = {}
     if (!values.name) {
       errors.name = 'Nombre es requerido'
@@ -136,6 +141,7 @@ const Form = () => {
         setIsHandle(true)
         if (response.data.total > 0) {
           setIsContact(true)
+          setContactId(response?.data?.results[0]?.id)
         } else {
           setIsNewContact(true)
         }
@@ -160,11 +166,11 @@ const Form = () => {
       })
   }
 
-  const updateContact = (contactObj) => {
+  const updateContact = (contactObj, contactId) => {
     const updatedDataObj = contactObj.properties
     axios
       .put(
-        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/update',
+        `http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/update/${contactId}`,
         updatedDataObj
       )
       .then(function (response) {
@@ -174,52 +180,6 @@ const Form = () => {
       .catch(function (error) {
         console.log(error)
       })
-  }
-  const handleSubmit = (e) => {
-    e?.preventDefault()
-    const { chanel, source, medium, campaign } = handleParams()
-
-    const contactObj = {
-      properties: {
-        servicios_interesados: direct
-          ? checkedServices
-          : checkedServices.join(', '),
-        firstname: formValues.name,
-        phone: formValues.phone,
-        pais: formValues.country,
-        email: formValues.email,
-        company: formValues.company,
-        cargo: formValues.charge,
-        cantidad_de_empleados: formValues.employees,
-        area: formValues.area,
-        detalle_proyecto: formValues.details,
-        p_gina_de_origen__c: data?.title,
-        fuente_medio__c: source && medium ? source + '/' + medium : '',
-        canal__c: chanel,
-        campa_a__c: campaign
-      }
-    }
-    const emailObj = {
-      email: formValues.email
-    }
-
-    if (!isHandle) {
-      searchContact(emailObj)
-    }
-
-    if (isContact) {
-      console.log('actualizar')
-      updateContact(contactObj)
-    }
-    if (isNewContact) {
-      console.log('crear')
-      createContact(contactObj)
-    }
-    // else {
-    //   createContact(contactObj)
-    // }
-    // 'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
-    // http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact
   }
 
   const handleParams = () => {
@@ -267,6 +227,46 @@ const Form = () => {
         }
       }
     }
+  }
+
+  const handleSubmit = (e) => {
+    e?.preventDefault()
+    if (!isHandle) {
+      searchContact({ email: formValues.email })
+    }
+    if (isHandle) {
+      const { chanel, source, medium, campaign } = handleParams()
+
+      const contactObj = {
+        properties: {
+          servicios_interesados: direct
+            ? checkedServices
+            : checkedServices.join(', '),
+          firstname: formValues.name,
+          phone: formValues.phone,
+          pais: formValues.country,
+          email: formValues.email,
+          company: formValues.company,
+          cargo: formValues.charge,
+          cantidad_de_empleados: formValues.employees,
+          area: formValues.area,
+          detalle_proyecto: formValues.details,
+          p_gina_de_origen__c: data?.title,
+          fuente_medio__c: source && medium ? source + '/' + medium : '',
+          canal__c: chanel,
+          campa_a__c: campaign
+        }
+      }
+      if (isContact) {
+        updateContact(contactObj, contactId)
+      }
+
+      if (isNewContact) {
+        createContact(contactObj)
+      }
+    }
+    // 'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
+    // http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact
   }
 
   const getFirstStep = () => {
@@ -336,6 +336,7 @@ const Form = () => {
       </div>
     )
   }
+
   const getSecondStep = () => {
     return (
       <div className={style.form_container_form_second}>
@@ -429,6 +430,7 @@ const Form = () => {
       </div>
     )
   }
+
   const getThirdStep = () => {
     return (
       <div className={style.form_container_form_second}>
@@ -593,14 +595,12 @@ const Form = () => {
     if (direct) {
       if (step !== 2) {
         return (
-          <>
-            <button
-              onClick={handleBack}
-              className={style.form_container_form_btns_back}
-            >
-              Atras
-            </button>
-          </>
+          <button
+            onClick={handleBack}
+            className={style.form_container_form_btns_back}
+          >
+            Atras
+          </button>
         )
       }
     }
@@ -617,18 +617,17 @@ const Form = () => {
       }
     }
   }
+
   const getNextButton = () => {
     if (direct) {
       if (step !== 4) {
         return (
-          <>
-            <button
-              onClick={handleSteps}
-              className={style.form_container_form_btns_next}
-            >
-              Siguiente
-            </button>
-          </>
+          <button
+            onClick={handleSteps}
+            className={style.form_container_form_btns_next}
+          >
+            Siguiente
+          </button>
         )
       }
     }
@@ -648,18 +647,67 @@ const Form = () => {
     if (direct) {
       if (step === 4) {
         return (
-          <>
-            <button
-              type='submit'
-              onClick={handleSteps}
-              className={style.form_container_form_btns_next}
-            >
-              Enviar
-            </button>
-          </>
+          <button
+            type='submit'
+            onClick={handleSteps}
+            className={style.form_container_form_btns_next}
+          >
+            Enviar
+          </button>
         )
       }
     }
+  }
+
+  const getSteps = () => {
+    if (step === 1) {
+      return getFirstStep()
+    }
+    if (step === 2) {
+      return getSecondStep()
+    }
+    if (step === 3) {
+      return getThirdStep()
+    }
+    if (step === 4) {
+      return getFourthStep()
+    }
+  }
+
+  const getStepImgs = (resolution) => {
+    if (resolution === 'mobile') {
+      if (step === 1) {
+        return <img src={firstStepImgMob.src} alt='Neo Consulting Contacto' />
+      }
+      if (step === 2) {
+        return <img src={secondStepImgMob.src} alt='Neo Consulting Contacto' />
+      }
+
+      if (step === 3) {
+        return <img src={thirdStepImgMob.src} alt='Neo Consulting Contacto' />
+      }
+
+      if (step === 4) {
+        return <img src={fourthStepImgMob.src} alt='Neo Consulting Contacto' />
+      }
+    }
+    if (resolution === 'desktop') {
+      if (step === 1) {
+        return <img src={firstStepImg.src} alt='Neo Consulting Contacto' />
+      }
+      if (step === 2) {
+        return <img src={secondStepImg.src} alt='Neo Consulting Contacto' />
+      }
+
+      if (step === 3) {
+        return <img src={thirdStepImg.src} alt='Neo Consulting Contacto' />
+      }
+
+      if (step === 4) {
+        return <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />
+      }
+    }
+    return null
   }
 
   useEffect(() => {
@@ -710,43 +758,25 @@ const Form = () => {
 
   return (
     <div className={style.form}>
+      <RotatingLines
+        strokeColor='#05058C'
+        strokeWidth='5'
+        animationDuration='0.75'
+        width='96'
+        visible={true}
+      />
       <div className={style.form_container}>
         <Breadscrumb inside={true} value={data?.title} />
         <div className={style.form_container_steps}>
           <div className={style.form_container_steps_mobile}>
-            {step === 1 && (
-              <img src={firstStepImgMob.src} alt='Neo Consulting Contacto' />
-            )}
-            {step === 2 && (
-              <img src={secondStepImgMob.src} alt='Neo Consulting Contacto' />
-            )}
-            {step === 3 && (
-              <img src={thirdStepImgMob.src} alt='Neo Consulting Contacto' />
-            )}
-            {step === 4 && (
-              <img src={fourthStepImgMob.src} alt='Neo Consulting Contacto' />
-            )}
+            {getStepImgs('mobile')}
           </div>
           <div className={style.form_container_steps_desk}>
-            {step === 1 && (
-              <img src={firstStepImg.src} alt='Neo Consulting Contacto' />
-            )}
-            {step === 2 && (
-              <img src={secondStepImg.src} alt='Neo Consulting Contacto' />
-            )}
-            {step === 3 && (
-              <img src={thirdStepImg.src} alt='Neo Consulting Contacto' />
-            )}
-            {step === 4 && (
-              <img src={fourthStepImg.src} alt='Neo Consulting Contacto' />
-            )}
+            {getStepImgs('desktop')}
           </div>
         </div>
         <form className={style.form_container_form}>
-          {step === 1 && getFirstStep()}
-          {step === 2 && getSecondStep()}
-          {step === 3 && getThirdStep()}
-          {step === 4 && getFourthStep()}
+          {getSteps()}
           <div className={style.form_container_form_btns}>
             {getBackButton()}
             {getNextButton()}
