@@ -42,7 +42,7 @@ const Form = () => {
   const [isNewContact, setIsNewContact] = useState(false)
   const [isHandle, setIsHandle] = useState(false)
   const [contactId, setContactId] = useState('')
-  // const [isLoading, setIsLoading] = useState(false)
+  const [isLoading, setIsLoading] = useState(false)
 
   const handleSteps = (e) => {
     e.preventDefault()
@@ -159,7 +159,8 @@ const Form = () => {
       )
       .then(function (response) {
         console.log(response)
-        // router.push('thanks')
+        setIsLoading(false)
+        router.push('thanks')
       })
       .catch(function (error) {
         console.log(error)
@@ -175,7 +176,8 @@ const Form = () => {
       )
       .then(function (response) {
         console.log(response)
-        // router.push('thanks')
+        setIsLoading(false)
+        router.push('thanks')
       })
       .catch(function (error) {
         console.log(error)
@@ -232,6 +234,7 @@ const Form = () => {
   const handleSubmit = (e) => {
     e?.preventDefault()
     if (!isHandle) {
+      setIsLoading(true)
       searchContact({ email: formValues.email })
     }
     if (isHandle) {
@@ -592,7 +595,7 @@ const Form = () => {
   }
 
   const getBackButton = () => {
-    if (direct) {
+    if (direct && !isLoading) {
       if (step !== 2) {
         return (
           <button
@@ -604,7 +607,7 @@ const Form = () => {
         )
       }
     }
-    if (!direct) {
+    if (!direct && !isLoading) {
       if (step !== 1) {
         return (
           <button
@@ -619,7 +622,7 @@ const Form = () => {
   }
 
   const getNextButton = () => {
-    if (direct) {
+    if (direct && !isLoading) {
       if (step !== 4) {
         return (
           <button
@@ -631,7 +634,7 @@ const Form = () => {
         )
       }
     }
-    if (step !== 4) {
+    if (step !== 4 && !isLoading) {
       return (
         <button
           onClick={handleSteps}
@@ -644,7 +647,7 @@ const Form = () => {
   }
 
   const getSendButton = () => {
-    if (direct) {
+    if (direct && !isLoading) {
       if (step === 4) {
         return (
           <button
@@ -710,6 +713,23 @@ const Form = () => {
     return null
   }
 
+  const getLoader = () => {
+    if (isLoading) {
+      return (
+        <div style={{ textAlign: 'center' }}>
+          <RotatingLines
+            strokeColor='#05058C'
+            strokeWidth='5'
+            animationDuration='0.75'
+            width='96'
+            visible={true}
+          />
+        </div>
+      )
+    }
+    return null
+  }
+
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
@@ -758,13 +778,6 @@ const Form = () => {
 
   return (
     <div className={style.form}>
-      <RotatingLines
-        strokeColor='#05058C'
-        strokeWidth='5'
-        animationDuration='0.75'
-        width='96'
-        visible={true}
-      />
       <div className={style.form_container}>
         <Breadscrumb inside={true} value={data?.title} />
         <div className={style.form_container_steps}>
@@ -782,6 +795,7 @@ const Form = () => {
             {getNextButton()}
             {getSendButton()}
           </div>
+          {getLoader()}
         </form>
       </div>
     </div>
