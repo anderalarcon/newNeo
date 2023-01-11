@@ -1,7 +1,7 @@
 import style from './Header.module.scss'
 import { useState } from 'react'
 
-import logoWhite from '../../public/assets/Logos/logo-white.png'
+// import logoWhite from '../../public/assets/Logos/logo-white.png'
 import logoBlack from '../../public/assets/Logos/logo-black.png'
 import logoSvg from '../../public/assets/Logos/logo-svg.svg'
 import arrowDown from '../../public/assets/SVGs/Arrow-Down.svg'

@@ -133,7 +133,7 @@ const Form = () => {
   const searchContact = (email) => {
     axios
       .post(
-        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/search',
+        'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/search',
         email
       )
       .then(function (response) {
@@ -154,7 +154,7 @@ const Form = () => {
   const createContact = (contactObj) => {
     axios
       .post(
-        'http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact',
+        'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
         contactObj
       )
       .then(function (response) {
@@ -171,7 +171,7 @@ const Form = () => {
     const updatedDataObj = contactObj.properties
     axios
       .put(
-        `http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/update/${contactId}`,
+        `https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/update/${contactId}`,
         updatedDataObj
       )
       .then(function (response) {
