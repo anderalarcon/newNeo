@@ -1,8 +1,6 @@
-import React from 'react'
 import Bcorp from '../../../components/Bcorp/Bcorp'
 import Clients from '../../../components/Clients/Clients'
 import Contact from '../../../components/Contact/Contact'
-
 import Header from '../../../components/Header/Header'
 import Hero from '../../../components/Hero/Hero'
 import Questions from '../../../components/Questions/Questions'
@@ -15,6 +13,7 @@ import { questionsHome } from '../../../utilities/home/questions'
 import { recommendations } from '../../../utilities/global/recommendations'
 import Content from '../../../components/Content/Content'
 import Footer from '../../../components/Footer/Footer'
+
 const pe = () => {
   return (
     <>
