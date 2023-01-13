@@ -1,6 +1,6 @@
 import style from './Profile.module.scss'
 import PropTypes from 'prop-types'
-import linkedin from '../../../../public/assets/Team/linkedin.svg'
+import linkedin from '../../../../public/assets/Services/Crm/Team/linkedin.svg'
 const Profile = ({ img, fullName, bio, linkedIn, charge }) => {
   return (
     <div className={style.profile}>
@@ -17,9 +17,9 @@ const Profile = ({ img, fullName, bio, linkedIn, charge }) => {
           <p className={style.profile_container_bottom_charge}>{charge}</p>
           <p className={style.profile_container_bottom_bio}>{bio}</p>
           <div className={style.profile_container_bottom_social}>
-            <p className={style.profile_container_bottom_social_linked}>
+            <a href={linkedIn} className={style.profile_container_bottom_social_linked}>
               Linkedin
-            </p>
+            </a>
             <img
               className={style.profile_container_bottom_social_logo}
               src={linkedin.src}

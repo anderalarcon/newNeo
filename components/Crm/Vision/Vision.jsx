@@ -148,7 +148,7 @@ const Vision = () => {
         <div className={style.vision_container_right}>
           {getServices()}
           <div className={style.vision_container_right_link}>
-            <Link className={style.vision_container_right_link_lnk} href={'/'}>
+            <Link className={style.vision_container_right_link_lnk} href={'/contact?service=crm&solution=default'}>
               Conversemos
             </Link>
           </div>

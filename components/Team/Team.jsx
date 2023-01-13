@@ -10,10 +10,9 @@ import leftArrow from '../../public/assets/Swiper/left-arrow-accent.svg'
 import rightArrow from '../../public/assets/Swiper/right-arrow-accent.svg'
 import Profile from './_children/Profile/Profile'
 import { useEffect, useState } from 'react'
-// import { team } from '../../utilities/crm/team'
 import uuid from 'react-uuid'
 
-const Team = ({ team }) => {
+const Team = ({ team, chapter }) => {
   const [isMobile, setIsMobile] = useState(
     typeof window === 'undefined' ? 0 : window.innerWidth < 1200
   )
@@ -32,7 +31,7 @@ const Team = ({ team }) => {
       <div className={style.team_container}>
         <h1 className={style.team_container_title}>Conoce a nuestro equipo</h1>
         <p className={style.team_container_subtitle}>
-          Nuestros consultores expertos en CRM y Salesforce te ayudarán a
+          Nuestros consultores expertos {chapter} te ayudarán a
           cumplir los objetivos de tu negocio.
         </p>
         <div
@@ -103,7 +102,8 @@ const Team = ({ team }) => {
 }
 
 Team.propTypes = {
-  team: PropTypes.array
+  team: PropTypes.array,
+  chapter: PropTypes.string
 }
 
 export default Team

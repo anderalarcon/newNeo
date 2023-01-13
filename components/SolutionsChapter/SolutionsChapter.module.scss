@@ -116,6 +116,14 @@
                 background-color: map-get($color , white);
             }
         }
+
+        &_filters{
+            display: flex;
+            gap: 144px;
+            &_filter{
+                cursor: pointer;
+            }
+        }
     }
 
     &_title {

@@ -1,13 +1,13 @@
 import Card from './_children/Card/Card.jsx'
-import { solutionsPeru } from '../../utilities/home/contact'
+import PropTypes from 'prop-types'
 import style from './Solutions.module.scss'
-const Solutions = () => {
+const Solutions = ({ solutions }) => {
   return (
     <section id='solutions' className={style.solutions}>
       <div className={style.solutions_container}>
         <h2 className={style.solutions_container_title}>Contamos con soluciones en</h2>
         <div className={style.solutions_container_services}>
-          {solutionsPeru.map(({ iconSrc, service, description, url }) => {
+          {solutions.map(({ iconSrc, service, description, url }) => {
             return (
               <Card iconSrc={iconSrc.src} service={service} key={service} description={description} url={url} />
             )
@@ -17,5 +17,7 @@ const Solutions = () => {
     </section>
   )
 }
-
+Solutions.propTypes = {
+  solutions: PropTypes.array
+}
 export default Solutions

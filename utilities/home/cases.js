@@ -1,8 +1,8 @@
-import belcorpImg from '../../public/assets/Cases/belcorp.jpg'
-import belcorpImgMob from '../../public/assets/Cases/belcorp-mobile.jpg'
-import soksoDesktop from '../../public/assets/Cases/sokso-desktop.jpg'
-import rimacDesktop from '../../public/assets/Cases/rimac-desktop.jpg'
-import alicorpDesktop from '../../public/assets/Cases/alicorp-desktop.jpg'
+import belcorpImg from '../../public/assets/Services/Cases/belcorp.jpg'
+import belcorpImgMob from '../../public/assets/Services/Cases/belcorp-mobile.jpg'
+import soksoDesktop from '../../public/assets/Services/Cases/sokso-desktop.jpg'
+import rimacDesktop from '../../public/assets/Services/Cases/rimac-desktop.jpg'
+import alicorpDesktop from '../../public/assets/Services/Cases/alicorp-desktop.jpg'
 export const peruCases = [
   {
     type: 'Caso de éxito',
