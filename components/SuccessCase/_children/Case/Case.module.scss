@@ -119,8 +119,12 @@
                 font-size: 16px;
                 line-height: 20px;
                 margin-bottom: 24px;
-
+                display: -webkit-box;
+                -webkit-line-clamp: 6;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
                 @include breakpoint(widescreen) {
+                    -webkit-line-clamp: 4;
                     font-size: 20px;
                     line-height: 24px;
                     margin-bottom: 64px;

@@ -12,53 +12,52 @@ export const solutionsPeru = [
     iconSrc: iconCanales,
     service: 'Canales digitales y Growth Haking',
     description: 'Atrae más clientes a través de Canales Digitales',
-    url: 'https://neoconsulting.ai/pe/servicios/canales-digitales-y-growth-hacking'
+    url: '/pe/servicios/canales-digitales-y-growth-hacking'
   },
   {
     iconSrc: iconEcommerce,
     service: 'E-commerce',
     description: 'Desarrolla estrategias que impulsen tu tienda virtual',
-    url: 'https://neoconsulting.ai/pe/servicios/consultoria-ecommerce'
+    url: '/pe/servicios/consultoria-ecommerce'
   },
   {
     iconSrc: iconHh,
     service: 'Headhunting y Mentoring',
     description: 'Recluta y forma talento digital de alto performace.',
-    url: 'https://neoconsulting.ai/pe/servicios/headhunting-y-mentoring'
+    url: '/pe/servicios/headhunting-y-mentoring'
   },
   {
     iconSrc: iconCrm,
     service: 'Consultoría CRM',
     description: 'Crea, desarrolla y mejora la relación con tus clientes.',
-
-    url: 'https://neoconsulting.ai/pe/servicios/consultoria-customer-relationship-management'
+    url: '/pe/servicios/consultoria-customer-relationship-management'
 
   },
   {
     iconSrc: iconAnalitica,
     service: 'Analítica Digital e Inteligencia Artificial',
     description: 'Mide, visualiza y capitaliza la data de tu empresa.',
-    url: 'https://neoconsulting.ai/pe/servicios/analitica-digital-inteligencia-artificial'
+    url: '/pe/servicios/analitica-digital-inteligencia-artificial'
   },
   {
     iconSrc: iconXd,
     service: 'Diseño de experiencia y Transformación Digital',
     description:
       'Conoce y mejora la experiencia de los usuarios en mis activos digitales.',
-    url: 'https://neoconsulting.ai/pe/servicios/experience-design'
+    url: '/pe/servicios/experience-design'
   },
   {
     iconSrc: iconPublicidad,
     service: 'Publicidad digital',
     description:
       'Logra tus objetivos de negocio usando medios digitales pagados.',
-    url: 'https://neoconsulting.ai/pe/servicios/digital-advertising'
+    url: '/pe/servicios/digital-advertising'
   },
   {
     iconSrc: iconMkt,
     service: 'Marketing Automation',
     description:
       'Automatiza acciones de marketing, fidelización en la venta y postventa.',
-    url: 'https://neoconsulting.ai/pe/servicios/marketing-automation'
+    url: '/pe/servicios/marketing-automation'
   }
 ]

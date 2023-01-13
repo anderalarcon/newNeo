@@ -1,11 +1,12 @@
-import hero from '../../public/assets/Crm/Hero/hero.jpg'
-import salesforce from '../../public/assets/Crm/Hero/salesforce.svg'
-import salesforcemkt from '../../public/assets/Crm/Hero/salesforce-mkt.svg'
+import hero from '../../../public/assets/Services/Crm/Hero/heroCrm.jpg'
+import salesforce from '../../../public/assets/Crm/Hero/salesforce.svg'
+import salesforcloud from '../../../public/assets/Services/Crm/Hero/sfcloud.svg'
+import salesforcemkt from '../../../public/assets/Crm/Hero/salesforce-mkt.svg'
 
-import ga from '../../public/assets/Crm/Hero/FullService/ga.svg'
-import gmp from '../../public/assets/Crm/Hero/FullService/gmp.svg'
-import gads from '../../public/assets/Crm/Hero/FullService/gads.svg'
-import gc from '../../public/assets/Crm/Hero/FullService/gc.svg'
+import ga from '../../../public/assets/Crm/Hero/FullService/ga.svg'
+import gmp from '../../../public/assets/Crm/Hero/FullService/gmp.svg'
+import gads from '../../../public/assets/Crm/Hero/FullService/gads.svg'
+import gc from '../../../public/assets/Crm/Hero/FullService/gc.svg'
 
 export const dataHero = {
   title: 'Somos especialistas en',
@@ -18,6 +19,9 @@ export const dataHero = {
   certifications: [
     {
       src: salesforce.src
+    },
+    {
+      src: salesforcloud.src
     },
     {
       src: salesforcemkt.src
