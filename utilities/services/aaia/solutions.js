@@ -137,5 +137,57 @@ export const aaiaSolutions2 = [
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       }
     ]
+  },
+  {
+    category: 'Activación',
+    solutions: [
+      {
+        solution: 'Predictive Customer Analytics',
+        description:
+          'Análisis del comportamiento de los clientes para la toma de decisiones comerciales mediante técnicas predictivas y de segmentación de mercado.',
+        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
+      },
+      {
+        solution: 'Predictive Sales & Product Analytics',
+        description:
+          'Análisis del desempeño de productos o servicios con relación a su venta en mercados objetivos.',
+        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
+      },
+      {
+        solution: 'Chatbots AI',
+        description:
+          'Desarrollo e implementación de un chatbot en el activo digital del cliente que atienda de manera automática y con reducida o nula intervención humana las consultas de los usuarios.',
+        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
+      },
+      {
+        solution: 'Sentiment Analysis & Social Listening',
+        description:
+          'Desarrollo e implementación de modelo de machine learning para clasificar comentarios de usuarios por sentimiento. Dashboard para visualizar resultados del modelo en tiempo real.',
+        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
+      }
+    ]
+  },
+  {
+    category: 'Gestión',
+    solutions: [
+      {
+        solution: 'Integración de Fuentes de Datos',
+        description:
+          'Desarrollo mediante el cual se unifican los datos, de diferentes fuentes, en un solo repositorio. El cual posteriormente agilizará y facilitará el análisis.',
+        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
+      },
+      {
+        solution: 'Automatización de reportes',
+        description:
+          'Desarrollo de un dashboard totalmente automatizado, en el cual se muestran los principales KPIs e indicadores de negocio.',
+        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
+      }
+    ]
   }
 ]

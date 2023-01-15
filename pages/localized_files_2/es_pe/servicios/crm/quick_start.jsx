@@ -12,11 +12,11 @@ import { team } from '../../../../../utilities/crm/team'
 const quick_start = () => {
   return (
     <>
-      <Hero data={dataHeroQuick} isSolution={true} />
+      {/* <Hero data={dataHeroQuick} isSolution={true} />
       <Team team={team} />
       <SuccessCase />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} solution={'quick-start'} />
+      <Contact service={'crm'} solution={'quick-start'} /> */}
     </>
   )
 }

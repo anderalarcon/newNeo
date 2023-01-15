@@ -14,21 +14,21 @@ export const team = [
   },
 
   {
-    fullname: 'Nicole gallardai',
+    fullname: 'Nicole Gallardai',
     charge: 'Consultor de canales digitales',
     bio: 'Ingeniero Estadístico Informático con experiencia en analítica digital, medios y análisis estadístico. Especializado en Business Intelligence y Business Analytics en la Universidad Nacional de Ingeniería (UNI).',
     linkedin: 'https://www.linkedin.com/in/alejandravidalcastillo/',
     img: nicole.src
   },
   {
-    fullname: 'Oscar días',
+    fullname: 'Oscar Días',
     charge: 'Consultor de canales digitales',
     bio: 'Pequeña bio | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit id lacus proin commodo tortor.',
     linkedin: 'https://www.linkedin.com/in/oscar-diaz-cava-seo/',
     img: oscar.src
   },
   {
-    fullname: 'Alejandra vidal',
+    fullname: 'Alejandra Vidal',
     charge: 'Consultora Jr. de Canales Digitales',
     bio: 'Más de 4 años de experiencia en la industria. Reconocido por desarrollar estrategias de optimización de tasa de conversión y embudo completo, administrar de manera efectiva la implementación de campañas publicitarias tanto para la marca como para el rendimiento, y aplicar metodologías UX para generar valor agregado a los usuarios. Experiencia liderando proyectos de diseño y desarrollo web.',
     linkedin: 'https://www.linkedin.com/in/alejandravidalcastillo/',

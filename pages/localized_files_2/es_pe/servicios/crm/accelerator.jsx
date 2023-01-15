@@ -9,11 +9,11 @@ import { team } from '../../../../../utilities/crm/team'
 const accelerator = () => {
   return (
     <>
-      <Hero data={dataHeroAccelerator} isSolution={true} />
+      {/* <Hero data={dataHeroAccelerator} isSolution={true} />
       <Team team={team} />
       <SuccessCase />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} solution={'accelerator'} />
+      <Contact service={'crm'} solution={'accelerator'} /> */}
     </>
   )
 }

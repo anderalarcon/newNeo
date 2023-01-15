@@ -10,6 +10,7 @@
     @include breakpoint(widescreen) {
         margin-bottom: map-get($margin , widescreen);
     }
+
     &_container {
         display: flex;
         flex-wrap: wrap;
@@ -117,11 +118,38 @@
             }
         }
 
-        &_filters{
+        &_filters {
             display: flex;
-            gap: 144px;
-            &_filter{
+            gap: 20px;
+            flex-wrap: wrap;
+            border-bottom: 1px solid map-get($color , white);
+            justify-content: center;
+            width: 100%;
+            margin-bottom: 30px;
+            @include breakpoint(widescreen) {
+                gap: 30px;
+                margin-bottom: 72px;
+            }
+            @include breakpoint(max) {
+                gap: 144px;
+            }
+
+
+            &_filter {
+                color: map-get($color , white);
                 cursor: pointer;
+                border-radius: 16px;
+                padding: 3px 20px;
+                font-size: 16px;
+                line-height: 20px;
+                font-family: 'Tiempos Headline Regular';
+
+                @include breakpoint(widescreen) {
+                    font-size: 32px;
+                    line-height: 40px;
+                    border-radius: 16px;
+                    padding: 3px 33px;
+                }
             }
         }
     }
@@ -140,4 +168,9 @@
         }
 
     }
+}
+
+.active {
+    background-color: white;
+    color: map-get($color, accent );
 }
