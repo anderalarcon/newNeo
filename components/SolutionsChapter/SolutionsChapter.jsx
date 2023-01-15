@@ -3,9 +3,21 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import arrow from '../../public/assets/Crm/Solutions/arrow.svg'
 import uuid from 'react-uuid'
+import { useEffect, useState } from 'react'
 const SolutionsChapter = ({ solutions, filter = false }) => {
-  console.log(solutions)
   if (filter) {
+    const [solutionsFiltered, setSolutionsFiltered] = useState([])
+    const [activeLink, setActiveLink] = useState('Estrategia')
+
+    const handleFilter = (category) => {
+      setSolutionsFiltered(solutions?.find((s) => s.category === category))
+      setActiveLink(category)
+    }
+
+    useEffect(() => {
+      setSolutionsFiltered(solutions.find((s) => s.category === 'Estrategia'))
+    }, [])
+
     return (
       <div id='solutions' className={style.solutions}>
         <h1 className={style.solutions_title}>
@@ -13,15 +25,13 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
         </h1>
         <div className={style.solutions_container}>
           <div className={style.solutions_container_filters}>
-            {solutions.map(({ category, solutions }) => {
-              return <h2 className={style.solutions_container_filters_filter} key={uuid()}>{category}</h2>
+            {solutions?.map(({ category }) => {
+              return <h2 onClick={ () => handleFilter(category)} className={`${style.solutions_container_filters_filter} ${activeLink === category ? style.active : ''}`} key={uuid()}>{category}</h2>
             })}
           </div>
-
-        {solutions.map(({ solutions }) => {
-          return solutions.map(({ solution, description, urlcontact, urlpage }) => {
-            return (
-              <div className={style.solutions_container_solution} key={solution}>
+        {solutionsFiltered?.solutions?.map(({ solution, description, urlcontact, urlpage }) => {
+          return (
+              <div className={style.solutions_container_solution} key={uuid()}>
               <h2 className={style.solutions_container_solution_title}>{solution}</h2>
               <p className={style.solutions_container_solution_desc}>{description}</p>
               <div className={style.solutions_container_solution_ctn}>
@@ -30,8 +40,7 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
               </div>
               <hr className={style.solutions_container_solution_hr} />
             </div>
-            )
-          })
+          )
         })}
 
         </div>

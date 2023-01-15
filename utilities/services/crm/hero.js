@@ -1,7 +1,11 @@
 import hero from '../../../public/assets/Services/Crm/Hero/heroCrm.jpg'
-import salesforce from '../../../public/assets/Crm/Hero/salesforce.svg'
-import salesforcloud from '../../../public/assets/Services/Crm/Hero/sfcloud.svg'
-import salesforcemkt from '../../../public/assets/Crm/Hero/salesforce-mkt.svg'
+import administrator from '../../../public/assets/Services/Crm/Certifications/administrator.svg'
+import inboud from '../../../public/assets/Services/Crm/Certifications/inboudmkt.svg'
+import mktadmin from '../../../public/assets/Services/Crm/Certifications/mktadmin.svg'
+import mktcloud from '../../../public/assets/Services/Crm/Certifications/mktcloud.svg'
+import sales from '../../../public/assets/Services/Crm/Certifications/sales.svg'
+import sfcloud from '../../../public/assets/Services/Crm/Certifications/sfcloud.svg'
+import software from '../../../public/assets/Services/Crm/Certifications/software.svg'
 
 import ga from '../../../public/assets/Crm/Hero/FullService/ga.svg'
 import gmp from '../../../public/assets/Crm/Hero/FullService/gmp.svg'
@@ -18,13 +22,25 @@ export const dataHero = {
   mainImg: hero.src,
   certifications: [
     {
-      src: salesforce.src
+      src: sfcloud.src
     },
     {
-      src: salesforcloud.src
+      src: mktcloud.src
     },
     {
-      src: salesforcemkt.src
+      src: administrator.src
+    },
+    {
+      src: mktadmin.src
+    },
+    {
+      src: inboud.src
+    },
+    {
+      src: sales.src
+    },
+    {
+      src: software.src
     }
   ]
 }

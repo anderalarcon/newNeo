@@ -18,14 +18,14 @@ import { team } from '../../../../../utilities/crm/team'
 const full_service = () => {
   return (
     <>
-      <Hero data={dataHeroFull} isSolution={true} />
+      {/* <Hero data={dataHeroFull} isSolution={true} />
       <Reasons data={dataReasonsFull} />
       <Achieves data={dataAchievesFull} />
       <Achieves contentRight={false} data={dataActionsFull} />
       <Team team={team} />
       <SuccessCase />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} solution={'full-service-crm'} />
+      <Contact service={'crm'} solution={'full-service-crm'} /> */}
     </>
   )
 }

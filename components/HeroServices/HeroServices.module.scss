@@ -1,4 +1,4 @@
-@import "../../../styles/variables.module.scss";
+@import "../../styles/variables.module.scss";
 
 .hero {
     margin-bottom: map-get($margin , mobile);
@@ -234,6 +234,10 @@
 
                 & img {
                     max-width: 100%;
+                    min-width: 83px;
+                    @include breakpoint(widescreen) {
+                        min-height: 34px;
+                    }
                 }
             }
         }

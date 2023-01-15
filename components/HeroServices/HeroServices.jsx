@@ -1,5 +1,5 @@
-import style from './Hero.module.scss'
-import arrow from '../../../public/assets/Crm/Hero/left_arrow.svg'
+import style from './HeroServices.module.scss'
+import arrow from '../../public/assets/Crm/Hero/left_arrow.svg'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
 import uuid from 'react-uuid'

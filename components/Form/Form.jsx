@@ -4,7 +4,7 @@ import style from './Form.module.scss'
 import Breadscrumb from '../Breadscrumb/Breadscrumb'
 import icon from '../../public/assets/Form/icon.svg'
 import axios from 'axios'
-import { servicesData } from '../../utilities/global/services'
+import { servicesData } from '../../utilities/form/services'
 import { useRouter } from 'next/router'
 import firstStepImg from '../../public/assets/Form/step_1.svg'
 import secondStepImg from '../../public/assets/Form/step_2.svg'
@@ -504,9 +504,7 @@ const Form = () => {
             >
               <option value=''>Seleccione</option>
               <option value='De 1 a 200'>De 1 a 200</option>
-              <option value='De 201 a  500 personas'>
-                De 201 a 500 personas
-              </option>
+              <option value='De 201 a 500 personas'>De 201 a 500 personas</option>
               <option value='De 501 a 1000 personas'>
                 De 501 a 1000 personas
               </option>
@@ -647,7 +645,7 @@ const Form = () => {
   }
 
   const getSendButton = () => {
-    if (direct && !isLoading) {
+    if (!isLoading) {
       if (step === 4) {
         return (
           <button
@@ -729,7 +727,8 @@ const Form = () => {
     }
     return null
   }
-
+  console.log(step)
+  console.log(direct)
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
