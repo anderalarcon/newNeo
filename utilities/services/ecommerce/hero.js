@@ -1,10 +1,11 @@
 import ecommerceHero from '../../../public/assets/Services/ecommerce/Hero/ecommerceHero.jpg'
-import aws from '../../../public/assets/Services/ecommerce/Hero/aws.svg'
-import gmp from '../../../public/assets/Services/ecommerce/Hero/gmp.svg'
-import gc from '../../../public/assets/Services/ecommerce/Hero/gc.svg'
+import ga from '../../../public/assets/Services/ecommerce/Hero/ga.svg'
+import sf from '../../../public/assets/Services/ecommerce/Hero/salesforce.svg'
+import hb from '../../../public/assets/Services/ecommerce/Hero/hubspot.svg'
+import ei from '../../../public/assets/Services/ecommerce/Hero/eicom.svg'
 
 export const dataHeroecommerce = {
-  title: 'Somos especialistas en',
+  title: 'Experiencia, data y estratégia para impulsar tu canal de',
   subtitle: 'E-commerce',
   service: 'ecommerce',
   solution: 'default',
@@ -13,13 +14,16 @@ export const dataHeroecommerce = {
   mainImg: ecommerceHero.src,
   certifications: [
     {
-      src: aws.src
+      src: ga.src
     },
     {
-      src: gmp.src
+      src: sf.src
     },
     {
-      src: gc.src
+      src: hb.src
+    },
+    {
+      src: ei.src
     }
   ]
 }

@@ -14,7 +14,7 @@ export const dtsSolutions = [
     urlpage: '/localized_files_2/es_pe/servicios/crm/accelerator/'
   },
   {
-    solution: 'Mentoring',
+    solution: 'Outsourcing + Mentoring',
     description:
       'Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas.',
     urlcontact: '/contact/?service=crm&solution=quick-start',

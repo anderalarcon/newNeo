@@ -7,6 +7,7 @@ import SolutionsChapter from '../../../../../components/SolutionsChapter/Solutio
 import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
+import Content from '../../../../../components/ContentServices/Content'
 
 import { dataHeroda } from '../../../../../utilities/services/da/hero'
 import { daVisions } from '../../../../../utilities/services/da/visions'
@@ -14,6 +15,8 @@ import { daSolutions } from '../../../../../utilities/services/da/solutions'
 import { team } from '../../../../../utilities/services/da/team'
 import { daCases } from '../../../../../utilities/services/da/cases'
 import { questionsda } from '../../../../../utilities/services/da/questions'
+import { contentda } from '../../../../../utilities/services/da/content'
+
 const da = () => {
   return (
     <>
@@ -25,6 +28,7 @@ const da = () => {
     <SuccessCase cases={daCases} />
     <Questions questions={questionsda} />
     <Contact service={'digital-ads'} />
+    <Content contents={contentda} />
     <Footer/>
   </>
   )

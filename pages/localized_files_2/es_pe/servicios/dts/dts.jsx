@@ -7,6 +7,7 @@ import SolutionsChapter from '../../../../../components/SolutionsChapter/Solutio
 import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
+import Content from '../../../../../components/ContentServices/Content'
 
 import { dataHerodts } from '../../../../../utilities/services/dts/hero'
 import { dtsVisions } from '../../../../../utilities/services/dts/visions'
@@ -14,6 +15,8 @@ import { dtsSolutions } from '../../../../../utilities/services/dts/solutions'
 import { team } from '../../../../../utilities/services/dts/team'
 import { dtsCases } from '../../../../../utilities/services/dts/cases'
 import { questionsdts } from '../../../../../utilities/services/dts/questions'
+import { contentdts } from '../../../../../utilities/services/dts/content'
+
 const dts = () => {
   return (
     <>
@@ -25,6 +28,7 @@ const dts = () => {
     <SuccessCase cases={dtsCases} />
     <Questions questions={questionsdts} />
     <Contact service={'digital-talent-solutions'} />
+    <Content contents={contentdts} />
     <Footer/>
   </>
   )

@@ -1,23 +1,23 @@
 export const ecommerceSolutions = [
   {
-    solution: 'Alineamiento C-Level E-commerce D2C',
+    solution: 'Desarrollo de modelo de negocio E-commerce',
     description:
-      'Alineamos tu negocio con los objetivos del canal, definimos las estrategias y requerimientos necesarios para el despliegue o transformación de la operación.',
+      'Desarrollamos en conjunto un Business Case que defina el rol del e-commerce dentro de la estrategia comercial que cubre la investigación del mercado, diseño del ecosistema y la presentación ante el directorio.',
     urlcontact: '/contact/?service=crm&solution=full-service-crm',
     urlpage: '/localized_files_2/es_pe/servicios/crm/full_service/'
   },
   {
-    solution: 'Planeamiento de solución D2C',
+    solution: 'Acompañamiento E-commerce',
     description:
-      'Nos involucramos en todas las etapas, desde el plan de marketing hasta la definición de la experiencia en el planeamiento del activo a desarrollar/ mejorar para la venta online.',
+      'Garantizamos que las operaciones de tu E-commerce cuenten con una estructura de data y medición confiable, auditamos agencias y proveedores para garantizar el cumplimiento de objetivos y proponer mejoras a la estrategia.',
     urlcontact: '/contact/?service=crm&solution=accelerator',
     urlpage: '/localized_files_2/es_pe/servicios/crm/accelerator/'
   },
   {
-    solution: 'Growth y Analytics para Ecommerce',
+    solution: 'E-commerce Growth y Analytics',
     description:
-      'Proveemos un roadmap de crecimiento para impactar en todos los canales y garantizar una estructura de datos confiable.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
+      'Te Proveemos un roadmap de crecimiento para impactar en todos los canales y garantizar una estructura de datos confiable, medible y ejecutable en el corto plazo.',
+    urlcontact: '/contact/?service=crm&solution=accelerator',
     urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
   }
 ]
