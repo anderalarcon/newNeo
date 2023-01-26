@@ -7,6 +7,7 @@ import SolutionsChapter from '../../../../../components/SolutionsChapter/Solutio
 import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
+import Content from '../../../../../components/ContentServices/Content'
 
 import { dataHeroxd } from '../../../../../utilities/services/xd/hero'
 import { xdVisions } from '../../../../../utilities/services/xd/visions'
@@ -14,6 +15,8 @@ import { xdSolutions } from '../../../../../utilities/services/xd/solutions'
 import { team } from '../../../../../utilities/services/xd/team'
 import { xdCases } from '../../../../../utilities/services/xd/cases'
 import { questionsxd } from '../../../../../utilities/services/xd/questions'
+import { contentxd } from '../../../../../utilities/services/xd/content'
+
 const xd = () => {
   return (
     <>
@@ -25,6 +28,7 @@ const xd = () => {
     <SuccessCase cases={xdCases} />
     <Questions questions={questionsxd} />
     <Contact service={'experience-design'} />
+    <Content contents={contentxd} />
     <Footer/>
   </>
   )

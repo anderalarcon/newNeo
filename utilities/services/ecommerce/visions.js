@@ -5,17 +5,17 @@ import visionecommerce3 from '../../../public/assets/services/ecommerce/Vision/v
 export const ecommerceVisions = [
   {
     icon: visionecommerce1.src,
-    title: 'Inicio',
-    desc: 'Desarrolla tu canal E-commerce Direct to consumer (D2C).'
+    title: 'Experiencia',
+    desc: 'Contamos con más de 5 años potenciando E-commerce líderes en sus industrias'
   },
   {
     icon: visionecommerce2.src,
-    title: 'Acciones específicas',
-    desc: 'Define acciones estratégicas para elevar tu conversión.'
+    title: 'Data',
+    desc: 'Tenemos más de 20 años de experiencia en proyectos de data, AI y Machine Learning.'
   },
   {
     icon: visionecommerce3.src,
-    title: 'Orientado a objetivos',
-    desc: 'Alcanza los objetivos de ventas del canal digital.'
+    title: 'Estrategia',
+    desc: 'Consultores con visión 360 y alto nivel de inmersión en el negocio..'
   }
 ]

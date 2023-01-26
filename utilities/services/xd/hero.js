@@ -4,7 +4,7 @@ import ux from '../../../public/assets/Services/Xd/Hero/ux-pm.svg'
 import ga from '../../../public/assets/Services/Xd/Hero/ga.svg'
 
 export const dataHeroxd = {
-  title: 'Somos especialistas en',
+  title: 'Somos expertos en',
   subtitle: 'Diseño de experiencia y Transformación Digital',
   service: 'experience_Design',
   solution: 'default',
