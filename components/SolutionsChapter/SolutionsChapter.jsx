@@ -36,7 +36,7 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
               <p className={style.solutions_container_solution_desc}>{description}</p>
               <div className={style.solutions_container_solution_ctn}>
                 <Link className={style.solutions_container_solution_ctn_talk} href={urlcontact}>Conversemos</Link>
-                <Link className={style.solutions_container_solution_ctn_more} href={urlpage}>Ver más <img alt='arrow neo consulting' src={arrow.src} width={16} height={16} /> </Link>
+                {/* <Link className={style.solutions_container_solution_ctn_more} href={urlpage}>Ver más <img alt='arrow neo consulting' src={arrow.src} width={16} height={16} /> </Link> */}
               </div>
               <hr className={style.solutions_container_solution_hr} />
             </div>
@@ -69,7 +69,7 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
                 >
                   Conversemos
                 </Link>
-                <Link
+                {/* <Link
                   className={style.solutions_container_solution_ctn_more}
                   href={urlpage}
                 >
@@ -80,7 +80,7 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
                     width={16}
                     height={16}
                   />{' '}
-                </Link>
+                </Link> */}
               </div>
               <hr className={style.solutions_container_solution_hr} />
             </div>

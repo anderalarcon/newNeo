@@ -58,8 +58,8 @@ const Footer = () => {
     {
       title: 'Recursos',
       ul: [
-        { link: '#', text: 'Blog' },
-        { link: 'https://neoconsulting.ai/descargables', text: 'Descargables' },
+        { link: 'https://neoconsulting.ai/blog-neo', text: 'Blog' },
+        { link: 'https://neoconsulting.ai/descargables/', text: 'Descargables' },
         { link: 'https://www.youtube.com/@neoconsulting/videos', text: 'Webinars' }
       ]
     }
