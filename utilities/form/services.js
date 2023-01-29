@@ -76,10 +76,10 @@ export const servicesData = [
     title: 'Marketing Automation',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!a',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!b',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!c',
+      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!d'
     ],
     solutions: [
       {
@@ -165,7 +165,7 @@ export const servicesData = [
     ]
   },
   {
-    service: 'xd',
+    service: 'experience-design',
     title: 'Diseño de Experiencia y Transformación Digital',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
     options: [
@@ -196,7 +196,7 @@ export const servicesData = [
     ]
   },
   {
-    service: 'digital-talent',
+    service: 'digital-talent-solution',
     title: 'Digital Talent Solutions',
     desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
     options: [

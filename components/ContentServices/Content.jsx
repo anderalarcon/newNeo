@@ -1,6 +1,7 @@
-import style from "./Content.module.scss";
-import Card from "./_children/Card/Card.jsx";
-import uuid from "react-uuid";
+import style from './Content.module.scss'
+import Card from './_children/Card/Card.jsx'
+import uuid from 'react-uuid'
+import PropTypes from 'prop-types'
 
 const Content = ({ contents }) => {
   /* const [contents, setContents] = useState([]);
@@ -35,7 +36,13 @@ const Content = ({ contents }) => {
         ))}
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Content;
+Content.propTypes = {
+  //   solution: PropTypes.string,
+  //   description: PropTypes.string,
+  //   url: PropTypes.string
+  contents: PropTypes.array
+}
+export default Content

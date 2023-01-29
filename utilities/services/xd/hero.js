@@ -6,7 +6,7 @@ import ga from '../../../public/assets/Services/Xd/Hero/ga.svg'
 export const dataHeroxd = {
   title: 'Somos expertos en',
   subtitle: 'Diseño de experiencia y Transformación Digital',
-  service: 'experience_Design',
+  service: 'experience-design',
   solution: 'default',
   desc: 'Somos expertos en diseño de experiencia y transformación digital.',
   descCert: 'Nuestros analistas están certificados en:',

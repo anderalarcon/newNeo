@@ -12,7 +12,7 @@ import Profile from './_children/Profile/Profile'
 import { useEffect, useState } from 'react'
 import uuid from 'react-uuid'
 
-const Team = ({ team, chapter }) => {
+const Team = ({ team, chapter, startAt = 2 }) => {
   const [isMobile, setIsMobile] = useState(
     typeof window === 'undefined' ? 0 : window.innerWidth < 1200
   )
@@ -65,7 +65,7 @@ const Team = ({ team, chapter }) => {
             slideShadows: false
           }}
           // spaceBetween={24}
-          initialSlide="2"
+          initialSlide={startAt}
           spaceBetween={48}
           navigation={{
             nextEl: `.${style.swiper_button_next_cases}`,
@@ -103,7 +103,8 @@ const Team = ({ team, chapter }) => {
 
 Team.propTypes = {
   team: PropTypes.array,
-  chapter: PropTypes.string
+  chapter: PropTypes.string,
+  startAt: PropTypes.number
 }
 
 export default Team

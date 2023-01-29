@@ -8,13 +8,13 @@ export const questionsCanales = [
   {
     question: '¿Qué necesito para incrementar las ventas de mi negocio?',
     answer: (
-      'Para comenzar a mejorar las ventas en un negocio se necesita trabajar una estrategia de canales digitales, es decir, aumentar la adquisición de usuarios en los diferentes canales SEO, Pagado, Email, SMS, entre otros. Desde Neo Consulting podemos ayudarte a generarla, contáctenos.'
+      'Para comenzar a mejorar las ventas en un negocio se necesita trabajar una estrategia de canales digitales, es decir, aumentar la adquisición de usuarios en los diferentes canales como SEO de pago, Email, SMS, entre otros. Desde Neo Consulting podemos ayudarte a generarla, contáctenos.'
     )
   },
   {
     question: '¿Por qué es importante aplicar estrategias de Growth Hacking en mi negocio?',
     answer: (
-      'El growth hacking es una herramienta importante para las empresas que buscan aumentar su base de clientes e impulsar las ventas. Se centra en el desarrollo de estrategias y tácticas para aumentar rápidamente el conocimiento de la marca, los clientes potenciales y las ventas. Al aplicar las estrategias de growth hacking, puede obtener una ventaja competitiva en el mercado y obtener una ventaja sobre sus competidores.'
+      'El growth hacking es una herramienta importante para las empresas que buscan aumentar su base de clientes e impulsar las ventas. Se centra en el desarrollo de estrategias y tácticas para aumentar rápidamente el conocimiento de la marca, los clientes potenciales y las ventas. Al aplicar las estrategias de growth hacking, puede obtener una ventaja competitiva en el mercado y obtener una ventaja sobre tus competidores.'
     )
   },
   {

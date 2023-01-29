@@ -1,7 +1,6 @@
-import visiondefault from '../../../public/assets/Test/vision_default.svg'
-import visionecommerce1 from '../../../public/assets/services/ecommerce/Vision/visionecommerce1.svg'
-import visionecommerce2 from '../../../public/assets/services/ecommerce/Vision/visionecommerce2.svg'
-import visionecommerce3 from '../../../public/assets/services/ecommerce/Vision/visionecommerce3.svg'
+import visionecommerce1 from '../../../public/assets/Services/ecommerce/Vision/visionecommerce1.svg'
+import visionecommerce2 from '../../../public/assets/Services/ecommerce/Vision/visionecommerce2.svg'
+import visionecommerce3 from '../../../public/assets/Services/ecommerce/Vision/visionecommerce3.svg'
 export const ecommerceVisions = [
   {
     icon: visionecommerce1.src,

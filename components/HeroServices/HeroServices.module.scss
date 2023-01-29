@@ -174,7 +174,7 @@
                 & img {
 
                     width: 288px;
-                    height: 289px;
+                    height: auto;
 
                     @include breakpoint(widescreen) {
                         width: 100%;
@@ -183,7 +183,7 @@
 
                     @include breakpoint(max) {
                         width: 613px;
-                        height: 617px;
+                        height: auto;
 
                     }
                 }

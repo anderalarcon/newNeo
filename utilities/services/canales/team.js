@@ -5,13 +5,6 @@ import alejandra from '../../../public/assets/Services/Canales/Team/alejandra.jp
 import paola from '../../../public/assets/Services/Canales/Team/paola.jpg'
 
 export const team = [
-  {
-    fullname: 'Renzo Risco Romani',
-    charge: 'Consultor de Canales Digitales',
-    bio: 'Consultor Senior de Advanced Analytics y CX con amplia experiencia liderando más de 30 proyectos de Innovación y Marketing Digital en el mercado local. Líder de equipos y gestor de proyectos multidisciplinarios en el sector financiero, seguros y educación. Además, ejerzo la docencia en escuelas de post grado y he capacitado a diversas empresas en metodologías de innovación y Growth Hacking.',
-    linkedin: 'https://www.linkedin.com/in/renzo-risco-romani/',
-    img: renzo.src
-  },
 
   {
     fullname: 'Nicole Gallardai',
@@ -26,6 +19,13 @@ export const team = [
     bio: 'Pequeña bio | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit id lacus proin commodo tortor.',
     linkedin: 'https://www.linkedin.com/in/oscar-diaz-cava-seo/',
     img: oscar.src
+  },
+  {
+    fullname: 'Renzo Risco Romani',
+    charge: 'Consultor de Canales Digitales',
+    bio: 'Consultor Senior de Advanced Analytics y CX con amplia experiencia liderando más de 30 proyectos de Innovación y Marketing Digital en el mercado local. Líder de equipos y gestor de proyectos multidisciplinarios en el sector financiero, seguros y educación. Además, ejerzo la docencia en escuelas de post grado y he capacitado a diversas empresas en metodologías de innovación y Growth Hacking.',
+    linkedin: 'https://www.linkedin.com/in/renzo-risco-romani/',
+    img: renzo.src
   },
   {
     fullname: 'Alejandra Vidal',

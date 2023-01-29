@@ -1,18 +1,21 @@
-import visiondefault from '../../../public/assets/Test/vision_default.svg'
+import vision1 from '../../../public/assets/Services/Canales/Vision/vision_1.svg'
+import vision2 from '../../../public/assets/Services/Canales/Vision/vision_2.svg'
+import vision3 from '../../../public/assets/Services/Canales/Vision/vision_3.svg'
+
 export const canalesVisions = [
   {
-    icon: visiondefault.src,
-    title: 'Alto Valor Agregado',
-    desc: 'Todos nuestros esfuerzos, están orientados al cumplimiento de los objetivos. Definiendo KPIs de acuerdo al sector.'
+    icon: vision1.src,
+    title: 'Trafico Digitlal',
+    desc: 'Aumenta la visibilidad y el tráfico a tu sitio web.'
   },
   {
-    icon: visiondefault.src,
-    title: 'Transparencia',
-    desc: 'Negociación de medios transparente, no recibimos comisiones, ni incentivos. Cada cliente es el único dueño de su data.'
+    icon: vision2.src,
+    title: 'Rendimiento',
+    desc: 'Optimiza el rendimiento de tus activos digitales.'
   },
   {
-    icon: visiondefault.src,
-    title: 'Escalabilidad',
-    desc: 'Mapeo de datos y tendencia a través de una visualización personalizada, para la capitalización de insights de valor.'
+    icon: vision3.src,
+    title: 'Automatización',
+    desc: 'Automatiza tus recursos de Marketing.'
   }
 ]

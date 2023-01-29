@@ -14,7 +14,7 @@ const Vision = ({ defaultVersion = true, visions = [], desc }) => {
     const getVisions = () => {
       if (visions.length > 0) {
         return (
-          <div className={style.vision_ctn} id='parent'>
+          <div className={style.vision_ctn}>
             {visions.map(({ icon, title, desc }) => {
               return <Card key={uuid()} icon={icon} title={title} desc={desc} />
             })}
@@ -109,7 +109,7 @@ const Vision = ({ defaultVersion = true, visions = [], desc }) => {
         <>
           <h1 className={style.vision_container_right_title}>Implementación</h1>
           <p className={style.vision_container_right_description}>
-            Setup inicial o migración de soluciones de CRM y MA. integraciones
+            Setup inicial o migración de soluciones de CRM y Marketing Automation (MA). integraciones
             con plataformas actuales.
           </p>
         </>

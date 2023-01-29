@@ -1,7 +1,6 @@
 import style from './SolutionsChapter.module.scss'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
-import arrow from '../../public/assets/Crm/Solutions/arrow.svg'
 import uuid from 'react-uuid'
 import { useEffect, useState } from 'react'
 const SolutionsChapter = ({ solutions, filter = false }) => {

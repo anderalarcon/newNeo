@@ -7,7 +7,7 @@ import pri from '../../../public/assets/Services/Crm/Team/pri.jpg'
 export const team = [
   {
     fullname: 'Priscilla Alvarez',
-    charge: 'Gerente de Customer Growth Strategy',
+    charge: 'Consultora Senior de CRM',
     bio: 'Especialista en marketing y gestión comercial 8 años de experiencia en marketing y ventas, producto, e-commerce y estrategia de gestión de clientes en canales digitales de diversos sectores en coordinación con agencias y equipos de múltiples disciplinas y países.',
     linkedin: 'https://www.linkedin.com/in/priscillaalvarezm/',
     img: pri.src
@@ -21,7 +21,7 @@ export const team = [
   },
   {
     fullname: 'Silvana Galletti',
-    charge: 'Consultora Senior de CRM',
+    charge: 'Head de CRM',
     bio: 'Marketing Cloud Administrator, con experiencia en gestión de base de datos, inteligencia de negocios, CRM, gestión de servicios de TI y testing de software; en los sectores: Banca, Petrolero, Consumo masivo, Seguros y Consultoría',
     linkedin: 'https://www.linkedin.com/in/silvana-galletti-rdv/',
     img: sil.src
