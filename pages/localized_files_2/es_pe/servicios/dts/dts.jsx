@@ -4,6 +4,8 @@ import Footer from '../../../../../components/Footer/Footer'
 import Header from '../../../../../components/Header/Header'
 import Team from '../../../../../components/Team/Team'
 import SolutionsChapter from '../../../../../components/SolutionsChapter/SolutionsChapter'
+import Possible from '../../../../../components/Possible/Possible'
+import Trust from '../../../../../components/Companies/Trust/TrustServices'
 import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
@@ -24,6 +26,8 @@ const dts = () => {
     <Hero data={dataHerodts} />
     <Vision defaultVersion={true} visions={dtsVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.' />
     <SolutionsChapter solutions={dtsSolutions} />
+    <Trust />
+    <Possible />
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <SuccessCase cases={dtsCases} />
     <Questions questions={questionsdts} />

@@ -115,6 +115,7 @@
 
               &:hover {
                 background-color: map-get($color, bg_page);
+                font-weight: bold;
               }
 
               & img {
