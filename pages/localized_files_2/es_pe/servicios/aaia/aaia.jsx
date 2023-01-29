@@ -22,10 +22,10 @@ const aaia = () => {
     <Hero data={dataHeroaaia} />
     <Vision visions={aaiaVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.'/>
     <SolutionsChapter solutions={aaiaSolutions2} filter={true} />
-    <Team team={team} chapter={'en Marketing Automation'} />
+    <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <SuccessCase cases={aaiaCases} />
     <Questions questions={questionsCrm} />
-    <Contact service={'ai-automation'} />
+    <Contact service={'aaia'} />
     <Footer/>
   </>
   )

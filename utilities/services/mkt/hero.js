@@ -7,7 +7,7 @@ import gads from '../../../public/assets/Services/Canales/Certifications/gads.sv
 import gc from '../../../public/assets/Services/Canales/Certifications/gc.svg'
 
 export const dataHeromkt = {
-  title: 'Somos especialistas en',
+  title: 'Somos expertos en',
   subtitle: 'Marketing Automation',
   service: 'mkt-automation',
   solution: 'default',

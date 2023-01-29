@@ -1,7 +1,6 @@
-import visiondefault from '../../../public/assets/Test/vision_default.svg'
-import visiondts1 from '../../../public/assets/services/Dts/Vision/visiondts1.svg'
-import visiondts2 from '../../../public/assets/services/Dts/Vision/visiondts2.svg'
-import visiondts3 from '../../../public/assets/services/Dts/Vision/visiondts3.svg'
+import visiondts1 from '../../../public/assets/Services/Dts/Vision/visiondts1.svg'
+import visiondts2 from '../../../public/assets/Services/Dts/Vision/visiondts2.svg'
+import visiondts3 from '../../../public/assets/Services/Dts/Vision/visiondts3.svg'
 export const dtsVisions = [
   {
     icon: visiondts1.src,

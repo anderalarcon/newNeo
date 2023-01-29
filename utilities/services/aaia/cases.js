@@ -5,12 +5,12 @@ import ferreycorpDesktop from '../../../public/assets/Services/Cases/ferreycorp-
 export const aaiaCases = [
   {
     type: 'Caso de éxito',
-    title: 'BCP aumenta 15 veces las ventas digitales con One-click cross-sell',
+    title: 'BCP User Feedback Analysis Automatizado',
     description:
-      'Con la ayuda de Google Cloud y Neo Consulting, la entidad bancaria encontró nuevos entry points para oportunidades de cross-sell y logró duplicar sus ventas digitales en el primer mes.',
+      'Explora cómo Neo Consulting creó una solución automatizada para que la entidad bancaria pueda tomar desiciones en base al sentiment analysis del cliente y personalizar sus respuestas en base a la satisfacción.',
     img: bcpDesktop,
     imgMob: bcpDesktop,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/bcp_aumenta_15_veces_ventas_digitales_one_click_cross_sell'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/bcp_user_feedback_analysis'
   },
   {
     type: 'Caso de éxito',

@@ -1,7 +1,6 @@
-import visiondefault from '../../../public/assets/Test/vision_default.svg'
-import visionda1 from '../../../public/assets/services/da/Vision/visionda1.svg'
-import visionda2 from '../../../public/assets/services/da/Vision/visionda2.svg'
-import visionda3 from '../../../public/assets/services/da/Vision/visionda3.svg'
+import visionda1 from '../../../public/assets/Services/Da/Vision/visionda1.svg'
+import visionda2 from '../../../public/assets/Services/Da/Vision/visionda2.svg'
+import visionda3 from '../../../public/assets/Services/Da/Vision/visionda3.svg'
 export const daVisions = [
   {
     icon: visionda1.src,

@@ -1,4 +1,3 @@
-import brian from '../../../public/assets/Services/Mkt/Team/brian.jpg'
 import joao from '../../../public/assets/Services/Aaia/Team/joao.jpg'
 import daniel from '../../../public/assets/Services/Mkt/Team/daniel.jpg'
 import jorge from '../../../public/assets/Services/Aaia/Team/jorge.jpg'
@@ -6,16 +5,9 @@ import jorge from '../../../public/assets/Services/Aaia/Team/jorge.jpg'
 export const team = [
 
   {
-    fullname: 'Brian Clemente',
-    charge: 'Co-Líder Advanced Analytics',
-    bio: 'Ingeniero Estadístico Informático con experiencia en analítica digital, medios y análisis estadístico. Especializado en Business Intelligence y Business Analytics en la Universidad Nacional de Ingeniería (UNI).',
-    linkedin: 'https://www.linkedin.com/in/brianerick/',
-    img: brian.src
-  },
-  {
     fullname: 'Daniel Vicente',
-    charge: 'Analista de Advanced Analytics & AI',
-    bio: 'Manejo de herramientas de Analitica digital como Google y Adobe Analyics, investigación de mercados, Optimización de motores de búsqueda (SEO) y limpieza, procesamiento y visualización de datos.',
+    charge: 'Consultor Sr. Advanced Analytics & AI',
+    bio: 'Ingeniero estadístico e informático, experiencia en la ciencia de datos, la inteligencia artificial y la creación de soluciones tecnológicas a problemas de alta complejidad para las personas.',
     linkedin: 'https://www.linkedin.com/in/daniel-vicente-romero/',
     img: daniel.src
   },

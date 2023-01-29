@@ -13,7 +13,7 @@ import gads from '../../../public/assets/Crm/Hero/FullService/gads.svg'
 import gc from '../../../public/assets/Crm/Hero/FullService/gc.svg'
 
 export const dataHero = {
-  title: 'Somos especialistas en',
+  title: 'Somos expertos en',
   subtitle: 'CRM',
   service: 'crm',
   solution: 'default',

@@ -8,7 +8,7 @@ import cm from '../../../public/assets/Services/Da/Hero/cm.svg'
 export const dataHeroda = {
   title: 'Somos expertos en',
   subtitle: 'Publicidad Digital',
-  service: 'digital_Ads',
+  service: 'digital-ads',
   solution: 'default',
   desc: 'Logra tus objetivos de negocio desde una estrategia rentable en medios digitales pagados.',
   descCert: 'Nuestros analistas están certificados en:',

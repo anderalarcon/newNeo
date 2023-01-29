@@ -2,7 +2,7 @@ import PropTypes from 'prop-types'
 import style from './Card.module.scss'
 const Card = ({ icon, title, desc }) => {
   return (
-    <div className={style.card} id='qew'>
+    <div className={style.card}>
       <div className={style.card_container}>
         <div className={style.card_container_card}>
             <div className={style.card_container_card_image}>

@@ -1,7 +1,6 @@
-import visiondefault from '../../../public/assets/Test/vision_default.svg'
-import visionxd1 from '../../../public/assets/services/xd/Vision/visionxd1.svg'
-import visionxd2 from '../../../public/assets/services/xd/Vision/visionxd2.svg'
-import visionxd3 from '../../../public/assets/services/xd/Vision/visionxd3.svg'
+import visionxd1 from '../../../public/assets/Services/Xd/Vision/visionxd1.svg'
+import visionxd2 from '../../../public/assets/Services/Xd/Vision/visionxd2.svg'
+import visionxd3 from '../../../public/assets/Services/Xd/Vision/visionxd3.svg'
 export const xdVisions = [
   {
     icon: visionxd1.src,

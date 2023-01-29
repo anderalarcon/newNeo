@@ -1,5 +1,5 @@
-import teresa from '../../../public/assets/Services/da/Team/teresa.jpg'
-import rodrigo from '../../../public/assets/Services/da/Team/rodrigo.jpg'
+import teresa from '../../../public/assets/Services/Da/Team/teresa.jpg'
+import rodrigo from '../../../public/assets/Services/Da/Team/rodrigo.jpg'
 
 export const team = [
   {

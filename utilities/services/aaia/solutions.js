@@ -1,90 +1,3 @@
-export const aaiaSolutions = [
-  {
-    solution: 'Estrategia de Data',
-    description:
-      'Un workshop estratégico que busca identificar la madurez y encontrar oportunidades para hacer el uso óptimo de la data para el cumplimiento de objetivos de negocio.',
-    urlcontact: '/contact/?service=crm&solution=full-service-crm',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/full_service/'
-  },
-  {
-    solution: 'Casos de Uso para Machine Learning',
-    description:
-      'Identificamos oportunidades de uso de analítica avanzada junto a los líderes de la organización mediante la preparación y ejecución de un Workshop virtual o presencial.',
-    urlcontact: '/contact/?service=crm&solution=accelerator',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/accelerator/'
-  },
-  {
-    solution: 'Implementación y/o migración a GA4',
-    description:
-      'Implementación y configuración de medición mejorada con GA4. Creación de manual de marcaciones, configuraciones en GA4, integraciones con otras herramientas del GMP, y dashboard para la visibilización de datos para toma de decisiones.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Digital Advance Analytics',
-    description:
-      'Permite explotar las capacidades de las herramientas de analítica digital nutriendo, transformando e integrando la data de todo el ecosistema digital para tener la visibilidad del journey 360.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Consultoría en Analítica Digital',
-    description:
-      'Proceso de soporte recurrente a las áreas usuarias y con objetivos de negocio planteadas sobre activos digitales. Ayudamos a los equipos según las necesidades que se tengan para complementar sus recursos internos.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Crashlytics',
-    description:
-      'Servicio 360° donde partimos de la estrategia de CRM y posterior operación del CRM, con gestión de campañas y comunicación cross-channel, basado en optimizaciones data-driven.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Predictive Customer Analytics',
-    description:
-      'Análisis del comportamiento de los clientes para la toma de decisiones comerciales mediante técnicas predictivas y de segmentación de mercado.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Predictive Sales & Product Analytics',
-    description:
-      'Análisis del desempeño de productos o servicios con relación a su venta en mercados objetivos.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Chatbots AI',
-    description:
-      'Desarrollo e implementación de un chatbot en el activo digital del cliente que atienda de manera automática y con reducida o nula intervención humana las consultas de los usuarios.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Sentiment Analysis & Social Listening',
-    description:
-      'Desarrollo e implementación de modelo de machine learning para clasificar comentarios de usuarios por sentimiento. Dashboard para visualizar resultados del modelo en tiempo real.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Integración de Fuentes de Datos',
-    description:
-      'Desarrollo mediante el cual se unifican los datos, de diferentes fuentes, en un solo repositorio. El cual posteriormente agilizará y facilitará el análisis.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Automatización de reportes',
-    description:
-      'Desarrollo de un dashboard totalmente automatizado, en el cual se muestran los principales KPIs e indicadores de negocio.',
-    urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  }
-]
-
 export const aaiaSolutions2 = [
   {
     category: 'Estrategia',
@@ -93,14 +6,14 @@ export const aaiaSolutions2 = [
         solution: 'Estrategia de Data',
         description:
           'Un workshop estratégico que busca identificar la madurez y encontrar oportunidades para hacer el uso óptimo de la data para el cumplimiento de objetivos de negocio.',
-        urlcontact: '/contact/?service=crm&solution=full-service-crm',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/full_service/'
       },
       {
         solution: 'Casos de Uso para Machine Learning',
         description:
           'Identificamos oportunidades de uso de analítica avanzada junto a los líderes de la organización mediante la preparación y ejecución de un Workshop virtual o presencial.',
-        urlcontact: '/contact/?service=crm&solution=accelerator',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/accelerator/'
       }
     ]
@@ -109,31 +22,24 @@ export const aaiaSolutions2 = [
     category: 'Medición',
     solutions: [
       {
-        solution: 'Implementación y/o migración a GA4',
+        solution: 'Implementación o migración a GA4',
         description:
-          'Implementación y configuración de medición mejorada con GA4. Creación de manual de marcaciones, configuraciones en GA4, integraciones con otras herramientas del GMP, y dashboard para la visibilización de datos para toma de decisiones.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+          'Implementación y configuración de medición mejorada con Google Analytics 4. Creación de manual de marcaciones, configuraciones, integraciones con otras herramientas del GMP, y dashboard para la visibilización de datos para toma de decisiones.',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       },
       {
-        solution: 'Digital Advance Analytics',
+        solution: 'Digital Advanced Analytics',
         description:
           'Permite explotar las capacidades de las herramientas de analítica digital nutriendo, transformando e integrando la data de todo el ecosistema digital para tener la visibilidad del journey 360.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       },
       {
         solution: 'Consultoría en Analítica Digital',
         description:
           'Proceso de soporte recurrente a las áreas usuarias y con objetivos de negocio planteadas sobre activos digitales. Ayudamos a los equipos según las necesidades que se tengan para complementar sus recursos internos.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
-        urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-      },
-      {
-        solution: 'Crashlytics',
-        description:
-          'Servicio 360° donde partimos de la estrategia de CRM y posterior operación del CRM, con gestión de campañas y comunicación cross-channel, basado en optimizaciones data-driven.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       }
     ]
@@ -145,47 +51,47 @@ export const aaiaSolutions2 = [
         solution: 'Predictive Customer Analytics',
         description:
           'Análisis del comportamiento de los clientes para la toma de decisiones comerciales mediante técnicas predictivas y de segmentación de mercado.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       },
       {
         solution: 'Predictive Sales & Product Analytics',
         description:
           'Análisis del desempeño de productos o servicios con relación a su venta en mercados objetivos.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       },
       {
         solution: 'Chatbots AI',
         description:
           'Desarrollo e implementación de un chatbot en el activo digital del cliente que atienda de manera automática y con reducida o nula intervención humana las consultas de los usuarios.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       },
       {
         solution: 'Sentiment Analysis & Social Listening',
         description:
           'Desarrollo e implementación de modelo de machine learning para clasificar comentarios de usuarios por sentimiento. Dashboard para visualizar resultados del modelo en tiempo real.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       }
     ]
   },
   {
-    category: 'Gestión',
+    category: 'Disponibilización',
     solutions: [
       {
         solution: 'Integración de Fuentes de Datos',
         description:
           'Desarrollo mediante el cual se unifican los datos, de diferentes fuentes, en un solo repositorio. El cual posteriormente agilizará y facilitará el análisis.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       },
       {
         solution: 'Automatización de reportes',
         description:
           'Desarrollo de un dashboard totalmente automatizado, en el cual se muestran los principales KPIs e indicadores de negocio.',
-        urlcontact: '/contact/?service=crm&solution=quick-start',
+        urlcontact: '/contact/?service=aaia&solution=default',
         urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
       }
     ]
