@@ -31,7 +31,7 @@ const dts = () => {
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <SuccessCase cases={dtsCases} />
     <Questions questions={questionsdts} />
-    <Contact service={'dts'} />
+    <Contact service={'digital-talent-solution'} />
     <Content contents={contentdts} />
     <Footer/>
   </>
