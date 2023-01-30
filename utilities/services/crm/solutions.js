@@ -2,7 +2,7 @@ export const crmSolutions = [
   {
     solution: 'Full Service CRM',
     description:
-      'Servicio 360° donde partimos de la estrategia de CRM y posterior operación del CRM, con gestión de campañas y comunicación cross-channel, basado en optimizaciones data-driven.',
+      'Definimos toda la estrategia y el funcionamiento de su plataforma CRM con un enfoque multicanal basado en datos para la gestión y el análisis de campañas.',
     // urlcontact: '/contact/?service=crm&solution=full-service-crm',
     urlcontact: '/contact/?service=crm&solution=default',
 
@@ -19,7 +19,7 @@ export const crmSolutions = [
   {
     solution: 'Quick Start',
     description:
-      'Orientado a empresas que quieren implementar soluciones CRM de forma rápida y efectiva. Configuramos procesos de negocio, informes y cargar datos en un software CRM.También capacitamos al equipo para asegurar la adopción de la herramienta.',
+      'Implementación rápida y efectiva de soluciones CRM, que incluye la configuración de procesos, informes y carga de datos en el software, además de capacitación al equipo para garantizar adopción de la herramienta.',
     // urlcontact: '/contact/?service=crm&solution=quick-start',
     urlcontact: '/contact/?service=crm&solution=default',
     urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'

@@ -1,4 +1,4 @@
-export const questionsCanales = [
+export const questionsaaia = [
   {
     question:
       '¿Por qué es importante incluir soluciones de machine learning a mi toma de decisiones?',
