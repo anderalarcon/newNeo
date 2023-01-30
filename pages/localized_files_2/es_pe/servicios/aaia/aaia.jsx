@@ -7,13 +7,15 @@ import SolutionsChapter from '../../../../../components/SolutionsChapter/Solutio
 import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
+import Content from '../../../../../components/ContentServices/Content'
 
 import { dataHeroaaia } from '../../../../../utilities/services/aaia/hero'
 import { aaiaSolutions2 } from '../../../../../utilities/services/aaia/solutions'
 import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
-import { questionsCrm } from '../../../../../utilities/services/crm/questions'
+import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { aaiaVisions } from '../../../../../utilities/services/aaia/visions'
+import { contentaaia } from '../../../../../utilities/services/aaia/content'
 
 const aaia = () => {
   return (
@@ -24,8 +26,9 @@ const aaia = () => {
     <SolutionsChapter solutions={aaiaSolutions2} filter={true} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <SuccessCase cases={aaiaCases} />
-    <Questions questions={questionsCrm} />
+    <Questions questions={questionsaaia} />
     <Contact service={'aaia'} />
+    <Content contents={contentaaia} />
     <Footer/>
   </>
   )

@@ -1,0 +1,106 @@
+
+@import "../../styles/variables.module.scss";
+
+.benefits {
+    background-color: map-get($color , accent);
+    color: white;
+    margin-top: 51px;
+    padding-top: 64px;
+    padding-bottom: 64px;
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
+    &_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      padding-left: map-get($padding, mobile);
+      padding-right: map-get($padding, mobile);
+      
+      @include breakpoint(widescreen) {
+        padding-left: map-get($padding, widescreen);
+        padding-right: map-get($padding, widescreen);
+        max-width: map-get($breakpoint, max);
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+      &_left {
+        @media screen and (min-width: 1024px) {
+          width: 50%;
+        }
+        @media screen and (min-width: 1538px) {
+          width: 614px;
+        }
+        &_title {
+          font-family: "Montserrat Bold";
+          text-align: center;
+          font-size: 25px;
+          margin-bottom: 30px;
+          @include breakpoint(widescreen) {
+            font-size: 40px;
+            text-align: start;
+            margin-bottom: 4rem;
+          }
+        }
+        &_container {
+          display: flex;
+          margin-bottom: 48px;
+          gap: 8px;
+          @include breakpoint(widescreen) {
+            gap: 15px;
+          }
+          &_left {
+            position: relative;
+            &_icon {
+              @media screen and (min-width: 1538px) {
+                &_line_2::before {
+                  height: 120px;
+                }
+              }
+            }
+          }
+  
+          &_right {
+            &_title {
+              font-family: "Montserrat Bold";
+              margin-bottom: 16px;
+              font-size: 18px;
+              @include breakpoint(widescreen) {
+                font-size: 20px;
+              }
+            }
+            &_description {
+              @include breakpoint(widescreen) {
+                font-size: 16px;
+              }
+            }
+          }
+        }
+      }
+      &_right {
+        @media screen and (min-width: 1024px) {
+          width: 50%;
+        }
+  
+        &_img {
+          width: 100%;
+          display: none;
+          margin-left: auto;
+          @media screen and (min-width: 1024px) {
+            width: 80%;
+  
+            display: block;
+          }
+          @media screen and (min-width: 1538px) {
+            // width: 613.24px;
+            // height: 603px;
+          }
+        }
+      }
+    }
+  }

@@ -7,6 +7,7 @@ import SolutionsChapter from '../../../../../components/SolutionsChapter/Solutio
 import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
+import Content from '../../../../../components/ContentServices/Content'
 
 import { dataHeromkt } from '../../../../../utilities/services/mkt/hero'
 import { mktSolutions } from '../../../../../utilities/services/mkt/solutions'
@@ -14,6 +15,7 @@ import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { mktVisions } from '../../../../../utilities/services/mkt/visions'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
+import { contentmkt } from '../../../../../utilities/services/mkt/content'
 const mkt = () => {
   return (
     <>
@@ -25,6 +27,7 @@ const mkt = () => {
     <SuccessCase cases={mktCases} />
     <Questions questions={questionsMkt} />
     <Contact service={'mkt-automation'} />
+    <Content contents={contentmkt} />
     <Footer/>
   </>
   )

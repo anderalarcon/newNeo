@@ -7,7 +7,7 @@ export const aaiaSolutions2 = [
         description:
           'Un workshop estratégico que busca identificar la madurez y encontrar oportunidades para hacer el uso óptimo de la data para el cumplimiento de objetivos de negocio.',
         urlcontact: '/contact/?service=aaia&solution=default',
-        urlpage: '/localized_files_2/es_pe/servicios/crm/full_service/'
+        urlpage: '/localized_files_2/es_pe/servicios/aaia/full_service/'
       },
       {
         solution: 'Casos de Uso para Machine Learning',
