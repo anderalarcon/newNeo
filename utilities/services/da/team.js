@@ -1,7 +1,7 @@
-import teresa from '../../../public/assets/Services/da/Team/teresa.jpg'
-import rodrigo from '../../../public/assets/Services/da/Team/rodrigo.jpg'
-import renzoR from '../../../public/assets/Services/da/Team/renzoR.jpg'
-import nicole from '../../../public/assets/Services/da/Team/nicole.jpg'
+import teresa from '../../../public/assets/Services/Da/Team/teresa.jpg'
+import rodrigo from '../../../public/assets/Services/Da/Team/rodrigo.jpg'
+import renzoR from '../../../public/assets/Services/Da/Team/renzoR.jpg'
+import nicole from '../../../public/assets/Services/Da/Team/nicole.jpg'
 
 export const team = [
   {

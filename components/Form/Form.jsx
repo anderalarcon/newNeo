@@ -727,8 +727,7 @@ const Form = () => {
     }
     return null
   }
-  console.log(step)
-  console.log(direct)
+
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
