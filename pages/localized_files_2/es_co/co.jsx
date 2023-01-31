@@ -13,15 +13,15 @@ import { questionsHome } from '../../../utilities/home/questions'
 import { recommendations } from '../../../utilities/global/recommendations'
 import Content from '../../../components/Content/Content'
 import Footer from '../../../components/Footer/Footer'
-import { solutionsPeru } from '../../../utilities/home/solutions'
 import { peruCases } from '../../../utilities/home/cases'
+import { solutionsColombia } from '../../../utilities/home/solutionsCl'
 
 const co = () => {
   return (
     <>
       <Header />
       <Hero />
-      <Solutions solutions={solutionsPeru} />
+      <Solutions solutions={solutionsColombia} />
       <Partners />
       <SuccessCase cases={peruCases} />
       <Clients recommendations={recommendations} />

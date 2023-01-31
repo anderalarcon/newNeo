@@ -13,9 +13,9 @@ import { questionsHome } from '../../../utilities/home/questions'
 import { recommendations } from '../../../utilities/global/recommendations'
 import Content from '../../../components/Content/Content'
 import Footer from '../../../components/Footer/Footer'
-import { solutionsPeru } from '../../../utilities/home/solutions'
 import { peruCases } from '../../../utilities/home/cases'
 import { useEffect } from 'react'
+import { solutionsMexico } from '../../../utilities/home/solutionsMx'
 
 export default function Home () {
   useEffect(() => {
@@ -27,7 +27,7 @@ export default function Home () {
       <>
       <Header />
       <Hero />
-      <Solutions solutions={solutionsPeru} />
+      <Solutions solutions={solutionsMexico} />
       <Partners />
       <SuccessCase cases={peruCases} />
       <Clients recommendations={recommendations} />
