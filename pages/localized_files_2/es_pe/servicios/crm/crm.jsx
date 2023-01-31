@@ -8,6 +8,7 @@ import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
 import Content from '../../../../../components/ContentServices/Content'
+import Head from 'next/head'
 
 import { crmSolutions } from '../../../../../utilities/services/crm/solutions'
 import { questionsCrm } from '../../../../../utilities/services/crm/questions'
@@ -19,6 +20,27 @@ import { contentcrm } from '../../../../../utilities/services/crm/content'
 const crm = () => {
   return (
     <>
+      <Head>
+      <title>Consultoría CRM & Estrategia | NEO Consulting</title>
+      <meta
+        name="description"
+        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+      />
+      <meta
+        property="og:title"
+        content="Consultoría CRM & Estrategia | NEO Consulting"
+      />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+      />
+      <meta
+        property="og:image"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+      />
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+      </Head>
       <Header/>
       <Hero data={dataHero} />
       <Vision defaultVersion={false}/>

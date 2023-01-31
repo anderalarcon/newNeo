@@ -10,6 +10,7 @@ import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
 import Content from '../../../../../components/ContentServices/Content'
+import Head from 'next/head'
 
 import { dataHerodts } from '../../../../../utilities/services/dts/hero'
 import { dtsVisions } from '../../../../../utilities/services/dts/visions'
@@ -22,6 +23,33 @@ import { contentdts } from '../../../../../utilities/services/dts/content'
 const dts = () => {
   return (
     <>
+    <Head>
+        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <meta
+          name="description"
+          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta
+          property="og:image"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/05/0.png"
+        />
+
+        <meta property="og:url" content="https://neoconsulting.ai/pe" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Consultoria en Marketing Digital | NEO Consulting"
+        />
+        <meta
+          property="og:description"
+          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    </Head>
     <Header/>
     <Hero data={dataHerodts} />
     <Vision defaultVersion={true} visions={dtsVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.' />
