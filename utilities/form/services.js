@@ -14,10 +14,9 @@ export const servicesData = [
     title: 'Consultoría CRM',
     desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
     options: [
-      'Quiero que gestionen mi CRM de manera integral',
-      'Quiero potenciar mi estrategia de CRM en corto plazo',
-      'Quiero que me implementen un servicio de CRM.',
-      'Quiero que diseñar una estrategia de CRM basado en objetivos'
+      'Full Service CRM',
+      'Accelerator',
+      'Quick Start'
     ],
     solutions: [
       {
@@ -43,12 +42,12 @@ export const servicesData = [
   {
     service: 'canales-digitales',
     title: 'Canales Digitales y Growth Hacking',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Atrae más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'Marketing de contenidos',
+      'SEO con Rank Tracker',
+      'Growth Hacking',
+      'Publicidad Digital'
     ],
     solutions: [
       {
@@ -74,12 +73,18 @@ export const servicesData = [
   {
     service: 'mkt-automation',
     title: 'Marketing Automation',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Automatiza acciones, entrega contenido personalizado y fideliza a los clientes con nuestras soluciones.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!a',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!b',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!c',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!d'
+      'Reporting ROI Automatizado',
+      'Automatización de leads para Remarketing',
+      'Personalización para E-Commerce',
+      'Automatización de Contenido',
+      'Dashboard SEO',
+      'Chatbot para Ecommerce',
+      'Planning de Contenido ágil',
+      'Lead Nurturing Automatizado',
+      'Centralización de insights'
+
     ],
     solutions: [
       {
@@ -105,12 +110,12 @@ export const servicesData = [
   {
     service: 'aaia',
     title: 'Analítica Digital e Inteligencia Artificial',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Mide, visualiza y capitaliza la data de tu empresa.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'Estrategia de Data',
+      'Medición de Data',
+      'Activación de Data',
+      'Disponibilización de Data'
     ],
     solutions: [
       {
@@ -136,12 +141,10 @@ export const servicesData = [
   {
     service: 'digital-ads',
     title: 'Publicidad Digital',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Logra tus objetivos de negocio usando medios digitales pagados y SEM.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'In Housing de Publicidad Digital',
+      'Auditoría de campañas de performance'
     ],
     solutions: [
       {
@@ -167,12 +170,13 @@ export const servicesData = [
   {
     service: 'experience-design',
     title: 'Diseño de Experiencia y Transformación Digital',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Conoce y mejora la experiencia UX/UI de los usuarios en mis activos digitales.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'Conocimiento del consumidor',
+      'Mapeo de experiencias',
+      'Diseño de experiencias',
+      'Medición de la experiencia',
+      'Transformación Digital'
     ],
     solutions: [
       {
@@ -198,12 +202,11 @@ export const servicesData = [
   {
     service: 'digital-talent-solution',
     title: 'Digital Talent Solutions',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Recluta, selecciona personal y forma talento digital de alto performance.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'Headhunting',
+      'Outsourcing',
+      'Outsourcing + Mentoring'
     ],
     solutions: [
       {
@@ -229,12 +232,11 @@ export const servicesData = [
   {
     service: 'ecommerce',
     title: 'E-commerce',
-    desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
+    desc: 'Desarrolla estrategias que impulsen tu e-commerce.',
     options: [
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!',
-      'Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, hic!'
+      'Desarrollo de modelo de negocio E-commerce',
+      'Acompañamiento E-commerce',
+      'Growth y Analytics para Ecommerce'
     ],
     solutions: [
       {
