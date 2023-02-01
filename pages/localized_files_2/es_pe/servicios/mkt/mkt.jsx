@@ -8,6 +8,7 @@ import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
 import Content from '../../../../../components/ContentServices/Content'
+import Head from 'next/head'
 
 import { dataHeromkt } from '../../../../../utilities/services/mkt/hero'
 import { mktSolutions } from '../../../../../utilities/services/mkt/solutions'
@@ -19,6 +20,33 @@ import { contentmkt } from '../../../../../utilities/services/mkt/content'
 const mkt = () => {
   return (
     <>
+    <Head>
+      <title>
+        Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting
+      </title>
+      <meta
+        name="keywords"
+        content="Servicio de publicidad digital, Auditoría de publicidad, Pauta publicitaria, Servicio de campañas digitales, Optimización de publicidad digital, Campañas de publicidad digital, Servicio Data Driven"
+      />
+      <meta
+        name="description"
+        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+      />
+      <meta
+      property="og:title"
+      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
+      />
+      <meta property="og:type" content="website" />
+      <meta
+        property="og:description"
+        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+      />
+      <meta
+        property="og:image"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/08/image-56.png"
+      />
+      <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    </Head>
     <Header/>
     <Hero data={dataHeromkt} />
     <Vision visions={mktVisions} desc={'Nuestro diferencial viene de entender los objetivos de negocio capitalizando la Data'}/>

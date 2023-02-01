@@ -23,16 +23,16 @@ const Footer = () => {
       title: 'Servicios',
       ul: [
         {
-          link: 'https://neoconsulting.ai/pe/servicios/analitica-digital-inteligencia-artificial',
+          link: '/pe/servicios/analitica-digital-inteligencia-artificial',
           text: 'Analítica Digital e Inteligencia Artificial'
         },
-        { link: 'https://neoconsulting.ai/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales digitales y Growth Haking' },
-        { link: 'https://neoconsulting.ai/pe/servicios/consultoria-customer-relationship-management', text: 'Consultoría CRM' },
-        { link: 'https://neoconsulting.ai/pe/servicios/experience-design', text: 'Diseño de experiencia' },
-        { link: 'https://neoconsulting.ai/pe/servicios/consultoria-ecommerce', text: 'E-commerce' },
-        { link: 'https://neoconsulting.ai/pe/servicios/headhunting-y-mentoring', text: 'Headhunting y Mentoring' },
-        { link: 'https://neoconsulting.ai/pe/servicios/marketing-automation', text: 'Marketing Automation' },
-        { link: 'https://neoconsulting.ai/pe/servicios/digital-advertising', text: 'Publicidad Digital' }
+        { link: '/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales digitales y Growth Haking' },
+        { link: '/pe/servicios/consultoria-customer-relationship-management', text: 'Consultoría CRM' },
+        { link: '/pe/servicios/experience-design', text: 'Diseño de experiencia' },
+        { link: '/pe/servicios/consultoria-ecommerce', text: 'E-commerce' },
+        { link: '/pe/servicios/headhunting-y-mentoring', text: 'Headhunting y Mentoring' },
+        { link: '/pe/servicios/marketing-automation', text: 'Marketing Automation' },
+        { link: '/pe/servicios/digital-advertising', text: 'Publicidad Digital' }
       ]
     },
     {

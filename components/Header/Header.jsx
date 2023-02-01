@@ -31,42 +31,42 @@ const Header = () => {
       title: 'Servicios',
       ul: [
         {
-          link: 'https://neoconsulting.ai/pe/servicios/canales-digitales-y-growth-hacking',
+          link: '/pe/servicios/canales-digitales-y-growth-hacking',
           text: 'Canales digitales y Growth Haking',
           icon: laptop.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/consultoria-ecommerce',
+          link: '/pe/servicios/consultoria-ecommerce',
           text: 'E-commerce',
           icon: basket.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/headhunting-y-mentoring',
+          link: '/pe/servicios/headhunting-y-mentoring',
           text: 'Headhunting y Mentoring',
           icon: nodeUser.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/consultoria-customer-relationship-management',
+          link: '/pe/servicios/consultoria-customer-relationship-management',
           text: 'Consultoría CRM',
           icon: consult.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/analitica-digital-inteligencia-artificial',
+          link: '/pe/servicios/analitica-digital-inteligencia-artificial',
           text: 'Analítica Digital e Inteligencia Artificial',
           icon: rise.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/experience-design',
+          link: '/pe/servicios/experience-design',
           text: 'Diseño de experiencia',
           icon: sync.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/digital-advertising',
+          link: '/pe/servicios/digital-advertising',
           text: 'Publicidad Digital',
           icon: stats.src
         },
         {
-          link: 'https://neoconsulting.ai/pe/servicios/marketing-automation',
+          link: '/pe/servicios/marketing-automation',
           text: 'Marketing Automation',
           icon: techInfo.src
         }
