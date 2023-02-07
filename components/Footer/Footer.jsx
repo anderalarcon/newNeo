@@ -44,7 +44,7 @@ const Footer = () => {
       ]
     },
     {
-      title: 'Paises',
+      title: 'Países',
       ul: [
         {
           link: 'https://neoconsulting.ai/pe',
