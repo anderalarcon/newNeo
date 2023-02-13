@@ -8,7 +8,7 @@
   padding-left: map-get($padding, mobile);
   padding-right: map-get($padding, mobile);
   @include breakpoint(widescreen) {
-
+    
     margin-bottom: map-get($margin , widescreen);
   }
   &_title {
@@ -50,5 +50,57 @@
         height: max-content;
       }
     }
+  }
+}
+
+// Nueva Seccion de prueba
+
+.sliderrr{
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  &_track{
+    display: flex;
+    animation: corre 60s linear infinite;
+    width: calc(200 * 16);
+    gap: 5rem;
+    margin: 1rem;
+  }
+    &_imagen {
+      width: 200px;
+    }
+    &_imagen img{
+      width: 100%;
+    }
+}
+
+.sliderrr2{
+  width: 85vw;
+  height: auto;
+  margin: auto;
+  overflow: hidden;
+  &_track{
+    display: flex;
+    animation: corre 60s linear infinite;
+    width: calc(200 * 16);
+    gap: 5rem;
+    margin: 1rem;
+    margin-left: 10rem;
+  }
+    &_imagen {
+      width: 200px;
+    }
+    &_imagen img{
+      width: 100%;
+    }
+}
+
+@keyframes corre {
+  0%{
+    transform: translateX(calc(-200px * 16));
+  }
+  100%{
+    transform: translateX(0px);
   }
 }

@@ -93,7 +93,7 @@ const Header = () => {
         },
         {
           link: 'https://neoconsulting.ai/recursos-digitales/#webinars',
-          text: 'Webinnars',
+          text: 'webinars',
           icon: videoChat.src
         }
       ]

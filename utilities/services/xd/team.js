@@ -21,7 +21,7 @@ export const team = [
   },
   {
     fullname: 'Jurgita Šarkovaitė',
-    charge: 'Gerente de Innovación y estratégia',
+    charge: 'Gerente de Experience Design',
     bio: 'Consultor de estrategia e innovación digital con más de 9 años de experiencia internacional en gestión de proyectos (ágiles) en los campos de marketing digital, tecnologías personalizadas y emergentes, innovación y desarrollo de nuevos productos.',
     linkedin: 'https://www.linkedin.com/in/jurgitasarkovaite/',
     img: jurgita.src

@@ -98,7 +98,7 @@ const Hero = () => {
                         style.hero_container_view_details_subcontainer_title_ttl
                       }
                     >
-                      21
+                      22
                     </p>
                   </div>
                   <div
@@ -171,7 +171,7 @@ const Hero = () => {
                         style.hero_container_view_details_subcontainer_description_dsc
                       }
                     >
-                      proyectos ejecutados en los últimos 5 años
+                      proyectos exitosos en los últimos 5 años
                     </p>
                   </div>
                 </div>

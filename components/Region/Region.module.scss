@@ -46,12 +46,22 @@
 
     &_container {
         text-align: center;
+        
 
         &_mobile {
-
             @include breakpoint(widescreen) {
                 display: none;
             }
+            @media screen and (min-width: 350px) {
+                width: 380px;
+                height: 500px;
+            }
+            @media screen and (min-width: 400px) {
+                width: 380px;
+                height: 550px;
+            }
+            
+            
         }
 
         &_desktop {
