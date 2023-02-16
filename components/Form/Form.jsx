@@ -28,7 +28,8 @@ const Form = () => {
     charge: '',
     employees: '',
     area: '',
-    details: ''
+    details: '',
+    knowing: ''
   }
   const [formValues, setFormValues] = useState(initialValues)
   const [formErrors, setFormErrors] = useState({})
@@ -94,6 +95,7 @@ const Form = () => {
   }
 
   const validateInputs = (values) => {
+    console.log(values)
     const errors = {}
     if (!values.name) {
       errors.name = 'Nombre es requerido'
@@ -112,6 +114,9 @@ const Form = () => {
         errors.email = 'Ingrese un email valido'
       }
     }
+    if (!values.knowing) {
+      errors.knowing = 'Campo requerido'
+    }
     if (!values.company && step === 3) {
       errors.company = 'Compañia es requerido'
     }
@@ -124,6 +129,7 @@ const Form = () => {
     if (!values.area && step === 3) {
       errors.area = 'Area es requerida'
     }
+
     if (!values.details && step === 4) {
       errors.details = 'Detalle es requerido'
     }
@@ -249,6 +255,7 @@ const Form = () => {
           phone: formValues.phone,
           pais: formValues.country,
           email: formValues.email,
+          como_supiste_de_neo_consulting_: formValues.knowing,
           company: formValues.company,
           cargo: formValues.charge,
           cantidad_de_empleados: formValues.employees,
@@ -428,6 +435,50 @@ const Form = () => {
               onChange={handleChange}
             />
             <p>{formErrors.email}</p>
+          </div>
+
+          <div className={style.form_container_form_second_inputs_input}>
+            <label
+              className={style.form_container_form_second_inputs_input_label}
+              htmlFor=''
+            >
+              ¿Cómo supiste de Neo Consulting?
+            </label>
+            <select
+              className={style.form_container_form_second_inputs_input_text}
+              required
+              name='knowing'
+              value={formValues.knowing}
+              onChange={handleChange}
+            >
+              <option value=''>Seleccione</option>
+              <option value='Artículos y columnas en periódicos / revistas'>
+                Artículos y columnas en periódicos / revistas
+              </option>
+              <option value='Conozco a alguien que trabaja en Neo'>
+                Conozco a alguien que trabaja en Neo
+              </option>
+              <option value='Evento'>Evento</option>
+              <option value='Publicidad en Redes Sociales'>
+                Publicidad en Redes Sociales
+              </option>
+              <option value='Publicidad en Buscadores (ejem. Google)'>
+                Publicidad en Buscadores (ejem. Google)
+              </option>
+              <option value='Publicidad en Correo / Otras Webs'>
+                Publicidad en Correo / Otras Webs
+              </option>
+              <option value='Recomendación de un colega de trabajo'>
+                Recomendación de un colega de trabajo
+              </option>
+              <option value='Redes sociales de Neo'>
+                Redes sociales de Neo
+              </option>
+              <option value='Redes sociales de terceros'>
+                Redes sociales de terceros
+              </option>
+            </select>
+            <p>{formErrors.knowing}</p>
           </div>
         </div>
       </div>
