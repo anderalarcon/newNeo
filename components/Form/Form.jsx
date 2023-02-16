@@ -198,6 +198,7 @@ const Form = () => {
       params.source = ''
       params.medium = ''
       params.campaign = ''
+      params.lead_source = 'Directo'
       return params
     }
     if (utm_source && utm_medium && utm_campaign) {
@@ -206,17 +207,21 @@ const Form = () => {
       params.campaign = utm_campaign
       if (utm_medium === 'social') {
         params.chanel = 'social'
+        params.lead_source = 'Social'
         return params
       }
       if (utm_medium === 'organic') {
         params.chanel = 'organic'
+        params.lead_source = 'Orgánico'
         return params
       }
       if (utm_medium === 'paidsocial') {
         params.chanel = 'paidsocial'
+        params.lead_source = 'PaidSocial'
         return params
       }
       if (utm_medium === 'cpc') {
+        params.lead_source = 'Google CPC'
         if (utm_source === 'google') {
           params.chanel = 'search'
           return params
@@ -244,7 +249,7 @@ const Form = () => {
       searchContact({ email: formValues.email })
     }
     if (isHandle) {
-      const { chanel, source, medium, campaign } = handleParams()
+      const { chanel, source, medium, campaign, lead_source } = handleParams()
 
       const contactObj = {
         properties: {
@@ -264,7 +269,12 @@ const Form = () => {
           p_gina_de_origen__c: data?.title,
           fuente_medio__c: source && medium ? source + '/' + medium : '',
           canal__c: chanel,
-          campa_a__c: campaign
+          campa_a__c: campaign,
+          lifecyclestage: 'lead',
+          // hs_created_by_user_id: '49155124',
+          chapter: data?.title,
+          leadsource: lead_source,
+          tipo_de_servicio: data?.service_type
         }
       }
       if (isContact) {
