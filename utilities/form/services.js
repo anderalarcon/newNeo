@@ -11,8 +11,9 @@ export const servicesData = [
   },
   {
     service: 'crm',
-    title: 'Consultoría CRM',
+    title: 'CRM',
     desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
+    service_type: 'Estratégico',
     options: [
       'Full Service CRM',
       'Accelerator',
@@ -44,7 +45,8 @@ export const servicesData = [
   },
   {
     service: 'canales-digitales',
-    title: 'Canales Digitales y Growth Hacking',
+    title: 'Canales Digitales',
+    service_type: 'Estratégico',
     desc: 'Atrae más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.',
     options: [
       'Marketing de contenidos',
@@ -76,6 +78,7 @@ export const servicesData = [
   {
     service: 'mkt-automation',
     title: 'Marketing Automation',
+    service_type: 'Evolucionado',
     desc: 'Automatiza acciones, entrega contenido personalizado y fideliza a los clientes con nuestras soluciones.',
     options: [
       'Reporting ROI Automatizado',
@@ -112,7 +115,8 @@ export const servicesData = [
   },
   {
     service: 'aaia',
-    title: 'Analítica Digital e Inteligencia Artificial',
+    title: 'Advanced Analytics',
+    service_type: 'Estratégico',
     desc: 'Mide, visualiza y capitaliza la data de tu empresa.',
     options: [
       'Estrategia de Data',
@@ -143,7 +147,8 @@ export const servicesData = [
   },
   {
     service: 'digital-ads',
-    title: 'Publicidad Digital',
+    title: 'Digital Advertising',
+    service_type: 'Estratégico',
     desc: 'Logra tus objetivos de negocio usando medios digitales pagados y SEM.',
     options: [
       'In Housing de Publicidad Digital',
@@ -172,7 +177,8 @@ export const servicesData = [
   },
   {
     service: 'experience-design',
-    title: 'Diseño de Experiencia y Transformación Digital',
+    title: 'Experience Design',
+    service_type: 'Estratégico',
     desc: 'Conoce y mejora la experiencia UX/UI de los usuarios en mis activos digitales.',
     options: [
       'Conocimiento del consumidor',
@@ -205,6 +211,7 @@ export const servicesData = [
   {
     service: 'digital-talent-solution',
     title: 'Digital Talent Solutions',
+    service_type: 'Evolucionado',
     desc: 'Recluta, selecciona personal y forma talento digital de alto performance.',
     options: [
       'Headhunting',
@@ -234,8 +241,9 @@ export const servicesData = [
   },
   {
     service: 'ecommerce',
-    title: 'E-commerce',
+    title: 'E-Commerce',
     desc: 'Desarrolla estrategias que impulsen tu e-commerce.',
+    service_type: 'Estratégico',
     options: [
       'Desarrollo de modelo de negocio E-commerce',
       'Acompañamiento E-commerce',
@@ -251,6 +259,7 @@ export const servicesData = [
       {
         solution: 'accelerator',
         title: 'Accelerator CRM',
+
         desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
         option: 'Quiero el servicio Accelerator CRM'
       },
