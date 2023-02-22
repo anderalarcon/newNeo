@@ -219,11 +219,11 @@ const Form = () => {
       }
       if (utm_medium === 'paidsocial') {
         params.chanel = 'paidsocial'
-        params.lead_source = 'PaidSocial'
+        params.lead_source = 'Advertisement'
         return params
       }
       if (utm_medium === 'cpc') {
-        params.lead_source = 'Google CPC'
+        params.lead_source = 'Advertisement'
         if (utm_source === 'google') {
           params.chanel = 'search'
           return params
@@ -273,7 +273,6 @@ const Form = () => {
           canal__c: chanel,
           campa_a__c: campaign,
           lifecyclestage: 'lead',
-          // hs_created_by_user_id: '49155124',
           chapter: data?.title,
           leadsource: lead_source,
           tipo_de_servicio: data?.service_type
@@ -287,8 +286,6 @@ const Form = () => {
         createContact(contactObj)
       }
     }
-    // 'https://us-central1-blog-neo.cloudfunctions.net/app/hubspot/create-contact',
-    // http://127.0.0.1:5001/blog-neo/us-central1/app/hubspot/create-contact
   }
 
   const getFirstStep = () => {
