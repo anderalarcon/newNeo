@@ -1,11 +1,13 @@
 /* eslint-disable camelcase */
-import { useEffect, useState } from 'react'
 import style from './Form.module.scss'
-import Breadscrumb from '../Breadscrumb/Breadscrumb'
-import icon from '../../public/assets/Form/icon.svg'
-import axios from 'axios'
+import { useEffect, useState } from 'react'
 import { servicesData } from '../../utilities/form/services'
 import { useRouter } from 'next/router'
+import axios from 'axios'
+
+import Breadscrumb from '../Breadscrumb/Breadscrumb'
+import icon from '../../public/assets/Form/icon.svg'
+
 import firstStepImg from '../../public/assets/Form/step_1.svg'
 import secondStepImg from '../../public/assets/Form/step_2.svg'
 import thirdStepImg from '../../public/assets/Form/step_3.svg'
