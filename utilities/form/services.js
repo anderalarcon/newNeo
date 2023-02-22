@@ -16,7 +16,10 @@ export const servicesData = [
     options: [
       'Full Service CRM',
       'Accelerator',
-      'Quick Start'
+      'Quick Start',
+      'Consultoría estratégica (Salesforce)',
+      'Conexión entre nubes y Apps (Salesforce)',
+      'Gestión de campañas de ventas y marketing (Salesforce)'
     ],
     solutions: [
       {
