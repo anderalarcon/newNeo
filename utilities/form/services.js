@@ -20,7 +20,9 @@ export const servicesData = [
       'Quick Start',
       'Consultoría estratégica (Salesforce)',
       'Conexión entre nubes y Apps (Salesforce)',
-      'Gestión de campañas de ventas y marketing (Salesforce)'
+      'Gestión de campañas de ventas y marketing (Salesforce)',
+      'Lead Scoring Bot',
+      'Lead Scoring Predictivo'
     ],
     solutions: [
       {
