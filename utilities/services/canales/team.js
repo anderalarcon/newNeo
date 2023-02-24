@@ -16,7 +16,7 @@ export const team = [
   {
     fullname: 'Oscar Días',
     charge: 'Consultor de canales digitales',
-    bio: 'Pequeña bio | Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit id lacus proin commodo tortor.',
+    bio: 'Apasionado en el mundo del marketing digital, buscando optimizar y automatizar procesos de estrategias SEO con el uso de herramientas de Google Cloud Platform aplicando soluciones basadas en machine learning.',
     linkedin: 'https://www.linkedin.com/in/oscar-diaz-cava-seo/',
     img: oscar.src
   },
