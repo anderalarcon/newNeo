@@ -2,15 +2,15 @@
 
 .companies {
   margin-bottom: map-get($margin , mobile);
-  background-color: map-get($color, white);
-  color: map-get($color, primary);
+  background-color: map-get($color, accent);
+  color: map-get($color, white);
   width: 100%;
-  padding-left: map-get($padding, mobile);
-  padding-right: map-get($padding, mobile);
+  padding: 80px map-get($padding, mobile);
   @include breakpoint(widescreen) {
     
     margin-bottom: map-get($margin , widescreen);
   }
+
   &_title {
     text-align: center;
     font-family: "Tiempos Headline bold";
@@ -22,6 +22,23 @@
     @include breakpoint(tablet) {
       line-height: 48px;
       font-size: 40px;
+    }
+  }
+  
+  &_subtitle {
+    max-width: 800px;
+    margin: 0 auto;
+    align-items: center;
+    text-align: center;
+    font-family: "Tiempos Headline";
+    font-style: normal;
+    font-size: 16px;
+    line-height: 28px;
+    margin-bottom: 40px;
+
+    @include breakpoint(tablet) {
+      line-height: 48px;
+      font-size: 25px;
     }
   }
 
@@ -104,3 +121,4 @@
     transform: translateX(0px);
   }
 }
+

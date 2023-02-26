@@ -55,6 +55,9 @@ const Partners = () => {
   return (
     // Seccion de prueba
     <div className={style.companies}>
+      <h2 className={style.companies_title}>
+        Más de 100 empresas que ya confían en nosotros
+     </h2>
       <div className={style.sliderrr}>
         <div className={style.sliderrr_track}>
           <div className={style.sliderrr_track_imagen}>
@@ -108,6 +111,7 @@ const Partners = () => {
 
         </div>
       </div>
+
       <div className={style.sliderrr2}>
         <div className={style.sliderrr2_track}>
           <div className={style.sliderrr_track_imagen}>
@@ -161,6 +165,7 @@ const Partners = () => {
 
         </div>
       </div>
+
       <div className={style.sliderrr}>
         <div className={style.sliderrr_track}>
           <div className={style.sliderrr_track_imagen}>
@@ -215,7 +220,8 @@ const Partners = () => {
         </div>
       </div>
     </div>
-    // Fin de la seccion de prueba
+
+  // Fin de la seccion de prueba
 
   // Inicio del original
   // <div className={style.companies}>
