@@ -12,7 +12,7 @@ import style from '../Companies.module.scss'
 const Partners = () => {
   return (
     // Seccion de prueba
-    <div className={style.companies}>
+    <div className={style.companies2}>
         <h2 className={style.companies_title}>
           Neos en el mundo
         </h2>

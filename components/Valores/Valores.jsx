@@ -93,9 +93,6 @@ const Valores = ({ solutions, filter = false }) => {
 
 export default Valores
 Valores.propTypes = {
-  //   solution: PropTypes.string,
-  //   description: PropTypes.string,
-  //   url: PropTypes.string
   solutions: PropTypes.array,
   filter: PropTypes.bool
 }
