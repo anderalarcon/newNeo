@@ -2,6 +2,7 @@
 
 .meet {
   padding: map-get($padding, mobile);
+  margin-bottom: map-get($margin, mobile);
 
   @include breakpoint(widescreen) {
     padding: 20px map-get($padding, widescreen);

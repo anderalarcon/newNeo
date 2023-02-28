@@ -6,6 +6,7 @@ import MeetOurTeam from '../../components/MeetOurTeam/MeetOurTeam'
 import Valores from '../../components/Valores/Valores'
 import Trust from '../../components/Companies/Trust/TrustQuienesSomos'
 import Bcorp from '../../components/Bcorp/Bcorp'
+import Family from '../../components/Family/Family'
 
 import { trajectoriesHome } from '../../utilities/quienes_somos/trajectories'
 import { collaborators } from '../../utilities/quienes_somos/collaborators'
@@ -21,6 +22,7 @@ const quienes = () => {
     <Trust />
     <MeetOurTeam collaborators={collaborators} />
     <Bcorp />
+    <Family />
     <Footer />
     </>
   )

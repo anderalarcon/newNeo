@@ -22,7 +22,7 @@
             margin-left: auto;
             margin-right: auto;
             flex-direction: row;
-            gap: 2%;
+            gap: 10%;
         }
 
         &_left {
@@ -37,9 +37,11 @@
                 text-align: center;
 
                 @include breakpoint(widescreen) {
-                    font-size: 48px;
-                    line-height: 56px;
+                    font-size: 54px;
+                    line-height: 76px;
                     text-align: start;
+                    margin-top: -5rem;
+                    margin-bottom: 3rem;
                 }
             }
 
