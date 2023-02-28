@@ -1,6 +1,6 @@
 import Breadscrumb from '../Breadscrumb/Breadscrumb'
 import style from './About.module.scss'
-import Image from 'next/image'
+// import Image from 'next/image'
 import AboutBannerMobile from '../../public/assets/About/about-banner-mobile.png'
 import About1 from '../../public/assets/About/about-1.png'
 import About2 from '../../public/assets/About/about-2.png'
@@ -35,29 +35,29 @@ const About = () => {
 
         <div className={style.about_container_banners}>
           <div className={style.about_container_banners_mobile}>
-            <Image
+            <img
               src={AboutBannerMobile.src}
               alt="About us"
               /* width={288}
               height={289} */
-              fill={true}
+            //   fill={true}
             />
           </div>
 
           <div className={style.about_container_banners_ws}>
             <span className={style.about_container_banners_ws_part}>
-              <Image src={About1.src} alt="About 1" width={324} height={283} />
-              <Image src={About2.src} alt="About 2" width={260} height={388} />
-              <Image src={About3.src} alt="About 3" width={244} height={241} />
-              <Image src={About4.src} alt="About 4" width={241} height={366} />
-              <Image src={About5.src} alt="About 5" width={309} height={257} />
+              <img src={About1.src} alt="About 1" width={324} height={283} />
+              <img src={About2.src} alt="About 2" width={260} height={388} />
+              <img src={About3.src} alt="About 3" width={244} height={241} />
+              <img src={About4.src} alt="About 4" width={241} height={366} />
+              <img src={About5.src} alt="About 5" width={309} height={257} />
             </span>
             <span className={style.about_container_banners_ws_part}>
-              <Image src={About1.src} alt="About 1" width={324} height={283} />
-              <Image src={About2.src} alt="About 2" width={260} height={388} />
-              <Image src={About3.src} alt="About 3" width={244} height={241} />
-              <Image src={About4.src} alt="About 4" width={241} height={366} />
-              <Image src={About5.src} alt="About 5" width={309} height={257} />
+              <img src={About1.src} alt="About 1" width={324} height={283} />
+              <img src={About2.src} alt="About 2" width={260} height={388} />
+              <img src={About3.src} alt="About 3" width={244} height={241} />
+              <img src={About4.src} alt="About 4" width={241} height={366} />
+              <img src={About5.src} alt="About 5" width={309} height={257} />
             </span>
           </div>
         </div>
