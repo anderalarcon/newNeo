@@ -4,6 +4,7 @@ import Person from './_children/Person'
 import { useState } from 'react'
 import uuid from 'react-uuid'
 import PropTypes from 'prop-types'
+import Link from 'next/link'
 
 const MeetOurTeam = ({ collaborators }) => {
   const [team, setTeam] = useState('t1')
@@ -26,7 +27,7 @@ const MeetOurTeam = ({ collaborators }) => {
               className={style.meet_container_header_select_teams}
               onChange={(e) => setTeam(e.target.value)}
             >
-              <option value="t1">Canales digitales y Growth Haking</option>
+              <option value="t1">Canales digitales y Growth Hacking</option>
               <option value="t2">E-commerce</option>
               <option value="t3">Digital Talent Solutions</option>
               <option value="t4">Consultoría CRM</option>
@@ -38,10 +39,14 @@ const MeetOurTeam = ({ collaborators }) => {
               </option>
               <option value="t7">Publicidad digital</option>
             </select>
-
-            <button className={style.meet_container_header_select_btn}>
+            <Link href={{
+              pathname: '/contact',
+              query: { service: 'default', solution: 'default' }
+            }}>
+              <button className={style.meet_container_header_select_btn}>
               Únete a nuestro equipo
-            </button>
+              </button>
+            </Link>
           </div>
         </div>
 
@@ -56,7 +61,7 @@ const MeetOurTeam = ({ collaborators }) => {
                     : ''
                 }
               >
-                Canales digitales y Growth Haking
+                Canales digitales y Growth Hacking
               </button>
               <button
                 onClick={() => setTeam('t2')}
@@ -121,9 +126,14 @@ const MeetOurTeam = ({ collaborators }) => {
             </div>
 
             <div className={style.meet_container_sector_btn_join}>
-              <button className={style.meet_container_header_select_btn}>
-                Únete a nuestro equipo
-              </button>
+              <Link Link href={{
+                pathname: '/contact',
+                query: { service: 'default', solution: 'default' }
+              }}>
+                <button className={style.meet_container_header_select_btn}>
+                  Únete a nuestro equipo
+                </button>
+              </Link>
             </div>
           </div>
 

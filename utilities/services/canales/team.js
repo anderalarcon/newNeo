@@ -7,14 +7,14 @@ import paola from '../../../public/assets/Services/Canales/Team/paola.jpg'
 export const team = [
 
   {
-    fullname: 'Nicole Gallardai',
+    fullname: 'Nicole Gallarday',
     charge: 'Consultor de canales digitales',
-    bio: 'Ingeniero Estadístico Informático con experiencia en analítica digital, medios y análisis estadístico. Especializado en Business Intelligence y Business Analytics en la Universidad Nacional de Ingeniería (UNI).',
+    bio: 'Especialista en Branding, gestión de Marca, comunicación e Imagen Empresarial con experiencia en consumo masivo, retail food, cash&carry y banca.',
     linkedin: 'https://www.linkedin.com/in/alejandravidalcastillo/',
     img: nicole.src
   },
   {
-    fullname: 'Oscar Días',
+    fullname: 'Oscar Diaz',
     charge: 'Consultor de canales digitales',
     bio: 'Apasionado en el mundo del marketing digital, buscando optimizar y automatizar procesos de estrategias SEO con el uso de herramientas de Google Cloud Platform aplicando soluciones basadas en machine learning.',
     linkedin: 'https://www.linkedin.com/in/oscar-diaz-cava-seo/',

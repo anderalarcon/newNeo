@@ -19,7 +19,7 @@ export const qValores = [
     ]
   },
   {
-    category: 'Medición',
+    category: 'Valores',
     solutions: [
       {
         // solution: 'Implementación o migración a GA4',

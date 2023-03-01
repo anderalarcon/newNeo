@@ -5,7 +5,7 @@ import vision3 from '../../../public/assets/Services/Canales/Vision/vision_3.svg
 export const canalesVisions = [
   {
     icon: vision1.src,
-    title: 'Trafico Digitlal',
+    title: 'Tráfico Digital',
     desc: 'Aumenta la visibilidad y el tráfico a tu sitio web.'
   },
   {

@@ -10,7 +10,7 @@ import iconMkt from '../../public/assets/Solutions/icon-mkt.svg'
 export const solutionsCh = [
   {
     iconSrc: iconCanales,
-    service: 'Canales digitales y Growth Haking',
+    service: 'Canales digitales y Growth Hacking',
     description: 'Atrae más clientes a través de Canales Digitales',
     url: '/cl/servicios/canales-digitales-y-growth-hacking'
   },

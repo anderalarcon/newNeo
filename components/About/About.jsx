@@ -24,12 +24,19 @@ const About = () => {
           <Link href={{
             pathname: '/contact',
             query: { service: 'default', solution: 'default' }
-          }}><button className={style.about_container_header_btn_mobile}>
-          Contáctanos
-        </button></Link>
+          }}>
+            <button className={style.about_container_header_btn_mobile}>
+              Contáctanos
+            </button>
+          </Link>
+          <Link href={{
+            pathname: '/contact',
+            query: { service: 'default', solution: 'default' }
+          }}>
             <button className={style.about_container_header_btn_ws}>
               Únete a nuestro equipo
             </button>
+          </Link>
           </div>
         </div>
 

@@ -26,7 +26,7 @@ const Footer = () => {
           link: '/pe/servicios/analitica-digital-inteligencia-artificial',
           text: 'Analítica Digital e Inteligencia Artificial'
         },
-        { link: '/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales digitales y Growth Haking' },
+        { link: '/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales digitales y Growth Hacking' },
         { link: '/pe/servicios/consultoria-customer-relationship-management', text: 'Consultoría CRM' },
         { link: '/pe/servicios/experience-design', text: 'Diseño de experiencia' },
         { link: '/pe/servicios/consultoria-ecommerce', text: 'E-commerce' },

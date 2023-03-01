@@ -32,7 +32,7 @@ const Header = () => {
       ul: [
         {
           link: '/pe/servicios/canales-digitales-y-growth-hacking',
-          text: 'Canales digitales y Growth Haking',
+          text: 'Canales digitales y Growth Hacking',
           icon: laptop.src
         },
         {

@@ -64,16 +64,34 @@
                 font-size: 14px;
                 line-height: 16px;
                 margin-top: 40px;
-                display: inline-flex;
+                display: flex;
                 align-items: center;
+                justify-content: center;
                 gap: 8px;
 
                 @include breakpoint(widescreen) {
                     font-size: 18px;
                     line-height: 24px;
                     margin-top: 32px;
+                    justify-content: start;
                 }
 
+            }
+
+            &_btn {
+                display: flex;
+                align-items: center;
+                background: #05058c;
+                cursor: pointer;
+                border-radius: 4px;
+                padding: 16px;
+                font-weight: bold;
+                font-size: 16px;
+                color: map-get($color, white);
+
+                @include breakpoint(widescreen) {
+
+                }
             }
         }
 

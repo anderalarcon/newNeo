@@ -1,6 +1,8 @@
 // import Link from 'next/link'
 import style from './Family.module.scss'
 import bcorp from '../../public/assets/Family/family.jpg'
+import Link from 'next/link'
+
 const Bcorp = () => {
   return (
     <div className={style.bcorp}>
@@ -15,6 +17,14 @@ const Bcorp = () => {
           {/* <Link className={style.bcorp_container_left_link} target='_blank' href={'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Reporte%20de%20sostenibilidad%20NEO%202022.pdf'}>
             Descarga informe de impacto <img src={arrow.src} width={'20'} height={'20'} />
           </Link> */}
+          <Link className={style.bcorp_container_left_link} href={{
+            pathname: '/contact',
+            query: { service: 'default', solution: 'default' }
+          }}>
+            <button className={style.bcorp_container_left_btn}>
+              Únete a nuestro equipo
+            </button>
+          </Link>
         </div>
         <div className={style.bcorp_container_right}>
           <div className={style.bcorp_container_right_ctn}>

@@ -13,7 +13,7 @@ export const trajectoriesHome = [
   },
   {
     // stat: 800,
-    stat: 800,
+    stat: 700,
     text: 'proyectos ejecutados en los últimos 5 años'
   }
 ]
