@@ -51,13 +51,25 @@ import mibanco from '../../../public/assets/Trust/Home/mibanco.jpg'
 
 import style from '../Companies.module.scss'
 
+import { motion } from 'framer-motion'
+import { zoomIn } from '../../../utilities/global/motion'
+
 const Partners = () => {
   return (
     // Seccion de prueba
-    <div className={style.companies}>
+    <motion.div
+      className={style.companies}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 'full' }}
+    >
       <h2 className={style.companies_title}>
         Más de 100 empresas que ya confían en nosotros
      </h2>
+     <motion.div
+              className={style.companies_container_img}
+              variants={zoomIn(0, 1.5)}
+      >
       <div className={style.sliderrr}>
         <div className={style.sliderrr_track}>
           <div className={style.sliderrr_track_imagen}>
@@ -219,7 +231,8 @@ const Partners = () => {
 
         </div>
       </div>
-    </div>
+      </motion.div>
+    </motion.div>
 
   // Fin de la seccion de prueba
 

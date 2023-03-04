@@ -8,6 +8,9 @@ import Recommendation from './_children/Recommendation/Recommendation'
 import rightArrow from '../../public/assets/Swiper/right-arrow-accent.svg'
 import leftArrow from '../../public/assets/Swiper/left-arrow-accent.svg'
 
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utilities/global/motion'
+
 const Clients = ({ recommendations }) => {
   const [isMobile, setIsMobile] = useState(
     typeof window === 'undefined' ? 0 : window.innerWidth < 1200
@@ -27,6 +30,12 @@ const Clients = ({ recommendations }) => {
   }, [updateDimensions])
   return (
     <div className={style.clients}>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={fadeIn('up', 'tween', 0, 1)}
+      >
       <h1 className={style.clients_title}>Nuestros clientes nos recomiendan</h1>
       <div className={style.clients_container}>
         <div
@@ -35,12 +44,12 @@ const Clients = ({ recommendations }) => {
           <span className={style.clients_container_swiper_button_span}>
             Siguiente
           </span>
-          <img src={rightArrow.src} alt='Casos de Exito Neo Consulting' />
+          <img src={rightArrow.src} alt='Casos de Éxito Neo Consulting' />
         </div>
         <div
           className={`${style.clients_container_swiper_button} ${style.swiper_button_prev_cases}`}
         >
-          <img src={leftArrow.src} alt='Casos de Exito Neo Consulting' />
+          <img src={leftArrow.src} alt='Casos de Éxito Neo Consulting' />
           <span className={style.clients_container_swiper_button_span}>
             Anterior
           </span>
@@ -102,6 +111,7 @@ const Clients = ({ recommendations }) => {
           )}
         </Swiper>
       </div>
+      </motion.div>
     </div>
   )
 }

@@ -17,6 +17,9 @@ import salesforce from '../../public/assets/Partners/salesforce.png'
 import complaintsBook from '../../public/assets/Footer/complaints-book.png'
 import logoNeo from '../../public/assets/Footer/logo-neo.png'
 
+import { motion } from 'framer-motion'
+import { footerVariants } from '../../utilities/global/motion'
+
 const Footer = () => {
   const AccordionData = [
     {
@@ -67,6 +70,7 @@ const Footer = () => {
 
   return (
     <div className={style.footer}>
+            <motion.div variants={footerVariants} initial="hidden" whileInView="show">
       <div className={style.footer_top}>
         <Accordion data={AccordionData} />
 
@@ -126,15 +130,16 @@ const Footer = () => {
           <img src={logoNeo.src} alt='neo' />
           <p>
             © 2022 NEO Consulting - Todos los derechos reservados | Política de
-            privacidad | Terminos de uso | Politica de Cookies
+            privacidad | Terminos de uso | Política de Cookies
           </p>
           <img src={complaintsBook.src} alt='complaintsBook' />
         </div>
         <p>
           © 2022 NEO Consulting - Todos los derechos reservados | Política de
-          privacidad | Terminos de uso | Politica de Cookies
+          privacidad | Terminos de uso | Política de Cookies
         </p>
       </div>
+      </motion.div>
     </div>
   )
 }

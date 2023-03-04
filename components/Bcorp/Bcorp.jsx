@@ -2,9 +2,19 @@ import Link from 'next/link'
 import style from './Bcorp.module.scss'
 import bcorp from '../../public/assets/Bcorp/bcorp.jpg'
 import arrow from '../../public/assets/Bcorp/arrow.svg'
+
+import { motion } from 'framer-motion'
+import { fadeIn } from '../../utilities/global/motion'
+
 const Bcorp = () => {
   return (
     <div className={style.bcorp}>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={fadeIn('left', 'tween', 0, 0.5)}
+      >
       <div className={style.bcorp_container}>
         <div className={style.bcorp_container_left}>
           <h1 className={style.bcorp_container_left_title}>
@@ -26,6 +36,7 @@ const Bcorp = () => {
           </div>
         </div>
       </div>
+      </motion.div>
     </div>
   )
 }

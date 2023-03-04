@@ -3,9 +3,19 @@ import style from './Contact.module.scss'
 import contactImg from '../../public/assets/Contact/contact.png'
 import Link from 'next/link'
 import PropTypes from 'prop-types'
+
+import { motion } from 'framer-motion'
+import { zoomIn } from '../../utilities/global/motion'
+
 const Contact = ({ service = 'default', solution = 'default' }) => {
   return (
     <div className={style.contact}>
+      <motion.div
+        initial="hidden"
+        whileInView="show"
+        viewport={{ once: true, amount: 0.1 }}
+        variants={zoomIn(0, 0.5)}
+      >
       <div className={`${style.contact_container}`}>
         <div className={style.contact_container_left}>
           <h2 className={style.contact_container_left_title}>
@@ -39,6 +49,7 @@ const Contact = ({ service = 'default', solution = 'default' }) => {
           </div>
         </div>
       </div>
+      </motion.div>
     </div>
   )
 }

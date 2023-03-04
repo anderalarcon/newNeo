@@ -40,12 +40,12 @@ const Team = ({ team, chapter, startAt = 2 }) => {
           <span className={style.team_container_swiper_button_span}>
             Siguiente
           </span>
-          <img src={rightArrow.src} alt='Casos de Exito Neo Consulting' />
+          <img src={rightArrow.src} alt='Casos de Éxito Neo Consulting' />
         </div>
         <div
           className={`${style.team_container_swiper_button} ${style.swiper_button_prev_cases}`}
         >
-          <img src={leftArrow.src} alt='Casos de Exito Neo Consulting' />
+          <img src={leftArrow.src} alt='Casos de Éxito Neo Consulting' />
           <span className={style.team_container_swiper_button_span}>
             Anterior
           </span>

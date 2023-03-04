@@ -1,9 +1,15 @@
 import style from './Case.module.scss'
 import PropTypes from 'prop-types'
 import Link from 'next/link'
+import { motion } from 'framer-motion'
+import { slideIn } from '../../../../utilities/global/motion'
+
 const Case = ({ type, title, description, img, imgMob, url }) => {
   return (
-    <div className={style.case}>
+    <motion.div
+      className={style.case}
+      variants={slideIn('right', 'tween', 0, 1)}
+    >
       <div className={style.case_container}>
         <div className={style.case_container_left}>
           <div className={style.case_container_left_image}>
@@ -30,7 +36,7 @@ const Case = ({ type, title, description, img, imgMob, url }) => {
           </Link>
         </div>
       </div>
-    </div>
+    </motion.div>
   )
 }
 Case.propTypes = {

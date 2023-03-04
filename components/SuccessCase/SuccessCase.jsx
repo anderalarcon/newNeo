@@ -7,6 +7,9 @@ import leftArrow from '../../public/assets/Swiper/left-arrow.svg'
 import rightArrow from '../../public/assets/Swiper/right-arrow.svg'
 import PropTypes from 'prop-types'
 
+import { motion } from 'framer-motion'
+import { staggerContainer } from '../../utilities/global/motion'
+
 // Import Swiper styles
 import 'swiper/css'
 // import 'swiper/css/navigation'
@@ -15,7 +18,13 @@ import 'swiper/css/pagination'
 import Case from './_children/Case/Case.jsx'
 const SuccessCase = ({ cases }) => {
   return (
-    <div className={style.success}>
+    <motion.div
+      className={style.success}
+      variants={staggerContainer}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.25 }}
+    >
       <div className={style.success_container}>
         <Swiper
           // install Swiper modules
@@ -43,12 +52,12 @@ const SuccessCase = ({ cases }) => {
             <span className={style.success_container_swiper_button_span}>
               Siguiente
             </span>
-            <img src={rightArrow.src} alt='Casos de Exito Neo Consulting' />
+            <img src={rightArrow.src} alt='Casos de Éxito Neo Consulting' />
           </div>
           <div
             className={`${style.success_container_swiper_button} ${style.swiper_button_prev_cases}`}
           >
-            <img src={leftArrow.src} alt='Casos de Exito Neo Consulting' />
+            <img src={leftArrow.src} alt='Casos de Éxito Neo Consulting' />
             <span className={style.success_container_swiper_button_span}>
               Anterior
             </span>
@@ -70,7 +79,7 @@ const SuccessCase = ({ cases }) => {
           })}
         </Swiper>
       </div>
-    </div>
+    </motion.div>
   )
 }
 

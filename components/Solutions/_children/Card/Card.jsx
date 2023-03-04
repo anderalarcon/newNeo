@@ -2,9 +2,19 @@ import Link from 'next/link'
 import PropTypes from 'prop-types'
 import arrow from '../../../../public/assets/Solutions/arrow.svg'
 import style from './Card.module.scss'
+import { motion } from 'framer-motion'
+import { slideIn } from '../../../../utilities/global/motion'
+
 const Card = ({ iconSrc, service, description, url }) => {
   return (
-    <Link href={url} className={style.card}>
+    <motion.div
+      className={style.card}
+      initial="hidden"
+      whileInView="show"
+      viewport={{ once: true, amount: 0.1 }}
+      variants={slideIn('down', 'tween', 0.2, 1)}
+    >
+      <Link href={url}>
 
       <div className={style.card_container}>
         <div className={style.card_container_subcontainer}>
@@ -27,7 +37,7 @@ const Card = ({ iconSrc, service, description, url }) => {
         </p>
       </div>
     </Link>
-
+    </motion.div>
   )
 }
 

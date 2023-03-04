@@ -4,15 +4,15 @@ import logoProtecta from '../../public/assets/Clients/logo_protecta.svg'
 import logoRimac from '../../public/assets/Clients/logo_rimac.svg'
 
 // import joseDuffo from '../../public/assets/Clients/jose_duffoo.jpg'
-import rocioMerino from '../../public/assets/Clients/rocio_merino.jpg'
-import diegoNasra from '../../public/assets/Clients/diego_nasra.jpg'
-import nataliaOrtis from '../../public/assets/Clients/natalia_ortis.jpg'
+import rocioMerino from '../../public/assets/Clients/rocioMerino.png'
+import diegoNasra from '../../public/assets/Clients/diego_nasra.png'
+import nataliaOrtis from '../../public/assets/Clients/nataliaOrtis.png'
 
 export const recommendations = [
   {
     logoCompany: logoBcp.src,
     quote:
-      '“La continua y oportuna optimización de las campañas influyó directamente en el crecimiento sostenido de las ventas, permitiéndonos obtener un alto nivel de performance en los resultados con una menor inversión. Las acciones concretas centradas en la visión del negocio y la comunicación con el equipo NEO permitieron alcanzar los resultados.”',
+      '“Logramos reducir la información que debe ingresar el usuario a un solo campo, sin alterar su navegación. Menos pasos en el proceso de compra incrementan el ratio de conversión significativamente.”',
     logoClient: diegoNasra.src,
     nameClient: 'Diego Nasra',
     chargeClient: 'Product Owner, BCP',
@@ -24,7 +24,7 @@ export const recommendations = [
       '“La continua y oportuna optimización de las campañas influyó directamente en el crecimiento sostenido de las ventas, permitiéndonos obtener un alto nivel de performance en los resultados con una menor inversión. Las acciones concretas centradas en la visión del negocio y la comunicación con el equipo NEO permitieron alcanzar los resultados.”',
     logoClient: nataliaOrtis.src,
     nameClient: 'Natalia Ortiz Velásquez',
-    chargeClient: 'Lider de Venta Digital',
+    chargeClient: 'Líder de Venta Digital',
     url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
   },
   {

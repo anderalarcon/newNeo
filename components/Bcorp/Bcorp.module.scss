@@ -3,6 +3,7 @@
 .bcorp {
     // margin-top: 130px;
     margin-bottom: map-get($margin , mobile);
+    overflow-x: clip;
 
     @include breakpoint(widescreen) {
         margin-bottom: map-get($margin , widescreen);
