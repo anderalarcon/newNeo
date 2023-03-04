@@ -10,6 +10,7 @@ import { fadeIn } from '../../../utilities/global/motion'
 const Partners = () => {
   return (
     <motion.div
+        className={style.companies}
         initial="hidden"
         whileInView="show"
         viewport={{ once: true, amount: 0.25 }}
