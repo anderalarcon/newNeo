@@ -138,6 +138,14 @@ const Form = () => {
     return errors
   }
 
+  const formatDate = () => {
+    const date = new Date()
+    date.setDate(date.getDate() - 1)
+    date.setUTCHours(0, 0, 0, 0)
+    const dateISO = date.toISOString()
+    return Date.parse(dateISO)
+  }
+
   const searchContact = (email) => {
     axios
       .post(
@@ -252,7 +260,6 @@ const Form = () => {
     }
     if (isHandle) {
       const { chanel, source, medium, campaign, lead_source } = handleParams()
-
       const contactObj = {
         properties: {
           servicios_interesados: direct
@@ -283,6 +290,7 @@ const Form = () => {
       }
 
       if (isNewContact) {
+        contactObj.properties.fecha_de_registro = formatDate()
         createContact(contactObj)
       }
     }
