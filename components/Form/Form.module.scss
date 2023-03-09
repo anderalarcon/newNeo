@@ -299,11 +299,23 @@
                         outline: none;
                         color: #4D4D70;
                         padding: 16px;
+                        margin-bottom: 20px;
 
                         @include breakpoint(widescreen) {
                             font-size: 18px;
                             line-height: 24px;
 
+                        }
+
+                    }
+                    &_checkbox {
+                        display: flex;
+                        gap: 15px;
+                        margin-top: 10px;
+                        & > span > a {
+                            color: #000033;
+                            text-decoration: underline;
+                            font-weight: bold;
                         }
                     }
                 }
