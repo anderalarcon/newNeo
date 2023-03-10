@@ -1,0 +1,245 @@
+@import "../../styles/variables.module.scss";
+
+.hero {
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
+    &_container {
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+
+        @include breakpoint(widescreen) {
+            flex-direction: row;
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: map-get($breakpoint, max);
+        }
+
+        &_left {
+            @include breakpoint(widescreen) {
+                width: 50%;
+            }
+
+            &_title {
+                text-align: center;
+                font-weight: 500;
+                font-size: 28px;
+                line-height: 32px;
+                font-family: "Tiempos Headline Medium";
+                margin-bottom: 16px;
+
+                &_span {
+                    color: map-get($color , accent);
+                    font-family: "Tiempos Headline Bold";
+                    margin-left: 5px;
+
+                    @include breakpoint(widescreen) {
+                        margin-left: 10px;
+
+                    }
+
+                }
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    font-weight: 500;
+                    font-size: 50px;
+                    line-height: 76px;
+                    margin-bottom: 24px;
+
+                }
+
+                @include breakpoint(max) {
+                    font-size: 64px;
+
+                }
+            }
+
+            &_description {
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 20px;
+                margin-bottom: 24px;
+                text-align: center;
+                font-family: "Montserrat Medium";
+
+                @include breakpoint(widescreen) {
+                    font-weight: 500;
+                    font-size: 20px;
+                    line-height: 24px;
+                    text-align: start;
+                    margin-bottom: 32px;
+
+                }
+            }
+
+            &_ctn {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 16px;
+                margin-bottom: 24px;
+
+                @include breakpoint(widescreen) {
+                    flex-direction: row;
+                    gap: 32px;
+                }
+
+                &_services {
+                    button {
+                        background-color: map-get($color, accent);
+                        color: map-get($color, white);
+                        width: 190px;
+                        height: 36px;
+                        border-radius: 4px;
+                        font-weight: 500;
+                        font-size: 14px;
+                        line-height: 20px;
+                        cursor: pointer;
+
+                        @include breakpoint(widescreen) {
+                            font-weight: 600;
+                            font-size: 18px;
+                            line-height: 24px;
+                            width: 149px;
+                            height: 56px;
+                        }
+                    }
+                }
+
+                &_contact {
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 10px;
+                    background-color: map-get($color, white);
+                    width: 190px;
+                    height: 36px;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+
+                    @include breakpoint(widescreen) {
+                        font-weight: 600;
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: 142px;
+                        height: 40px;
+                    }
+
+                }
+
+                &_direct {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-family: 'Montserrat Medium';
+                    background-color: map-get($color , accent);
+                    color: map-get($color , white);
+                    padding: 8px 16px;
+                    border-radius: 4px;
+                    text-align: center;
+                    @include breakpoint(widescreen) {
+                        width: 294px;
+                        font-size: 18px;
+                        line-height: 24px;
+                        padding: 16px;
+                    }
+                }
+            }
+
+
+        }
+
+        &_right {
+            @include breakpoint(widescreen) {
+                width: 50%;
+            }
+
+            &_img {
+                text-align: center;
+
+                & img {
+
+                    width: 288px;
+                    height: auto;
+
+                    @include breakpoint(widescreen) {
+                        width: 100%;
+                        height: auto;
+                    }
+
+                    @include breakpoint(max) {
+                        width: 613px;
+                        height: auto;
+
+                    }
+                }
+            }
+
+        }
+
+        &_certifications {
+            margin-top: 24px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+
+            @include breakpoint(widescreen) {
+                flex-direction: row;
+                gap: 24px;
+                justify-content: center;
+                align-items: center;
+
+            }
+
+            &_desc {
+                font-family: 'Montserrat Medium';
+                text-align: center;
+                margin-bottom: 24px;
+                font-weight: 500;
+                font-size: 14px;
+                line-height: 20px;
+
+                @include breakpoint(widescreen) {
+                    width: 297px;
+                    text-align: start;
+                    margin-bottom: 0;
+                }
+
+                @include breakpoint(widescreen) {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            &_logos {
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                gap: 48px;
+                flex-wrap: wrap;
+
+                & img {
+                    max-width: 100%;
+                    min-width: 83px;
+                    @include breakpoint(widescreen) {
+                        min-height: 34px;
+                    }
+                }
+            }
+        }
+    }
+}
