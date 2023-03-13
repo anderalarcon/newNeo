@@ -150,10 +150,10 @@ const Form = () => {
 
   const formatDate = () => {
     const date = new Date()
-    date.setDate(date.getDate() - 1)
-    date.setUTCHours(0, 0, 0, 0)
-    const dateISO = date.toISOString()
-    return Date.parse(dateISO)
+    const day = date.getDate()
+    const month = date.getMonth() + 1
+    const year = date.getFullYear()
+    return `${day}/${month}/${year}`
   }
 
   const searchContact = (email) => {
