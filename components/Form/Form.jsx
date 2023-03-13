@@ -46,6 +46,8 @@ const Form = () => {
   const [isHandle, setIsHandle] = useState(false)
   const [contactId, setContactId] = useState('')
   const [isLoading, setIsLoading] = useState(false)
+  const [politics, setPolitics] = useState(false)
+  const [comunications, setComunications] = useState(false)
 
   const handleSteps = (e) => {
     e.preventDefault()
@@ -91,13 +93,21 @@ const Form = () => {
     }
   }
 
+  const handlePolitics = (e) => {
+    if (e.target.name === 'politics') {
+      setPolitics(e.target.checked)
+    }
+    if (e.target.name === 'comunications') {
+      setComunications(e.target.checked)
+    }
+  }
+
   const validateEmail = (email) => {
     const re = /^[a-z0-9.]{1,64}@[a-z0-9.]{1,64}$/i
     return re.test(email)
   }
 
   const validateInputs = (values) => {
-    console.log(values)
     const errors = {}
     if (!values.name) {
       errors.name = 'Nombre es requerido'
@@ -282,7 +292,9 @@ const Form = () => {
           lifecyclestage: 'lead',
           chapter: data?.title,
           leadsource: lead_source,
-          tipo_de_servicio: data?.service_type
+          tipo_de_servicio: data?.service_type,
+          acepta_politicas: politics ? 'Si' : 'No',
+          acepta_comunicaciones: comunications ? 'Si' : 'No'
         }
       }
       if (isContact) {
@@ -654,6 +666,27 @@ const Form = () => {
             onChange={handleChange}
             placeholder='Quiero...'
           />
+          <div className={style.form_container_form_third_input_checkbox}>
+            <input
+              type='checkbox'
+              checked={politics}
+              name='politics'
+              onChange={handlePolitics}
+            />
+            <span>
+              Acepto las{' '}
+              <a href='/politica-de-privacidad'>políticas de privacidad</a>
+            </span>
+          </div>
+          <div className={style.form_container_form_third_input_checkbox}>
+            <input
+              type='checkbox'
+              checked={comunications}
+              name='comunications'
+              onChange={handlePolitics}
+            />
+            <span>Acepto que Neo me envié comunicaciones</span>
+          </div>
         </div>
         <p>{formErrors.details}</p>
       </div>
