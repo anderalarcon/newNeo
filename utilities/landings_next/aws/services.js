@@ -40,10 +40,10 @@ export const servicesAws = {
       name: 'Sentiment Analysis',
       content:
         'Evalúa las emociones, actitudes y opiniones de las personas frente a un tema específico, producto, marca, entre otros.',
-      impact: `Creación y mejora de productos/ servicios
-Marketing personalizado
-Previsión de ventas
-Incremento de satisfacción del cliente`,
+      impact: '- Creación y mejora de productos/ servicios',
+      impact2: '- Marketing personalizado',
+      impact3: '- Previsión de ventas',
+      impact4: '- Incremento de satisfacción del cliente',
       contactUrl: '#form'
     },
     {
@@ -53,10 +53,10 @@ Incremento de satisfacción del cliente`,
       name: 'Customer Segmentation',
       content:
         'Es la estimación de las ganancias netas que una empresa puede obtener de un cliente a lo largo de su ciclo de vida de relación con la marca y/o clasificación en grupos de interés.',
-      impact: `Mejora y/o creación de productos/ servicios
-Mejora de estrategias de marketing
-Optimización de presupuestos
-Mejora de satisfacción de cliente`,
+      impact: '- Mejora y/o creación de productos/ servicios',
+      impact2: '- Mejora de estrategias de marketing',
+      impact3: '- Optimización de presupuestos',
+      impact4: '- Mejora de satisfacción de cliente',
       contactUrl: '#form'
     }
   ]

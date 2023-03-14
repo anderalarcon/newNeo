@@ -4,7 +4,7 @@
   width: 100%;
   position: relative;
   padding: 0 map-get($padding, mobile);
-  margin-bottom: 64px;
+  margin-bottom: 80px;
 
   @include breakpoint(widescreen) {
     padding: 0 map-get($padding, widescreen);
@@ -85,7 +85,7 @@
       margin-bottom: 48px;
 
       &_title {
-        font-family: "Tiempos Headline";
+        font-family: "Tiempos Headline Medium";
         font-style: normal;
         font-weight: 500;
         font-size: 20px;
@@ -150,7 +150,7 @@
           }
 
           &_name {
-            font-family: "Tiempos Headline";
+            font-family: "Tiempos Headline Bold";
             font-style: normal;
             font-weight: 700;
             font-size: 20px;

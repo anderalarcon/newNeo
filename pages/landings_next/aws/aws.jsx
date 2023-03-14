@@ -1,9 +1,10 @@
 import Header from '../../../components/Header/Header'
 import Hero from '../../../components/HeroAws/HeroServices'
 import Footer from '../../../components/Footer/Footer'
-import Head from 'next/head'
 import Services from '../../../components/Servicios/Services'
 import Trust from '../../../components/Companies/Trust/Trust'
+import Embedform from '../../../components/Embed-form/Embedform'
+import Head from 'next/head'
 
 import { dataHeroAws } from '../../../utilities/landings_next/aws/hero'
 import { servicesAws } from '../../../utilities/landings_next/aws/services'
@@ -12,7 +13,7 @@ const aws = () => {
   return (
     <>
       <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Conoce nuestros servicios de Amazon Web Services</title>
         <meta
           name="description"
           content="Descubre cómo Amazon Web Services puede mejorar la eficiencia de tu empresa con servicios escalables de almacenamiento en la nube, análisis de datos y mucho más aquí."
@@ -23,27 +24,26 @@ const aws = () => {
 
         <meta
           property="og:image"
-          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/05/0.png"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/03/aws_open.png"
         />
 
-        <meta property="og:url" content="https://neoconsulting.ai/pe" />
+        <meta property="og:url" content="https://neoconsulting.ai/servicios-aws/" />
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Conoce nuestros servicios de Amazon Web Services"
         />
         <meta
           property="og:description"
           content="Descubre cómo Amazon Web Services puede mejorar la eficiencia de tu empresa con servicios escalables de almacenamiento en la nube, análisis de datos y mucho más aquí."
         />
         <script defer src="/js/gtm.js"></script>
-        <script defer src="/js/hotjar.js"></script>
-        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <Header />
       <Hero data={dataHeroAws} />
       <Services services={servicesAws} />
       <Trust />
+      <Embedform />
       <Footer />
     </>
   )

@@ -103,6 +103,9 @@ const Services = ({ services }) => {
                     >
                       <h5>Impacto</h5>
                       <p>{service.impact}</p>
+                      <p>{service.impact2}</p>
+                      <p>{service.impact3}</p>
+                      <p>{service.impact4}</p>
                     </div>
                   </div>
                 </div>
