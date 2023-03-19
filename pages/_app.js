@@ -1,7 +1,14 @@
 import Script from 'next/script'
 import '../styles/globals.scss'
+import { hotjar } from 'react-hotjar'
+import { useEffect } from 'react'
 // eslint-disable-next-line
 function MyApp({ Component, pageProps }) {
+
+  useEffect(() => {
+    hotjar.initialize(3412179, 6)
+  }, [])
+
   return (
     <>
       <Component {...pageProps} />
