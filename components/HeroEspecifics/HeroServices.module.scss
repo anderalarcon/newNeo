@@ -30,6 +30,20 @@
             @include breakpoint(widescreen) {
                 width: 50%;
             }
+            
+            &_pretitle {
+                text-align: start;
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 18px;
+                margin-bottom: 15px;
+                font-family: "Tiempos Headline Bold";
+                @include breakpoint(widescreen) {
+                    font-size: 20px;
+                    margin-bottom: 10px;
+                }
+
+            }
 
             &_title {
                 text-align: center;

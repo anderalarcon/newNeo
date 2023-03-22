@@ -6,6 +6,7 @@ import uuid from 'react-uuid'
 
 const Hero = ({ data, isSolution = false }) => {
   const {
+    pretitle,
     title,
     subtitle,
     desc,
@@ -53,6 +54,9 @@ const Hero = ({ data, isSolution = false }) => {
     <div className={style.hero}>
       <div className={style.hero_container}>
         <div className={style.hero_container_left}>
+        <h4 className={style.hero_container_left_pretitle}>
+              {pretitle}
+          </h4>
           <h1 className={style.hero_container_left_title}>
             {title}
             {getSubtitle()}
