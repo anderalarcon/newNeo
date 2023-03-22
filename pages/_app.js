@@ -2,12 +2,20 @@ import Script from 'next/script'
 import '../styles/globals.scss'
 import { hotjar } from 'react-hotjar'
 import { useEffect } from 'react'
+import TagManager from 'react-gtm-module'
 // eslint-disable-next-line
 function MyApp({ Component, pageProps }) {
 
+  // Hotjar
   useEffect(() => {
     hotjar.initialize(3412179, 6)
+    TagManager.initialize({ gtmId: 'GTM-5F5MZXX' })
   }, [])
+
+  // Google Tag Manager "Armando"
+  // useEffect(() => {
+  //   TagManager.initialize({ gtmId: 'GTM-5F5MZXX' })
+  // }, [])
 
   return (
     <>

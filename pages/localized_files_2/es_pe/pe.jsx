@@ -45,8 +45,6 @@ const pe = () => {
           property="og:description"
           content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
         />
-        <script defer src="/js/gtm.js"></script>
-        <script defer src="/js/hotjar.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <Header />
