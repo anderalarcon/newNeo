@@ -34,7 +34,7 @@ export const perksDesarrolloModelo = {
     }
   ],
   contact: {
-    text: 'Conversemos',
+    text: 'Contáctanos',
     link: 'https://google.com'
   }
 }
@@ -61,7 +61,7 @@ export const perksAcompanamientoEcommerce = {
     }
   ],
   contact: {
-    text: 'Conversemos',
+    text: 'Contáctanos',
     link: 'https://google.com'
   }
 }
@@ -92,7 +92,7 @@ export const perksGrowthEcommerce = {
     }
   ],
   contact: {
-    text: 'Conversemos',
+    text: 'Contáctanos',
     link: 'https://google.com'
   }
 }

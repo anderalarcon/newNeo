@@ -19,6 +19,7 @@
     gap: 24px;
 
     @include breakpoint(widescreen) {
+      justify-content: center;
       flex-direction: row;
     }
 
