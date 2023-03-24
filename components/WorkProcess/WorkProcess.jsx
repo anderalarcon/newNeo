@@ -21,6 +21,11 @@ const WorkProcess = ({ processes }) => {
             <div className={style.wp_container_process_content}>
               <h3>{process.title}</h3>
               <p>{process.text}</p>
+              <p>{process.text2}</p>
+              <p>{process.text3}</p>
+              <p>{process.text4}</p>
+              <p>{process.text5}</p>
+              <p>{process.text6}</p>
             </div>
           </div>
         ))}
