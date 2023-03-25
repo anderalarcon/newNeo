@@ -56,7 +56,8 @@ export const perksConocimiento = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'experience-design',
+    solution: 'default'
   }
 }
 
@@ -87,7 +88,8 @@ export const perksMapeo = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'experience-design',
+    solution: 'default'
   }
 }
 
@@ -114,7 +116,8 @@ export const perksDiseno = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'experience-design',
+    solution: 'default'
   }
 }
 
@@ -137,7 +140,8 @@ export const perksMedicion = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'experience-design',
+    solution: 'default'
   }
 }
 
@@ -164,6 +168,7 @@ export const perksTransformacion = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'experience-design',
+    solution: 'default'
   }
 }

@@ -33,7 +33,8 @@ export const perksHeadHunting = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'digital-talent-solution',
+    solution: 'default'
   }
 }
 
@@ -60,7 +61,8 @@ export const perksOutsourcing = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'digital-talent-solution',
+    solution: 'default'
   }
 }
 
@@ -83,6 +85,7 @@ export const perksMentoryOutsourcing = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'digital-talent-solution',
+    solution: 'default'
   }
 }

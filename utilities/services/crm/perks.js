@@ -39,7 +39,8 @@ export const perksFullService = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'crm',
+    solution: 'default'
   }
 }
 
@@ -66,7 +67,8 @@ export const perksAccelerator = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'crm',
+    solution: 'default'
   }
 }
 
@@ -93,6 +95,7 @@ export const perksQuickStart = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'crm',
+    solution: 'default'
   }
 }

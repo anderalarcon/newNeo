@@ -39,7 +39,8 @@ export const perksMarketingContenidos = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'canales-digitales',
+    solution: 'default'
   }
 }
 
@@ -66,7 +67,8 @@ export const perksGrowthHacking = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'canales-digitales',
+    solution: 'default'
   }
 }
 
@@ -93,6 +95,7 @@ export const perksSeoRank = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'canales-digitales',
+    solution: 'default'
   }
 }

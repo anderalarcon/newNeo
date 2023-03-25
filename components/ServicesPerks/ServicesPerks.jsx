@@ -1,6 +1,7 @@
 import style from './ServicesPerks.module.scss'
 import PropTypes from 'prop-types'
 import uuid from 'react-uuid'
+import Link from 'next/link'
 
 const ServicesPerks = ({ data }) => {
   return (
@@ -23,11 +24,11 @@ const ServicesPerks = ({ data }) => {
               </div>
             ))}
           </div>
-          <a href={data.contact.link}>
+          <Link href={`/contact/?service=${data.contact.service}&solution=${data.contact.solution}`}>
             <button className={style.perks_container_root_contact}>
               {data.contact.text}
             </button>
-          </a>
+          </Link>
         </div>
       </div>
     </div>

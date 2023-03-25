@@ -75,7 +75,8 @@ export const perksWorkshopEstrategia = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -98,7 +99,8 @@ export const perksMachineLearning = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -121,7 +123,8 @@ export const perksMigracionGa4 = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -144,7 +147,8 @@ export const perksAdvancedAnalytics = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -167,7 +171,8 @@ export const perksAnaliticaDigital = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -190,7 +195,8 @@ export const perksPredictiveAnalytics = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -213,7 +219,8 @@ export const perksPredictiveSales = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -244,7 +251,8 @@ export const perksChatbotsInteligencia = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -267,7 +275,8 @@ export const perksSentimentAnalysis = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -290,7 +299,8 @@ export const perksIntegracionDatos = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }
 
@@ -317,6 +327,7 @@ export const perksAutomatizacionReportes = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'aaia',
+    solution: 'default'
   }
 }

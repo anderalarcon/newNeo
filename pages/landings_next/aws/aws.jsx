@@ -1,5 +1,5 @@
 import Header from '../../../components/Header/Header'
-import Hero from '../../../components/HeroEspecifics/HeroServices'
+import Hero from '../../../components/HeoLandingsSeparate/HeroServices'
 import Footer from '../../../components/Footer/Footer'
 import Services from '../../../components/Servicios/Services'
 import Trust from '../../../components/Companies/Trust/Trust'

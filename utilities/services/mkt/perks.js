@@ -72,7 +72,8 @@ export const perksReportingRoi = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -99,7 +100,8 @@ export const perksAutomatizacionLeads = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -126,7 +128,8 @@ export const perksPersonalizacionEcommerce = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -153,7 +156,8 @@ export const perksAutomatizacionContenido = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -172,7 +176,8 @@ export const perksDashboardSeo = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -203,7 +208,8 @@ export const perksChatbotEcommerce = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -230,7 +236,8 @@ export const perksPlaningContenido = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -253,7 +260,8 @@ export const perksLeadNurturing = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }
 
@@ -276,6 +284,7 @@ export const perksCentralizacionInsights = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'mkt-automation',
+    solution: 'default'
   }
 }

@@ -29,12 +29,9 @@ const Hero = ({ data, isSolution = false }) => {
     }
     return (
       <>
-        <Link
-          className={style.hero_container_left_ctn_direct}
-          href={`/contact/?service=${service}&solution=${solution}`}
-        >
-          Contáctanos
-        </Link>
+        <a className={style.hero_container_left_ctn_services} href='#form'>
+          <button>Contáctanos</button>
+        </a>
         {/* <Link
           className={style.hero_container_left_ctn_contact}
           href={`/contact/?service=${service}&solution=${solution}`}

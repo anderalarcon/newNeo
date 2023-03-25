@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import uuid from 'react-uuid'
 import { useEffect, useState } from 'react'
+// import arrow from '../../public/assets/Swiper/right-arrow.svg'
+
 const SolutionsChapter = ({ solutions, filter = false }) => {
   if (filter) {
     const [solutionsFiltered, setSolutionsFiltered] = useState([])

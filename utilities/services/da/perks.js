@@ -28,7 +28,8 @@ export const perksInhousing = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'digital-ads',
+    solution: 'default'
   }
 }
 
@@ -55,6 +56,7 @@ export const perksAuditoria = {
   ],
   contact: {
     text: 'Contáctanos',
-    link: 'https://google.com'
+    service: 'digital-ads',
+    solution: 'default'
   }
 }
