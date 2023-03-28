@@ -35,12 +35,7 @@ const Hero = ({ data, isSolution = false }) => {
         >
           Contáctanos
         </Link>
-        {/* <Link
-          className={style.hero_container_left_ctn_contact}
-          href={`/contact/?service=${service}&solution=${solution}`}
-        >
-          Contáctanos <img src={arrow.src} alt='Neo Consulting' />
-        </Link> */}
+
       </>
     )
   }

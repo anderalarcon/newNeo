@@ -37,7 +37,7 @@ export const dataHeroMarketingContenidos = {
   title: 'Creamos contenido relevante para',
   subtitle: 'conectar con tu audiencia',
   service: 'canales-digitales',
-  solution: 'default',
+  solution: 'marketing-de-contenidos',
   desc: 'Generamos contenido relevante, que permite lograr objetivos de negocio al empatizar con las necesidades del consumidor.',
   descCert: 'Nuestros analistas están certificados en:',
   mainImg: MarketingContenidosHero.src,

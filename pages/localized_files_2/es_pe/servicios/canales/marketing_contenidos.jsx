@@ -47,7 +47,7 @@ const marketingContenidos = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroMarketingContenidos} />
+    <Hero data={dataHeroMarketingContenidos} isSolution={true} />
     <WhySolutions data={whySolMarketingContenidos} />
     <ServicesPerks data={perksMarketingContenidos} />
     <WorkProcess processes={workMarketingContenidos} />

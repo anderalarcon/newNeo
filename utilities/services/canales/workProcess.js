@@ -1,17 +1,17 @@
-import Icon1MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-process-icon1-service1.svg'
-import Icon2MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-process-icon2-service1.svg'
-import Icon3MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-process-icon3-service1.svg'
-import Icon4MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-process-icon4-service1.svg'
+import Icon1MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-process-icon1-service1.svg'
+import Icon2MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-process-icon2-service1.svg'
+import Icon3MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-process-icon3-service1.svg'
+import Icon4MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-process-icon4-service1.svg'
 
-import Icon1GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-process-icon1-service2.svg'
-import Icon2GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-process-icon2-service2.svg'
-import Icon3GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-process-icon3-service2.svg'
-import Icon4GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-process-icon4-service2.svg'
+import Icon1GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-process-icon1-service2.svg'
+import Icon2GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-process-icon2-service2.svg'
+import Icon3GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-process-icon3-service2.svg'
+import Icon4GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-process-icon4-service2.svg'
 
-import Icon1SeoRank from '../../../public/assets/Services/canales/Especifics/cd-process-icon1-service3.svg'
-import Icon2SeoRank from '../../../public/assets/Services/canales/Especifics/cd-process-icon2-service3.svg'
-import Icon3SeoRank from '../../../public/assets/Services/canales/Especifics/cd-process-icon3-service3.svg'
-import Icon4SeoRank from '../../../public/assets/Services/canales/Especifics/cd-process-icon4-service3.svg'
+import Icon1SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-process-icon1-service3.svg'
+import Icon2SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-process-icon2-service3.svg'
+import Icon3SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-process-icon3-service3.svg'
+import Icon4SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-process-icon4-service3.svg'
 
 export const workMarketingContenidos = [
   {

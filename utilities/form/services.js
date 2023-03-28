@@ -50,6 +50,7 @@ export const servicesData = [
     title: 'Canales Digitales',
     service_type: 'Tradicional',
     desc: 'Atrae más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.',
+    chapter: 'Canales Digitales',
     options: [
       'Marketing de contenidos',
       'SEO con Rank Tracker',
@@ -58,10 +59,12 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'marketing-de-contenidos',
+        title: 'Marketing de Contenidos',
+        service_type: 'Tradicional',
+        option: 'Marketing de contenidos',
+        chapter: 'Canales Digitales'
+
       },
       {
         solution: 'accelerator',

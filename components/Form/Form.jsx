@@ -290,13 +290,14 @@ const Form = () => {
           canal__c: chanel,
           campa_a__c: campaign,
           lifecyclestage: 'lead',
-          chapter: data?.title,
+          chapter: data?.chapter,
           leadsource: lead_source,
           tipo_de_servicio: data?.service_type,
           acepta_politicas: politics ? 'Si' : 'No',
           acepta_comunicaciones: comunications ? 'Si' : 'No'
         }
       }
+      console.log('data sended', contactObj)
       if (isContact) {
         updateContact(contactObj, contactId)
       }
@@ -513,7 +514,7 @@ const Form = () => {
       </div>
     )
   }
-
+  console.log(checkedServices);
   const getThirdStep = () => {
     return (
       <div className={style.form_container_form_second}>
@@ -832,18 +833,18 @@ const Form = () => {
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
-      if (
+      if ( // home service
         router.query.service !== 'default' &&
         router.query.solution === 'default'
       ) {
+        console.log('caso home service papa')
         setData(servicesData.find((e) => e.service === router.query.service))
       }
-      if (
-        (router.query.service !== 'default' &&
-          router.query.solution !== 'default') ||
+      if ( // home solution
         (router.query.service === 'default' &&
           router.query.solution === 'default')
       ) {
+        console.log('caso homes paises')
         setDirect(true)
         setStep(2)
         setData(servicesData.find((e) => e.service === router.query.service))
@@ -852,6 +853,19 @@ const Form = () => {
             ?.find((e) => e.service === router.query.service)
             ?.solutions.find((e) => e.solution === router.query.solution).option
         )
+      }
+
+      if (router.query.service !== 'default' && router.query.solution !== 'default') { // caso servicio especifico
+        console.log('nuevo')
+        setDirect(true)
+        setStep(2)
+        setData((servicesData.find((e) => e.service === router.query.service).solutions.find((e) => e.solution === router.query.solution)))
+        setCheckedServices(
+          servicesData
+            ?.find((e) => e.service === router.query.service)
+            ?.solutions.find((e) => e.solution === router.query.solution).option
+        )
+        console.log((servicesData.find((e) => e.service === router.query.service).solutions.find((e) => e.solution === router.query.solution)))
       }
     }
     getOptions()

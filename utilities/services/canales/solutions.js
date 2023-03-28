@@ -4,7 +4,7 @@ export const canalesSolutions = [
     description:
       'Generamos contenido relevante, que permite lograr objetivos de negocio al empatizar con las necesidades del consumidor.',
     urlcontact: '/contact/?service=canales-digitales&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/full_service/'
+    urlpage: '/localized_files_2/es_pe/servicios/canales/marketing_contenidos/'
   },
   {
     solution: 'SEO con Rank Tracker',
