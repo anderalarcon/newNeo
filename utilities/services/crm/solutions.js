@@ -23,29 +23,29 @@ export const crmSolutions = [
     // urlcontact: '/contact/?service=crm&solution=quick-start',
     urlcontact: '/contact/?service=crm&solution=default',
     urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
-  },
-  {
-    solution: 'Servicios Salesforce',
-    description:
-      'Alcanza tus objetivos de negocio aprovechando al máximo tus nubes de Salesforce. Como partnerts de Salesforce, contamos con soluciones estratégicas para lograr una gestión integral de tus procesos de CRM acorde a tus necesidades.',
-    // urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlcontact: '/contact/?service=crm&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/servicios_salesforce/'
-  },
-  {
-    solution: 'Lead Scoring Bot',
-    description:
-      'Responde y captura datos de tus leads de manera rápida y eficiente, a través de una misma comunicación en distintos canales. Luego, recibe la información en tu CRM de forma inmediata.',
-    // urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlcontact: '/contact/?service=crm&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/lead_scoring_bot/'
-  },
-  {
-    solution: 'Lead Scoring Predictivo',
-    description:
-      'Evalúa tus leads al momento de capturarlos para determinar su grado de afinidad con la propuesta de valor de tu empresa. Además, a través de machine learning (ML), se utilizan modelos predictivos para analizar datos de clientes actuales a partir de interacciones previas, para predecir los comportamientos futuros.',
-    // urlcontact: '/contact/?service=crm&solution=quick-start',
-    urlcontact: '/contact/?service=crm&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/crm/lead_scoring_predictivo/'
   }
+  // {
+  //   solution: 'Servicios Salesforce',
+  //   description:
+  //     'Alcanza tus objetivos de negocio aprovechando al máximo tus nubes de Salesforce. Como partnerts de Salesforce, contamos con soluciones estratégicas para lograr una gestión integral de tus procesos de CRM acorde a tus necesidades.',
+  //   // urlcontact: '/contact/?service=crm&solution=quick-start',
+  //   urlcontact: '/contact/?service=crm&solution=default',
+  //   urlpage: '/localized_files_2/es_pe/servicios/crm/servicios_salesforce/'
+  // },
+  // {
+  //   solution: 'Lead Scoring Bot',
+  //   description:
+  //     'Responde y captura datos de tus leads de manera rápida y eficiente, a través de una misma comunicación en distintos canales. Luego, recibe la información en tu CRM de forma inmediata.',
+  //   // urlcontact: '/contact/?service=crm&solution=quick-start',
+  //   urlcontact: '/contact/?service=crm&solution=default',
+  //   urlpage: '/localized_files_2/es_pe/servicios/crm/lead_scoring_bot/'
+  // },
+  // {
+  //   solution: 'Lead Scoring Predictivo',
+  //   description:
+  //     'Evalúa tus leads al momento de capturarlos para determinar su grado de afinidad con la propuesta de valor de tu empresa. Además, a través de machine learning (ML), se utilizan modelos predictivos para analizar datos de clientes actuales a partir de interacciones previas, para predecir los comportamientos futuros.',
+  //   // urlcontact: '/contact/?service=crm&solution=quick-start',
+  //   urlcontact: '/contact/?service=crm&solution=default',
+  //   urlpage: '/localized_files_2/es_pe/servicios/crm/lead_scoring_predictivo/'
+  // }
 ]

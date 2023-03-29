@@ -40,7 +40,7 @@ export const perksFullService = {
   contact: {
     text: 'Contáctanos',
     service: 'crm',
-    solution: 'default'
+    solution: 'full-service'
   }
 }
 
@@ -68,7 +68,7 @@ export const perksAccelerator = {
   contact: {
     text: 'Contáctanos',
     service: 'crm',
-    solution: 'default'
+    solution: 'accelerator'
   }
 }
 
@@ -96,6 +96,6 @@ export const perksQuickStart = {
   contact: {
     text: 'Contáctanos',
     service: 'crm',
-    solution: 'default'
+    solution: 'quickstart'
   }
 }

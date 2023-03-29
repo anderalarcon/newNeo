@@ -26,22 +26,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
+        solution: 'full-service',
         title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        service_type: 'Tradicional',
+        option: 'Full Service CRM',
+        chapter: 'CRM'
       },
       {
         solution: 'accelerator',
         title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        service_type: 'Tradicional',
+        option: 'Accelerator CRM',
+        chapter: 'CRM'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'quickstart',
+        title: 'Quick Start',
+        service_type: 'Tradicional',
+        option: 'Quick Start',
+        chapter: 'CRM'
       }
     ]
   },

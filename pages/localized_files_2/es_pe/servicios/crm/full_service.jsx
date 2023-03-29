@@ -54,7 +54,7 @@ const fullService = () => {
       <SuccessCase cases={crmCases} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} />
+      <Contact service={'crm'} solution={'full-service'} />
       <Content contents={contentcrm} />
       <Footer/>
     </>

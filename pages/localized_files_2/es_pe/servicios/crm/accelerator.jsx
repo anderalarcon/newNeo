@@ -54,7 +54,7 @@ const accelerator = () => {
       <SuccessCase cases={crmCases} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} />
+      <Contact service={'crm'} solution={'accelerator'} />
       <Content contents={contentcrm} />
       <Footer/>
     </>
