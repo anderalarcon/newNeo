@@ -84,6 +84,16 @@ const Header = () => {
       ]
     },
     {
+      title: 'Servicios con partners',
+      ul: [
+        {
+          link: 'https://neoconsulting.ai/',
+          text: 'Soluciones cloud con AWS',
+          icon: brain.src
+        }
+      ]
+    },
+    {
       title: 'Recursos',
       ul: [
         {
