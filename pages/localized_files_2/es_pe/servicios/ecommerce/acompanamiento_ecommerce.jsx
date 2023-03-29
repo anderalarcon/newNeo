@@ -49,7 +49,7 @@ const acompanamientoEcommerce = () => {
     <WorkProcess processes={workAcompanamientoEcommerce} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} />
+    <Contact service={'ecommerce'} solution={'acompanamiento-ecommerce'} />
     <Content contents={contentecommerce} />
     <Footer/>
     </>

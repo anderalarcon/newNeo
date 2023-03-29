@@ -101,7 +101,7 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
+        solution: 'acomponamiento-ecommerce',
         title: 'Full Service CRM',
         desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
         option: 'Quiero el servicio de Full Service CRM'
@@ -258,23 +258,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'acompanamiento-ecommerce',
+        title: 'Acompañamiento E-commerce',
+        service_type: 'Tradicional',
+        option: 'Acompañamiento E-commerce',
+        chapter: 'Ecommerce'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'desarrollo-de-modelo-ecommerce',
+        title: 'Desarrollo de modelo de negocio E-commerce',
+        service_type: 'Tradicional',
+        option: 'Desarrollo de modelo de negocio E-commerce',
+        chapter: 'Ecommerce'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'growth-y-analytics-para-ecommerce',
+        title: 'Growth y Analytics para E-commerce',
+        service_type: 'Tradicional',
+        option: 'Growth y Analytics para E-commerce',
+        chapter: 'Ecommerce'
       }
     ]
   }
