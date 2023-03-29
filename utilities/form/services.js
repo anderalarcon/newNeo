@@ -67,16 +67,18 @@ export const servicesData = [
 
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'growth-hacking',
+        title: 'Growth Hacking',
+        service_type: 'Tradicional',
+        option: 'Growth Hacking',
+        chapter: 'Canales Digitales'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'seo-rank-tracker',
+        title: 'SEO con Rank Tracker',
+        service_type: 'Tradicional',
+        option: 'SEO con Rank Tracker',
+        chapter: 'Canales Digitales'
       }
     ]
   },
