@@ -61,7 +61,7 @@ const outsourcing = () => {
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <Questions questions={questionsdts} />
     <Contact service={'digital-talent-solution'} />
-    <Content contents={contentdts} />
+    <Content contents={contentdts} solution={'outsourcing'} />
     <Footer/>
   </>
   )

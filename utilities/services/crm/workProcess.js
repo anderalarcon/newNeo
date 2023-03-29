@@ -1,16 +1,16 @@
-import Icon1workFullService from '../../../public/assets/Services/crm/Especifics/crm-process-icon1-service1.svg'
-import Icon2workFullService from '../../../public/assets/Services/crm/Especifics/crm-process-icon2-service1.svg'
-import Icon3workFullService from '../../../public/assets/Services/crm/Especifics/crm-process-icon3-service1.svg'
+import Icon1workFullService from '../../../public/assets/Services/Crm/Especifics/crm-process-icon1-service1.svg'
+import Icon2workFullService from '../../../public/assets/Services/Crm/Especifics/crm-process-icon2-service1.svg'
+import Icon3workFullService from '../../../public/assets/Services/Crm/Especifics/crm-process-icon3-service1.svg'
 
-import Icon1workAccelerator from '../../../public/assets/Services/crm/Especifics/crm-process-icon1-service2.svg'
-import Icon2workAccelerator from '../../../public/assets/Services/crm/Especifics/crm-process-icon2-service2.svg'
-import Icon3workAccelerator from '../../../public/assets/Services/crm/Especifics/crm-process-icon3-service2.svg'
-import Icon4workAccelerator from '../../../public/assets/Services/crm/Especifics/crm-process-icon4-service2.svg'
+import Icon1workAccelerator from '../../../public/assets/Services/Crm/Especifics/crm-process-icon1-service2.svg'
+import Icon2workAccelerator from '../../../public/assets/Services/Crm/Especifics/crm-process-icon2-service2.svg'
+import Icon3workAccelerator from '../../../public/assets/Services/Crm/Especifics/crm-process-icon3-service2.svg'
+import Icon4workAccelerator from '../../../public/assets/Services/Crm/Especifics/crm-process-icon4-service2.svg'
 
-import Icon1workQuickStart from '../../../public/assets/Services/crm/Especifics/crm-process-icon1-service3.svg'
-import Icon2workQuickStart from '../../../public/assets/Services/crm/Especifics/crm-process-icon2-service3.svg'
-import Icon3workQuickStart from '../../../public/assets/Services/crm/Especifics/crm-process-icon3-service3.svg'
-import Icon4workQuickStart from '../../../public/assets/Services/crm/Especifics/crm-process-icon4-service3.svg'
+import Icon1workQuickStart from '../../../public/assets/Services/Crm/Especifics/crm-process-icon1-service3.svg'
+import Icon2workQuickStart from '../../../public/assets/Services/Crm/Especifics/crm-process-icon2-service3.svg'
+import Icon3workQuickStart from '../../../public/assets/Services/Crm/Especifics/crm-process-icon3-service3.svg'
+import Icon4workQuickStart from '../../../public/assets/Services/Crm/Especifics/crm-process-icon4-service3.svg'
 
 export const workFullService = [
   {

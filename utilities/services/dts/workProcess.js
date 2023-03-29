@@ -1,19 +1,19 @@
-import Icon1DesarrolloModelo from '../../../public/assets/Services/dts/Especifics/dts-process-icon1-service1.svg'
-import Icon2DesarrolloModelo from '../../../public/assets/Services/dts/Especifics/dts-process-icon2-service1.svg'
-import Icon3DesarrolloModelo from '../../../public/assets/Services/dts/Especifics/dts-process-icon3-service1.svg'
-import Icon4DesarrolloModelo from '../../../public/assets/Services/dts/Especifics/dts-process-icon4-service1.svg'
-import Icon5DesarrolloModelo from '../../../public/assets/Services/dts/Especifics/dts-process-icon5-service1.svg'
+import Icon1DesarrolloModelo from '../../../public/assets/Services/Dts/Especifics/dts-process-icon1-service1.svg'
+import Icon2DesarrolloModelo from '../../../public/assets/Services/Dts/Especifics/dts-process-icon2-service1.svg'
+import Icon3DesarrolloModelo from '../../../public/assets/Services/Dts/Especifics/dts-process-icon3-service1.svg'
+import Icon4DesarrolloModelo from '../../../public/assets/Services/Dts/Especifics/dts-process-icon4-service1.svg'
+import Icon5DesarrolloModelo from '../../../public/assets/Services/Dts/Especifics/dts-process-icon5-service1.svg'
 
-import Icon1Outsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon1-service2.svg'
-import Icon2Outsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon2-service2.svg'
-import Icon3Outsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon3-service2.svg'
-import Icon4Outsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon4-service2.svg'
-import Icon5Outsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon5-service2.svg'
+import Icon1Outsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon1-service2.svg'
+import Icon2Outsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon2-service2.svg'
+import Icon3Outsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon3-service2.svg'
+import Icon4Outsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon4-service2.svg'
+import Icon5Outsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon5-service2.svg'
 
-import Icon1MentoryOutsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon1-service3.svg'
-import Icon2MentoryOutsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon2-service3.svg'
-import Icon3MentoryOutsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon3-service3.svg'
-import Icon4MentoryOutsourcing from '../../../public/assets/Services/dts/Especifics/dts-process-icon4-service3.svg'
+import Icon1MentoryOutsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon1-service3.svg'
+import Icon2MentoryOutsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon2-service3.svg'
+import Icon3MentoryOutsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon3-service3.svg'
+import Icon4MentoryOutsourcing from '../../../public/assets/Services/Dts/Especifics/dts-process-icon4-service3.svg'
 
 export const workHeadHunting = [
   {

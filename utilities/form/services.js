@@ -64,7 +64,6 @@ export const servicesData = [
         service_type: 'Tradicional',
         option: 'Marketing de contenidos',
         chapter: 'Canales Digitales'
-
       },
       {
         solution: 'growth-hacking',
@@ -163,22 +162,22 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
+        solution: 'acomponamiento-ecommerce',
         title: 'Full Service CRM',
         desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
         option: 'Quiero el servicio de Full Service CRM'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
+        solution: 'acomponamiento-ecommerce',
+        title: 'Full Service CRM',
         desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        option: 'Quiero el servicio de Full Service CRM'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
+        solution: 'acomponamiento-ecommerce',
+        title: 'Full Service CRM',
         desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        option: 'Quiero el servicio de Full Service CRM'
       }
     ]
   },
@@ -227,22 +226,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'headhunting',
+        title: 'Head Hunting',
+        service_type: 'Tradicional',
+        option: 'Head Hunting',
+        chapter: 'Digital Talent Solutions'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'outsourcing',
+        title: 'Outsourcing',
+        service_type: 'Tradicional',
+        option: 'Outsourcing',
+        chapter: 'Digital Talent Solutions'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'outsourcing-y-mentoring',
+        title: 'Outsourcing y Mentoring',
+        service_type: 'Tradicional',
+        option: 'Outsourcing y Mentoring',
+        chapter: 'Digital Talent Solutions'
       }
     ]
   },
