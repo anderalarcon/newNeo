@@ -3,7 +3,7 @@ export const whySolFullService = {
   desc: 'Situaciones y necesidades que podemos resolver con nuestro expertise y metodología',
   reasons: [
     'Quieres aprovechar la herramienta CRM que ya posee mi negocio, siguiendo una estrategia.',
-    'Necesitas acompañamiento en la ejecución de mi estrategia de CRM.',
+    'Necesitas acompañamiento en la ejecución de tu estrategia de CRM.',
     'Necesitas un equipo que opere tu plataforma de marketing Automation en el día a día.'
   ]
 }
@@ -12,7 +12,7 @@ export const whySolAccelerator = {
   title: '¿Por qué elegir esta solución?',
   desc: 'Situaciones y necesidades que podemos resolver con nuestro expertise y metodología',
   reasons: [
-    'Quieres elegir una herramienta de Marketing Automation adecuada para tu negocio.',
+    'Quieres consultoría para elegir el software más adecuado para tu empresa.',
     'Quieres personalizar la comunicación con segmentos de clientes.',
     'Quieres mejorar las estrategias de retención, fidelización y reactivación en base a datos.'
   ]

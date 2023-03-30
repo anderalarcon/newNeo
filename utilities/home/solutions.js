@@ -22,7 +22,7 @@ export const solutionsPeru = [
   },
   {
     iconSrc: iconHh,
-    service: 'Headhunting y Mentoring',
+    service: 'Digital Talent Solutions',
     description: 'Recluta y forma talento digital de alto performace.',
     url: '/pe/servicios/headhunting-y-mentoring'
   },

@@ -170,37 +170,6 @@ export const dataHeroAutomatizacionContenido = {
   ]
 }
 
-export const dataHeroDashboardSeo = {
-  pretitle: 'Dashboard SEO',
-  title: 'Unifica el análisis de tus',
-  subtitle: 'keywords en un solo lugar',
-  service: 'mkt-automation',
-  solution: 'default',
-  desc: 'Automatiza el seguimiento y análisis de las palabras claves de forma recurrente, tomando en cuenta a los competidores y unifícalo en un dashboard estratégico SEO.',
-  descCert: 'Nuestros analistas están certificados en:',
-  mainImg: DashboardSeoHero.src,
-  certifications: [
-    {
-      src: salesforce.src
-    },
-    {
-      src: aws.src
-    },
-    {
-      src: ga.src
-    },
-    {
-      src: gmp.src
-    },
-    {
-      src: gads.src
-    },
-    {
-      src: gc.src
-    }
-  ]
-}
-
 export const dataHeroChatbotEcommerce = {
   pretitle: 'Chatbot para E-commerce',
   title: 'Aumenta tus ventas y',

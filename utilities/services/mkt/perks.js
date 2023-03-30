@@ -22,10 +22,6 @@ import perkIcon2AutomatizacionContenido from '../../../public/assets/Services/mk
 import perkIcon3AutomatizacionContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service4.svg'
 import perkIcon4AutomatizacionContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service4.svg'
 
-import DashboardSeoImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service5.jpg'
-import perkIcon1DashboardSeo from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service5.svg'
-import perkIcon2DashboardSeo from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service5.svg'
-
 import ChatbotEcommerceImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service6.jpg'
 import perkIcon1ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service6.svg'
 import perkIcon2ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service6.svg'
@@ -152,26 +148,6 @@ export const perksAutomatizacionContenido = {
     {
       text: 'Desarrollar contenido de forma automatizada para mejorar el posicionamiento SEO de un sitio web.',
       icon: perkIcon4AutomatizacionContenido
-    }
-  ],
-  contact: {
-    text: 'Contáctanos',
-    service: 'mkt-automation',
-    solution: 'default'
-  }
-}
-
-export const perksDashboardSeo = {
-  coverImg: DashboardSeoImg,
-  title: '¿Qué podrás lograr con este servicio?',
-  perks: [
-    {
-      text: 'Utilizar algoritmos de aprendizaje automático para analizar los datos y extraer información valiosa.',
-      icon: perkIcon1DashboardSeo
-    },
-    {
-      text: 'Utilizar algoritmos de aprendizaje automático para analizar los datos y extraer información valiosa.',
-      icon: perkIcon2DashboardSeo
     }
   ],
   contact: {

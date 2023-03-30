@@ -81,7 +81,7 @@ export const dataHeroFullService = {
 export const dataHeroAccelerator = {
   pretitle: 'Accelerator CRM',
   title: 'Logra tus resultados de forma',
-  subtitle: 'rápida y personalizadas',
+  subtitle: 'rápida y personalizada',
   service: 'crm',
   solution: 'default',
   desc: 'Diseño y ejecución de soluciones específicas y de corta duración (2-4 meses), con foco en resultados de negocio inmediatos.',
@@ -114,11 +114,11 @@ export const dataHeroAccelerator = {
 
 export const dataHeroQuickStart = {
   pretitle: 'Quick Start',
-  title: 'Configuramos y potenciamos',
-  subtitle: 'tu estrategia de CRM',
+  title: 'Implementamos, migramos y',
+  subtitle: 'potenciamos soluciones avanzadas',
   service: 'crm',
   solution: 'default',
-  desc: 'Implementación rápida y efectiva de soluciones CRM, que incluye la configuración de procesos, informes y carga de datos en el software, además de capacitación al equipo para garantizar adopción de la herramienta.',
+  desc: 'Implementación rápida y efectiva de soluciones de Ventas, Marketing y Servicio al cliente. Incluye la configuración de procesos, informes y carga de datos en el software, además de capacitación al equipo para garantizar adopción de la herramienta.',
   descCert: 'Nuestros analistas están certificados en:',
   mainImg: QuickStartHero.src,
   certifications: [

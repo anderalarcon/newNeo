@@ -87,7 +87,7 @@ const Header = () => {
       title: 'Servicios con partners',
       ul: [
         {
-          link: 'https://neoconsulting.ai/',
+          link: 'https://neoconsulting.ai/servicios-aws/',
           text: 'Soluciones cloud con AWS',
           icon: brain.src
         }
