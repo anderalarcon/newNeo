@@ -1,60 +1,60 @@
-import WorkshopEstrategiaImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service1.jpg'
-import perkIcon1WorkshopEstrategia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service1.svg'
-import perkIcon2WorkshopEstrategia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service1.svg'
-import perkIcon3WorkshopEstrategia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service1.svg'
+import WorkshopEstrategiaImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service1.jpg'
+import perkIcon1WorkshopEstrategia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service1.svg'
+import perkIcon2WorkshopEstrategia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service1.svg'
+import perkIcon3WorkshopEstrategia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service1.svg'
 
-import MachineLearningImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service2.jpg'
-import perkIcon1MachineLearning from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service2.svg'
-import perkIcon2MachineLearning from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service2.svg'
-import perkIcon3MachineLearning from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service2.svg'
+import MachineLearningImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service2.jpg'
+import perkIcon1MachineLearning from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service2.svg'
+import perkIcon2MachineLearning from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service2.svg'
+import perkIcon3MachineLearning from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service2.svg'
 
-import MigracionGa4Img from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service3.jpg'
-import perkIcon1MigracionGa4 from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service3.svg'
-import perkIcon2MigracionGa4 from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service3.svg'
-import perkIcon3MigracionGa4 from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service3.svg'
+import MigracionGa4Img from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service3.jpg'
+import perkIcon1MigracionGa4 from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service3.svg'
+import perkIcon2MigracionGa4 from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service3.svg'
+import perkIcon3MigracionGa4 from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service3.svg'
 
-import AdvancedAnalyticsImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service4.jpg'
-import perkIcon1AdvancedAnalytics from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service4.svg'
-import perkIcon2AdvancedAnalytics from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service4.svg'
-import perkIcon3AdvancedAnalytics from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service4.svg'
+import AdvancedAnalyticsImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service4.jpg'
+import perkIcon1AdvancedAnalytics from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service4.svg'
+import perkIcon2AdvancedAnalytics from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service4.svg'
+import perkIcon3AdvancedAnalytics from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service4.svg'
 
-import AnaliticaDigitalImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service5.jpg'
-import perkIcon1AnaliticaDigital from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service5.svg'
-import perkIcon2AnaliticaDigital from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service5.svg'
-import perkIcon3AnaliticaDigital from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service5.svg'
+import AnaliticaDigitalImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service5.jpg'
+import perkIcon1AnaliticaDigital from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service5.svg'
+import perkIcon2AnaliticaDigital from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service5.svg'
+import perkIcon3AnaliticaDigital from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service5.svg'
 
-import PredictiveAnalyticsImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service6.jpg'
-import perkIcon1PredictiveAnalytics from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service6.svg'
-import perkIcon2PredictiveAnalytics from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service6.svg'
-import perkIcon3PredictiveAnalytics from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service6.svg'
+import PredictiveAnalyticsImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service6.jpg'
+import perkIcon1PredictiveAnalytics from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service6.svg'
+import perkIcon2PredictiveAnalytics from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service6.svg'
+import perkIcon3PredictiveAnalytics from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service6.svg'
 
-import PredictiveSalesImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service7.jpg'
-import perkIcon1PredictiveSales from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service7.svg'
-import perkIcon2PredictiveSales from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service7.svg'
-import perkIcon3PredictiveSales from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service7.svg'
+import PredictiveSalesImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service7.jpg'
+import perkIcon1PredictiveSales from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service7.svg'
+import perkIcon2PredictiveSales from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service7.svg'
+import perkIcon3PredictiveSales from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service7.svg'
 
-import ChatbotsInteligenciaImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service8.jpg'
-import perkIcon1ChatbotsInteligencia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service8.svg'
-import perkIcon2ChatbotsInteligencia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service8.svg'
-import perkIcon3ChatbotsInteligencia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service8.svg'
-import perkIcon4ChatbotsInteligencia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon4-service8.svg'
-import perkIcon5ChatbotsInteligencia from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon5-service8.svg'
+import ChatbotsInteligenciaImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service8.jpg'
+import perkIcon1ChatbotsInteligencia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service8.svg'
+import perkIcon2ChatbotsInteligencia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service8.svg'
+import perkIcon3ChatbotsInteligencia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service8.svg'
+import perkIcon4ChatbotsInteligencia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon4-service8.svg'
+import perkIcon5ChatbotsInteligencia from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon5-service8.svg'
 
-import SentimentAnalysisImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service9.jpg'
-import perkIcon1SentimentAnalysis from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service9.svg'
-import perkIcon2SentimentAnalysis from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service9.svg'
-import perkIcon3SentimentAnalysis from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service9.svg'
+import SentimentAnalysisImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service9.jpg'
+import perkIcon1SentimentAnalysis from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service9.svg'
+import perkIcon2SentimentAnalysis from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service9.svg'
+import perkIcon3SentimentAnalysis from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service9.svg'
 
-import IntegracionDatosImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service10.jpg'
-import perkIcon1IntegracionDatos from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service10.svg'
-import perkIcon2IntegracionDatos from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service10.svg'
-import perkIcon3IntegracionDatos from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service10.svg'
+import IntegracionDatosImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service10.jpg'
+import perkIcon1IntegracionDatos from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service10.svg'
+import perkIcon2IntegracionDatos from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service10.svg'
+import perkIcon3IntegracionDatos from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service10.svg'
 
-import AutomatizacionReportesImg from '../../../public/assets/Services/aaia/Especifics/analytics-results-image-service11.jpg'
-import perkIcon1AutomatizacionReportes from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon1-service11.svg'
-import perkIcon2AutomatizacionReportes from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon2-service11.svg'
-import perkIcon3AutomatizacionReportes from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon3-service11.svg'
-import perkIcon4AutomatizacionReportes from '../../../public/assets/Services/aaia/Especifics/analytics-results-icon4-service11.svg'
+import AutomatizacionReportesImg from '../../../public/assets/Services/Aaia/Especifics/analytics-results-image-service11.jpg'
+import perkIcon1AutomatizacionReportes from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon1-service11.svg'
+import perkIcon2AutomatizacionReportes from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon2-service11.svg'
+import perkIcon3AutomatizacionReportes from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon3-service11.svg'
+import perkIcon4AutomatizacionReportes from '../../../public/assets/Services/Aaia/Especifics/analytics-results-icon4-service11.svg'
 
 export const perksWorkshopEstrategia = {
   coverImg: WorkshopEstrategiaImg,
@@ -76,7 +76,7 @@ export const perksWorkshopEstrategia = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'estrategia-data'
   }
 }
 
@@ -100,7 +100,7 @@ export const perksMachineLearning = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'casos-de-uso-ml'
   }
 }
 
@@ -124,7 +124,7 @@ export const perksMigracionGa4 = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'implementacion-o-migracion-a-ga4'
   }
 }
 
@@ -148,7 +148,7 @@ export const perksAdvancedAnalytics = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'digital-advanced-analytics'
   }
 }
 
@@ -172,7 +172,7 @@ export const perksAnaliticaDigital = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'consultoria-analitica-digital'
   }
 }
 
@@ -196,7 +196,7 @@ export const perksPredictiveAnalytics = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'predictive-customer-analytics'
   }
 }
 
@@ -220,7 +220,7 @@ export const perksPredictiveSales = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'predictive-sales-analytics'
   }
 }
 
@@ -252,7 +252,7 @@ export const perksChatbotsInteligencia = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'chatbots-ai'
   }
 }
 
@@ -276,7 +276,7 @@ export const perksSentimentAnalysis = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'sentiment-analysis-social-listening'
   }
 }
 
@@ -300,7 +300,7 @@ export const perksIntegracionDatos = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'integracion-fuente-de-datos'
   }
 }
 
@@ -328,6 +328,6 @@ export const perksAutomatizacionReportes = {
   contact: {
     text: 'Contáctanos',
     service: 'aaia',
-    solution: 'default'
+    solution: 'automatizacion-reportes'
   }
 }

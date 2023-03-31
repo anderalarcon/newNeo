@@ -135,22 +135,81 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'estrategia-data',
+        title: 'Estrategia de Data',
+        service_type: 'Tradicional',
+        option: 'Estrategia de Data',
+        chapter: 'Advanced Analytics'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'casos-de-uso-ml',
+        title: 'Casos de Uso para Machine Learning',
+        service_type: 'Tradicional',
+        option: 'Casos de Uso para Machine Learning',
+        chapter: 'Advanced Analytics'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'implementacion-o-migracion-a-ga4',
+        title: 'Implementación o migración a GA4',
+        service_type: 'Tradicional',
+        option: 'Implementación o migración a GA4',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'digital-advanced-analytics',
+        title: 'Digital Advanced Analytics',
+        service_type: 'Tradicional',
+        option: 'Digital Advanced Analytics',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'consultoria-analitica-digital',
+        title: 'Consultoría en Analítica Digital',
+        service_type: 'Tradicional',
+        option: 'Consultoría en Analítica Digital',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'predictive-customer-analytics',
+        title: 'Predictive Customer Analytics',
+        service_type: 'Tradicional',
+        option: 'Predictive Customer Analytics',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'predictive-sales-analytics',
+        title: 'Predictive Sales & Product Analytics',
+        service_type: 'Tradicional',
+        option: 'Predictive Sales & Product Analytics',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'chatbots-ai',
+        title: 'Chatbots AI',
+        service_type: 'Tradicional',
+        option: 'Chatbots AI',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'sentiment-analysis-social-listening',
+        title: 'Sentiment Analysis & Social Listening',
+        service_type: 'Tradicional',
+        option: 'Sentiment Analysis & Social Listening',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'integracion-fuente-de-datos',
+        title: 'Integración de Fuentes de Datos',
+        service_type: 'Tradicional',
+        option: 'Integración de Fuentes de Datos',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'automatizacion-reportes',
+        title: 'Automatización de reportes',
+        service_type: 'Tradicional',
+        option: 'Automatización de reportes',
+        chapter: 'Advanced Analytics'
       }
     ]
   },
