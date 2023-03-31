@@ -4,20 +4,20 @@ export const dtsSolutions = [
     description:
       'Nos encargamos del proceso de búsqueda y selección de perfiles digitales de nuestros clientes, para que puedan contratar al candidato elegido.',
     urlcontact: '/contact/?service=digital-talent-solution&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/dts/head_hunting/'
+    urlpage: '/pe/servicios/headhunting-y-mentoring/headhunting'
   },
   {
     solution: 'Outsourcing',
     description:
       'Reclutamos y seleccionamos perfiles para ti. El perfil trabaja tiempo completo con el cliente, pero es personal de Neo y nosotros nos encargamos del apoyo y mentoring.',
     urlcontact: '/contact/?service=digital-talent-solution&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/dts/outsourcing/'
+    urlpage: '/pe/servicios/headhunting-y-mentoring/outsourcing'
   },
   {
     solution: 'Outsourcing + Mentoring',
     description:
       'Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas.',
     urlcontact: '/contact/?service=digital-talent-solution&solution=default',
-    urlpage: '/localized_files_2/es_pe/servicios/dts/mentory_outsourcing/'
+    urlpage: 'pe/servicios/headhunting-y-mentoring/outsourcing-y-mentoring'
   }
 ]
