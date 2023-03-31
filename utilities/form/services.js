@@ -224,22 +224,18 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'acomponamiento-ecommerce',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'inhousing',
+        title: 'In Housing de Publicidad Digital',
+        service_type: 'Tradicional',
+        option: 'In Housing de Publicidad Digital',
+        chapter: 'Digital Advertising'
       },
       {
-        solution: 'acomponamiento-ecommerce',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
-      },
-      {
-        solution: 'acomponamiento-ecommerce',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'auditoria',
+        title: 'Auditoría de campañas de performance',
+        service_type: 'Tradicional',
+        option: 'Auditoría de campañas de performance',
+        chapter: 'Digital Advertising'
       }
     ]
   },

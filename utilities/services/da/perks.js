@@ -1,13 +1,13 @@
-import InhousingImg from '../../../public/assets/Services/da/Especifics/da-results-image-service1.jpg'
-import perkIcon1Inhousing from '../../../public/assets/Services/da/Especifics/da-results-icon1-service1.svg'
-import perkIcon2Inhousing from '../../../public/assets/Services/da/Especifics/da-results-icon2-service1.svg'
-import perkIcon3Inhousing from '../../../public/assets/Services/da/Especifics/da-results-icon3-service1.svg'
+import InhousingImg from '../../../public/assets/Services/Da/Especifics/da-results-image-service1.jpg'
+import perkIcon1Inhousing from '../../../public/assets/Services/Da/Especifics/da-results-icon1-service1.svg'
+import perkIcon2Inhousing from '../../../public/assets/Services/Da/Especifics/da-results-icon2-service1.svg'
+import perkIcon3Inhousing from '../../../public/assets/Services/Da/Especifics/da-results-icon3-service1.svg'
 
-import AuditoriaImg from '../../../public/assets/Services/da/Especifics/da-results-image-service2.jpg'
-import perkIcon1Auditoria from '../../../public/assets/Services/da/Especifics/da-results-icon1-service2.svg'
-import perkIcon2Auditoria from '../../../public/assets/Services/da/Especifics/da-results-icon2-service2.svg'
-import perkIcon3Auditoria from '../../../public/assets/Services/da/Especifics/da-results-icon3-service2.svg'
-import perkIcon4Auditoria from '../../../public/assets/Services/da/Especifics/da-results-icon4-service2.svg'
+import AuditoriaImg from '../../../public/assets/Services/Da/Especifics/da-results-image-service2.jpg'
+import perkIcon1Auditoria from '../../../public/assets/Services/Da/Especifics/da-results-icon1-service2.svg'
+import perkIcon2Auditoria from '../../../public/assets/Services/Da/Especifics/da-results-icon2-service2.svg'
+import perkIcon3Auditoria from '../../../public/assets/Services/Da/Especifics/da-results-icon3-service2.svg'
+import perkIcon4Auditoria from '../../../public/assets/Services/Da/Especifics/da-results-icon4-service2.svg'
 
 export const perksInhousing = {
   coverImg: InhousingImg,
@@ -29,7 +29,7 @@ export const perksInhousing = {
   contact: {
     text: 'Contáctanos',
     service: 'digital-ads',
-    solution: 'default'
+    solution: 'inhousing'
   }
 }
 
@@ -57,6 +57,6 @@ export const perksAuditoria = {
   contact: {
     text: 'Contáctanos',
     service: 'digital-ads',
-    solution: 'default'
+    solution: 'auditoria'
   }
 }
