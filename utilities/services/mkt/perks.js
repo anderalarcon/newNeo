@@ -1,53 +1,53 @@
-import ReportingRoiImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service1.jpg'
-import perkIcon1ReportingRoi from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service1.svg'
-import perkIcon2ReportingRoi from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service1.svg'
-import perkIcon3ReportingRoi from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service1.svg'
-import perkIcon4ReportingRoi from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service1.svg'
+import ReportingRoiImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service1.jpg'
+import perkIcon1ReportingRoi from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service1.svg'
+import perkIcon2ReportingRoi from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service1.svg'
+import perkIcon3ReportingRoi from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service1.svg'
+import perkIcon4ReportingRoi from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service1.svg'
 
-import AutomatizacionLeadsImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service2.jpg'
-import perkIcon1AutomatizacionLeads from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service2.svg'
-import perkIcon2AutomatizacionLeads from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service2.svg'
-import perkIcon3AutomatizacionLeads from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service2.svg'
-import perkIcon4AutomatizacionLeads from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service2.svg'
+import AutomatizacionLeadsImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service2.jpg'
+import perkIcon1AutomatizacionLeads from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service2.svg'
+import perkIcon2AutomatizacionLeads from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service2.svg'
+import perkIcon3AutomatizacionLeads from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service2.svg'
+import perkIcon4AutomatizacionLeads from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service2.svg'
 
-import PersonalizacionEcommerceImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service3.jpg'
-import perkIcon1PersonalizacionEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service3.svg'
-import perkIcon2PersonalizacionEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service3.svg'
-import perkIcon3PersonalizacionEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service3.svg'
-import perkIcon4PersonalizacionEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service3.svg'
+import PersonalizacionEcommerceImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service3.jpg'
+import perkIcon1PersonalizacionEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service3.svg'
+import perkIcon2PersonalizacionEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service3.svg'
+import perkIcon3PersonalizacionEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service3.svg'
+import perkIcon4PersonalizacionEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service3.svg'
 
-import AutomatizacionContenidoImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service4.jpg'
-import perkIcon1AutomatizacionContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service4.svg'
-import perkIcon2AutomatizacionContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service4.svg'
-import perkIcon3AutomatizacionContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service4.svg'
-import perkIcon4AutomatizacionContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service4.svg'
+import AutomatizacionContenidoImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service4.jpg'
+import perkIcon1AutomatizacionContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service4.svg'
+import perkIcon2AutomatizacionContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service4.svg'
+import perkIcon3AutomatizacionContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service4.svg'
+import perkIcon4AutomatizacionContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service4.svg'
 
-import DashboardSeoImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service5.jpg'
-import perkIcon1DashboardSeo from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service5.svg'
-import perkIcon2DashboardSeo from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service5.svg'
+import DashboardSeoImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service5.jpg'
+import perkIcon1DashboardSeo from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service5.svg'
+import perkIcon2DashboardSeo from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service5.svg'
 
-import ChatbotEcommerceImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service6.jpg'
-import perkIcon1ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service6.svg'
-import perkIcon2ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service6.svg'
-import perkIcon3ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service6.svg'
-import perkIcon4ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service6.svg'
-import perkIcon5ChatbotEcommerce from '../../../public/assets/Services/mkt/Especifics/ma-results-icon5-service6.svg'
+import ChatbotEcommerceImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service6.jpg'
+import perkIcon1ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service6.svg'
+import perkIcon2ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service6.svg'
+import perkIcon3ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service6.svg'
+import perkIcon4ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service6.svg'
+import perkIcon5ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon5-service6.svg'
 
-import PlaningContenidoImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service7.jpg'
-import perkIcon1PlaningContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service7.svg'
-import perkIcon2PlaningContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service7.svg'
-import perkIcon3PlaningContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service7.svg'
-import perkIcon4PlaningContenido from '../../../public/assets/Services/mkt/Especifics/ma-results-icon4-service7.svg'
+import PlaningContenidoImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service7.jpg'
+import perkIcon1PlaningContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service7.svg'
+import perkIcon2PlaningContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service7.svg'
+import perkIcon3PlaningContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service7.svg'
+import perkIcon4PlaningContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service7.svg'
 
-import LeadNurturingImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service8.jpg'
-import perkIcon1LeadNurturing from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service8.svg'
-import perkIcon2LeadNurturing from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service8.svg'
-import perkIcon3LeadNurturing from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service8.svg'
+import LeadNurturingImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service8.jpg'
+import perkIcon1LeadNurturing from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service8.svg'
+import perkIcon2LeadNurturing from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service8.svg'
+import perkIcon3LeadNurturing from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service8.svg'
 
-import CentralizacionInsightsImg from '../../../public/assets/Services/mkt/Especifics/ma-results-image-service9.jpg'
-import perkIcon1CentralizacionInsights from '../../../public/assets/Services/mkt/Especifics/ma-results-icon1-service9.svg'
-import perkIcon2CentralizacionInsights from '../../../public/assets/Services/mkt/Especifics/ma-results-icon2-service9.svg'
-import perkIcon3CentralizacionInsights from '../../../public/assets/Services/mkt/Especifics/ma-results-icon3-service9.svg'
+import CentralizacionInsightsImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service9.jpg'
+import perkIcon1CentralizacionInsights from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service9.svg'
+import perkIcon2CentralizacionInsights from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service9.svg'
+import perkIcon3CentralizacionInsights from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service9.svg'
 
 export const perksReportingRoi = {
   coverImg: ReportingRoiImg,
@@ -73,7 +73,7 @@ export const perksReportingRoi = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'reporting-roi-automatizado'
   }
 }
 
@@ -101,7 +101,7 @@ export const perksAutomatizacionLeads = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'automatizacion-de-leads-para-remarketing'
   }
 }
 
@@ -129,7 +129,7 @@ export const perksPersonalizacionEcommerce = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'personalizacion-ecommerce'
   }
 }
 
@@ -157,7 +157,7 @@ export const perksAutomatizacionContenido = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'automatizacion-de-contenido'
   }
 }
 
@@ -177,7 +177,7 @@ export const perksDashboardSeo = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'dashboard-seo'
   }
 }
 
@@ -209,7 +209,7 @@ export const perksChatbotEcommerce = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'chatbot-ecommerce'
   }
 }
 
@@ -237,7 +237,7 @@ export const perksPlaningContenido = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'planning-de-contenido-agil'
   }
 }
 
@@ -261,7 +261,7 @@ export const perksLeadNurturing = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'lead-nurturing-automatizado'
   }
 }
 
@@ -285,6 +285,6 @@ export const perksCentralizacionInsights = {
   contact: {
     text: 'Contáctanos',
     service: 'mkt-automation',
-    solution: 'default'
+    solution: 'centralizacion-de-insights'
   }
 }

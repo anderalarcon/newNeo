@@ -103,22 +103,67 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'acomponamiento-ecommerce',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'reporting-roi-automatizado',
+        title: 'Reporting ROI Automatizado',
+        service_type: 'Estratégico',
+        option: 'Reporting ROI Automatizado',
+        chapter: 'Marketing Automation'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'automatizacion-de-leads-para-remarketing',
+        title: 'Automatización de leads para Remarketing',
+        service_type: 'Estratégico',
+        option: 'Automatización de leads para Remarketing',
+        chapter: 'Marketing Automation'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'personalizacion-ecommerce',
+        title: 'Personalización para E-Commerce',
+        service_type: 'Estratégico',
+        option: 'Personalización para E-Commerce',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'automatizacion-de-contenido',
+        title: 'Automatización de Contenido',
+        service_type: 'Estratégico',
+        option: 'Automatización de Contenido',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'dashboard-seo',
+        title: 'Dashboard SEO',
+        service_type: 'Estratégico',
+        option: 'Dashboard SEO',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'chatbot-ecommerce',
+        title: 'Chatbot para Ecommerce',
+        service_type: 'Estratégico',
+        option: 'Chatbot para Ecommerce',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'planning-de-contenido-agil',
+        title: 'Planning de Contenido ágil',
+        service_type: 'Estratégico',
+        option: 'Planning de Contenido ágil',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'lead-nurturing-automatizado',
+        title: 'Lead Nurturing Automatizado',
+        service_type: 'Estratégico',
+        option: 'Lead Nurturing Automatizado',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'centralizacion-de-insights',
+        title: 'Centralización de insights',
+        service_type: 'Estratégico',
+        option: 'Centralización de insights',
+        chapter: 'Marketing Automation'
       }
     ]
   },
@@ -303,21 +348,21 @@ export const servicesData = [
       {
         solution: 'headhunting',
         title: 'Head Hunting',
-        service_type: 'Tradicional',
+        service_type: 'Estratégico',
         option: 'Head Hunting',
         chapter: 'Digital Talent Solutions'
       },
       {
         solution: 'outsourcing',
         title: 'Outsourcing',
-        service_type: 'Tradicional',
+        service_type: 'Estratégico',
         option: 'Outsourcing',
         chapter: 'Digital Talent Solutions'
       },
       {
         solution: 'outsourcing-y-mentoring',
         title: 'Outsourcing y Mentoring',
-        service_type: 'Tradicional',
+        service_type: 'Estratégico',
         option: 'Outsourcing y Mentoring',
         chapter: 'Digital Talent Solutions'
       }

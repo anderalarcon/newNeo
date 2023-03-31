@@ -60,7 +60,7 @@ const leadNurturing = () => {
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} />
+    <Contact service={'mkt-automation'} solution='lead-nurturing-automatizado' />
     <Content contents={contentmkt} />
     <Footer/>
   </>
