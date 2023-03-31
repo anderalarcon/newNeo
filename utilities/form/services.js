@@ -257,22 +257,39 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'conocimiento-del-consumidor',
+        title: 'Conocimiento del consumidor',
+        service_type: 'Tradicional',
+        option: 'Conocimiento del consumidor',
+        chapter: 'Experience Design'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'mapeo-de-experiencias',
+        title: 'Mapeo de experiencias',
+        service_type: 'Tradicional',
+        option: 'Mapeo de experiencias',
+        chapter: 'Experience Design'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'diseño-de-experiencias',
+        title: 'Diseño de experiencias',
+        service_type: 'Tradicional',
+        option: 'Diseño de experiencias',
+        chapter: 'Experience Design'
+      },
+      {
+        solution: 'medicion-de-experiencia',
+        title: 'Medición de la experiencia',
+        service_type: 'Tradicional',
+        option: 'Medición de la experiencia',
+        chapter: 'Experience Design'
+      },
+      {
+        solution: 'transformacion-digital',
+        title: 'Transformación Digital',
+        service_type: 'Tradicional',
+        option: 'Transformación Digital',
+        chapter: 'Experience Design'
       }
     ]
   },
