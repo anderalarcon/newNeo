@@ -18,6 +18,7 @@ import rise from '../../public/assets/Header/Rise.svg'
 import stats from '../../public/assets/Header/stats.svg'
 import sync from '../../public/assets/Header/Sync.svg'
 import techInfo from '../../public/assets/Header/tech-info.svg'
+import aws from '../../public/assets/Header/aws.svg'
 // import window from '../../public/assets/Header/window.svg'
 import videoChat from '../../public/assets/Header/video-chat-line.svg'
 import uuid from 'react-uuid'
@@ -81,6 +82,16 @@ const Header = () => {
           icon: brain.src
         }
         // { link: '#', text: 'Otros', icon: window.src }
+      ]
+    },
+    {
+      title: 'Servicios con partners',
+      ul: [
+        {
+          link: 'https://neoconsulting.ai/servicios-aws/',
+          text: 'Soluciones cloud con AWS',
+          icon: aws.src
+        }
       ]
     },
     {

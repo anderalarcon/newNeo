@@ -136,30 +136,6 @@ export const workAutomatizacionContenido = [
   }
 ]
 
-export const workDashboardSeo = [
-  {
-    icon: Icon1DashboardSeo,
-    title: 'Alineamiento con el negocio',
-    text: 'Se identifican los objetivos del negocio tanto a nivel digital como de negocio.'
-  },
-  {
-    icon: Icon2DashboardSeo,
-    title: 'Keyword Research',
-    text: 'Se identifican las palabras clave que responden a los objetivos establecidos.'
-
-  },
-  {
-    icon: Icon3DashboardSeo,
-    title: 'Auditoría técnica y de contenido SEO',
-    text: 'La auditoría está alineada con los objetivos del negocio para asegurar una correcta indexación de resultados en Google.'
-  },
-  {
-    icon: Icon4DashboardSeo,
-    title: 'Mejora continua',
-    text: 'Seguimiento continuo de los resultados obtenidos tras las implementaciones realizadas a través de las recomendaciones identificadas en la auditoría.'
-  }
-]
-
 export const workChatbotEcommerce = [
   {
     icon: Icon1ChatbotEcommerce,

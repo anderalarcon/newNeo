@@ -12,17 +12,17 @@ import WhySolutions from '../../../../../components/WhySolution/WhySolutions'
 import ServicesPerks from '../../../../../components/ServicesPerks/ServicesPerks'
 import WorkProcess from '../../../../../components/WorkProcess/WorkProcess'
 
-import { dataHeroDashboardSeo } from '../../../../../utilities/services/mkt/hero'
-import { whySolDashboardSeo } from '../../../../../utilities/services/mkt/whySolutions'
-import { perksDashboardSeo } from '../../../../../utilities/services/mkt/perks'
-import { workDashboardSeo } from '../../../../../utilities/services/mkt/workProcess'
+import { dataHeroPlaningContenido } from '../../../../../utilities/services/mkt/hero'
+import { whySolPlaningContenido } from '../../../../../utilities/services/mkt/whySolutions'
+import { perksPlaningContenido } from '../../../../../utilities/services/mkt/perks'
+import { workPlaningContenido } from '../../../../../utilities/services/mkt/workProcess'
 
 import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
 import { contentmkt } from '../../../../../utilities/services/mkt/content'
 
-const dashboardSeo = () => {
+const planingContenido = () => {
   return (
     <>
     <Head>
@@ -53,18 +53,18 @@ const dashboardSeo = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroDashboardSeo} />
-    <WhySolutions data={whySolDashboardSeo} />
-    <ServicesPerks data={perksDashboardSeo} />
-    <WorkProcess processes={workDashboardSeo} />
+    <Hero data={dataHeroPlaningContenido} />
+    <WhySolutions data={whySolPlaningContenido} />
+    <ServicesPerks data={perksPlaningContenido} />
+    <WorkProcess processes={workPlaningContenido} />
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} solution='dashboard-seo' />
+    <Contact service={'mkt-automation'} />
     <Content contents={contentmkt} />
     <Footer/>
   </>
   )
 }
 
-export default dashboardSeo
+export default planingContenido
