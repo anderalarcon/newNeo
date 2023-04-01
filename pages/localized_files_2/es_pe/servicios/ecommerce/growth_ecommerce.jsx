@@ -49,7 +49,7 @@ const growthEcommerce = () => {
     <WorkProcess processes={workGrowthEcommerce} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} />
+    <Contact service={'ecommerce'} solution={'growth-y-analytics-para-ecommerce'} />
     <Content contents={contentecommerce} />
     <Footer/>
     </>

@@ -26,22 +26,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
+        solution: 'full-service',
         title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        service_type: 'Tradicional',
+        option: 'Full Service CRM',
+        chapter: 'CRM'
       },
       {
         solution: 'accelerator',
         title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        service_type: 'Tradicional',
+        option: 'Accelerator CRM',
+        chapter: 'CRM'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'quickstart',
+        title: 'Quick Start',
+        service_type: 'Tradicional',
+        option: 'Quick Start',
+        chapter: 'CRM'
       }
     ]
   },
@@ -50,6 +53,7 @@ export const servicesData = [
     title: 'Canales Digitales',
     service_type: 'Tradicional',
     desc: 'Atrae más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.',
+    chapter: 'Canales Digitales',
     options: [
       'Marketing de contenidos',
       'SEO con Rank Tracker',
@@ -58,22 +62,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'marketing-de-contenidos',
+        title: 'Marketing de Contenidos',
+        service_type: 'Tradicional',
+        option: 'Marketing de contenidos',
+        chapter: 'Canales Digitales'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'growth-hacking',
+        title: 'Growth Hacking',
+        service_type: 'Tradicional',
+        option: 'Growth Hacking',
+        chapter: 'Canales Digitales'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'seo-rank-tracker',
+        title: 'SEO con Rank Tracker',
+        service_type: 'Tradicional',
+        option: 'SEO con Rank Tracker',
+        chapter: 'Canales Digitales'
       }
     ]
   },
@@ -96,22 +103,67 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'reporting-roi-automatizado',
+        title: 'Reporting ROI Automatizado',
+        service_type: 'Estratégico',
+        option: 'Reporting ROI Automatizado',
+        chapter: 'Marketing Automation'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'automatizacion-de-leads-para-remarketing',
+        title: 'Automatización de leads para Remarketing',
+        service_type: 'Estratégico',
+        option: 'Automatización de leads para Remarketing',
+        chapter: 'Marketing Automation'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'personalizacion-ecommerce',
+        title: 'Personalización para E-Commerce',
+        service_type: 'Estratégico',
+        option: 'Personalización para E-Commerce',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'automatizacion-de-contenido',
+        title: 'Automatización de Contenido',
+        service_type: 'Estratégico',
+        option: 'Automatización de Contenido',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'dashboard-seo',
+        title: 'Dashboard SEO',
+        service_type: 'Estratégico',
+        option: 'Dashboard SEO',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'chatbot-ecommerce',
+        title: 'Chatbot para Ecommerce',
+        service_type: 'Estratégico',
+        option: 'Chatbot para Ecommerce',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'planning-de-contenido-agil',
+        title: 'Planning de Contenido ágil',
+        service_type: 'Estratégico',
+        option: 'Planning de Contenido ágil',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'lead-nurturing-automatizado',
+        title: 'Lead Nurturing Automatizado',
+        service_type: 'Estratégico',
+        option: 'Lead Nurturing Automatizado',
+        chapter: 'Marketing Automation'
+      },
+      {
+        solution: 'centralizacion-de-insights',
+        title: 'Centralización de insights',
+        service_type: 'Estratégico',
+        option: 'Centralización de insights',
+        chapter: 'Marketing Automation'
       }
     ]
   },
@@ -128,22 +180,81 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'estrategia-data',
+        title: 'Estrategia de Data',
+        service_type: 'Tradicional',
+        option: 'Estrategia de Data',
+        chapter: 'Advanced Analytics'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'casos-de-uso-ml',
+        title: 'Casos de Uso para Machine Learning',
+        service_type: 'Tradicional',
+        option: 'Casos de Uso para Machine Learning',
+        chapter: 'Advanced Analytics'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'implementacion-o-migracion-a-ga4',
+        title: 'Implementación o migración a GA4',
+        service_type: 'Tradicional',
+        option: 'Implementación o migración a GA4',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'digital-advanced-analytics',
+        title: 'Digital Advanced Analytics',
+        service_type: 'Tradicional',
+        option: 'Digital Advanced Analytics',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'consultoria-analitica-digital',
+        title: 'Consultoría en Analítica Digital',
+        service_type: 'Tradicional',
+        option: 'Consultoría en Analítica Digital',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'predictive-customer-analytics',
+        title: 'Predictive Customer Analytics',
+        service_type: 'Tradicional',
+        option: 'Predictive Customer Analytics',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'predictive-sales-analytics',
+        title: 'Predictive Sales & Product Analytics',
+        service_type: 'Tradicional',
+        option: 'Predictive Sales & Product Analytics',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'chatbots-ai',
+        title: 'Chatbots AI',
+        service_type: 'Tradicional',
+        option: 'Chatbots AI',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'sentiment-analysis-social-listening',
+        title: 'Sentiment Analysis & Social Listening',
+        service_type: 'Tradicional',
+        option: 'Sentiment Analysis & Social Listening',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'integracion-fuente-de-datos',
+        title: 'Integración de Fuentes de Datos',
+        service_type: 'Tradicional',
+        option: 'Integración de Fuentes de Datos',
+        chapter: 'Advanced Analytics'
+      },
+      {
+        solution: 'automatizacion-reportes',
+        title: 'Automatización de reportes',
+        service_type: 'Tradicional',
+        option: 'Automatización de reportes',
+        chapter: 'Advanced Analytics'
       }
     ]
   },
@@ -158,22 +269,18 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'inhousing',
+        title: 'In Housing de Publicidad Digital',
+        service_type: 'Tradicional',
+        option: 'In Housing de Publicidad Digital',
+        chapter: 'Digital Advertising'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
-      },
-      {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'auditoria',
+        title: 'Auditoría de campañas de performance',
+        service_type: 'Tradicional',
+        option: 'Auditoría de campañas de performance',
+        chapter: 'Digital Advertising'
       }
     ]
   },
@@ -191,22 +298,39 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'conocimiento-del-consumidor',
+        title: 'Conocimiento del consumidor',
+        service_type: 'Tradicional',
+        option: 'Conocimiento del consumidor',
+        chapter: 'Experience Design'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'mapeo-de-experiencias',
+        title: 'Mapeo de experiencias',
+        service_type: 'Tradicional',
+        option: 'Mapeo de experiencias',
+        chapter: 'Experience Design'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'diseño-de-experiencias',
+        title: 'Diseño de experiencias',
+        service_type: 'Tradicional',
+        option: 'Diseño de experiencias',
+        chapter: 'Experience Design'
+      },
+      {
+        solution: 'medicion-de-experiencia',
+        title: 'Medición de la experiencia',
+        service_type: 'Tradicional',
+        option: 'Medición de la experiencia',
+        chapter: 'Experience Design'
+      },
+      {
+        solution: 'transformacion-digital',
+        title: 'Transformación Digital',
+        service_type: 'Tradicional',
+        option: 'Transformación Digital',
+        chapter: 'Experience Design'
       }
     ]
   },
@@ -222,22 +346,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'headhunting',
+        title: 'Head Hunting',
+        service_type: 'Estratégico',
+        option: 'Head Hunting',
+        chapter: 'Digital Talent Solutions'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'outsourcing',
+        title: 'Outsourcing',
+        service_type: 'Estratégico',
+        option: 'Outsourcing',
+        chapter: 'Digital Talent Solutions'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'outsourcing-y-mentoring',
+        title: 'Outsourcing y Mentoring',
+        service_type: 'Estratégico',
+        option: 'Outsourcing y Mentoring',
+        chapter: 'Digital Talent Solutions'
       }
     ]
   },
@@ -253,23 +380,25 @@ export const servicesData = [
     ],
     solutions: [
       {
-        solution: 'full-service-crm',
-        title: 'Full Service CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio de Full Service CRM'
+        solution: 'acompanamiento-ecommerce',
+        title: 'Acompañamiento E-commerce',
+        service_type: 'Tradicional',
+        option: 'Acompañamiento E-commerce',
+        chapter: 'Ecommerce'
       },
       {
-        solution: 'accelerator',
-        title: 'Accelerator CRM',
-
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Accelerator CRM'
+        solution: 'desarrollo-de-modelo-ecommerce',
+        title: 'Desarrollo de modelo de negocio E-commerce',
+        service_type: 'Tradicional',
+        option: 'Desarrollo de modelo de negocio E-commerce',
+        chapter: 'Ecommerce'
       },
       {
-        solution: 'quick-start',
-        title: 'Quick start CRM',
-        desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
-        option: 'Quiero el servicio Quick start CRM'
+        solution: 'growth-y-analytics-para-ecommerce',
+        title: 'Growth y Analytics para E-commerce',
+        service_type: 'Tradicional',
+        option: 'Growth y Analytics para E-commerce',
+        chapter: 'Ecommerce'
       }
     ]
   }

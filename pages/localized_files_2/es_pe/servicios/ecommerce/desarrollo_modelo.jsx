@@ -49,7 +49,7 @@ const desarrolloModelo = () => {
     <WorkProcess processes={workDesarrolloModelo} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} />
+    <Contact service={'ecommerce'} solution={'desarrollo-de-modelo-ecommerce'} />
     <Content contents={contentecommerce} />
     <Footer/>
     </>

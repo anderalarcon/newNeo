@@ -47,14 +47,14 @@ const marketingContenidos = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroMarketingContenidos} />
+    <Hero data={dataHeroMarketingContenidos} isSolution={true} />
     <WhySolutions data={whySolMarketingContenidos} />
     <ServicesPerks data={perksMarketingContenidos} />
     <WorkProcess processes={workMarketingContenidos} />
     <SuccessCase cases={canalesCases} />
     <Team team={team} chapter={'en Canales Digitales y Growth Hacking'} />
     <Questions questions={questionsCanales} />
-    <Contact service={'canales-digitales'} />
+    <Contact service={'canales-digitales'} solution={'marketing-de-contenidos'} />
     <Content contents={contentcanales} />
     <Footer/>
   </>

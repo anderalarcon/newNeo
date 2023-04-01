@@ -54,7 +54,7 @@ const migracionGa4 = () => {
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} />
+    <Contact service={'aaia'} solution='implementacion-o-migracion-a-ga4' />
     <Content contents={contentaaia} />
     <Footer/>
   </>

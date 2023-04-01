@@ -20,7 +20,7 @@ export const dataHeroHeadHunting = {
   title: 'Atrae a los mejores con',
   subtitle: 'Head hunting',
   service: 'digital-talent-solution',
-  solution: 'default',
+  solution: 'headhunting',
   desc: 'Nos encargamos del proceso de búsqueda y selección de perfiles digitales de nuestros clientes, para la mejor contratación del talento.',
   mainImg: HeroHeadHunting.src,
   certifications: [
@@ -32,7 +32,7 @@ export const dataHeroOutsourcing = {
   title: 'Optimiza tu eficiencia con',
   subtitle: 'Outsourcing',
   service: 'digital-talent-solution',
-  solution: 'default',
+  solution: 'outsourcing',
   desc: 'Reclutamos y seleccionamos perfiles para tí. El perfil trabaja tiempo completo en tu empresa, pero es personal de Neo y nosotros nos encargamos del apoyo y mentoring.',
   mainImg: HeroOutsourcing.src,
   certifications: [
@@ -44,7 +44,7 @@ export const dataHeroMentoryOutsourcing = {
   title: 'Eleva el desempeño con',
   subtitle: 'Outsourcing y Mentoring',
   service: 'digital-talent-solution',
-  solution: 'default',
+  solution: 'outsourcing-y-mentoring',
   desc: 'Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas.',
   mainImg: MentoryOutsourcing.src,
   certifications: [

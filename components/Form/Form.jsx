@@ -219,6 +219,7 @@ const Form = () => {
       params.medium = ''
       params.campaign = ''
       params.lead_source = 'Directo'
+      params.original_source = 'DIRECT_TRAFFIC'
       return params
     }
     if (utm_source && utm_medium && utm_campaign) {
@@ -228,34 +229,41 @@ const Form = () => {
       if (utm_medium === 'social') {
         params.chanel = 'social'
         params.lead_source = 'Social'
+        params.original_source = 'SOCIAL_MEDIA'
         return params
       }
       if (utm_medium === 'organic') {
         params.chanel = 'organic'
         params.lead_source = 'Orgánico'
+        params.original_source = 'ORGANIC_SEARCH'
         return params
       }
       if (utm_medium === 'paidsocial') {
         params.chanel = 'paidsocial'
         params.lead_source = 'Advertisement'
+        params.original_source = 'PAID_SOCIAL'
         return params
       }
       if (utm_medium === 'cpc') {
         params.lead_source = 'Advertisement'
         if (utm_source === 'google') {
           params.chanel = 'search'
+          params.original_source = 'PAID_SEARCH'
           return params
         }
         if (utm_source === 'google_pmax') {
           params.chanel = 'performace max'
+          params.original_source = 'PAID_SEARCH'
           return params
         }
         if (utm_source === 'google_display') {
           params.chanel = 'display'
+          params.original_source = 'PAID_SEARCH'
           return params
         }
         if (utm_source === 'google_youtube') {
           params.chanel = 'youtube'
+          params.original_source = 'PAID_SEARCH'
           return params
         }
       }
@@ -269,7 +277,7 @@ const Form = () => {
       searchContact({ email: formValues.email })
     }
     if (isHandle) {
-      const { chanel, source, medium, campaign, lead_source } = handleParams()
+      const { chanel, source, medium, campaign, lead_source, original_source } = handleParams()
       const contactObj = {
         properties: {
           servicios_interesados: direct
@@ -290,11 +298,12 @@ const Form = () => {
           canal__c: chanel,
           campa_a__c: campaign,
           lifecyclestage: 'lead',
-          chapter: data?.title,
+          chapter: data?.chapter,
           leadsource: lead_source,
           tipo_de_servicio: data?.service_type,
           acepta_politicas: politics ? 'Si' : 'No',
-          acepta_comunicaciones: comunications ? 'Si' : 'No'
+          acepta_comunicaciones: comunications ? 'Si' : 'No',
+          hs_analytics_source: original_source
         }
       }
       if (isContact) {
@@ -513,7 +522,6 @@ const Form = () => {
       </div>
     )
   }
-
   const getThirdStep = () => {
     return (
       <div className={style.form_container_form_second}>
@@ -832,21 +840,30 @@ const Form = () => {
   useEffect(() => {
     if (!router.isReady) return
     const getOptions = () => {
-      if (
+      if ( // home service
         router.query.service !== 'default' &&
         router.query.solution === 'default'
       ) {
         setData(servicesData.find((e) => e.service === router.query.service))
       }
-      if (
-        (router.query.service !== 'default' &&
-          router.query.solution !== 'default') ||
+      if ( // home solution
         (router.query.service === 'default' &&
           router.query.solution === 'default')
       ) {
         setDirect(true)
         setStep(2)
         setData(servicesData.find((e) => e.service === router.query.service))
+        setCheckedServices(
+          servicesData
+            ?.find((e) => e.service === router.query.service)
+            ?.solutions.find((e) => e.solution === router.query.solution).option
+        )
+      }
+
+      if (router.query.service !== 'default' && router.query.solution !== 'default') {
+        setDirect(true)
+        setStep(2)
+        setData((servicesData.find((e) => e.service === router.query.service).solutions.find((e) => e.solution === router.query.solution)))
         setCheckedServices(
           servicesData
             ?.find((e) => e.service === router.query.service)

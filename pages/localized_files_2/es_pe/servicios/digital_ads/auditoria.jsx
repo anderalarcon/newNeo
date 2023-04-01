@@ -54,7 +54,7 @@ const auditoria = () => {
     <SuccessCase cases={daCases} />
     <Team team={team} chapter={'en e-commerce'} />
     <Questions questions={questionsda} />
-    <Contact service={'digital-ads'} />
+    <Contact service={'digital-ads'} solution='auditoria' />
     <Content contents={contentda} />
     <Footer/>
   </>

@@ -1,12 +1,12 @@
-import Icon1Inhousing from '../../../public/assets/Services/da/Especifics/da-process-icon1-service1.svg'
-import Icon2Inhousing from '../../../public/assets/Services/da/Especifics/da-process-icon2-service1.svg'
-import Icon3Inhousing from '../../../public/assets/Services/da/Especifics/da-process-icon3-service1.svg'
+import Icon1Inhousing from '../../../public/assets/Services/Da/Especifics/da-process-icon1-service1.svg'
+import Icon2Inhousing from '../../../public/assets/Services/Da/Especifics/da-process-icon2-service1.svg'
+import Icon3Inhousing from '../../../public/assets/Services/Da/Especifics/da-process-icon3-service1.svg'
 
-import Icon1Auditoria from '../../../public/assets/Services/da/Especifics/da-process-icon1-service2.svg'
-import Icon2Auditoria from '../../../public/assets/Services/da/Especifics/da-process-icon2-service2.svg'
-import Icon3Auditoria from '../../../public/assets/Services/da/Especifics/da-process-icon3-service2.svg'
-import Icon4Auditoria from '../../../public/assets/Services/da/Especifics/da-process-icon4-service2.svg'
-import Icon5Auditoria from '../../../public/assets/Services/da/Especifics/da-process-icon5-service2.svg'
+import Icon1Auditoria from '../../../public/assets/Services/Da/Especifics/da-process-icon1-service2.svg'
+import Icon2Auditoria from '../../../public/assets/Services/Da/Especifics/da-process-icon2-service2.svg'
+import Icon3Auditoria from '../../../public/assets/Services/Da/Especifics/da-process-icon3-service2.svg'
+import Icon4Auditoria from '../../../public/assets/Services/Da/Especifics/da-process-icon4-service2.svg'
+import Icon5Auditoria from '../../../public/assets/Services/Da/Especifics/da-process-icon5-service2.svg'
 
 export const workInhousing = [
   {

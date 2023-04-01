@@ -1,20 +1,21 @@
-import MarketingContenidosImg from '../../../public/assets/Services/canales/Especifics/cd-results-image-service1.jpg'
-import perkIcon1MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-results-icon1-service1.svg'
-import perkIcon2MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-results-icon2-service1.svg'
-import perkIcon3MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-results-icon3-service1.svg'
-import perkIcon4MarketingContenidos from '../../../public/assets/Services/canales/Especifics/cd-results-icon4-service1.svg'
+import MarketingContenidosImg from '../../../public/assets/Services/Canales/Especifics/cd-results-image-service1.jpg'
 
-import GrowthHackingImg from '../../../public/assets/Services/canales/Especifics/cd-results-image-service2.jpg'
-import perkIcon1GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-results-icon1-service2.svg'
-import perkIcon2GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-results-icon2-service2.svg'
-import perkIcon3GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-results-icon3-service2.svg'
-import perkIcon4GrowthHacking from '../../../public/assets/Services/canales/Especifics/cd-results-icon4-service2.svg'
+import perkIcon1MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-results-icon1-service1.svg'
+import perkIcon2MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-results-icon2-service1.svg'
+import perkIcon3MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-results-icon3-service1.svg'
+import perkIcon4MarketingContenidos from '../../../public/assets/Services/Canales/Especifics/cd-results-icon4-service1.svg'
 
-import SeoRankImg from '../../../public/assets/Services/canales/Especifics/cd-results-image-service3.jpg'
-import perkIcon1SeoRank from '../../../public/assets/Services/canales/Especifics/cd-results-icon1-service3.svg'
-import perkIcon2SeoRank from '../../../public/assets/Services/canales/Especifics/cd-results-icon2-service3.svg'
-import perkIcon3SeoRank from '../../../public/assets/Services/canales/Especifics/cd-results-icon3-service3.svg'
-import perkIcon4SeoRank from '../../../public/assets/Services/canales/Especifics/cd-results-icon4-service3.svg'
+import GrowthHackingImg from '../../../public/assets/Services/Canales/Especifics/cd-results-image-service2.jpg'
+import perkIcon1GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-results-icon1-service2.svg'
+import perkIcon2GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-results-icon2-service2.svg'
+import perkIcon3GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-results-icon3-service2.svg'
+import perkIcon4GrowthHacking from '../../../public/assets/Services/Canales/Especifics/cd-results-icon4-service2.svg'
+
+import SeoRankImg from '../../../public/assets/Services/Canales/Especifics/cd-results-image-service3.jpg'
+import perkIcon1SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-results-icon1-service3.svg'
+import perkIcon2SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-results-icon2-service3.svg'
+import perkIcon3SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-results-icon3-service3.svg'
+import perkIcon4SeoRank from '../../../public/assets/Services/Canales/Especifics/cd-results-icon4-service3.svg'
 
 export const perksMarketingContenidos = {
   coverImg: MarketingContenidosImg,
@@ -40,7 +41,7 @@ export const perksMarketingContenidos = {
   contact: {
     text: 'Contáctanos',
     service: 'canales-digitales',
-    solution: 'default'
+    solution: 'marketing-de-contenidos'
   }
 }
 
@@ -68,7 +69,7 @@ export const perksGrowthHacking = {
   contact: {
     text: 'Contáctanos',
     service: 'canales-digitales',
-    solution: 'default'
+    solution: 'growth-hacking'
   }
 }
 
@@ -96,6 +97,6 @@ export const perksSeoRank = {
   contact: {
     text: 'Contáctanos',
     service: 'canales-digitales',
-    solution: 'default'
+    solution: 'seo-rank-tracker'
   }
 }

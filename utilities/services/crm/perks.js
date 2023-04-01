@@ -1,20 +1,20 @@
-import FullServiceImg from '../../../public/assets/Services/crm/Especifics/crm-results-image-service1.jpg'
-import perkIcon1FullService from '../../../public/assets/Services/crm/Especifics/crm-results-icon1-service1.svg'
-import perkIcon2FullService from '../../../public/assets/Services/crm/Especifics/crm-results-icon2-service1.svg'
-import perkIcon3FullService from '../../../public/assets/Services/crm/Especifics/crm-results-icon3-service1.svg'
-import perkIcon4FullService from '../../../public/assets/Services/crm/Especifics/crm-results-icon4-service1.svg'
+import FullServiceImg from '../../../public/assets/Services/Crm/Especifics/crm-results-image-service1.jpg'
+import perkIcon1FullService from '../../../public/assets/Services/Crm/Especifics/crm-results-icon1-service1.svg'
+import perkIcon2FullService from '../../../public/assets/Services/Crm/Especifics/crm-results-icon2-service1.svg'
+import perkIcon3FullService from '../../../public/assets/Services/Crm/Especifics/crm-results-icon3-service1.svg'
+import perkIcon4FullService from '../../../public/assets/Services/Crm/Especifics/crm-results-icon4-service1.svg'
 
-import AcceleratorImg from '../../../public/assets/Services/crm/Especifics/crm-results-image-service2.jpg'
-import perkIcon1Accelerator from '../../../public/assets/Services/crm/Especifics/crm-results-icon1-service2.svg'
-import perkIcon2Accelerator from '../../../public/assets/Services/crm/Especifics/crm-results-icon2-service2.svg'
-import perkIcon3Accelerator from '../../../public/assets/Services/crm/Especifics/crm-results-icon3-service2.svg'
-import perkIcon4Accelerator from '../../../public/assets/Services/crm/Especifics/crm-results-icon4-service2.svg'
+import AcceleratorImg from '../../../public/assets/Services/Crm/Especifics/crm-results-image-service2.jpg'
+import perkIcon1Accelerator from '../../../public/assets/Services/Crm/Especifics/crm-results-icon1-service2.svg'
+import perkIcon2Accelerator from '../../../public/assets/Services/Crm/Especifics/crm-results-icon2-service2.svg'
+import perkIcon3Accelerator from '../../../public/assets/Services/Crm/Especifics/crm-results-icon3-service2.svg'
+import perkIcon4Accelerator from '../../../public/assets/Services/Crm/Especifics/crm-results-icon4-service2.svg'
 
-import QuickStartImg from '../../../public/assets/Services/crm/Especifics/crm-results-image-service3.jpg'
-import perkIcon1QuickStart from '../../../public/assets/Services/crm/Especifics/crm-results-icon1-service3.svg'
-import perkIcon2QuickStart from '../../../public/assets/Services/crm/Especifics/crm-results-icon2-service3.svg'
-import perkIcon3QuickStart from '../../../public/assets/Services/crm/Especifics/crm-results-icon3-service3.svg'
-import perkIcon4QuickStart from '../../../public/assets/Services/crm/Especifics/crm-results-icon4-service3.svg'
+import QuickStartImg from '../../../public/assets/Services/Crm/Especifics/crm-results-image-service3.jpg'
+import perkIcon1QuickStart from '../../../public/assets/Services/Crm/Especifics/crm-results-icon1-service3.svg'
+import perkIcon2QuickStart from '../../../public/assets/Services/Crm/Especifics/crm-results-icon2-service3.svg'
+import perkIcon3QuickStart from '../../../public/assets/Services/Crm/Especifics/crm-results-icon3-service3.svg'
+import perkIcon4QuickStart from '../../../public/assets/Services/Crm/Especifics/crm-results-icon4-service3.svg'
 
 export const perksFullService = {
   coverImg: FullServiceImg,
@@ -40,7 +40,7 @@ export const perksFullService = {
   contact: {
     text: 'Contáctanos',
     service: 'crm',
-    solution: 'default'
+    solution: 'full-service'
   }
 }
 
@@ -68,7 +68,7 @@ export const perksAccelerator = {
   contact: {
     text: 'Contáctanos',
     service: 'crm',
-    solution: 'default'
+    solution: 'accelerator'
   }
 }
 
@@ -96,6 +96,6 @@ export const perksQuickStart = {
   contact: {
     text: 'Contáctanos',
     service: 'crm',
-    solution: 'default'
+    solution: 'quickstart'
   }
 }

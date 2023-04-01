@@ -36,7 +36,7 @@ export const perksDesarrolloModelo = {
   contact: {
     text: 'Contáctanos',
     service: 'ecommerce',
-    solution: 'default'
+    solution: 'desarrollo-de-modelo-ecommerce'
   }
 }
 
@@ -64,7 +64,7 @@ export const perksAcompanamientoEcommerce = {
   contact: {
     text: 'Contáctanos',
     service: 'ecommerce',
-    solution: 'default'
+    solution: 'acompanamiento-ecommerce'
   }
 }
 
@@ -96,6 +96,6 @@ export const perksGrowthEcommerce = {
   contact: {
     text: 'Contáctanos',
     service: 'ecommerce',
-    solution: 'default'
+    solution: 'growth-y-analytics-para-ecommerce'
   }
 }

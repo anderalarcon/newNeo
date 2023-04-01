@@ -59,7 +59,7 @@ const conocimiento = () => {
     <Team team={team} chapter={'en experience_design'} />
     <SuccessCase cases={xdCases} />
     <Questions questions={questionsxd} />
-    <Contact service={'experience-design'} />
+    <Contact service={'experience-design'} solution='conocimiento-del-consumidor' />
     <Content contents={contentxd} />
     <Footer/>
   </>

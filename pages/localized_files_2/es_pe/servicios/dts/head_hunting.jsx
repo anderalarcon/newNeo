@@ -59,7 +59,7 @@ const headHunting = () => {
     <SuccessCase cases={dtsCases} />
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <Questions questions={questionsdts} />
-    <Contact service={'digital-talent-solution'} />
+    <Contact service={'digital-talent-solution'} solution={'headhunting'} />
     <Content contents={contentdts} />
     <Footer/>
   </>

@@ -54,7 +54,7 @@ const seoRank = () => {
     <SuccessCase cases={canalesCases} />
     <Team team={team} chapter={'en Canales Digitales y Growth Hacking'} />
     <Questions questions={questionsCanales} />
-    <Contact service={'canales-digitales'} />
+    <Contact service={'canales-digitales'} solution={'seo-rank-tracker'} />
     <Content contents={contentcanales} />
     <Footer/>
   </>

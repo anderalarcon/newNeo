@@ -54,7 +54,7 @@ const inhousing = () => {
     <SuccessCase cases={daCases} />
     <Team team={team} chapter={'en e-commerce'} />
     <Questions questions={questionsda} />
-    <Contact service={'digital-ads'} />
+    <Contact service={'digital-ads'} solution='inhousing' />
     <Content contents={contentda} />
     <Footer/>
   </>
