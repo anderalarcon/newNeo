@@ -21,18 +21,20 @@ const About = () => {
             culturas
           </h4>
           <div className={style.about_container_header_btn}>
-          <Link href={{
+          {/* <Link href={{
             pathname: '/contact',
             query: { service: 'default', solution: 'default' }
-          }}>
+          }}> */}
+          <Link href='https://neo.applytojob.com/apply'>
             <button className={style.about_container_header_btn_mobile}>
               Contáctanos
             </button>
           </Link>
-          <Link href={{
+          {/* <Link href={{
             pathname: '/contact',
             query: { service: 'default', solution: 'default' }
-          }}>
+          }}> */}
+          <Link href='https://neo.applytojob.com/apply'>
             <button className={style.about_container_header_btn_ws}>
               Únete a nuestro equipo
             </button>

@@ -19,6 +19,9 @@ import stats from '../../public/assets/Header/stats.svg'
 import sync from '../../public/assets/Header/Sync.svg'
 import techInfo from '../../public/assets/Header/tech-info.svg'
 import aws from '../../public/assets/Header/aws.svg'
+import quienes from '../../public/assets/Header/quienes.svg'
+import trabaja from '../../public/assets/Header/trabaja.svg'
+import bcorp from '../../public/assets/Header/bcorp.svg'
 // import window from '../../public/assets/Header/window.svg'
 import videoChat from '../../public/assets/Header/video-chat-line.svg'
 import uuid from 'react-uuid'
@@ -107,6 +110,27 @@ const Header = () => {
           text: 'webinars',
           icon: videoChat.src
         }
+      ]
+    },
+    {
+      title: 'Sobre Nosotros',
+      ul: [
+        {
+          link: 'https://neoconsulting.ai/quienes_somos',
+          text: '¿Quienes Somos?',
+          icon: quienes.src
+        },
+        {
+          link: 'https://neo.applytojob.com/apply',
+          text: 'Trabaja con nosotros',
+          icon: trabaja.src
+        },
+        {
+          link: 'https://wordpress.neoconsulting.ai/wp-content/uploads/2022/06/Reporte-de-Sostenibilidad-2021-Neo-Consulting.pdf',
+          text: 'Reporte Bcorp',
+          icon: bcorp.src
+        }
+        // { link: '#', text: 'Otros', icon: window.src }
       ]
     },
     {

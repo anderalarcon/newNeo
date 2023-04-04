@@ -117,8 +117,8 @@
 
                 @include breakpoint(max) {
                     img {
-                        width: 600px;
-                        height: 782px;
+                        width: 100%;
+                        height: auto;
 
                     }
                 }

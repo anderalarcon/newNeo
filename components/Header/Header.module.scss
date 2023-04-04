@@ -63,7 +63,7 @@
       @include breakpoint(widescreen) {
         display: flex;
         align-items: center;
-        gap: 0.8rem;
+        gap: 0.05rem;
 
         &_item {
           list-style: none;
@@ -152,16 +152,16 @@
       }
 
       @include breakpoint(widescreen) {
-        padding: 1rem 2rem;
+        padding: 1rem 1.5rem;
       }
 
       & a {
         font-size: 14px;
-        line-height: 20px;
+        line-height: 15px;
         color: map-get($color, primary);
 
         @include breakpoint(widescreen) {
-          font-size: 1rem;
+          font-size: 0.9rem;
           font-weight: 700;
         }
       }

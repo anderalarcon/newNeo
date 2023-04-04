@@ -177,18 +177,6 @@ export const collaborators = {
   ],
   t6: [
     {
-      img: T6P1,
-      name: 'Teresa Flores',
-      role: 'Consultor Sr. Publicidad Digital'
-    },
-    {
-      img: T6P2,
-      name: 'Rodrigo Salazar',
-      role: 'Trainee de Publicidad Digital'
-    }
-  ],
-  t7: [
-    {
       img: T7P1,
       name: 'Jurgita Šarkovaitė',
       role: 'Gerente de Innovación y estratégia'
@@ -247,6 +235,18 @@ export const collaborators = {
       img: T7P12,
       name: 'Adriana Sarmiento',
       role: 'Consultor Junior CX/UX'
+    }
+  ],
+  t7: [
+    {
+      img: T6P1,
+      name: 'Teresa Flores',
+      role: 'Consultor Sr. Publicidad Digital'
+    },
+    {
+      img: T6P2,
+      name: 'Rodrigo Salazar',
+      role: 'Trainee de Publicidad Digital'
     }
   ]
 }
