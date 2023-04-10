@@ -16,8 +16,10 @@ import { team } from '../../../../../utilities/services/crm/team'
 import { dataHero } from '../../../../../utilities/services/crm/hero'
 import { crmCases } from '../../../../../utilities/services/crm/cases'
 import { contentcrm } from '../../../../../utilities/services/crm/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const crm = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
       <Head>
@@ -42,13 +44,13 @@ const crm = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <Header/>
-      <Hero data={dataHero} />
+      <Hero data={dataHero} urlHasUtm={urlHasUtm} router={router} />
       <Vision defaultVersion={false}/>
-      <SolutionsChapter solutions={crmSolutions} />
+      <SolutionsChapter solutions={crmSolutions} urlHasUtm={urlHasUtm} router={router} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <SuccessCase cases={crmCases} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} />
+      <Contact service={'crm'} urlHasUtm={urlHasUtm} router={router} />
       <Content contents={contentcrm} />
       <Footer/>
     </>

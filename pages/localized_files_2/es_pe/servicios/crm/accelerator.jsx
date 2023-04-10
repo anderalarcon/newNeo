@@ -21,8 +21,10 @@ import { questionsCrm } from '../../../../../utilities/services/crm/questions'
 import { team } from '../../../../../utilities/services/crm/team'
 import { crmCases } from '../../../../../utilities/services/crm/cases'
 import { contentcrm } from '../../../../../utilities/services/crm/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const accelerator = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
       <Head>
@@ -47,14 +49,14 @@ const accelerator = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <Header/>
-      <Hero data={dataHeroAccelerator} />
+      <Hero data={dataHeroAccelerator} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolAccelerator} />
-      <ServicesPerks data={perksAccelerator} />
+      <ServicesPerks data={perksAccelerator} urlHasUtm={urlHasUtm} router={router} />
       <WorkProcess processes={workAccelerator} />
       <SuccessCase cases={crmCases} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} solution={'accelerator'} />
+      <Contact service={'crm'} solution={'accelerator'} urlHasUtm={urlHasUtm} router={router} />
       <Content contents={contentcrm} />
       <Footer/>
     </>

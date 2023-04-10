@@ -21,8 +21,11 @@ import { questionsCrm } from '../../../../../utilities/services/crm/questions'
 import { team } from '../../../../../utilities/services/crm/team'
 import { crmCases } from '../../../../../utilities/services/crm/cases'
 import { contentcrm } from '../../../../../utilities/services/crm/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const quickStart = () => {
+  const [urlHasUtm, router] = useUtm()
+
   return (
     <>
       <Head>
@@ -47,14 +50,14 @@ const quickStart = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <Header/>
-      <Hero data={dataHeroQuickStart} />
+      <Hero data={dataHeroQuickStart} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolQuickStart} />
-      <ServicesPerks data={perksQuickStart} />
+      <ServicesPerks data={perksQuickStart} urlHasUtm={urlHasUtm} router={router} />
       <WorkProcess processes={workQuickStart} />
       <SuccessCase cases={crmCases} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} solution={'quickstart'} />
+      <Contact service={'crm'} solution={'quickstart'} urlHasUtm={urlHasUtm} router={router} />
       <Content contents={contentcrm} />
       <Footer/>
     </>

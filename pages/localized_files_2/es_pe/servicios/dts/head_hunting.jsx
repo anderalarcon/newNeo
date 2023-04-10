@@ -20,8 +20,10 @@ import { team } from '../../../../../utilities/services/dts/team'
 import { dtsCases } from '../../../../../utilities/services/dts/cases'
 import { questionsdts } from '../../../../../utilities/services/dts/questions'
 import { contentdts } from '../../../../../utilities/services/dts/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const headHunting = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -52,14 +54,14 @@ const headHunting = () => {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroHeadHunting} />
+    <Hero data={dataHeroHeadHunting} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolHeadHunting} />
-    <ServicesPerks data={perksHeadHunting} />
+    <ServicesPerks data={perksHeadHunting} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workHeadHunting} />
     <SuccessCase cases={dtsCases} />
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <Questions questions={questionsdts} />
-    <Contact service={'digital-talent-solution'} solution={'headhunting'} />
+    <Contact service={'digital-talent-solution'} solution={'headhunting'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentdts} />
     <Footer/>
   </>

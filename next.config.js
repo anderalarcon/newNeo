@@ -108,6 +108,30 @@ const nextConfig = {
       {
         source: '/pe/servicios/consultoria-ecommerce/growth-analytics-para-ecommerce/',
         destination: '/localized_files_2/es_pe/servicios/ecommerce/growth_ecommerce'
+      }, // hh
+      {
+        source: '/pe/servicios/headhunting-y-mentoring/headhunting/',
+        destination: '/localized_files_2/es_pe/servicios/dts/head_hunting'
+      },
+      {
+        source: '/pe/servicios/headhunting-y-mentoring/outsourcing/',
+        destination: '/localized_files_2/es_pe/servicios/dts/outsourcing'
+      },
+      {
+        source: '/pe/servicios/headhunting-y-mentoring/outsourcing-y-mentoring',
+        destination: '/localized_files_2/es_pe/servicios/dts/mentory_outsourcing'
+      }, // crm
+      {
+        source: '/pe/servicios/consultoria-customer-relationship-management/full-service-crm/',
+        destination: '/localized_files_2/es_pe/servicios/crm/full_service'
+      },
+      {
+        source: '/pe/servicios/consultoria-customer-relationship-management/accelerator/',
+        destination: '/localized_files_2/es_pe/servicios/crm/accelerator'
+      },
+      {
+        source: '/pe/servicios/consultoria-customer-relationship-management/quick-start-crm/',
+        destination: '/localized_files_2/es_pe/servicios/crm/quick_start'
       }
     ]
   }
