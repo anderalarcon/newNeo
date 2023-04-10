@@ -96,6 +96,18 @@ const nextConfig = {
       {
         source: '/pe/servicios/canales-digitales-y-growth-hacking/growth-hacking/',
         destination: '/localized_files_2/es_pe/servicios/canales/growth_hacking'
+      }, // ecommerce
+      {
+        source: '/pe/servicios/consultoria-ecommerce/desarrollo-modelo-ecommerce/',
+        destination: '/localized_files_2/es_pe/servicios/ecommerce/desarrollo_modelo'
+      },
+      {
+        source: '/pe/servicios/consultoria-ecommerce/acompanamiento-ecommerce/',
+        destination: '/localized_files_2/es_pe/servicios/ecommerce/acompanamiento_ecommerce'
+      },
+      {
+        source: '/pe/servicios/consultoria-ecommerce/growth-analytics-para-ecommerce/',
+        destination: '/localized_files_2/es_pe/servicios/ecommerce/growth_ecommerce'
       }
     ]
   }
