@@ -11,6 +11,27 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
     router.push(urlWithUtm)
   }
 
+  const getLetsTalkBtn = (url) => {
+    if (urlHasUtm) {
+      return (
+        <a
+        className={style.solutions_container_solution_ctn_talk}
+        onClick={() => handlePush(url)}
+      >
+        Conversemos
+      </a>
+      )
+    }
+    return (
+      <Link
+        className={style.solutions_container_solution_ctn_talk}
+        href={url}
+      >
+        Conversemos
+      </Link>
+    )
+  }
+
   if (filter) {
     const [solutionsFiltered, setSolutionsFiltered] = useState([])
     const [activeLink, setActiveLink] = useState('Estrategia')
@@ -45,12 +66,7 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                 {description}
               </p>
               <div className={style.solutions_container_solution_ctn}>
-                <a
-                  className={style.solutions_container_solution_ctn_talk}
-                  onClick={() => handlePush(urlcontact)}
-                >
-                  Conversemos
-                </a>
+                {getLetsTalkBtn(urlcontact)}
                 <Link
                   className={style.solutions_container_solution_ctn_more}
                   href={{
@@ -98,12 +114,7 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                 {description}
               </p>
               <div className={style.solutions_container_solution_ctn}>
-                <a
-                  className={style.solutions_container_solution_ctn_talk}
-                  onClick={() => handlePush(urlcontact)}
-                >
-                  Conversemos
-                </a>
+                {getLetsTalkBtn(urlcontact)}
                 <Link
                   className={style.solutions_container_solution_ctn_more}
                   href={{

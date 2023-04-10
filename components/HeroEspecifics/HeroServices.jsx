@@ -21,7 +21,18 @@ const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
       return (
         <Link
           className={style.hero_container_left_ctn_direct}
-          href={`/contact/?service=${service}&solution=${solution}`}
+          href={{
+            pathname: '/contact',
+            query: {
+              service,
+              solution,
+              ...(urlHasUtm && {
+                utm_medium: router?.query?.utm_medium || 'empty',
+                utm_source: router?.query?.utm_source || 'empty',
+                utm_campaign: router?.query?.utm_campaign || 'empty'
+              })
+            }
+          }}
         >
           Contáctanos
         </Link>
