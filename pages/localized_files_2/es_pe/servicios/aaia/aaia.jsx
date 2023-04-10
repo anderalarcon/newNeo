@@ -17,8 +17,10 @@ import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { aaiaVisions } from '../../../../../utilities/services/aaia/visions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const aaia = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -43,13 +45,13 @@ const aaia = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroaaia} />
+    <Hero data={dataHeroaaia} urlHasUtm={urlHasUtm} router={router} />
     <Vision visions={aaiaVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.'/>
-    <SolutionsChapter solutions={aaiaSolutions2} filter={true} />
+    <SolutionsChapter solutions={aaiaSolutions2} filter={true} urlHasUtm={urlHasUtm} router={router} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <SuccessCase cases={aaiaCases} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} />
+    <Contact service={'aaia'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

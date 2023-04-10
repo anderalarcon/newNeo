@@ -36,6 +36,50 @@ const nextConfig = {
       {
         source: '/pe/servicios/marketing-automation/',
         destination: '/localized_files_2/es_pe/servicios/mkt/mkt'
+      }, // aaia
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/workshop-estrategia-marca/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/workshop_estrategia'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/caso-uso-machine-learning/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/machine_learning'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/implementacion-migracion-google-analytics-4/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/migracion_ga4'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/digital-advanced-analytics/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/advanced_analytics'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/consultoria-analitica-digital/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/analitica_digital'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/predictive-customer-analytics/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/predictive_analytics'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/predictive-sales-product-analytics/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/predictive_sales'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/chatbots-inteligencia-artificial/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/chatbots_inteligencia'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/sentiment-analysis-social-listening/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/sentiment_analysis'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/integracion-fuentes-de-datos/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/integracion_datos'
+      },
+      {
+        source: '/pe/servicios/analitica-digital-inteligencia-artificial/automatizacion_reportes/',
+        destination: '/localized_files_2/es_pe/servicios/aaia/automatizacion_reportes'
       }
     ]
   }

@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const sentimentAnalysis = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,14 +49,14 @@ const sentimentAnalysis = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroSentimentAnalysis} />
+    <Hero data={dataHeroSentimentAnalysis} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolSentimentAnalysis} />
-    <ServicesPerks data={perksSentimentAnalysis} />
+    <ServicesPerks data={perksSentimentAnalysis} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workSentimentAnalysis} />
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} solution='sentiment-analysis-social-listening' />
+    <Contact service={'aaia'} solution='sentiment-analysis-social-listening' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

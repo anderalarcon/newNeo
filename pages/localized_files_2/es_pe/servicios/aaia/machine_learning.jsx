@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const machineLearning = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,14 +49,14 @@ const machineLearning = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroMachineLearning} />
+    <Hero data={dataHeroMachineLearning} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMachineLearning} />
-    <ServicesPerks data={perksMachineLearning} />
+    <ServicesPerks data={perksMachineLearning} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workMachineLearning} />
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} solution='casos-de-uso-ml' />
+    <Contact service={'aaia'} solution='casos-de-uso-ml' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

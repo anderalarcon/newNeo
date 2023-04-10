@@ -16,8 +16,10 @@ import Footer from '../../../components/Footer/Footer'
 import { solutionsPeru } from '../../../utilities/home/solutions'
 import { peruCases } from '../../../utilities/home/cases'
 import Head from 'next/head'
+import { useUtm } from '../../../utilities/global/customhooks'
 
 const pe = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
       <Head>
@@ -48,8 +50,8 @@ const pe = () => {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
       <Header />
-      <Hero />
-      <Solutions solutions={solutionsPeru} />
+      <Hero urlHasUtm={urlHasUtm} router={router}/>
+      <Solutions solutions={solutionsPeru} urlHasUtm={urlHasUtm} router={router} />
       <Partners />
       <SuccessCase cases={peruCases} />
       <Clients recommendations={recommendations} />
@@ -57,7 +59,7 @@ const pe = () => {
       <Region />
       <Bcorp />
       <Questions questions={questionsHome} />
-      <Contact />
+      <Contact urlHasUtm={urlHasUtm} router={router}/>
       <Content />
       <Footer />
     </>
