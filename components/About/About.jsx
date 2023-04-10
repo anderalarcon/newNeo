@@ -25,16 +25,16 @@ const About = () => {
             pathname: '/contact',
             query: { service: 'default', solution: 'default' }
           }}> */}
-          <Link href='https://neo.applytojob.com/apply'>
+          <Link href='https://neoconsulting.ai/neo-jobs/'>
             <button className={style.about_container_header_btn_mobile}>
-              Contáctanos
+              Únete a nuestro equipo
             </button>
           </Link>
           {/* <Link href={{
             pathname: '/contact',
             query: { service: 'default', solution: 'default' }
           }}> */}
-          <Link href='https://neo.applytojob.com/apply'>
+          <Link href='https://neoconsulting.ai/neo-jobs/'>
             <button className={style.about_container_header_btn_ws}>
               Únete a nuestro equipo
             </button>

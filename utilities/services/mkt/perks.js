@@ -22,10 +22,6 @@ import perkIcon2AutomatizacionContenido from '../../../public/assets/Services/Mk
 import perkIcon3AutomatizacionContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon3-service4.svg'
 import perkIcon4AutomatizacionContenido from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon4-service4.svg'
 
-import DashboardSeoImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service5.jpg'
-import perkIcon1DashboardSeo from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service5.svg'
-import perkIcon2DashboardSeo from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service5.svg'
-
 import ChatbotEcommerceImg from '../../../public/assets/Services/Mkt/Especifics/ma-results-image-service6.jpg'
 import perkIcon1ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon1-service6.svg'
 import perkIcon2ChatbotEcommerce from '../../../public/assets/Services/Mkt/Especifics/ma-results-icon2-service6.svg'
@@ -161,29 +157,6 @@ export const perksAutomatizacionContenido = {
   }
 }
 
-<<<<<<< HEAD
-export const perksDashboardSeo = {
-  coverImg: DashboardSeoImg,
-  title: '¿Qué podrás lograr con este servicio?',
-  perks: [
-    {
-      text: 'Utilizar algoritmos de aprendizaje automático para analizar los datos y extraer información valiosa.',
-      icon: perkIcon1DashboardSeo
-    },
-    {
-      text: 'Utilizar algoritmos de aprendizaje automático para analizar los datos y extraer información valiosa.',
-      icon: perkIcon2DashboardSeo
-    }
-  ],
-  contact: {
-    text: 'Contáctanos',
-    service: 'mkt-automation',
-    solution: 'dashboard-seo'
-  }
-}
-
-=======
->>>>>>> 6c4f3cd17b3c2b07296694dc8b380a5a4ae76fba
 export const perksChatbotEcommerce = {
   coverImg: ChatbotEcommerceImg,
   title: '¿Qué podrás lograr con este servicio?',

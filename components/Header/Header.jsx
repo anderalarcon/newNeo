@@ -121,7 +121,7 @@ const Header = () => {
           icon: quienes.src
         },
         {
-          link: 'https://neo.applytojob.com/apply',
+          link: 'https://neoconsulting.ai/neo-jobs/',
           text: 'Trabaja con nosotros',
           icon: trabaja.src
         },

@@ -39,7 +39,7 @@ const quienes = () => {
         <script defer src="/js/gtm.js"></script>
         <script defer src="/js/hotjar.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-      </Head>
+    </Head>
     <Header />
     <About />
     <Trajectory trajectories={trajectoriesHome} />
