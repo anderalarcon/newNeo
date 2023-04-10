@@ -6,6 +6,10 @@ const nextConfig = {
   async rewrites () {
     return [
       {
+        source: '/pe/',
+        destination: '/localized_files_2/es_pe/pe/'
+      },
+      {
         source: '/pe/servicios/consultoria-customer-relationship-management/',
         destination: '/localized_files_2/es_pe/servicios/crm/crm'
       },
@@ -80,6 +84,18 @@ const nextConfig = {
       {
         source: '/pe/servicios/analitica-digital-inteligencia-artificial/automatizacion_reportes/',
         destination: '/localized_files_2/es_pe/servicios/aaia/automatizacion_reportes'
+      }, // canales
+      {
+        source: '/pe/servicios/canales-digitales-y-growth-hacking/marketing-de-contenidos/',
+        destination: '/localized_files_2/es_pe/servicios/canales/marketing_contenidos'
+      },
+      {
+        source: '/pe/servicios/canales-digitales-y-growth-hacking/seo-rank-tracker/',
+        destination: '/localized_files_2/es_pe/servicios/canales/seo_rank'
+      },
+      {
+        source: '/pe/servicios/canales-digitales-y-growth-hacking/growth-hacking/',
+        destination: '/localized_files_2/es_pe/servicios/canales/growth_hacking'
       }
     ]
   }

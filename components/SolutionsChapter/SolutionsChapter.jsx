@@ -6,6 +6,11 @@ import { useEffect, useState } from 'react'
 import arrow from '../../public/assets/Swiper/right-arrow.svg'
 
 const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
+  const handlePush = (url) => {
+    const urlWithUtm = urlHasUtm ? `${url}&utm_medium=${router.query.utm_medium}&utm_source=${router.query.utm_source}&utm_campaign=${router.query.utm_campaign}` : ''
+    router.push(urlWithUtm)
+  }
+
   if (filter) {
     const [solutionsFiltered, setSolutionsFiltered] = useState([])
     const [activeLink, setActiveLink] = useState('Estrategia')
@@ -13,11 +18,6 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
     const handleFilter = (category) => {
       setSolutionsFiltered(solutions?.find((s) => s.category === category))
       setActiveLink(category)
-    }
-
-    const handlePush = (url) => {
-      const urlWithUtm = urlHasUtm ? `${url}&utm_medium=${router.query.utm_medium}&utm_source=${router.query.utm_source}&utm_campaign=${router.query.utm_campaign}` : ''
-      router.push(urlWithUtm)
     }
 
     useEffect(() => {
@@ -63,7 +63,6 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                       })
                     }
                   }}
-                  // href={urlpage}
                 >
                   Ver más{' '}
                   <img
@@ -99,15 +98,24 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                 {description}
               </p>
               <div className={style.solutions_container_solution_ctn}>
-                <Link
+                <a
                   className={style.solutions_container_solution_ctn_talk}
-                  href={urlcontact}
+                  onClick={() => handlePush(urlcontact)}
                 >
                   Conversemos
-                </Link>
+                </a>
                 <Link
                   className={style.solutions_container_solution_ctn_more}
-                  href={urlpage}
+                  href={{
+                    pathname: urlpage,
+                    query: {
+                      ...(urlHasUtm && {
+                        utm_medium: router?.query?.utm_medium || 'empty',
+                        utm_source: router?.query?.utm_source || 'empty',
+                        utm_campaign: router?.query?.utm_campaign || 'empty'
+                      })
+                    }
+                  }}
                 >
                   Ver más{' '}
                   <img
