@@ -161,7 +161,6 @@ export const perksAutomatizacionContenido = {
   }
 }
 
-<<<<<<< HEAD
 export const perksDashboardSeo = {
   coverImg: DashboardSeoImg,
   title: '¿Qué podrás lograr con este servicio?',
@@ -182,8 +181,6 @@ export const perksDashboardSeo = {
   }
 }
 
-=======
->>>>>>> 6c4f3cd17b3c2b07296694dc8b380a5a4ae76fba
 export const perksChatbotEcommerce = {
   coverImg: ChatbotEcommerceImg,
   title: '¿Qué podrás lograr con este servicio?',

@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
 import { contentmkt } from '../../../../../utilities/services/mkt/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const leadNurturing = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -53,14 +55,14 @@ const leadNurturing = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroLeadNurturing} />
+    <Hero data={dataHeroLeadNurturing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolLeadNurturing} />
-    <ServicesPerks data={perksLeadNurturing} />
+    <ServicesPerks data={perksLeadNurturing} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workLeadNurturing} />
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} solution='lead-nurturing-automatizado' />
+    <Contact service={'mkt-automation'} solution='lead-nurturing-automatizado' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentmkt} />
     <Footer/>
   </>

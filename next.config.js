@@ -162,6 +162,39 @@ const nextConfig = {
       {
         source: '/pe/servicios/digital-advertising/auditoria-publicidad-digital/',
         destination: '/localized_files_2/es_pe/servicios/digital_ads/auditoria'
+      },
+      // mkt
+      {
+        source: '/es_pe/servicios/mkt/pe/servicios/marketing-automation/reporting-roi-automatizado-360-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/reporting_roi'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/automatizacion-leads-remarketing-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/automatizacion_leads'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/personalizacion-ecommerce-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/personalizacion_ecommerce'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/automatizacion-de-contenido-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/automatizacion_contenido'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/chatbots-ecommerce-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/chatbot_ecommerce'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/planning-contenido-agil-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/planing_contenido'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/lead-nurturing-automatizado-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/lead_nurturing'
+      },
+      {
+        source: '/pe/servicios/marketing-automation/centralizacion-insights-redes-sociales-marketing-automation/',
+        destination: '/localized_files_2/es_pe/servicios/mkt/centralizacion_insights'
       }
     ]
   }

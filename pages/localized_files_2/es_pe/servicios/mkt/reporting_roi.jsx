@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
 import { contentmkt } from '../../../../../utilities/services/mkt/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const reportingRoi = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -53,14 +55,14 @@ const reportingRoi = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroReportingRoi} />
+    <Hero data={dataHeroReportingRoi} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolReportingRoi} />
-    <ServicesPerks data={perksReportingRoi} />
+    <ServicesPerks data={perksReportingRoi} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workReportingRoi} />
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} solution='reporting-roi-automatizado' />
+    <Contact service={'mkt-automation'} solution='reporting-roi-automatizado' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentmkt} />
     <Footer/>
   </>
