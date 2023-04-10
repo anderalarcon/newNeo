@@ -17,8 +17,10 @@ import { team } from '../../../../../utilities/services/da/team'
 import { daCases } from '../../../../../utilities/services/da/cases'
 import { questionsda } from '../../../../../utilities/services/da/questions'
 import { contentda } from '../../../../../utilities/services/da/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const da = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -44,13 +46,13 @@ const da = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroda} />
+    <Hero data={dataHeroda} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={daVisions} desc='Nuestro diferencial viene de entender los objetivos de negocio capitalizando la Data' />
-    <SolutionsChapter solutions={daSolutions} />
+    <SolutionsChapter solutions={daSolutions} urlHasUtm={urlHasUtm} router={router} />
     <Team team={team} chapter={'en e-commerce'} />
     <SuccessCase cases={daCases} />
     <Questions questions={questionsda} />
-    <Contact service={'digital-ads'} />
+    <Contact service={'digital-ads'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentda} />
     <Footer/>
   </>

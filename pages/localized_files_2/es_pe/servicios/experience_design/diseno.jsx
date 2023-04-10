@@ -20,8 +20,10 @@ import { team } from '../../../../../utilities/services/xd/team'
 import { xdCases } from '../../../../../utilities/services/xd/cases'
 import { questionsxd } from '../../../../../utilities/services/xd/questions'
 import { contentxd } from '../../../../../utilities/services/xd/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const diseno = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -52,14 +54,14 @@ const diseno = () => {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataDiseno} />
+    <Hero data={dataDiseno} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolDiseno} />
-    <ServicesPerks data={perksDiseno} />
+    <ServicesPerks data={perksDiseno} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workDiseno} />
     <Team team={team} chapter={'en experience_design'} />
     <SuccessCase cases={xdCases} />
     <Questions questions={questionsxd} />
-    <Contact service={'experience-design'} solution='diseño-de-experiencias' />
+    <Contact service={'experience-design'} solution='diseño-de-experiencias' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentxd} />
     <Footer/>
   </>

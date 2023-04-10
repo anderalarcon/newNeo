@@ -132,6 +132,36 @@ const nextConfig = {
       {
         source: '/pe/servicios/consultoria-customer-relationship-management/quick-start-crm/',
         destination: '/localized_files_2/es_pe/servicios/crm/quick_start'
+      },
+      // xd
+      {
+        source: '/pe/servicios/experience-design/conocimiento-del-consumidor/',
+        destination: '/localized_files_2/es_pe/servicios/experience_design/conocimiento'
+      },
+      {
+        source: '/pe/servicios/experience-design/mapeo-de-experiencias/',
+        destination: '/localized_files_2/es_pe/servicios/experience_design/mapeo'
+      },
+      {
+        source: '/pe/servicios/experience-design/medicion-experiencia-de-usuario/',
+        destination: '/localized_files_2/es_pe/servicios/experience_design/medicion'
+      },
+      {
+        source: '/pe/servicios/experience-design/diseno-de-experiencias/',
+        destination: '/localized_files_2/es_pe/servicios/experience_design/diseno'
+      },
+      {
+        source: '/pe/servicios/experience-design/transformacion-digital/',
+        destination: '/localized_files_2/es_pe/servicios/experience_design/transformacion'
+      },
+      // da
+      {
+        source: '/pe/servicios/digital-advertising/inhousing-publicidad-digital/',
+        destination: '/localized_files_2/es_pe/servicios/digital_ads/inhousing'
+      },
+      {
+        source: '/pe/servicios/digital-advertising/auditoria-publicidad-digital/',
+        destination: '/localized_files_2/es_pe/servicios/digital_ads/auditoria'
       }
     ]
   }
