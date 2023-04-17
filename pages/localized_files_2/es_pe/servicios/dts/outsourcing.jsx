@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/dts/team'
 import { dtsCases } from '../../../../../utilities/services/dts/cases'
 import { questionsdts } from '../../../../../utilities/services/dts/questions'
 import { contentdts } from '../../../../../utilities/services/dts/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const outsourcing = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -53,14 +55,14 @@ const outsourcing = () => {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroOutsourcing} />
+    <Hero data={dataHeroOutsourcing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolOutsourcing} />
-    <ServicesPerks data={perksOutsourcing} />
+    <ServicesPerks data={perksOutsourcing} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workOutsourcing} />
     <SuccessCase cases={dtsCases} />
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <Questions questions={questionsdts} />
-    <Contact service={'digital-talent-solution'} solution={'outsourcing'} />
+    <Contact service={'digital-talent-solution'} solution={'outsourcing'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentdts}/>
     <Footer/>
   </>

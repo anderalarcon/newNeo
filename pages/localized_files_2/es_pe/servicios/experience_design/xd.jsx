@@ -17,8 +17,10 @@ import { team } from '../../../../../utilities/services/xd/team'
 import { xdCases } from '../../../../../utilities/services/xd/cases'
 import { questionsxd } from '../../../../../utilities/services/xd/questions'
 import { contentxd } from '../../../../../utilities/services/xd/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const xd = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -49,13 +51,13 @@ const xd = () => {
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroxd} />
+    <Hero data={dataHeroxd} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={xdVisions} desc='Nuestro diferencial viene de entender los objetivos de negocio y unirlo con las necesidades del usuario' />
-    <SolutionsChapter solutions={xdSolutions} />
+    <SolutionsChapter solutions={xdSolutions} urlHasUtm={urlHasUtm} router={router} />
     <Team team={team} chapter={'en experience_design'} />
     <SuccessCase cases={xdCases} />
     <Questions questions={questionsxd} />
-    <Contact service={'experience-design'} />
+    <Contact service={'experience-design'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentxd} />
     <Footer/>
   </>

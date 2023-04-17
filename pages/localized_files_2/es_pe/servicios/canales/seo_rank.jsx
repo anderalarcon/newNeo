@@ -21,8 +21,10 @@ import { questionsCanales } from '../../../../../utilities/services/canales/ques
 import { team } from '../../../../../utilities/services/canales/team'
 import { canalesCases } from '../../../../../utilities/services/canales/cases'
 import { contentcanales } from '../../../../../utilities/services/canales/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const seoRank = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,13 +49,13 @@ const seoRank = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroSeoRank} />
+    <Hero data={dataHeroSeoRank} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolSeoRank} />
-    <ServicesPerks data={perksSeoRank} />
+    <ServicesPerks data={perksSeoRank} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workSeoRank} />
     <SuccessCase cases={canalesCases} />
     <Team team={team} chapter={'en Canales Digitales y Growth Hacking'} />
-    <Questions questions={questionsCanales} />
+    <Questions questions={questionsCanales} urlHasUtm={urlHasUtm} router={router} />
     <Contact service={'canales-digitales'} solution={'seo-rank-tracker'} />
     <Content contents={contentcanales} />
     <Footer/>

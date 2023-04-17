@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const automatizacionReportes = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,14 +49,14 @@ const automatizacionReportes = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroAutomatizacionReportes} />
+    <Hero data={dataHeroAutomatizacionReportes} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAutomatizacionReportes} />
-    <ServicesPerks data={perksAutomatizacionReportes} />
+    <ServicesPerks data={perksAutomatizacionReportes} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workAutomatizacionReportes} />
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} solution='automatizacion-reportes' />
+    <Contact service={'aaia'} solution='automatizacion-reportes' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

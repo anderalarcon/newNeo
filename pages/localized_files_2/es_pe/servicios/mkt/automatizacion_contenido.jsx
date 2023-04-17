@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
 import { contentmkt } from '../../../../../utilities/services/mkt/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const automatizacionContenido = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -53,14 +55,14 @@ const automatizacionContenido = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroAutomatizacionContenido} />
+    <Hero data={dataHeroAutomatizacionContenido} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAutomatizacionContenido} />
-    <ServicesPerks data={perksAutomatizacionContenido} />
+    <ServicesPerks data={perksAutomatizacionContenido} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workAutomatizacionContenido} />
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} solution='automatizacion-de-contenido' />
+    <Contact service={'mkt-automation'} solution='automatizacion-de-contenido' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentmkt} />
     <Footer/>
   </>

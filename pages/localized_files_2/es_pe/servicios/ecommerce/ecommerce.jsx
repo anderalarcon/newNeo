@@ -17,8 +17,10 @@ import { ecommerceCases } from '../../../../../utilities/services/ecommerce/case
 import { questionsecommerce } from '../../../../../utilities/services/ecommerce/questions'
 import { contentecommerce } from '../../../../../utilities/services/ecommerce/content'
 import Head from 'next/head'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const ecommerce = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -43,13 +45,13 @@ const ecommerce = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroecommerce} />
+    <Hero data={dataHeroecommerce} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={ecommerceVisions} desc='Ser socios que aporten visión estratégica y experiencia en la implementación de proyectos de crecimiento digital.' />
-    <SolutionsChapter solutions={ecommerceSolutions} />
+    <SolutionsChapter solutions={ecommerceSolutions} urlHasUtm={urlHasUtm} router={router} />
     <Team team={team} chapter={'en e-commerce'} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} />
+    <Contact service={'ecommerce'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentecommerce} />
     <Footer/>
   </>

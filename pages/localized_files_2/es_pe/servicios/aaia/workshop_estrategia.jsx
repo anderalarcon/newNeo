@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const workshopEstrategia = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,14 +49,14 @@ const workshopEstrategia = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroWorkshopEstrategia} />
+    <Hero data={dataHeroWorkshopEstrategia} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolWorkshopEstrategia} />
-    <ServicesPerks data={perksWorkshopEstrategia} />
+    <ServicesPerks data={perksWorkshopEstrategia} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workWorkshopEstrategia} />
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} solution={'estrategia-data'} />
+    <Contact service={'aaia'} solution={'estrategia-data'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

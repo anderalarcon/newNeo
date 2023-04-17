@@ -17,8 +17,10 @@ import { ecommerceCases } from '../../../../../utilities/services/ecommerce/case
 import { questionsecommerce } from '../../../../../utilities/services/ecommerce/questions'
 import { contentecommerce } from '../../../../../utilities/services/ecommerce/content'
 import Head from 'next/head'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const growthEcommerce = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -43,13 +45,13 @@ const growthEcommerce = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataGrowthEcommerce} />
+    <Hero data={dataGrowthEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolGrowthEcommerce} />
-    <ServicesPerks data={perksGrowthEcommerce} />
+    <ServicesPerks data={perksGrowthEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workGrowthEcommerce} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} solution={'growth-y-analytics-para-ecommerce'} />
+    <Contact service={'ecommerce'} solution={'growth-y-analytics-para-ecommerce'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentecommerce} />
     <Footer/>
     </>

@@ -1,7 +1,7 @@
 import Card from './_children/Card/Card.jsx'
 import PropTypes from 'prop-types'
 import style from './Solutions.module.scss'
-const Solutions = ({ solutions }) => {
+const Solutions = ({ solutions, urlHasUtm, router }) => {
   return (
     <section id='solutions' className={style.solutions}>
       <div className={style.solutions_container}>
@@ -9,7 +9,7 @@ const Solutions = ({ solutions }) => {
         <div className={style.solutions_container_services}>
           {solutions.map(({ iconSrc, service, description, url }) => {
             return (
-              <Card iconSrc={iconSrc.src} service={service} key={service} description={description} url={url} />
+              <Card iconSrc={iconSrc.src} service={service} key={service} description={description} url={url} urlHasUtm={urlHasUtm} router={router} />
             )
           })}
         </div>
@@ -18,6 +18,8 @@ const Solutions = ({ solutions }) => {
   )
 }
 Solutions.propTypes = {
-  solutions: PropTypes.array
+  solutions: PropTypes.array,
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
 }
 export default Solutions

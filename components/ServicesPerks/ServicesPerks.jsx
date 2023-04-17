@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import uuid from 'react-uuid'
 import Link from 'next/link'
 
-const ServicesPerks = ({ data }) => {
+const ServicesPerks = ({ data, urlHasUtm, router }) => {
   return (
     <div className={style.perks}>
       <div className={style.perks_container}>
@@ -24,7 +24,20 @@ const ServicesPerks = ({ data }) => {
               </div>
             ))}
           </div>
-          <Link href={`/contact/?service=${data.contact.service}&solution=${data.contact.solution}`}>
+          <Link
+          href={{
+            pathname: '/contact',
+            query: {
+              service: data.contact.service,
+              solution: data.contact.solution,
+              ...(urlHasUtm && {
+                utm_medium: router?.query?.utm_medium || 'empty',
+                utm_source: router?.query?.utm_source || 'empty',
+                utm_campaign: router?.query?.utm_campaign || 'empty'
+              })
+            }
+          }}
+          >
             <button className={style.perks_container_root_contact}>
               {data.contact.text}
             </button>
@@ -36,7 +49,9 @@ const ServicesPerks = ({ data }) => {
 }
 
 ServicesPerks.propTypes = {
-  data: PropTypes.array
+  data: PropTypes.array,
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
 }
 
 export default ServicesPerks

@@ -1,33 +1,29 @@
 import Link from 'next/link'
 import style from './Hero.module.scss'
-// import view1 from '../../public/assets/Hero/view-1-mobile.png'
 import view1Desk from '../../public/assets/Hero/view-1-desktoppp.png'
 import view2Desk from '../../public/assets/Hero/view-2-desktop.png'
 import arrowRight from '../../public/assets/Hero/arrow-right-white.svg'
 import { Navigation, Pagination, A11y } from 'swiper'
-
+import PropTypes from 'prop-types'
 import { Swiper, SwiperSlide } from 'swiper/react'
 import leftArrow from '../../public/assets/Swiper/left-arrow.svg'
 import rightArrow from '../../public/assets/Swiper/right-arrow.svg'
-// Import Swiper styles
 import 'swiper/css'
-// import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import { motion } from 'framer-motion'
 import { staggerContainer, slideIn } from '../../utilities/global/motion'
 
-const Hero = () => {
+const Hero = ({ urlHasUtm, router }) => {
   return (
     <motion.section
       className={style.hero}
       variants={staggerContainer}
-      initial="hidden"
-      whileInView="show"
+      initial='hidden'
+      whileInView='show'
       viewport={{ once: true, amount: 0.25 }}
     >
       <div className={style.hero_container}>
         <Swiper
-          // install Swiper modules
           modules={[Navigation, Pagination, A11y]}
           spaceBetween={50}
           slidesPerView={1}
@@ -77,7 +73,16 @@ const Hero = () => {
                   className={style.hero_container_view_buttons_contact}
                   href={{
                     pathname: '/contact',
-                    query: { service: 'default', solution: 'default' }
+                    query: {
+                      service: 'default',
+                      solution: 'default',
+                      ...(urlHasUtm && {
+                        utm_medium: router?.query?.utm_medium || 'empty',
+                        utm_source: router?.query?.utm_source || 'empty',
+                        utm_campaign: router?.query?.utm_campaign || 'empty'
+
+                      })
+                    }
                   }}
                 >
                   Contáctanos
@@ -253,8 +258,11 @@ const Hero = () => {
           </SwiperSlide>
         </Swiper>
       </div>
-      </motion.section>
+    </motion.section>
   )
 }
-
+Hero.propTypes = {
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
+}
 export default Hero

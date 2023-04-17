@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
 import { contentmkt } from '../../../../../utilities/services/mkt/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const CentralizacionInsights = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -53,14 +55,14 @@ const CentralizacionInsights = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroCentralizacionInsights} />
+    <Hero data={dataHeroCentralizacionInsights} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolCentralizacionInsights} />
-    <ServicesPerks data={perksCentralizacionInsights} />
+    <ServicesPerks data={perksCentralizacionInsights} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workCentralizacionInsights} />
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} solution='centralizacion-de-insights' />
+    <Contact service={'mkt-automation'} solution='centralizacion-de-insights' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentmkt} />
     <Footer/>
   </>

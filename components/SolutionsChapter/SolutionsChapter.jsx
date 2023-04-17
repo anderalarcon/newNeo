@@ -5,7 +5,33 @@ import uuid from 'react-uuid'
 import { useEffect, useState } from 'react'
 import arrow from '../../public/assets/Swiper/right-arrow.svg'
 
-const SolutionsChapter = ({ solutions, filter = false }) => {
+const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
+  const handlePush = (url) => {
+    const urlWithUtm = urlHasUtm ? `${url}&utm_medium=${router.query.utm_medium}&utm_source=${router.query.utm_source}&utm_campaign=${router.query.utm_campaign}` : ''
+    router.push(urlWithUtm)
+  }
+
+  const getLetsTalkBtn = (url) => {
+    if (urlHasUtm) {
+      return (
+        <a
+        className={style.solutions_container_solution_ctn_talk}
+        onClick={() => handlePush(url)}
+      >
+        Conversemos
+      </a>
+      )
+    }
+    return (
+      <Link
+        className={style.solutions_container_solution_ctn_talk}
+        href={url}
+      >
+        Conversemos
+      </Link>
+    )
+  }
+
   if (filter) {
     const [solutionsFiltered, setSolutionsFiltered] = useState([])
     const [activeLink, setActiveLink] = useState('Estrategia')
@@ -32,12 +58,36 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
           </div>
         {solutionsFiltered?.solutions?.map(({ solution, description, urlcontact, urlpage }) => {
           return (
-              <div className={style.solutions_container_solution} key={uuid()}>
-              <h2 className={style.solutions_container_solution_title}>{solution}</h2>
-              <p className={style.solutions_container_solution_desc}>{description}</p>
+            <div className={style.solutions_container_solution} key={uuid()}>
+              <h2 className={style.solutions_container_solution_title}>
+                {solution}
+              </h2>
+              <p className={style.solutions_container_solution_desc}>
+                {description}
+              </p>
               <div className={style.solutions_container_solution_ctn}>
-                <Link className={style.solutions_container_solution_ctn_talk} href={urlcontact}>Conversemos</Link>
-                <Link className={style.solutions_container_solution_ctn_more} href={urlpage}>Ver más <img alt='arrow neo consulting' src={arrow.src} width={16} height={16} /> </Link>
+                {getLetsTalkBtn(urlcontact)}
+                <Link
+                  className={style.solutions_container_solution_ctn_more}
+                  href={{
+                    pathname: urlpage,
+                    query: {
+                      ...(urlHasUtm && {
+                        utm_medium: router?.query?.utm_medium || 'empty',
+                        utm_source: router?.query?.utm_source || 'empty',
+                        utm_campaign: router?.query?.utm_campaign || 'empty'
+                      })
+                    }
+                  }}
+                >
+                  Ver más{' '}
+                  <img
+                    alt='arrow neo consulting'
+                    src={arrow.src}
+                    width={16}
+                    height={16}
+                  />{' '}
+                </Link>
               </div>
               <hr className={style.solutions_container_solution_hr} />
             </div>
@@ -64,15 +114,19 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
                 {description}
               </p>
               <div className={style.solutions_container_solution_ctn}>
-                <Link
-                  className={style.solutions_container_solution_ctn_talk}
-                  href={urlcontact}
-                >
-                  Conversemos
-                </Link>
+                {getLetsTalkBtn(urlcontact)}
                 <Link
                   className={style.solutions_container_solution_ctn_more}
-                  href={urlpage}
+                  href={{
+                    pathname: urlpage,
+                    query: {
+                      ...(urlHasUtm && {
+                        utm_medium: router?.query?.utm_medium || 'empty',
+                        utm_source: router?.query?.utm_source || 'empty',
+                        utm_campaign: router?.query?.utm_campaign || 'empty'
+                      })
+                    }
+                  }}
                 >
                   Ver más{' '}
                   <img
@@ -94,9 +148,8 @@ const SolutionsChapter = ({ solutions, filter = false }) => {
 
 export default SolutionsChapter
 SolutionsChapter.propTypes = {
-  //   solution: PropTypes.string,
-  //   description: PropTypes.string,
-  //   url: PropTypes.string
   solutions: PropTypes.array,
-  filter: PropTypes.bool
+  filter: PropTypes.bool,
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
 }

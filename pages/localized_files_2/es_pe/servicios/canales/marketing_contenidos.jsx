@@ -21,8 +21,10 @@ import { questionsCanales } from '../../../../../utilities/services/canales/ques
 import { team } from '../../../../../utilities/services/canales/team'
 import { canalesCases } from '../../../../../utilities/services/canales/cases'
 import { contentcanales } from '../../../../../utilities/services/canales/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const marketingContenidos = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,14 +49,14 @@ const marketingContenidos = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroMarketingContenidos} isSolution={true} />
+    <Hero data={dataHeroMarketingContenidos} isSolution={true} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMarketingContenidos} />
-    <ServicesPerks data={perksMarketingContenidos} />
+    <ServicesPerks data={perksMarketingContenidos} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workMarketingContenidos} />
     <SuccessCase cases={canalesCases} />
     <Team team={team} chapter={'en Canales Digitales y Growth Hacking'} />
     <Questions questions={questionsCanales} />
-    <Contact service={'canales-digitales'} solution={'marketing-de-contenidos'} />
+    <Contact service={'canales-digitales'} solution={'marketing-de-contenidos'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentcanales} />
     <Footer/>
   </>

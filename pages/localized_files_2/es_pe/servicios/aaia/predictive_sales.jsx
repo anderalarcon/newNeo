@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const predictiveSales = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -47,14 +49,14 @@ const predictiveSales = () => {
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
     <Header/>
-    <Hero data={dataHeroPredictiveSales} />
+    <Hero data={dataHeroPredictiveSales} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolPredictiveSales} />
-    <ServicesPerks data={perksPredictiveSales} />
+    <ServicesPerks data={perksPredictiveSales} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workPredictiveSales} />
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} solution='predictive-sales-analytics' />
+    <Contact service={'aaia'} solution='predictive-sales-analytics' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

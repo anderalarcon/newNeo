@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Link from 'next/link'
 import uuid from 'react-uuid'
 
-const Hero = ({ data, isSolution = false }) => {
+const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
   const {
     pretitle,
     title,
@@ -21,7 +21,18 @@ const Hero = ({ data, isSolution = false }) => {
       return (
         <Link
           className={style.hero_container_left_ctn_direct}
-          href={`/contact/?service=${service}&solution=${solution}`}
+          href={{
+            pathname: '/contact',
+            query: {
+              service,
+              solution,
+              ...(urlHasUtm && {
+                utm_medium: router?.query?.utm_medium || 'empty',
+                utm_source: router?.query?.utm_source || 'empty',
+                utm_campaign: router?.query?.utm_campaign || 'empty'
+              })
+            }
+          }}
         >
           Contáctanos
         </Link>
@@ -34,7 +45,18 @@ const Hero = ({ data, isSolution = false }) => {
         </a>
         <Link
           className={style.hero_container_left_ctn_contact}
-          href={`/contact/?service=${service}&solution=${solution}`}
+          href={{
+            pathname: '/contact',
+            query: {
+              service,
+              solution,
+              ...(urlHasUtm && {
+                utm_medium: router?.query?.utm_medium || 'empty',
+                utm_source: router?.query?.utm_source || 'empty',
+                utm_campaign: router?.query?.utm_campaign || 'empty'
+              })
+            }
+          }}
         >
           Contáctanos <img src={arrow.src} alt='Neo Consulting' />
         </Link>
@@ -90,6 +112,8 @@ const Hero = ({ data, isSolution = false }) => {
 }
 Hero.propTypes = {
   data: PropTypes.object,
-  isSolution: PropTypes.bool
+  isSolution: PropTypes.bool,
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
 }
 export default Hero
