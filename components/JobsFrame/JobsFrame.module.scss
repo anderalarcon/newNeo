@@ -1,0 +1,34 @@
+@import "../../styles/variables.module.scss";
+
+.hero {
+  width: 100%;
+  max-width: 1300px;
+  position: relative;
+  padding: 0 map-get($padding, mobile);
+  margin: 0 auto;
+  margin-bottom: 64px;
+  // background-color: map-get($color, accent);
+  @include breakpoint(widescreen) {
+    // padding: 0 map-get($padding, widescreen);
+    margin-top: 160px;
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 24px;
+    margin: 0 auto;
+    padding: 16px 0;
+    padding-bottom: 0;
+    height: 500px;
+    font-size: 80px !important;
+
+    @include breakpoint(widescreen) {
+      flex-direction: row;
+      font-size: 80px !important;
+    }
+    
+  }
+}

@@ -88,7 +88,7 @@ const Header = () => {
       ]
     },
     {
-      title: 'Servicios con partners',
+      title: 'Partners',
       ul: [
         {
           link: 'https://neoconsulting.ai/servicios-aws/',
@@ -113,7 +113,7 @@ const Header = () => {
       ]
     },
     {
-      title: 'Sobre Nosotros',
+      title: 'Sobre Neo',
       ul: [
         {
           link: 'https://neoconsulting.ai/quienes_somos',
@@ -121,7 +121,7 @@ const Header = () => {
           icon: quienes.src
         },
         {
-          link: 'https://neo.applytojob.com/apply',
+          link: 'https://neoconsulting.ai/neo-jobs/',
           text: 'Trabaja con nosotros',
           icon: trabaja.src
         },
