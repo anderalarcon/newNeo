@@ -48,7 +48,7 @@ const machineLearning = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroMachineLearning} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMachineLearning} />
     <ServicesPerks data={perksMachineLearning} urlHasUtm={urlHasUtm} router={router} />

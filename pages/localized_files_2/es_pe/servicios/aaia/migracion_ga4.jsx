@@ -49,7 +49,7 @@ const migracionGa4 = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroMigracionGa4} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMigracionGa4} />
     <ServicesPerks data={perksMigracionGa4} urlHasUtm={urlHasUtm} router={router} />

@@ -54,7 +54,7 @@ const reportingRoi = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroReportingRoi} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolReportingRoi} />
     <ServicesPerks data={perksReportingRoi} urlHasUtm={urlHasUtm} router={router} />

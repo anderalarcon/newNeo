@@ -43,7 +43,7 @@ const crm = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header/>
+      <Header urlHasUtm={urlHasUtm} router={router}/>
       <Hero data={dataHero} urlHasUtm={urlHasUtm} router={router} />
       <Vision defaultVersion={false}/>
       <SolutionsChapter solutions={crmSolutions} urlHasUtm={urlHasUtm} router={router} />

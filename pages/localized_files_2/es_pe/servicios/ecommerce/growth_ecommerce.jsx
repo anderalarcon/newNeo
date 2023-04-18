@@ -44,7 +44,7 @@ const growthEcommerce = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataGrowthEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolGrowthEcommerce} />
     <ServicesPerks data={perksGrowthEcommerce} urlHasUtm={urlHasUtm} router={router} />

@@ -1,144 +1,18 @@
 import style from './Header.module.scss'
 import { useState } from 'react'
-
-// import logoWhite from '../../public/assets/Logos/logo-white.png'
 import logoBlack from '../../public/assets/Logos/logo-black.png'
 import logoSvg from '../../public/assets/Logos/logo-svg.svg'
 import arrowDown from '../../public/assets/SVGs/Arrow-Down.svg'
 import menu from '../../public/assets/SVGs/Menu.svg'
 import close from '../../public/assets/SVGs/Close.svg'
 import Accordion from './_children/Accordion/Accordion'
-import basket from '../../public/assets/Header/basket.svg'
-import brain from '../../public/assets/Header/brain.svg'
-import consult from '../../public/assets/Header/consult.svg'
-import download from '../../public/assets/Header/download.svg'
-import laptop from '../../public/assets/Header/laptop.svg'
-import nodeUser from '../../public/assets/Header/node-user.svg'
-import rise from '../../public/assets/Header/Rise.svg'
-import stats from '../../public/assets/Header/stats.svg'
-import sync from '../../public/assets/Header/Sync.svg'
-import techInfo from '../../public/assets/Header/tech-info.svg'
-import aws from '../../public/assets/Header/aws.svg'
-import quienes from '../../public/assets/Header/quienes.svg'
-import trabaja from '../../public/assets/Header/trabaja.svg'
-import bcorp from '../../public/assets/Header/bcorp.svg'
-// import window from '../../public/assets/Header/window.svg'
-import videoChat from '../../public/assets/Header/video-chat-line.svg'
 import uuid from 'react-uuid'
 import Link from 'next/link'
+import { AccordionData } from '../../utilities/global/header'
+import PropTypes from 'prop-types'
 
-const Header = () => {
+const Header = ({ urlHasUtm, router }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
-
-  const AccordionData = [
-    {
-      title: 'Servicios',
-      ul: [
-        {
-          link: '/pe/servicios/canales-digitales-y-growth-hacking',
-          text: 'Canales digitales y Growth Hacking',
-          icon: laptop.src
-        },
-        {
-          link: '/pe/servicios/consultoria-ecommerce',
-          text: 'E-commerce',
-          icon: basket.src
-        },
-        {
-          link: '/pe/servicios/headhunting-y-mentoring',
-          text: 'Headhunting y Mentoring',
-          icon: nodeUser.src
-        },
-        {
-          link: '/pe/servicios/consultoria-customer-relationship-management',
-          text: 'Consultoría CRM',
-          icon: consult.src
-        },
-        {
-          link: '/pe/servicios/analitica-digital-inteligencia-artificial',
-          text: 'Analítica Digital e Inteligencia Artificial',
-          icon: rise.src
-        },
-        {
-          link: '/pe/servicios/experience-design',
-          text: 'Diseño de experiencia',
-          icon: sync.src
-        },
-        {
-          link: '/pe/servicios/digital-advertising',
-          text: 'Publicidad Digital',
-          icon: stats.src
-        },
-        {
-          link: '/pe/servicios/marketing-automation',
-          text: 'Marketing Automation',
-          icon: techInfo.src
-        }
-      ]
-    },
-    {
-      title: 'Productos',
-      ul: [
-        {
-          link: 'https://neoconsulting.ai/digital-skills',
-          text: 'Neo Digital Skills',
-          icon: brain.src
-        }
-        // { link: '#', text: 'Otros', icon: window.src }
-      ]
-    },
-    {
-      title: 'Partners',
-      ul: [
-        {
-          link: 'https://neoconsulting.ai/servicios-aws/',
-          text: 'Soluciones cloud con AWS',
-          icon: aws.src
-        }
-      ]
-    },
-    {
-      title: 'Recursos',
-      ul: [
-        {
-          link: 'https://neoconsulting.ai/recursos-digitales/',
-          text: 'Descargables',
-          icon: download.src
-        },
-        {
-          link: 'https://neoconsulting.ai/recursos-digitales/#webinars',
-          text: 'webinars',
-          icon: videoChat.src
-        }
-      ]
-    },
-    {
-      title: 'Sobre Neo',
-      ul: [
-        {
-          link: 'https://neoconsulting.ai/quienes_somos',
-          text: '¿Quienes Somos?',
-          icon: quienes.src
-        },
-        {
-          link: 'https://neoconsulting.ai/neo-jobs/',
-          text: 'Trabaja con nosotros',
-          icon: trabaja.src
-        },
-        {
-          link: 'https://wordpress.neoconsulting.ai/wp-content/uploads/2022/06/Reporte-de-Sostenibilidad-2021-Neo-Consulting.pdf',
-          text: 'Reporte Bcorp',
-          icon: bcorp.src
-        }
-        // { link: '#', text: 'Otros', icon: window.src }
-      ]
-    },
-    {
-      title: 'Casos de éxito',
-      link: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/'
-    },
-    { title: 'Blog', link: 'https://neoconsulting.ai/blog-neo' }
-  ]
 
   return (
     <header className={style.header}>
@@ -164,12 +38,9 @@ const Header = () => {
           {AccordionData.map((menu) => (
             <li key={uuid()} className={style.header_base_menu_item}>
               {menu.ul
-                ? (
-                <p>{menu.title}</p>
-                  )
-                : (
-                <a href={menu.link}>{menu.title}</a>
-                  )}
+                ? <p>{menu.title}</p>
+                : <a href={menu.link}>{menu.title}</a>
+                  }
 
               {menu.ul ? <img src={arrowDown.src} alt='arrow down' /> : ''}
 
@@ -191,13 +62,23 @@ const Header = () => {
           ))}
         </ul>
 
-        <button
-          className={style.header_base_right}
-        >
-          <Link href={{
-            pathname: '/contact',
-            query: { service: 'default', solution: 'default' }
-          }}>Contáctanos</Link>
+        <button className={style.header_base_right}>
+          <Link
+            href={{
+              pathname: '/contact',
+              query: {
+                service: 'default',
+                solution: 'default',
+                ...(urlHasUtm && {
+                  utm_medium: router?.query?.utm_medium || 'empty',
+                  utm_source: router?.query?.utm_source || 'empty',
+                  utm_campaign: router?.query?.utm_campaign || 'empty'
+                })
+              }
+            }}
+          >
+            Contáctanos
+          </Link>
         </button>
       </div>
 
@@ -233,5 +114,8 @@ const Header = () => {
     </header>
   )
 }
-
+Header.propTypes = {
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
+}
 export default Header

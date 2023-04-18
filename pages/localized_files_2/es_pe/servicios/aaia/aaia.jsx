@@ -44,7 +44,7 @@ const aaia = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroaaia} urlHasUtm={urlHasUtm} router={router} />
     <Vision visions={aaiaVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.'/>
     <SolutionsChapter solutions={aaiaSolutions2} filter={true} urlHasUtm={urlHasUtm} router={router} />

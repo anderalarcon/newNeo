@@ -54,7 +54,7 @@ const outsourcing = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroOutsourcing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolOutsourcing} />
     <ServicesPerks data={perksOutsourcing} urlHasUtm={urlHasUtm} router={router} />

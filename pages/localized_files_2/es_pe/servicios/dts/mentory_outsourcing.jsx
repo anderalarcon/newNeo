@@ -54,7 +54,7 @@ const mentoryOutsourcing = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroMentoryOutsourcing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMentoryOutsourcing} />
     <ServicesPerks data={perksMentoryOutsourcing} urlHasUtm={urlHasUtm} router={router} />

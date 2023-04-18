@@ -50,7 +50,7 @@ const xd = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroxd} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={xdVisions} desc='Nuestro diferencial viene de entender los objetivos de negocio y unirlo con las necesidades del usuario' />
     <SolutionsChapter solutions={xdSolutions} urlHasUtm={urlHasUtm} router={router} />

@@ -53,7 +53,7 @@ const medicion = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataMedicion} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMedicion} />
     <ServicesPerks data={perksMedicion} urlHasUtm={urlHasUtm} router={router} />

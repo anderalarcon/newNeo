@@ -48,7 +48,7 @@ const sentimentAnalysis = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroSentimentAnalysis} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolSentimentAnalysis} />
     <ServicesPerks data={perksSentimentAnalysis} urlHasUtm={urlHasUtm} router={router} />

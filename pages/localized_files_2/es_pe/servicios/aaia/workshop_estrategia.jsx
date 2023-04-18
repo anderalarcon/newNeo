@@ -48,7 +48,7 @@ const workshopEstrategia = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroWorkshopEstrategia} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolWorkshopEstrategia} />
     <ServicesPerks data={perksWorkshopEstrategia} urlHasUtm={urlHasUtm} router={router} />

@@ -48,7 +48,7 @@ const growthHacking = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroGrowthHacking} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolGrowthHacking} />
     <ServicesPerks data={perksGrowthHacking} urlHasUtm={urlHasUtm} router={router} />

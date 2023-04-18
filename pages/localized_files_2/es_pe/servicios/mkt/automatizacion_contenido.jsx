@@ -54,7 +54,7 @@ const automatizacionContenido = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroAutomatizacionContenido} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAutomatizacionContenido} />
     <ServicesPerks data={perksAutomatizacionContenido} urlHasUtm={urlHasUtm} router={router} />

@@ -44,7 +44,7 @@ const ecommerce = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroecommerce} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={ecommerceVisions} desc='Ser socios que aporten visión estratégica y experiencia en la implementación de proyectos de crecimiento digital.' />
     <SolutionsChapter solutions={ecommerceSolutions} urlHasUtm={urlHasUtm} router={router} />

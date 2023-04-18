@@ -48,7 +48,7 @@ const ChatbotsInteligencia = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroChatbotsInteligencia} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolChatbotsInteligencia} />
     <ServicesPerks data={perksChatbotsInteligencia} urlHasUtm={urlHasUtm} router={router} />

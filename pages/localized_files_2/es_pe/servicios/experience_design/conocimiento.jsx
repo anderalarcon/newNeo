@@ -53,7 +53,7 @@ const conocimiento = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataConocimiento} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolConocimiento} />
     <ServicesPerks data={perksConocimiento} urlHasUtm={urlHasUtm} router={router} />

@@ -54,7 +54,7 @@ const personalizacionEcommerce = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroPersonalizacionEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolPersonalizacionEcommerce} />
     <ServicesPerks data={perksPersonalizacionEcommerce} urlHasUtm={urlHasUtm} router={router} />

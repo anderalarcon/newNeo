@@ -48,7 +48,7 @@ const integracionDatos = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroIntegracionDatos} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolIntegracionDatos} />
     <ServicesPerks data={perksIntegracionDatos} urlHasUtm={urlHasUtm} router={router} />

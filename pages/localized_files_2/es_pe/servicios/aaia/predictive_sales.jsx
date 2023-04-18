@@ -48,7 +48,7 @@ const predictiveSales = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroPredictiveSales} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolPredictiveSales} />
     <ServicesPerks data={perksPredictiveSales} urlHasUtm={urlHasUtm} router={router} />
