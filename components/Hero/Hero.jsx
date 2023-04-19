@@ -12,6 +12,7 @@ import 'swiper/css'
 import 'swiper/css/pagination'
 import { motion } from 'framer-motion'
 import { staggerContainer, slideIn } from '../../utilities/global/motion'
+import TagManager from 'react-gtm-module'
 
 const Hero = ({ urlHasUtm, router }) => {
   return (
@@ -71,6 +72,16 @@ const Hero = ({ urlHasUtm, router }) => {
               <div className={style.hero_container_view_buttons}>
                 <Link
                   className={style.hero_container_view_buttons_contact}
+                  onClick={() => {
+                    TagManager.dataLayer({
+                      dataLayer: {
+                        event: 'click_button_formulario',
+                        event_category: 'boton_interes_contacto',
+                        event_label: 'hero_home_boton_contacto',
+                        value: 1
+                      }
+                    })
+                  }}
                   href={{
                     pathname: '/contact',
                     query: {

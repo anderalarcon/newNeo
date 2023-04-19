@@ -4,8 +4,9 @@ import arrow from '../../../../public/assets/Solutions/arrow.svg'
 import style from './Card.module.scss'
 import { motion } from 'framer-motion'
 import { slideIn } from '../../../../utilities/global/motion'
+import TagManager from 'react-gtm-module'
 
-const Card = ({ iconSrc, service, description, url, urlHasUtm, router }) => {
+const Card = ({ iconSrc, service, description, url, urlHasUtm, router, eventCategory, eventLabel }) => {
   return (
     <motion.div
       className={style.card}
@@ -15,6 +16,16 @@ const Card = ({ iconSrc, service, description, url, urlHasUtm, router }) => {
       variants={slideIn('down', 'tween', 0.2, 1)}
     >
       <Link
+        onClick={() => {
+          TagManager.dataLayer({
+            dataLayer: {
+              event: 'click_button_interes_servicio',
+              event_category: { eventCategory },
+              event_label: { eventLabel },
+              value: 1
+            }
+          })
+        }}
         href={{
           pathname: url,
           query: {
@@ -58,7 +69,9 @@ Card.propTypes = {
   description: PropTypes.string,
   url: PropTypes.string,
   urlHasUtm: PropTypes.bool,
-  router: PropTypes.object
+  router: PropTypes.object,
+  eventCategory: PropTypes.string,
+  eventLabel: PropTypes.string
 }
 
 export default Card

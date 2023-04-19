@@ -26,6 +26,7 @@ import bcorp from '../../public/assets/Header/bcorp.svg'
 import videoChat from '../../public/assets/Header/video-chat-line.svg'
 import uuid from 'react-uuid'
 import Link from 'next/link'
+import TagManager from 'react-gtm-module'
 
 const Header = () => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -192,6 +193,16 @@ const Header = () => {
         </ul>
 
         <button
+          onClick={() => {
+            TagManager.dataLayer({
+              dataLayer: {
+                event: 'click_button_formulario',
+                event_category: 'boton_interes_contacto',
+                event_label: 'navBar_boton_contacto',
+                value: 1
+              }
+            })
+          }}
           className={style.header_base_right}
         >
           <Link href={{

@@ -6,16 +6,11 @@ import TagManager from 'react-gtm-module'
 // eslint-disable-next-line
 function MyApp({ Component, pageProps }) {
 
-  // Hotjar
+  // Hotjar y TagManager
   useEffect(() => {
     hotjar.initialize(3412179, 6)
     TagManager.initialize({ gtmId: 'GTM-5F5MZXX' })
   }, [])
-
-  // Google Tag Manager "Armando"
-  // useEffect(() => {
-  //   TagManager.initialize({ gtmId: 'GTM-5F5MZXX' })
-  // }, [])
 
   return (
     <>
