@@ -48,7 +48,7 @@ const auditoria = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroAuditoria} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAuditoria} />
     <ServicesPerks data={perksAuditoria} urlHasUtm={urlHasUtm} router={router} />

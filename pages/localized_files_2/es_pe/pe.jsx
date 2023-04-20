@@ -60,7 +60,7 @@ const pe = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header />
+      <Header urlHasUtm={urlHasUtm} router={router} />
       <Hero urlHasUtm={urlHasUtm} router={router}/>
       <Solutions solutions={solutionsPeru} urlHasUtm={urlHasUtm} router={router} />
       <Partners />

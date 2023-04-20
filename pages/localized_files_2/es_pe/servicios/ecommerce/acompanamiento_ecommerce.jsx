@@ -44,7 +44,7 @@ const acompanamientoEcommerce = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataAcompanamientoEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAcompanamientoEcommerce} />
     <ServicesPerks data={perksAcompanamientoEcommerce} urlHasUtm={urlHasUtm} router={router} />

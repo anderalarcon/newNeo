@@ -49,7 +49,7 @@ const quickStart = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header/>
+      <Header urlHasUtm={urlHasUtm} router={router}/>
       <Hero data={dataHeroQuickStart} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolQuickStart} />
       <ServicesPerks data={perksQuickStart} urlHasUtm={urlHasUtm} router={router} />

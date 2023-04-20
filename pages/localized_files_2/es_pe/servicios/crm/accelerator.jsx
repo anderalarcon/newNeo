@@ -48,7 +48,7 @@ const accelerator = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header/>
+      <Header urlHasUtm={urlHasUtm} router={router}/>
       <Hero data={dataHeroAccelerator} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolAccelerator} />
       <ServicesPerks data={perksAccelerator} urlHasUtm={urlHasUtm} router={router} />

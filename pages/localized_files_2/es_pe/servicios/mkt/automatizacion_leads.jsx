@@ -54,7 +54,7 @@ const automatizacionLeads = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroAutomatizacionLeads} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAutomatizacionLeads} />
     <ServicesPerks data={perksAutomatizacionLeads} urlHasUtm={urlHasUtm} router={router} />

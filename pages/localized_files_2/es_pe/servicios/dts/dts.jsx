@@ -52,7 +52,7 @@ const dts = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHerodts} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={dtsVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.' />
     <SolutionsChapter solutions={dtsSolutions} urlHasUtm={urlHasUtm} router={router} />

@@ -54,7 +54,7 @@ const CentralizacionInsights = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroCentralizacionInsights} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolCentralizacionInsights} />
     <ServicesPerks data={perksCentralizacionInsights} urlHasUtm={urlHasUtm} router={router} />

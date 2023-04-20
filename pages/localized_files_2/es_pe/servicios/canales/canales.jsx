@@ -44,7 +44,7 @@ const canales = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroCanales} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={canalesVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.' />
     <SolutionsChapter solutions={canalesSolutions} urlHasUtm={urlHasUtm} router={router} />

@@ -53,7 +53,7 @@ const diseno = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataDiseno} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolDiseno} />
     <ServicesPerks data={perksDiseno} urlHasUtm={urlHasUtm} router={router} />

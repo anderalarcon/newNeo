@@ -53,7 +53,7 @@ const headHunting = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroHeadHunting} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolHeadHunting} />
     <ServicesPerks data={perksHeadHunting} urlHasUtm={urlHasUtm} router={router} />

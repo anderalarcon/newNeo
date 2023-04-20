@@ -48,7 +48,7 @@ const advancedAnalytics = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroAdvancedAnalytics} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAdvancedAnalytics} />
     <ServicesPerks data={perksAdvancedAnalytics} urlHasUtm={urlHasUtm} router={router} />

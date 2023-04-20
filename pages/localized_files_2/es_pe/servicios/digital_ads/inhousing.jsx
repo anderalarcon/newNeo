@@ -48,7 +48,7 @@ const inhousing = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroInhousing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolInhousing} />
     <ServicesPerks data={perksInhousing} urlHasUtm={urlHasUtm} router={router} />

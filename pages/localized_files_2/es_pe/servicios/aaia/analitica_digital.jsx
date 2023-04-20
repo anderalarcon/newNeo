@@ -48,7 +48,7 @@ const AnaliticaDigital = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroAnaliticaDigital} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAnaliticaDigital} />
     <ServicesPerks data={perksAnaliticaDigital} urlHasUtm={urlHasUtm} router={router} />

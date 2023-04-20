@@ -49,7 +49,7 @@ const fullService = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header/>
+      <Header urlHasUtm={urlHasUtm} router={router}/>
       <Hero data={dataHeroFullService} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolFullService} />
       <ServicesPerks data={perksFullService} urlHasUtm={urlHasUtm} router={router} />

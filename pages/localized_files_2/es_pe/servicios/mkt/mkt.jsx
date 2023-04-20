@@ -49,7 +49,7 @@ const mkt = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeromkt} urlHasUtm={urlHasUtm} router={router} />
     <Vision visions={mktVisions} desc={'Nuestro diferencial viene de entender los objetivos de negocio capitalizando la Data'}/>
     <SolutionsChapter solutions={mktSolutions} urlHasUtm={urlHasUtm} router={router} />

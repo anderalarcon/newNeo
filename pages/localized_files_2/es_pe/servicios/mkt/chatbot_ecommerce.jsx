@@ -54,7 +54,7 @@ const chatbotEcommerce = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroChatbotEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolChatbotEcommerce} />
     <ServicesPerks data={perksChatbotEcommerce} urlHasUtm={urlHasUtm} router={router} />

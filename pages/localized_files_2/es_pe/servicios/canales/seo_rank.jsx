@@ -48,7 +48,7 @@ const seoRank = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroSeoRank} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolSeoRank} />
     <ServicesPerks data={perksSeoRank} urlHasUtm={urlHasUtm} router={router} />

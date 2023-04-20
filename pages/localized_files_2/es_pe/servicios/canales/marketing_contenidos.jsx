@@ -48,7 +48,7 @@ const marketingContenidos = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroMarketingContenidos} isSolution={true} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMarketingContenidos} />
     <ServicesPerks data={perksMarketingContenidos} urlHasUtm={urlHasUtm} router={router} />

@@ -54,7 +54,7 @@ const planingContenido = () => {
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataHeroPlaningContenido} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolPlaningContenido} />
     <ServicesPerks data={perksPlaningContenido} urlHasUtm={urlHasUtm} router={router} />

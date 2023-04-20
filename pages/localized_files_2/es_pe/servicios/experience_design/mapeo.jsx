@@ -53,7 +53,7 @@ const mapeo = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
     <Hero data={dataMapeo} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolMapeo} />
     <ServicesPerks data={perksMapeo} urlHasUtm={urlHasUtm} router={router} />
