@@ -10,6 +10,7 @@ import uuid from 'react-uuid'
 import Link from 'next/link'
 import { AccordionData } from '../../utilities/global/header'
 import PropTypes from 'prop-types'
+import TagManager from 'react-gtm-module'
 
 const Header = ({ urlHasUtm, router }) => {
   const [showMobileMenu, setShowMobileMenu] = useState(false)
@@ -40,7 +41,7 @@ const Header = ({ urlHasUtm, router }) => {
               {menu.ul
                 ? <p>{menu.title}</p>
                 : <a href={menu.link}>{menu.title}</a>
-                  }
+                }
 
               {menu.ul ? <img src={arrowDown.src} alt='arrow down' /> : ''}
 
@@ -62,7 +63,19 @@ const Header = ({ urlHasUtm, router }) => {
           ))}
         </ul>
 
-        <button className={style.header_base_right}>
+        <button
+          onClick={() => {
+            TagManager.dataLayer({
+              dataLayer: {
+                event: 'click_button_formulario',
+                event_category: 'boton_interes_contacto',
+                event_label: 'navBar_boton_contacto',
+                value: 1
+              }
+            })
+          }}
+          className={style.header_base_right}
+        >
           <Link
             href={{
               pathname: '/contact',

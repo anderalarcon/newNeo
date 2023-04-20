@@ -6,6 +6,7 @@ import PropTypes from 'prop-types'
 
 import { motion } from 'framer-motion'
 import { zoomIn } from '../../utilities/global/motion'
+import TagManager from 'react-gtm-module'
 
 const Contact = ({ service = 'default', solution = 'default', urlHasUtm, router }) => {
   return (
@@ -29,6 +30,16 @@ const Contact = ({ service = 'default', solution = 'default', urlHasUtm, router 
               <div className={style.contact_container_left_button_container}>
                 <Link
                   className={style.contact_container_left_button_container_btn}
+                  onClick={() => {
+                    TagManager.dataLayer({
+                      dataLayer: {
+                        event: 'click_button_formulario',
+                        event_category: 'boton_interes_contacto',
+                        event_label: 'hero_home_boton_contacto',
+                        value: 1
+                      }
+                    })
+                  }}
                   href={{
                     pathname: '/contact',
                     query: {

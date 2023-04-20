@@ -17,8 +17,19 @@ import { solutionsPeru } from '../../../utilities/home/solutions'
 import { peruCases } from '../../../utilities/home/cases'
 import Head from 'next/head'
 import { useUtm } from '../../../utilities/global/customhooks'
+import { useEffect } from 'react'
+import TagManager from 'react-gtm-module'
 
 const pe = () => {
+  useEffect(() => {
+    TagManager.dataLayer({
+      dataLayer: {
+        event: 'page_view',
+        page_path: '/home-principal-peru'
+      }
+    })
+  }, [])
+
   const [urlHasUtm, router] = useUtm()
   return (
     <>
