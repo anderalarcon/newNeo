@@ -45,7 +45,7 @@ const crm = () => {
       </Head>
       <Header urlHasUtm={urlHasUtm} router={router}/>
       <Hero data={dataHero} urlHasUtm={urlHasUtm} router={router} />
-      <Vision defaultVersion={false}/>
+      <Vision defaultVersion={false} urlHasUtm={urlHasUtm} router={router}/>
       <SolutionsChapter solutions={crmSolutions} urlHasUtm={urlHasUtm} router={router} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <SuccessCase cases={crmCases} />

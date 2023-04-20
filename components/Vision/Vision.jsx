@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import Card from './_children/Card'
 import uuid from 'react-uuid'
 
-const Vision = ({ defaultVersion = true, visions = [], desc }) => {
+const Vision = ({ service = 'crm', solution = 'default', defaultVersion = true, visions = [], desc, urlHasUtm, router }) => {
   if (defaultVersion) {
     const getVisions = () => {
       if (visions.length > 0) {
@@ -185,7 +185,18 @@ const Vision = ({ defaultVersion = true, visions = [], desc }) => {
           <div className={style.vision_container_right_link}>
             <Link
               className={style.vision_container_right_link_lnk}
-              href={'/contact?service=crm&solution=default'}
+              href={{
+                pathname: '/contact',
+                query: {
+                  service,
+                  solution,
+                  ...(urlHasUtm && {
+                    utm_medium: router?.query?.utm_medium || 'empty',
+                    utm_source: router?.query?.utm_source || 'empty',
+                    utm_campaign: router?.query?.utm_campaign || 'empty'
+                  })
+                }
+              }}
             >
               Conversemos
             </Link>
@@ -196,8 +207,12 @@ const Vision = ({ defaultVersion = true, visions = [], desc }) => {
   )
 }
 Vision.propTypes = {
+  service: PropTypes.string,
+  solution: PropTypes.string,
   defaultVersion: PropTypes.bool,
   visions: PropTypes.array,
-  desc: PropTypes.string
+  desc: PropTypes.string,
+  urlHasUtm: PropTypes.bool,
+  router: PropTypes.object
 }
 export default Vision
