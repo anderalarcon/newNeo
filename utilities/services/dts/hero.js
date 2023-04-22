@@ -33,7 +33,7 @@ export const dataHeroOutsourcing = {
   subtitle: 'Outsourcing',
   service: 'digital-talent-solution',
   solution: 'outsourcing',
-  desc: 'Reclutamos y seleccionamos perfiles para tí. El perfil trabaja tiempo completo en tu empresa, pero es personal de Neo y nosotros nos encargamos del apoyo y mentoring.',
+  desc: 'Reclutamos y seleccionamos perfiles digitales para tu empresa. El perfil trabaja tiempo completo en tu empresa, pero es personal de Neo y nosotros nos encargamos del apoyo y mentoring.',
   mainImg: HeroOutsourcing.src,
   certifications: [
   ]

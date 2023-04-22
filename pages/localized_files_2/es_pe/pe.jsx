@@ -34,7 +34,7 @@ const pe = () => {
   return (
     <>
       <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Consultoria en Marketing Digital | NEO Consulting Perú</title>
         <meta
           name="description"
           content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
