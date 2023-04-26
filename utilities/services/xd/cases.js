@@ -3,7 +3,30 @@ import belcorpImgMob from '../../../public/assets/Services/Cases/belcorp-mobile.
 import soksoDesktop from '../../../public/assets/Services/Cases/sokso-desktop.jpg'
 import entelDesktop from '../../../public/assets/Services/Cases/entel-desktop.jpg'
 import ferreycorpDesktop from '../../../public/assets/Services/Cases/ferreycorp-desktop.jpg'
+import incarailDesktop from '../../../public/assets/Services/Cases/incarail_desktop.jpg'
+import movilDesktop from '../../../public/assets/Services/Cases/mobil_desktop.jpg'
+
 export const xdCases = [
+  {
+    type: 'Caso de éxito',
+    title: 'Inca Rail: Optimización en Experiencia de Usuario',
+    description:
+      'Descubre cómo Inca Rail mejoró la experiencia de sus clientes creando una experiencia web más atractiva, intuitiva e interactiva para potenciar oportunidades de negocio. ¡Conoce su historia de éxito aquí!',
+    img: incarailDesktop,
+    imgMob: incarailDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+  },
+  {
+    type: 'Caso de éxito',
+    title: 'Mobil: Implementación de Estrategia Digital Integral B2B y B2C',
+    description:
+      'Conoce cómo Neo Consulting acompañó a Mobil alcanzar objetivos de negocio mediante la creación de una Estrategia Digital que responde a las necesidades de sus usuarios en procesos de posicionamiento diferenciado, comunicación eficaz y venta.',
+    img: movilDesktop,
+    imgMob: movilDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+  },
   {
     type: 'Caso de éxito',
     title: 'Sokso potencia la transformación digital de todas sus áreas',
