@@ -20,8 +20,10 @@ import { team } from '../../../../../utilities/services/da/team'
 import { daCases } from '../../../../../utilities/services/da/cases'
 import { questionsda } from '../../../../../utilities/services/da/questions'
 import { contentda } from '../../../../../utilities/services/da/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const auditoria = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -42,19 +44,19 @@ const auditoria = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/08/image-56.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/digital_ads_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataHeroAuditoria} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroAuditoria} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAuditoria} />
-    <ServicesPerks data={perksAuditoria} />
+    <ServicesPerks data={perksAuditoria} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workAuditoria} />
     <SuccessCase cases={daCases} />
     <Team team={team} chapter={'en e-commerce'} />
     <Questions questions={questionsda} />
-    <Contact service={'digital-ads'} />
+    <Contact service={'digital-ads'} solution='auditoria' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentda} />
     <Footer/>
   </>

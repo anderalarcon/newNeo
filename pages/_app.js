@@ -10,6 +10,7 @@ function MyApp({ Component, pageProps }) {
   useEffect(() => {
     hotjar.initialize(3412179, 6)
     TagManager.initialize({ gtmId: 'GTM-5F5MZXX' })
+    TagManager.initialize({ gtmId: 'GTM-K5493HX' })
   }, [])
 
   return (

@@ -17,8 +17,10 @@ import { ecommerceCases } from '../../../../../utilities/services/ecommerce/case
 import { questionsecommerce } from '../../../../../utilities/services/ecommerce/questions'
 import { contentecommerce } from '../../../../../utilities/services/ecommerce/content'
 import Head from 'next/head'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const desarrolloModelo = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -38,18 +40,18 @@ const desarrolloModelo = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/ecommerce_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataDesarrolloModelo} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataDesarrolloModelo} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolDesarrolloModelo} />
-    <ServicesPerks data={perksDesarrolloModelo} />
+    <ServicesPerks data={perksDesarrolloModelo} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workDesarrolloModelo} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} />
+    <Contact service={'ecommerce'} solution={'desarrollo-de-modelo-ecommerce'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentecommerce} />
     <Footer/>
     </>

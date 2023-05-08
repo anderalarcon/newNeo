@@ -20,8 +20,10 @@ import { team } from '../../../../../utilities/services/da/team'
 import { daCases } from '../../../../../utilities/services/da/cases'
 import { questionsda } from '../../../../../utilities/services/da/questions'
 import { contentda } from '../../../../../utilities/services/da/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const inhousing = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -42,19 +44,19 @@ const inhousing = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/08/image-56.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/digital_ads_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataHeroInhousing} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroInhousing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolInhousing} />
-    <ServicesPerks data={perksInhousing} />
+    <ServicesPerks data={perksInhousing} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workInhousing} />
     <SuccessCase cases={daCases} />
     <Team team={team} chapter={'en e-commerce'} />
     <Questions questions={questionsda} />
-    <Contact service={'digital-ads'} />
+    <Contact service={'digital-ads'} solution='inhousing' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentda} />
     <Footer/>
   </>

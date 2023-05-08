@@ -50,7 +50,7 @@ const CentralizacionInsights = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/08/image-56.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/marketing_automation_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/aaia/team'
 import { aaiaCases } from '../../../../../utilities/services/aaia/cases'
 import { questionsaaia } from '../../../../../utilities/services/aaia/questions'
 import { contentaaia } from '../../../../../utilities/services/aaia/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const automatizacionReportes = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -42,19 +44,19 @@ const automatizacionReportes = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/aaia_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataHeroAutomatizacionReportes} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroAutomatizacionReportes} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolAutomatizacionReportes} />
-    <ServicesPerks data={perksAutomatizacionReportes} />
+    <ServicesPerks data={perksAutomatizacionReportes} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workAutomatizacionReportes} />
     <SuccessCase cases={aaiaCases} />
     <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
     <Questions questions={questionsaaia} />
-    <Contact service={'aaia'} />
+    <Contact service={'aaia'} solution='automatizacion-reportes' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentaaia} />
     <Footer/>
   </>

@@ -44,7 +44,7 @@ const workshopEstrategia = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/aaia_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

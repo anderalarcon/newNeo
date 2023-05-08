@@ -8,6 +8,7 @@ import SuccessCase from '../../../../../components/SuccessCase/SuccessCase'
 import Contact from '../../../../../components/Contact/Contact'
 import Vision from '../../../../../components/Vision/Vision'
 import Content from '../../../../../components/ContentServices/Content'
+import Head from 'next/head'
 
 import { dataHeroxd } from '../../../../../utilities/services/xd/hero'
 import { xdVisions } from '../../../../../utilities/services/xd/visions'
@@ -16,18 +17,47 @@ import { team } from '../../../../../utilities/services/xd/team'
 import { xdCases } from '../../../../../utilities/services/xd/cases'
 import { questionsxd } from '../../../../../utilities/services/xd/questions'
 import { contentxd } from '../../../../../utilities/services/xd/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const xd = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
-    <Header/>
-    <Hero data={dataHeroxd} />
+    <Head>
+        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <meta
+          name="description"
+          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        />
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+
+        <meta
+          property="og:image"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/xd_home.png"
+        />
+
+        <meta property="og:url" content="https://neoconsulting.ai/pe" />
+        <meta property="og:type" content="website" />
+        <meta
+          property="og:title"
+          content="Consultoria en Marketing Digital | NEO Consulting"
+        />
+        <meta
+          property="og:description"
+          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        />
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+    </Head>
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroxd} urlHasUtm={urlHasUtm} router={router} />
     <Vision defaultVersion={true} visions={xdVisions} desc='Nuestro diferencial viene de entender los objetivos de negocio y unirlo con las necesidades del usuario' />
-    <SolutionsChapter solutions={xdSolutions} />
+    <SolutionsChapter solutions={xdSolutions} urlHasUtm={urlHasUtm} router={router} />
     <Team team={team} chapter={'en experience_design'} />
     <SuccessCase cases={xdCases} />
     <Questions questions={questionsxd} />
-    <Contact service={'experience-design'} />
+    <Contact service={'experience-design'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentxd} />
     <Footer/>
   </>

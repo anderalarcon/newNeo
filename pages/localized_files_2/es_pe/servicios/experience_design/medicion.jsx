@@ -38,7 +38,7 @@ const medicion = () => {
 
         <meta
           property="og:image"
-          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/05/0.png"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/xd_home.png"
         />
 
         <meta property="og:url" content="https://neoconsulting.ai/pe" />

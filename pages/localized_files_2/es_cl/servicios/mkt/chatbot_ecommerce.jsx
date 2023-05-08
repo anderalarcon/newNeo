@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/mkt/team'
 import { mktCases } from '../../../../../utilities/services/mkt/cases'
 import { questionsMkt } from '../../../../../utilities/services/mkt/questions'
 import { contentmkt } from '../../../../../utilities/services/mkt/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const chatbotEcommerce = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -48,19 +50,19 @@ const chatbotEcommerce = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/08/image-56.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/marketing_automation_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataHeroChatbotEcommerce} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroChatbotEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolChatbotEcommerce} />
-    <ServicesPerks data={perksChatbotEcommerce} />
+    <ServicesPerks data={perksChatbotEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workChatbotEcommerce} />
     <SuccessCase cases={mktCases} />
     <Team team={team} chapter={'en Marketing Automation'} startAt = {1} />
     <Questions questions={questionsMkt} />
-    <Contact service={'mkt-automation'} />
+    <Contact service={'mkt-automation'} solution='chatbot-ecommerce' urlHasUtm={urlHasUtm} router={router}/>
     <Content contents={contentmkt} />
     <Footer/>
   </>

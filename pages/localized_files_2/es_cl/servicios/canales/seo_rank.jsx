@@ -21,8 +21,10 @@ import { questionsCanales } from '../../../../../utilities/services/canales/ques
 import { team } from '../../../../../utilities/services/canales/team'
 import { canalesCases } from '../../../../../utilities/services/canales/cases'
 import { contentcanales } from '../../../../../utilities/services/canales/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const seoRank = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -42,19 +44,19 @@ const seoRank = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/canales_digitales_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataHeroSeoRank} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroSeoRank} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolSeoRank} />
-    <ServicesPerks data={perksSeoRank} />
+    <ServicesPerks data={perksSeoRank} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workSeoRank} />
     <SuccessCase cases={canalesCases} />
     <Team team={team} chapter={'en Canales Digitales y Growth Hacking'} />
-    <Questions questions={questionsCanales} />
-    <Contact service={'canales-digitales'} />
+    <Questions questions={questionsCanales} urlHasUtm={urlHasUtm} router={router} />
+    <Contact service={'canales-digitales'} solution={'seo-rank-tracker'} />
     <Content contents={contentcanales} />
     <Footer/>
   </>

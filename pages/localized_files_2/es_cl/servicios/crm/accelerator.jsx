@@ -21,8 +21,10 @@ import { questionsCrm } from '../../../../../utilities/services/crm/questions'
 import { team } from '../../../../../utilities/services/crm/team'
 import { crmCases } from '../../../../../utilities/services/crm/cases'
 import { contentcrm } from '../../../../../utilities/services/crm/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const accelerator = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
       <Head>
@@ -42,19 +44,19 @@ const accelerator = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/crm_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header/>
-      <Hero data={dataHeroAccelerator} />
+      <Header urlHasUtm={urlHasUtm} router={router}/>
+      <Hero data={dataHeroAccelerator} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolAccelerator} />
-      <ServicesPerks data={perksAccelerator} />
+      <ServicesPerks data={perksAccelerator} urlHasUtm={urlHasUtm} router={router} />
       <WorkProcess processes={workAccelerator} />
       <SuccessCase cases={crmCases} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} />
+      <Contact service={'crm'} solution={'accelerator'} urlHasUtm={urlHasUtm} router={router} />
       <Content contents={contentcrm} />
       <Footer/>
     </>

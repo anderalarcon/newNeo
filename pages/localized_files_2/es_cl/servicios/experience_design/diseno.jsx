@@ -20,8 +20,10 @@ import { team } from '../../../../../utilities/services/xd/team'
 import { xdCases } from '../../../../../utilities/services/xd/cases'
 import { questionsxd } from '../../../../../utilities/services/xd/questions'
 import { contentxd } from '../../../../../utilities/services/xd/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const diseno = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -36,7 +38,7 @@ const diseno = () => {
 
         <meta
           property="og:image"
-          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/05/0.png"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/xd_home.png"
         />
 
         <meta property="og:url" content="https://neoconsulting.ai/pe" />
@@ -51,15 +53,15 @@ const diseno = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataDiseno} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataDiseno} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolDiseno} />
-    <ServicesPerks data={perksDiseno} />
+    <ServicesPerks data={perksDiseno} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workDiseno} />
     <Team team={team} chapter={'en experience_design'} />
     <SuccessCase cases={xdCases} />
     <Questions questions={questionsxd} />
-    <Contact service={'experience-design'} />
+    <Contact service={'experience-design'} solution='diseño-de-experiencias' urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentxd} />
     <Footer/>
   </>

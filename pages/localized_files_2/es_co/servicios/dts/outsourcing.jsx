@@ -21,8 +21,10 @@ import { team } from '../../../../../utilities/services/dts/team'
 import { dtsCases } from '../../../../../utilities/services/dts/cases'
 import { questionsdts } from '../../../../../utilities/services/dts/questions'
 import { contentdts } from '../../../../../utilities/services/dts/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const outsourcing = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -37,7 +39,7 @@ const outsourcing = () => {
 
         <meta
           property="og:image"
-          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2022/05/0.png"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/dts_home.png"
         />
 
         <meta property="og:url" content="https://neoconsulting.ai/pe" />
@@ -52,16 +54,16 @@ const outsourcing = () => {
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataHeroOutsourcing} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataHeroOutsourcing} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolOutsourcing} />
-    <ServicesPerks data={perksOutsourcing} />
+    <ServicesPerks data={perksOutsourcing} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workOutsourcing} />
     <SuccessCase cases={dtsCases} />
     <Team team={team} chapter={'en Headhunting y Mentoring'} />
     <Questions questions={questionsdts} />
-    <Contact service={'digital-talent-solution'} />
-    <Content contents={contentdts} />
+    <Contact service={'digital-talent-solution'} solution={'outsourcing'} urlHasUtm={urlHasUtm} router={router} />
+    <Content contents={contentdts}/>
     <Footer/>
   </>
   )

@@ -21,8 +21,11 @@ import { questionsCrm } from '../../../../../utilities/services/crm/questions'
 import { team } from '../../../../../utilities/services/crm/team'
 import { crmCases } from '../../../../../utilities/services/crm/cases'
 import { contentcrm } from '../../../../../utilities/services/crm/content'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const fullService = () => {
+  const [urlHasUtm, router] = useUtm()
+
   return (
     <>
       <Head>
@@ -42,19 +45,19 @@ const fullService = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/crm_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <Header/>
-      <Hero data={dataHeroFullService} />
+      <Header urlHasUtm={urlHasUtm} router={router}/>
+      <Hero data={dataHeroFullService} urlHasUtm={urlHasUtm} router={router} />
       <WhySolutions data={whySolFullService} />
-      <ServicesPerks data={perksFullService} />
+      <ServicesPerks data={perksFullService} urlHasUtm={urlHasUtm} router={router} />
       <WorkProcess processes={workFullService} />
       <SuccessCase cases={crmCases} />
       <Team team={team} chapter={'en CRM y Salesforce '} />
       <Questions questions={questionsCrm} />
-      <Contact service={'crm'} />
+      <Contact service={'crm'} solution={'full-service'} urlHasUtm={urlHasUtm} router={router} />
       <Content contents={contentcrm} />
       <Footer/>
     </>

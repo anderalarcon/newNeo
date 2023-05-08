@@ -17,8 +17,10 @@ import { ecommerceCases } from '../../../../../utilities/services/ecommerce/case
 import { questionsecommerce } from '../../../../../utilities/services/ecommerce/questions'
 import { contentecommerce } from '../../../../../utilities/services/ecommerce/content'
 import Head from 'next/head'
+import { useUtm } from '../../../../../utilities/global/customhooks'
 
 const growthEcommerce = () => {
+  const [urlHasUtm, router] = useUtm()
   return (
     <>
     <Head>
@@ -38,18 +40,18 @@ const growthEcommerce = () => {
       />
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2021/06/duotone-1-1-683x1024.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/ecommerce_home.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>
-    <Header/>
-    <Hero data={dataGrowthEcommerce} />
+    <Header urlHasUtm={urlHasUtm} router={router}/>
+    <Hero data={dataGrowthEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WhySolutions data={whySolGrowthEcommerce} />
-    <ServicesPerks data={perksGrowthEcommerce} />
+    <ServicesPerks data={perksGrowthEcommerce} urlHasUtm={urlHasUtm} router={router} />
     <WorkProcess processes={workGrowthEcommerce} />
     <SuccessCase cases={ecommerceCases} />
     <Questions questions={questionsecommerce} />
-    <Contact service={'ecommerce'} />
+    <Contact service={'ecommerce'} solution={'growth-y-analytics-para-ecommerce'} urlHasUtm={urlHasUtm} router={router} />
     <Content contents={contentecommerce} />
     <Footer/>
     </>
