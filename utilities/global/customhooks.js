@@ -12,7 +12,7 @@ export const useUtm = () => {
 
   useEffect(() => {
     getUtms()
-  }, [router, router])
+  }, [router])
 
   return [urlHasUtm, router]
 }

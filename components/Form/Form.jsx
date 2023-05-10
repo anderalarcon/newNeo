@@ -209,10 +209,39 @@ const Form = () => {
         console.log(error)
       })
   }
-
+  const utmParams = {}
+  console.log(router)
+  for (const key in router.query) {
+    if (
+      key === 'utm_source' ||
+      key === 'utm_medium' ||
+      key === 'utm_campaign'
+    ) {
+      if (typeof router.query[key] === 'object') {
+        utmParams[key] = router.query[key][0]
+      } else {
+        utmParams[key] = router.query[key]
+      }
+    }
+  }
+  console.log(utmParams)
   const handleParams = () => {
-    const { utm_source, utm_medium, utm_campaign } = router.query
+    const utmParams = {}
     const params = {}
+    for (const key in router.query) {
+      if (
+        key === 'utm_source' ||
+        key === 'utm_medium' ||
+        key === 'utm_campaign'
+      ) {
+        if (typeof router.query[key] === 'object') {
+          utmParams[key] = router.query[key][0]
+        } else {
+          utmParams[key] = router.query[key]
+        }
+      }
+    }
+    const { utm_source, utm_medium, utm_campaign } = utmParams
     if (!utm_source && !utm_medium && !utm_campaign) {
       params.chanel = 'direct'
       params.source = ''
@@ -244,9 +273,9 @@ const Form = () => {
         params.original_source = 'PAID_SOCIAL'
         return params
       }
-      if (utm_medium === 'cpc') {
+      if (utm_medium === 'cpc' || utm_medium === 'ppc') {
         params.lead_source = 'Advertisement'
-        if (utm_source === 'google') {
+        if (utm_source === 'google' || utm_source === 'adwords') {
           params.chanel = 'search'
           params.original_source = 'PAID_SEARCH'
           return params

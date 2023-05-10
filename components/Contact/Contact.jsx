@@ -9,6 +9,12 @@ import { zoomIn } from '../../utilities/global/motion'
 import TagManager from 'react-gtm-module'
 
 const Contact = ({ service = 'default', solution = 'default', urlHasUtm, router }) => {
+  const utmParams = {}
+  if (urlHasUtm) {
+    for (const key in router.query) {
+      utmParams[key] = router.query[key]
+    }
+  }
   return (
     <div className={style.contact}>
       <motion.div
@@ -46,9 +52,7 @@ const Contact = ({ service = 'default', solution = 'default', urlHasUtm, router 
                       service,
                       solution,
                       ...(urlHasUtm && {
-                        utm_medium: router?.query?.utm_medium || 'empty',
-                        utm_source: router?.query?.utm_source || 'empty',
-                        utm_campaign: router?.query?.utm_campaign || 'empty'
+                        ...utmParams
                       })
                     }
                   }}
