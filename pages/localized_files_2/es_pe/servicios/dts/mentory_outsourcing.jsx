@@ -28,10 +28,10 @@ const mentoryOutsourcing = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Outsourcing y Mentoring</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Desarrolla tu equipo con Neo Consulting. Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas."
         />
 
         <meta charset="utf-8" />
@@ -46,11 +46,11 @@ const mentoryOutsourcing = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Outsourcing y Mentoring"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Desarrolla tu equipo con Neo Consulting. Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

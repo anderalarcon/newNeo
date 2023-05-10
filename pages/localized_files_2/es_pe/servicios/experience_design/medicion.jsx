@@ -27,10 +27,10 @@ const medicion = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Medición de experiencia de usuario</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Optimiza la experiencia de usuario. Hacemos seguimiento y revisamos la data de los consumidores para mejorar y/o optimizar los pain points identificados."
         />
 
         <meta charset="utf-8" />
@@ -45,11 +45,11 @@ const medicion = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Medición de experiencia de usuario"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Optimiza la experiencia de usuario. Hacemos seguimiento y revisamos la data de los consumidores para mejorar y/o optimizar los pain points identificados."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

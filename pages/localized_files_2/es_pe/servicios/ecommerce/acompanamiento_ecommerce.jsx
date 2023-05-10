@@ -24,19 +24,19 @@ const acompanamientoEcommerce = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Ecommerce | Expertos Ecommerce | NEO Consulting</title>
+      <title>Acompañamiento E-commerce</title>
       <meta
         name="description"
-        content="Consultoría Ecommerce por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Asegura el éxito de tu E-commerce. Nuestros consultores expertos garantizan una estructura de data y medición confiable para cumplir tus metas."
       />
       <meta
       property="og:title"
-      content="Consultoría Ecommerce | Expertos Ecommerce | NEO Consulting"
+      content="Acompañamiento E-commerce"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría Ecommerce por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Asegura el éxito de tu E-commerce. Nuestros consultores expertos garantizan una estructura de data y medición confiable para cumplir tus metas."
       />
       <meta
         property="og:image"

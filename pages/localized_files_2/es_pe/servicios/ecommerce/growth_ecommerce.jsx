@@ -24,19 +24,19 @@ const growthEcommerce = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Ecommerce | Expertos Ecommerce | NEO Consulting</title>
+      <title>Growth y Analytics para E-commerce</title>
       <meta
         name="description"
-        content="Consultoría Ecommerce por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Impulsa el crecimiento de tu E-commerce. Te proporcionamos un roadmap de crecimiento y una estructura de datos medible y ejecutable en el corto plazo."
       />
       <meta
       property="og:title"
-      content="Consultoría Ecommerce | Expertos Ecommerce | NEO Consulting"
+      content="Growth y Analytics para E-commerce"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría Ecommerce por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Impulsa el crecimiento de tu E-commerce. Te proporcionamos un roadmap de crecimiento y una estructura de datos medible y ejecutable en el corto plazo."
       />
       <meta
         property="og:image"

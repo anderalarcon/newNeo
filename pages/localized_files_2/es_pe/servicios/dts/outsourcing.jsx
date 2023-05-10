@@ -28,10 +28,10 @@ const outsourcing = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Outsourcing</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Simplifica tu proceso de reclutamiento con Neo Consulting. Nos encargamos de reclutar y seleccionar perfiles para ti, y el perfil seleccionado trabaja directamente contigo."
         />
 
         <meta charset="utf-8" />
@@ -46,11 +46,11 @@ const outsourcing = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Outsourcing"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Simplifica tu proceso de reclutamiento con Neo Consulting. Nos encargamos de reclutar y seleccionar perfiles para ti, y el perfil seleccionado trabaja directamente contigo."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

@@ -27,10 +27,10 @@ const diseno = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Diseño de experiencias</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Diseña una experiencia inolvidable para tus clientes. Creamos experiencias memorables dentro de todos los activos digitales de tu empresa."
         />
 
         <meta charset="utf-8" />
@@ -45,11 +45,11 @@ const diseno = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Diseño de experiencias"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Diseña una experiencia inolvidable para tus clientes. Creamos experiencias memorables dentro de todos los activos digitales de tu empresa."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

@@ -24,10 +24,10 @@ const xd = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Consultoría Diseño de experiencia y Transformación Digital | NEO Consulting</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Consultoria en Diseño de experiencia y Transformación Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
         />
 
         <meta charset="utf-8" />
@@ -42,11 +42,11 @@ const xd = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Consultoría Diseño de experiencia y Transformación Digital | NEO Consulting"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Consultoria en Diseño de experiencia y Transformación Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

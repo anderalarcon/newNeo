@@ -27,10 +27,10 @@ const transformacion = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Transformación Digital</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Transforma tu organización con nuestra consultoría en definir, diseñar e implementar tu estrategia de transformación digital. Estamos contigo en cada paso del camino."
         />
 
         <meta charset="utf-8" />
@@ -45,11 +45,11 @@ const transformacion = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Transformación Digital"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Transforma tu organización con nuestra consultoría en definir, diseñar e implementar tu estrategia de transformación digital. Estamos contigo en cada paso del camino."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

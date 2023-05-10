@@ -104,7 +104,7 @@ export const AccordionData = [
         icon: quienes.src
       },
       {
-        link: 'https://neoconsulting.ai/neo-jobs/',
+        link: 'https://neo-consulting-s-a-c.breezy.hr/',
         text: 'Trabaja con nosotros',
         icon: trabaja.src
       },

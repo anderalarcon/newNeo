@@ -3,7 +3,44 @@ import belcorpImgMob from '../../public/assets/Services/Cases/belcorp-mobile.jpg
 import soksoDesktop from '../../public/assets/Services/Cases/sokso-desktop.jpg'
 import rimacDesktop from '../../public/assets/Services/Cases/rimac-desktop.jpg'
 import alicorpDesktop from '../../public/assets/Services/Cases/alicorp-desktop.jpg'
+import naturaDesktop from '../../public/assets/Services/Cases/card_natura.jpg'
+import shopstarDesktop from '../../public/assets/Services/Cases/shopstar_card.jpg'
+import roasDesktop from '../../public/assets/Services/Cases/roas_card.jpg'
+
 export const peruCases = [
+  {
+    type: 'Caso de éxito',
+    title:
+      'Natura logra un enfoque de governance efectivo para impulsar su crecimiento',
+    description:
+      'Descubre cómo Natura logró establecer un governance eficiente para la innovación mediante procesos específicos y definición de metodologías, además de elegir responsables para priorizar y ejecutar proyectos. Lee el caso completo y conoce los resultados.',
+    img: naturaDesktop,
+    imgMob: naturaDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/natura_diseno_governance_de_innovacion'
+  },
+  {
+    type: 'Caso de éxito',
+    title:
+      'Shopstar optimiza su proceso de toma de decisiones en un 60% y alcanza sus metas comerciales',
+    description:
+      'Descubre cómo Shopstar mejoró su gestión de ventas gracias a una arquitectura que centralizó la información en BigQuery de GCP, permitiendo una mejor visibilidad de los indicadores de venta y alcanzar sus metas comerciales con una toma de decisiones un 60% más ágil.',
+    img: shopstarDesktop,
+    imgMob: shopstarDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/shopstar_integracion_arquitectura_de_datos_GCP'
+  },
+  {
+    type: 'Caso de éxito',
+    title:
+      'Rimac Seguros incrementa en 612% las ventas en su producto de Seguros Salud con PMax',
+    description:
+      'Conoce cómo la empresa de seguros consiguió aumentar la venta de pólizas de seguro de salud a través del uso de formatos publicitarios orientados a la conversión y decisiones estratégicas basadas en data.',
+    img: roasDesktop,
+    imgMob: roasDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_incremento_ventas_polizas'
+  },
   {
     type: 'Caso de éxito',
     title:

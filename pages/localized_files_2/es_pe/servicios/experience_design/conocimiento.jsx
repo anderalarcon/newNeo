@@ -27,10 +27,10 @@ const conocimiento = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Conocimiento del consumidor</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Entiende mejor a tu audiencia con Neo Consulting. Realizamos una investigación profunda del consumidor para adaptar las soluciones a sus necesidades.s"
         />
 
         <meta charset="utf-8" />
@@ -45,11 +45,11 @@ const conocimiento = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Conocimiento del consumidor"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Entiende mejor a tu audiencia con Neo Consulting. Realizamos una investigación profunda del consumidor para adaptar las soluciones a sus necesidades."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

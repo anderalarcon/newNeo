@@ -27,10 +27,10 @@ const mapeo = () => {
   return (
     <>
     <Head>
-        <title>Consultoria en Marketing Digital | NEO Consulting</title>
+        <title>Mapeo de experiencias</title>
         <meta
           name="description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+          content="Crea una experiencia del consumidor memorable. Entendemos y diseñamos el Journey del consumidor para atacar todos los puntos de contacto con este."
         />
 
         <meta charset="utf-8" />
@@ -45,11 +45,11 @@ const mapeo = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Consultoria en Marketing Digital | NEO Consulting"
+          content="Mapeo de experiencias"
         />
         <meta
           property="og:description"
-          content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+          content="Crea una experiencia del consumidor memorable. Entendemos y diseñamos el Journey del consumidor para atacar todos los puntos de contacto con este."
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

@@ -24,19 +24,19 @@ const desarrolloModelo = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Ecommerce | Expertos Ecommerce | NEO Consulting</title>
+      <title>Desarrollo de modelo E-commerce y diseño de ecosistema</title>
       <meta
         name="description"
-        content="Consultoría Ecommerce por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Diseñamos el rol del e-commerce en tu estrategia comercial con nuestro Business Case y diseño de ecosistema."
       />
       <meta
       property="og:title"
-      content="Consultoría Ecommerce | Expertos Ecommerce | NEO Consulting"
+      content="Desarrollo de modelo E-commerce y diseño de ecosistema"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría Ecommerce por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Diseñamos el rol del e-commerce en tu estrategia comercial con nuestro Business Case y diseño de ecosistema."
       />
       <meta
         property="og:image"
