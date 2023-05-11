@@ -5,6 +5,12 @@ import Link from 'next/link'
 import uuid from 'react-uuid'
 
 const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
+  const utmParams = {}
+  if (urlHasUtm) {
+    for (const key in router.query) {
+      utmParams[key] = router.query[key]
+    }
+  }
   const {
     pretitle,
     title,
@@ -27,9 +33,7 @@ const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
               service,
               solution,
               ...(urlHasUtm && {
-                utm_medium: router?.query?.utm_medium || 'empty',
-                utm_source: router?.query?.utm_source || 'empty',
-                utm_campaign: router?.query?.utm_campaign || 'empty'
+                ...utmParams
               })
             }
           }}
@@ -48,9 +52,7 @@ const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
               service,
               solution,
               ...(urlHasUtm && {
-                utm_medium: router?.query?.utm_medium || 'empty',
-                utm_source: router?.query?.utm_source || 'empty',
-                utm_campaign: router?.query?.utm_campaign || 'empty'
+                ...utmParams
               })
             }
           }}

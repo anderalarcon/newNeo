@@ -4,6 +4,12 @@ import uuid from 'react-uuid'
 import Link from 'next/link'
 
 const ServicesPerks = ({ data, urlHasUtm, router }) => {
+  const utmParams = {}
+  if (urlHasUtm) {
+    for (const key in router.query) {
+      utmParams[key] = router.query[key]
+    }
+  }
   return (
     <div className={style.perks}>
       <div className={style.perks_container}>
@@ -31,9 +37,7 @@ const ServicesPerks = ({ data, urlHasUtm, router }) => {
               service: data.contact.service,
               solution: data.contact.solution,
               ...(urlHasUtm && {
-                utm_medium: router?.query?.utm_medium || 'empty',
-                utm_source: router?.query?.utm_source || 'empty',
-                utm_campaign: router?.query?.utm_campaign || 'empty'
+                ...utmParams
               })
             }
           }}

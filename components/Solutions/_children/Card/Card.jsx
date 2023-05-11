@@ -7,6 +7,12 @@ import { slideIn } from '../../../../utilities/global/motion'
 import TagManager from 'react-gtm-module'
 
 const Card = ({ iconSrc, service, description, url, urlHasUtm, router, eventCategory, eventLabel }) => {
+  const utmParams = {}
+  if (urlHasUtm) {
+    for (const key in router.query) {
+      utmParams[key] = router.query[key]
+    }
+  }
   return (
     <motion.div
       className={style.card}
@@ -30,9 +36,7 @@ const Card = ({ iconSrc, service, description, url, urlHasUtm, router, eventCate
           pathname: url,
           query: {
             ...(urlHasUtm && {
-              utm_medium: router?.query?.utm_medium || 'empty',
-              utm_source: router?.query?.utm_source || 'empty',
-              utm_campaign: router?.query?.utm_campaign || 'empty'
+              ...utmParams
             })
           }
         }}

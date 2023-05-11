@@ -6,8 +6,21 @@ import { useEffect, useState } from 'react'
 import arrow from '../../public/assets/Swiper/right-arrow.svg'
 
 const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
+  const utmParams = {}
+  if (urlHasUtm) {
+    for (const key in router.query) {
+      if (typeof router.query[key] === 'object') {
+        utmParams[key] = router.query[key][0]
+      } else {
+        utmParams[key] = router.query[key]
+      }
+    }
+  }
   const handlePush = (url) => {
-    const urlWithUtm = urlHasUtm ? `${url}&utm_medium=${router.query.utm_medium}&utm_source=${router.query.utm_source}&utm_campaign=${router.query.utm_campaign}` : ''
+    let urlWithUtm = url
+    for (const key in utmParams) {
+      urlWithUtm += `&${key}=${utmParams[key]}`
+    }
     router.push(urlWithUtm)
   }
 
@@ -73,9 +86,7 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                     pathname: urlpage,
                     query: {
                       ...(urlHasUtm && {
-                        utm_medium: router?.query?.utm_medium || 'empty',
-                        utm_source: router?.query?.utm_source || 'empty',
-                        utm_campaign: router?.query?.utm_campaign || 'empty'
+                        ...utmParams
                       })
                     }
                   }}
@@ -121,9 +132,7 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                     pathname: urlpage,
                     query: {
                       ...(urlHasUtm && {
-                        utm_medium: router?.query?.utm_medium || 'empty',
-                        utm_source: router?.query?.utm_source || 'empty',
-                        utm_campaign: router?.query?.utm_campaign || 'empty'
+                        ...utmParams
                       })
                     }
                   }}
