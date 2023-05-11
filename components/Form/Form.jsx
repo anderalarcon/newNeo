@@ -209,22 +209,6 @@ const Form = () => {
         console.log(error)
       })
   }
-  const utmParams = {}
-  console.log(router)
-  for (const key in router.query) {
-    if (
-      key === 'utm_source' ||
-      key === 'utm_medium' ||
-      key === 'utm_campaign'
-    ) {
-      if (typeof router.query[key] === 'object') {
-        utmParams[key] = router.query[key][0]
-      } else {
-        utmParams[key] = router.query[key]
-      }
-    }
-  }
-  console.log(utmParams)
   const handleParams = () => {
     const utmParams = {}
     const params = {}
