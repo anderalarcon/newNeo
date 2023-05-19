@@ -17,10 +17,7 @@ const Bcorp = () => {
           {/* <Link className={style.bcorp_container_left_link} target='_blank' href={'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Reporte%20de%20sostenibilidad%20NEO%202022.pdf'}>
             Descarga informe de impacto <img src={arrow.src} width={'20'} height={'20'} />
           </Link> */}
-          <Link className={style.bcorp_container_left_link} href={{
-            pathname: '/contact',
-            query: { service: 'default', solution: 'default' }
-          }}>
+          <Link className={style.bcorp_container_left_link} href="https://neo-consulting-s-a-c.breezy.hr/">
             <button className={style.bcorp_container_left_btn}>
               Únete a nuestro equipo
             </button>

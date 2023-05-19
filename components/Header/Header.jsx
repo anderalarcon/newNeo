@@ -10,9 +10,26 @@ import uuid from 'react-uuid'
 import Link from 'next/link'
 import { AccordionData } from '../../utilities/global/header'
 import PropTypes from 'prop-types'
-import TagManager from 'react-gtm-module'
+// import TagManager from 'react-gtm-module'
 
 const Header = ({ urlHasUtm, router }) => {
+  // function handleButtonClick () {
+  //   window.dataLayer = window.dataLayer || []
+  //   window.dataLayer.push({
+  //     event: 'interes_contacto',
+  //     // buttonName: 'myButton'
+  //     event_name: 'interes_contacto'
+  //   })
+
+  //   console.log('evnet firesd')
+  // }
+
+  const handleGTagEvent = (link) => {
+    window.gtag('event', 'interes_contacto', {
+      event_name: 'interes_contacto'
+    })
+  }
+
   const utmParams = {}
   if (urlHasUtm) {
     for (const key in router.query) {
@@ -70,16 +87,17 @@ const Header = ({ urlHasUtm, router }) => {
         </ul>
 
         <button
-          onClick={() => {
-            TagManager.dataLayer({
-              dataLayer: {
-                event: 'click_button_formulario',
-                event_category: 'boton_interes_contacto',
-                event_label: 'navBar_boton_contacto',
-                value: 1
-              }
-            })
-          }}
+          // onClick={() => {
+          //   TagManager.dataLayer({
+          //     dataLayer: {
+          //       event: 'click_button_formulario',
+          //       event_category: 'boton_interes_contacto',
+          //       event_label: 'navBar_boton_contacto',
+          //       value: 1
+          //     }
+          //   })
+          // }}
+          onClick={handleGTagEvent}
           className={style.header_base_right}
         >
           <Link

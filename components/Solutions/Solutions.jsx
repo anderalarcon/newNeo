@@ -7,9 +7,9 @@ const Solutions = ({ solutions, urlHasUtm, router }) => {
       <div className={style.solutions_container}>
         <h2 className={style.solutions_container_title}>Contamos con soluciones en</h2>
         <div className={style.solutions_container_services}>
-          {solutions.map(({ iconSrc, service, description, url, eventCategory, eventLabel }) => {
+          {solutions.map(({ iconSrc, service, description, url, eventName }) => {
             return (
-              <Card iconSrc={iconSrc.src} service={service} key={service} description={description} url={url} urlHasUtm={urlHasUtm} router={router} eventCategory={eventCategory} eventLabel={eventLabel} />
+              <Card iconSrc={iconSrc.src} service={service} key={service} description={description} url={url} urlHasUtm={urlHasUtm} router={router} eventName={eventName} />
             )
           })}
         </div>
@@ -21,7 +21,6 @@ Solutions.propTypes = {
   solutions: PropTypes.array,
   urlHasUtm: PropTypes.bool,
   router: PropTypes.object,
-  eventCategory: PropTypes.array,
-  eventLabel: PropTypes.array
+  eventName: PropTypes.array
 }
 export default Solutions

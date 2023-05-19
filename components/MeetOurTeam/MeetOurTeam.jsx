@@ -39,10 +39,7 @@ const MeetOurTeam = ({ collaborators }) => {
               </option>
               <option value="t7">Publicidad digital</option>
             </select>
-            <Link href={{
-              pathname: '/contact',
-              query: { service: 'default', solution: 'default' }
-            }}>
+            <Link href="https://neo-consulting-s-a-c.breezy.hr/">
               <button className={style.meet_container_header_select_btn}>
               Únete a nuestro equipo
               </button>
@@ -126,10 +123,7 @@ const MeetOurTeam = ({ collaborators }) => {
             </div>
 
             <div className={style.meet_container_sector_btn_join}>
-              <Link Link href={{
-                pathname: '/contact',
-                query: { service: 'default', solution: 'default' }
-              }}>
+              <Link Link href="https://neo-consulting-s-a-c.breezy.hr/">
                 <button className={style.meet_container_header_select_btn}>
                   Únete a nuestro equipo
                 </button>

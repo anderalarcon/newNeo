@@ -4,9 +4,15 @@ import arrow from '../../../../public/assets/Solutions/arrow.svg'
 import style from './Card.module.scss'
 import { motion } from 'framer-motion'
 import { slideIn } from '../../../../utilities/global/motion'
-import TagManager from 'react-gtm-module'
+// import TagManager from 'react-gtm-module'
 
-const Card = ({ iconSrc, service, description, url, urlHasUtm, router, eventCategory, eventLabel }) => {
+const Card = ({ iconSrc, service, description, url, urlHasUtm, router, eventName }) => {
+  const handleGTagEvent = (link) => {
+    window.gtag('event', eventName, {
+      event_name: eventName
+    })
+  }
+
   const utmParams = {}
   if (urlHasUtm) {
     for (const key in router.query) {
@@ -22,16 +28,17 @@ const Card = ({ iconSrc, service, description, url, urlHasUtm, router, eventCate
       variants={slideIn('down', 'tween', 0.2, 1)}
     >
       <Link
-        onClick={() => {
-          TagManager.dataLayer({
-            dataLayer: {
-              event: 'click_button_interes_servicio',
-              event_category: { eventCategory },
-              event_label: { eventLabel },
-              value: 1
-            }
-          })
-        }}
+        // onClick={() => {
+        //   TagManager.dataLayer({
+        //     dataLayer: {
+        //       event: 'click_button_interes_servicio',
+        //       event_category: { eventCategory },
+        //       event_label: { eventLabel },
+        //       value: 1
+        //     }
+        //   })
+        // }}
+        onClick={handleGTagEvent}
         href={{
           pathname: url,
           query: {
@@ -74,8 +81,7 @@ Card.propTypes = {
   url: PropTypes.string,
   urlHasUtm: PropTypes.bool,
   router: PropTypes.object,
-  eventCategory: PropTypes.string,
-  eventLabel: PropTypes.string
+  eventName: PropTypes.string
 }
 
 export default Card
