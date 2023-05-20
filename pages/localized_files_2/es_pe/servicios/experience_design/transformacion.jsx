@@ -32,17 +32,10 @@ const transformacion = () => {
           name="description"
           content="Transforma tu organización con nuestra consultoría en definir, diseñar e implementar tu estrategia de transformación digital. Estamos contigo en cada paso del camino."
         />
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-
         <meta
           property="og:image"
           content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/xd_home.png"
         />
-
-        <meta property="og:url" content="https://neoconsulting.ai/pe" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Transformación Digital"

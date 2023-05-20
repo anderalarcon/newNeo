@@ -29,17 +29,10 @@ const xd = () => {
           name="description"
           content="Consultoria en Diseño de experiencia y Transformación Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
         />
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-
         <meta
           property="og:image"
           content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/xd_home.png"
         />
-
-        <meta property="og:url" content="https://neoconsulting.ai/pe" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Consultoría Diseño de experiencia y Transformación Digital | NEO Consulting"

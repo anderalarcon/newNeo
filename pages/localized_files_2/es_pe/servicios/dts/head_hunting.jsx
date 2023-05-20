@@ -33,16 +33,10 @@ const headHunting = () => {
           content="Encuentra al candidato perfecto para tu empresa. Nos encargamos del proceso de búsqueda y selección de perfiles digitales de nuestros clientes."
         />
 
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-
         <meta
           property="og:image"
           content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/dts_home.png"
         />
-
-        <meta property="og:url" content="https://neoconsulting.ai/pe" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Headhunting"

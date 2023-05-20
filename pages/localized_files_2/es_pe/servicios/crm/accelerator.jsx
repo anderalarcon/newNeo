@@ -28,19 +28,19 @@ const accelerator = () => {
   return (
     <>
       <Head>
-      <title>Consultoría CRM & Estrategia | NEO Consulting</title>
+      <title>Accelerator | NEO Consulting</title>
       <meta
         name="description"
-        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Diseño y ejecución de soluciones específicas y cortas para obtener resultados de negocio inmediatos."
       />
       <meta
         property="og:title"
-        content="Consultoría CRM & Estrategia | NEO Consulting"
+        content="Accelerator | NEO Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Diseño y ejecución de soluciones específicas y cortas para obtener resultados de negocio inmediatos."
       />
       <meta
         property="og:image"

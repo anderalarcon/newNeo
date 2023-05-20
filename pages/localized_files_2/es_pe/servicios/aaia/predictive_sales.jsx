@@ -28,19 +28,19 @@ const predictiveSales = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Predictive Sales & Product Analytics | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Mejora el desempeño de tus productos o servicios. Analizamos el desempeño de productos o servicios con relación a su venta en mercados objetivos."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Predictive Sales & Product Analytics | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Mejora el desempeño de tus productos o servicios. Analizamos el desempeño de productos o servicios con relación a su venta en mercados objetivos."
       />
       <meta
         property="og:image"

@@ -29,7 +29,7 @@ const CentralizacionInsights = () => {
     <>
     <Head>
       <title>
-        Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting
+        Centralización de insights | Campañas de publicidad digital | Neo Consulting
       </title>
       <meta
         name="keywords"
@@ -37,16 +37,16 @@ const CentralizacionInsights = () => {
       />
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Toma decisiones más efectivas en tu negocio visualizando los datos más relevantes de redes sociales."
       />
       <meta
       property="og:title"
-      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
+      content="Centralización de insights | Campañas de publicidad digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Toma decisiones más efectivas en tu negocio visualizando los datos más relevantes de redes sociales."
       />
       <meta
         property="og:image"

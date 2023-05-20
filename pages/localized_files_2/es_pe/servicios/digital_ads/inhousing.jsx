@@ -27,20 +27,20 @@ const inhousing = () => {
   return (
     <>
     <Head>
-      <title>Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting</title>
+      <title>Inhousing publicidad digital | Neo Consulting</title>
       <meta name="keywords" content="Servicio de publicidad digital, Auditoría de publicidad, Pauta publicitaria, Servicio de campañas digitales, Optimización de publicidad digital, Campañas de publicidad digital, Servicio Data Driven"/>
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Garantizamos éxito en tus campañas publicitarias con nuestro equipo especializado. Servicio para empresas con agencias."
       />
       <meta
       property="og:title"
-      content="Servicios de Publicidad Digital | Neo Consulting"
+      content="Inhousing publicidad digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Garantizamos éxito en tus campañas publicitarias con nuestro equipo especializado. Servicio para empresas con agencias."
       />
       <meta
         property="og:image"

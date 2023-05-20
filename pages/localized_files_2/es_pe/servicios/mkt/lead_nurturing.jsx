@@ -29,7 +29,7 @@ const leadNurturing = () => {
     <>
     <Head>
       <title>
-        Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting
+        Lead Nurturing Automatizado | Campañas de publicidad digital | Neo Consulting
       </title>
       <meta
         name="keywords"
@@ -37,16 +37,16 @@ const leadNurturing = () => {
       />
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Concreta ventas con e-mailings automatizados y flujos personalizados para cada perfil de leads."
       />
       <meta
       property="og:title"
-      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
+      content="Lead Nurturing Automatizado | Campañas de publicidad digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Concreta ventas con e-mailings automatizados y flujos personalizados para cada perfil de leads."
       />
       <meta
         property="og:image"

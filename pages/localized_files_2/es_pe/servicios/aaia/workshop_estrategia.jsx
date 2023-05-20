@@ -28,19 +28,19 @@ const workshopEstrategia = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Workshop de estrategia de data | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Identifica oportunidades de uso óptimo de la data con nuestro workshop especializado.."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Workshop de estrategia de data | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Identifica oportunidades de uso óptimo de la data con nuestro workshop especializado."
       />
       <meta
         property="og:image"

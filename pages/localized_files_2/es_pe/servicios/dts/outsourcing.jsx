@@ -33,17 +33,10 @@ const outsourcing = () => {
           name="description"
           content="Simplifica tu proceso de reclutamiento con Neo Consulting. Nos encargamos de reclutar y seleccionar perfiles para ti, y el perfil seleccionado trabaja directamente contigo."
         />
-
-        <meta charset="utf-8" />
-        <meta name="viewport" content="width=device-width,initial-scale=1" />
-
         <meta
           property="og:image"
           content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/dts_home.png"
         />
-
-        <meta property="og:url" content="https://neoconsulting.ai/pe" />
-        <meta property="og:type" content="website" />
         <meta
           property="og:title"
           content="Outsourcing"

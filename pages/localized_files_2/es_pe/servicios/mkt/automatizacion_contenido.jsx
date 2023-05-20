@@ -29,7 +29,7 @@ const automatizacionContenido = () => {
     <>
     <Head>
       <title>
-        Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting
+        Automatización de Contenido | Campañas de publicidad digital | Neo Consulting
       </title>
       <meta
         name="keywords"
@@ -37,16 +37,16 @@ const automatizacionContenido = () => {
       />
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Genera contenido de forma automatizada y escalable con herramientas basadas en Inteligencia Artificial, mejora el posicionamiento en buscadores y ahorra tiempo."
       />
       <meta
       property="og:title"
-      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
+      content="Automatización de Contenido | Campañas de publicidad digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Genera contenido de forma automatizada y escalable con herramientas basadas en Inteligencia Artificial, mejora el posicionamiento en buscadores y ahorra tiempo."
       />
       <meta
         property="og:image"

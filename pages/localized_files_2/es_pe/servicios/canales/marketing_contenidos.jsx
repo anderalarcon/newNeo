@@ -28,19 +28,19 @@ const marketingContenidos = () => {
   return (
     <>
     <Head>
-      <title>Consultoria Growth Hacking | NEO Consulting</title>
+      <title>Marketing de contenidos | NEO Consulting</title>
       <meta
         name="description"
-        content="Consultoria de Growth Hacking por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Generamos contenido relevante para lograr objetivos de negocio, empatizando con las necesidades de tus consumidores."
       />
       <meta
       property="og:title"
-      content="Consultoria Growth Hacking | NEO Consulting"
+      content="Marketing de contenidos | NEO Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoria de Growth Hacking por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Generamos contenido relevante para lograr objetivos de negocio, empatizando con las necesidades de tus consumidores."
       />
       <meta
         property="og:image"

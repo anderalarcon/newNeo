@@ -29,7 +29,7 @@ const automatizacionLeads = () => {
     <>
     <Head>
       <title>
-        Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting
+        Automatización de leads para Remarketing | Campañas de publicidad digital | Neo Consulting
       </title>
       <meta
         name="keywords"
@@ -37,16 +37,16 @@ const automatizacionLeads = () => {
       />
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Integra tu CRM con Facebook para un seguimiento oportuno de clientes generados a través de campañas digitales y logra una mayor tasa de conversión."
       />
       <meta
       property="og:title"
-      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
+      content="Automatización de leads para Remarketing | Campañas de publicidad digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Integra tu CRM con Facebook para un seguimiento oportuno de clientes generados a través de campañas digitales y logra una mayor tasa de conversión."
       />
       <meta
         property="og:image"

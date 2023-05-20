@@ -29,7 +29,7 @@ const chatbotEcommerce = () => {
     <>
     <Head>
       <title>
-        Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting
+        Chatbot para E-commerce | Campañas de publicidad digital | Neo Consulting
       </title>
       <meta
         name="keywords"
@@ -37,16 +37,16 @@ const chatbotEcommerce = () => {
       />
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Reduce costos de atención, destaca entre la competencia, estandariza el proceso y obtén estadísticas completas de usuarios."
       />
       <meta
       property="og:title"
-      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
+      content="Chatbot para E-commerce | Campañas de publicidad digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Reduce costos de atención, destaca entre la competencia, estandariza el proceso y obtén estadísticas completas de usuarios."
       />
       <meta
         property="og:image"

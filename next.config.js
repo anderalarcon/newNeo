@@ -118,8 +118,8 @@ const nextConfig = {
         destination: '/localized_files_2/es_pe/servicios/dts/outsourcing'
       },
       {
-        source: '/pe/servicios/headhunting-y-mentoring/outsourcing-y-mentoring',
-        destination: '/localized_files_2/es_pe/servicios/dts/mentory_outsourcing'
+        source: '/pe/servicios/headhunting-y-mentoring/mentoryOutsourcing/',
+        destination: '/localized_files_2/es_pe/servicios/dts/mentoryOutsourcing'
       }, // crm
       {
         source: '/pe/servicios/consultoria-customer-relationship-management/full-service-crm/',

@@ -28,19 +28,19 @@ const automatizacionReportes = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Automatización de reportes | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Optimiza tus reportes de negocio. Desarrollamos un dashboard automatizado."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Automatización de reportes | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Optimiza tus reportes de negocio. Desarrollamos un dashboard automatizado."
       />
       <meta
         property="og:image"

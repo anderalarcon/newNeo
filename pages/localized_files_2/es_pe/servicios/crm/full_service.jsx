@@ -29,19 +29,19 @@ const fullService = () => {
   return (
     <>
       <Head>
-      <title>Consultoría CRM & Estrategia | NEO Consulting</title>
+      <title>Full Service CRM | NEO Consulting</title>
       <meta
         name="description"
-        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Definimos toda la estrategia y funcionamiento de tu CRM para la gestión y análisis de campañas de manera multicanal."
       />
       <meta
         property="og:title"
-        content="Consultoría CRM & Estrategia | NEO Consulting"
+        content="Full Service CRM | NEO Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Definimos toda la estrategia y funcionamiento de tu CRM para la gestión y análisis de campañas de manera multicanal."
       />
       <meta
         property="og:image"

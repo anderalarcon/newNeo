@@ -28,19 +28,19 @@ const AnaliticaDigital = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Consultoría en Analítica Digital | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Asegura el éxito de tus activos digitales. Ofrecemos soporte recurrente y ayudamos a los equipos según las necesidades que se tengan."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Consultoría en Analítica Digital | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Asegura el éxito de tus activos digitales. Ofrecemos soporte recurrente y ayudamos a los equipos según las necesidades que se tengan."
       />
       <meta
         property="og:image"

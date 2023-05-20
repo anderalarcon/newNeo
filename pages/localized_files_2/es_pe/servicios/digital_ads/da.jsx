@@ -32,9 +32,8 @@ const da = () => {
       />
       <meta
       property="og:title"
-      content="Servicios de Publicidad Digital | Neo Consulting"
+      content="Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting"
       />
-      <meta property="og:type" content="website" />
       <meta
         property="og:description"
         content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."

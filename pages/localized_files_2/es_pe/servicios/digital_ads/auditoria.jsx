@@ -27,20 +27,20 @@ const auditoria = () => {
   return (
     <>
     <Head>
-      <title>Servicio de publicidad digital | Data Driven | Campañas de publicidad digital | Neo Consulting</title>
+      <title>Auditoría de Publicidad Digital | Neo Consulting</title>
       <meta name="keywords" content="Servicio de publicidad digital, Auditoría de publicidad, Pauta publicitaria, Servicio de campañas digitales, Optimización de publicidad digital, Campañas de publicidad digital, Servicio Data Driven"/>
       <meta
         name="description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Maximiza el rendimiento de tus campañas publicitarias. Ofrecemos servicios de auditoría para optimizar tus estrategias digitales."
       />
       <meta
       property="og:title"
-      content="Servicios de Publicidad Digital | Neo Consulting"
+      content="Auditoría de Publicidad Digital | Neo Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Optimiza tu inversión en publicidad digital con nuestro servicio de Digital Advertising. Atrae a tus clientes gracias a soluciones estratégicas con consultores certificados."
+        content="Maximiza el rendimiento de tus campañas publicitarias. Ofrecemos servicios de auditoría para optimizar tus estrategias digitales."
       />
       <meta
         property="og:image"

@@ -5,8 +5,8 @@ import HeroOutsourcing from '../../../public/assets/Services/Dts/Especifics/dts-
 import MentoryOutsourcing from '../../../public/assets/Services/Dts/Especifics/dts-hero-image-service3.jpg'
 
 export const dataHerodts = {
-  title: 'Digital',
-  subtitle: 'Talent Solutions',
+  title: 'Somos expertos en',
+  subtitle: 'Headhunting y Mentoring',
   service: 'digital-talent-solution',
   solution: 'default',
   desc: 'Reclutamos y formamos talento digital de alto performance para tu equipo',

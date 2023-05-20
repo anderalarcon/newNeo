@@ -28,19 +28,19 @@ const ChatbotsInteligencia = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Chatbots con Inteligencia Artificial | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Desarrollamos e implementamos chatbots con IA para mejorar la atención al cliente en tu activo digital."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Chatbots con Inteligencia Artificial | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Desarrollamos e implementamos chatbots con IA para mejorar la atención al cliente en tu activo digital."
       />
       <meta
         property="og:image"

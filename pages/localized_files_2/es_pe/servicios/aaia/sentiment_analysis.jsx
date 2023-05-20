@@ -28,19 +28,19 @@ const sentimentAnalysis = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Sentiment Analysis & Social Listening | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Desarrollamos e implementamos un modelo de machine learning para clasificar los comentarios de tus clientes en redes sociales por sentimiento y conocer mejor su opinión."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Sentiment Analysis & Social Listening | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Desarrollamos e implementamos un modelo de machine learning para clasificar los comentarios de tus clientes en redes sociales por sentimiento y conocer mejor su opinión."
       />
       <meta
         property="og:image"

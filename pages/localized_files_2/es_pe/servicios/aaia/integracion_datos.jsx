@@ -29,19 +29,19 @@ const integracionDatos = () => {
   return (
     <>
     <Head>
-      <title>Consultoría Inteligencia Artificial | Expertos en IA | NEO</title>
+      <title>Integración de Fuentes de Datos | Expertos en IA | NEO</title>
       <meta
         name="description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Agiliza y facilita el análisis de tus datos. Desarrollamos mediante la unificación de datos en un solo repositorio."
       />
       <meta
       property="og:title"
-      content="Consultoría Inteligencia Artificial | Expertos en IA | NEO"
+      content="Integración de Fuentes de Datos | Expertos en IA | NEO"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoría de Inteligencia Artificial por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
+        content="Agiliza y facilita el análisis de tus datos. Desarrollamos mediante la unificación de datos en un solo repositorio."
       />
       <meta
         property="og:image"

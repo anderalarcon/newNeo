@@ -28,19 +28,19 @@ const seoRank = () => {
   return (
     <>
     <Head>
-      <title>Consultoria Growth Hacking | NEO Consulting</title>
+      <title>SEO con Rank Tracker | NEO Consulting</title>
       <meta
         name="description"
-        content="Consultoria de Growth Hacking por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="En Neo Consulting planteamos estrategias SEO para generar tráfico orgánico sostenible y relevante para tu sitio web."
       />
       <meta
       property="og:title"
-      content="Consultoria Growth Hacking | NEO Consulting"
+      content="SEO con Rank Tracker | NEO Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultoria de Growth Hacking por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="En Neo Consulting planteamos estrategias SEO para generar tráfico orgánico sostenible y relevante para tu sitio web."
       />
       <meta
         property="og:image"

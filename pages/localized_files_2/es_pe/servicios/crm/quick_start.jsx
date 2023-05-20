@@ -29,19 +29,19 @@ const quickStart = () => {
   return (
     <>
       <Head>
-      <title>Consultoría CRM & Estrategia | NEO Consulting</title>
+      <title>Quick Start | NEO Consulting</title>
       <meta
         name="description"
-        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Implementación rápida de soluciones CRM y capacitación para asegurar adopción efectiva."
       />
       <meta
         property="og:title"
-        content="Consultoría CRM & Estrategia | NEO Consulting"
+        content="Quick Start | NEO Consulting"
       />
       <meta property="og:type" content="website" />
       <meta
         property="og:description"
-        content="Consultora CRM por consultores expertos. En NEO por más de 19 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital."
+        content="Implementación rápida de soluciones CRM y capacitación para asegurar adopción efectiva."
       />
       <meta
         property="og:image"
