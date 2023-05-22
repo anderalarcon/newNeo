@@ -1,0 +1,124 @@
+@import "../../styles/variables.module.scss";
+
+.content {
+  //   background-color: aquamarine;
+  &_container {
+    margin: 0 auto;
+    padding: map-get($padding, mobile);
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    @include breakpoint(widescreen) {
+      margin-top: 50px;
+      padding-left: map-get($padding, widescreen);
+      padding-right: map-get($padding, widescreen);
+      padding-bottom: 128px;
+      max-width: map-get($breakpoint, max);
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    &_img{
+      margin: 0 auto;
+      &_size{
+        width: 300px;
+        @include breakpoint(widescreen) {
+          width: 380px;
+        }
+      }    
+    }
+    
+    &_text1{
+      font-size: 28px;
+      font-family: "Tiempos Headline Medium";
+      text-align: center;
+        @include breakpoint(widescreen) {
+          font-size: 64px;
+        }
+    }
+
+    &_text2{
+      max-width: 0 auto;
+      max-width: 850px;
+      font-size: 16px;
+      font-family: "Montserrat";
+      text-align: center;
+      line-height: 20px;
+        @include breakpoint(widescreen) {
+          font-size: 20px;
+          line-height: 24px;
+        }
+    }
+
+    &_botones{
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+        @include breakpoint(widescreen) {
+          gap: 3rem;
+          flex-direction: row;
+          margin-top: 1rem;
+        }
+      
+      &_boton1{
+        min-width: 200px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Montserrat Medium";
+        font-weight: 500;
+        padding: 0.5rem 0.8rem;
+        border: 1px solid map-get($color, accent);
+        border-radius: 4px;
+        color: white;
+        background-color: map-get($color, accent);
+        &:hover{
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          font-weight: bold;
+        }
+          @include breakpoint(widescreen) {
+            padding: 0.8rem 1rem;
+          }
+        
+        &_link{
+          justify-content: center;
+          align-items: center;
+          padding: 0.2rem;
+          display: flex;
+          gap: 0.3rem;
+        }
+      }
+
+      &_boton2{
+        min-width: 200px;
+        cursor: pointer;
+        font-size: 16px;
+        font-family: "Montserrat Medium";
+        font-weight: 500;
+        padding: 0.5rem 0.8rem;
+        border: 1px solid map-get($color, black);
+        border-radius: 4px;
+        color: black;
+        background-color: map-get($color, white);
+        &:hover{
+          box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+          font-weight: bold;
+        }
+          @include breakpoint(widescreen) {
+            padding: 0.8rem 1rem;
+          }
+        
+        &_link{
+          align-items: center;
+          padding: 0.2rem;
+          display: flex;
+          gap: 0.3rem;
+        }
+      }
+    }
+
+
+  }
+
+}

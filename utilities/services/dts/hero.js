@@ -11,6 +11,7 @@ export const dataHerodts = {
   solution: 'default',
   desc: 'Reclutamos y formamos talento digital de alto performance para tu equipo',
   mainImg: dtsHero.src,
+  eventName: 'interes_servicio_dts',
   certifications: [
   ]
 }
@@ -23,6 +24,7 @@ export const dataHeroHeadHunting = {
   solution: 'headhunting',
   desc: 'Nos encargamos del proceso de búsqueda y selección de perfiles digitales de nuestros clientes, para la mejor contratación del talento.',
   mainImg: HeroHeadHunting.src,
+  eventName: 'interes_servicio_dts_Headhunting',
   certifications: [
   ]
 }
@@ -35,6 +37,7 @@ export const dataHeroOutsourcing = {
   solution: 'outsourcing',
   desc: 'Reclutamos y seleccionamos perfiles digitales para tu empresa. El perfil trabaja tiempo completo en tu empresa, pero es personal de Neo y nosotros nos encargamos del apoyo y mentoring.',
   mainImg: HeroOutsourcing.src,
+  eventName: 'interes_servicio_dts_Outsourcing',
   certifications: [
   ]
 }
@@ -47,6 +50,7 @@ export const dataHeroMentoryOutsourcing = {
   solution: 'outsourcing-y-mentoring',
   desc: 'Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas.',
   mainImg: MentoryOutsourcing.src,
+  eventName: 'interes_servicio_dts_MentoryOutsourcing',
   certifications: [
   ]
 }

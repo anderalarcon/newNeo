@@ -5,6 +5,18 @@ import Link from 'next/link'
 import uuid from 'react-uuid'
 
 const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
+  const handleGTagEvent = (link) => {
+    window.gtag('event', 'interes_contacto', {
+      event_name: 'interes_contacto'
+    })
+  }
+
+  const handleGTagEvent2 = (link) => {
+    window.gtag('event', eventName, {
+      event_name: eventName
+    })
+  }
+
   const utmParams = {}
   if (urlHasUtm) {
     for (const key in router.query) {
@@ -20,12 +32,14 @@ const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
     solution,
     mainImg,
     certifications,
-    descCert
+    descCert,
+    eventName
   } = data
   const getBtns = () => {
     if (isSolution) {
       return (
         <Link
+          onClick={handleGTagEvent}
           className={style.hero_container_left_ctn_direct}
           href={{
             pathname: '/contact',
@@ -44,10 +58,11 @@ const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
     }
     return (
       <>
-        <a className={style.hero_container_left_ctn_services} href='#solutions'>
+        <a className={style.hero_container_left_ctn_services} href='#solutions' onClick={handleGTagEvent2}>
           <button>Ver Servicios</button>
         </a>
         <Link
+          onClick={handleGTagEvent}
           className={style.hero_container_left_ctn_contact}
           href={{
             pathname: '/contact',
