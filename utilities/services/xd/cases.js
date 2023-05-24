@@ -5,8 +5,42 @@ import entelDesktop from '../../../public/assets/Services/Cases/entel-desktop.jp
 import ferreycorpDesktop from '../../../public/assets/Services/Cases/ferreycorp-desktop.jpg'
 import incarailDesktop from '../../../public/assets/Services/Cases/incarail_desktop.jpg'
 import movilDesktop from '../../../public/assets/Services/Cases/mobil_desktop.jpg'
+import naturaDesktop from '../../../public/assets/Services/Cases/card_natura.jpg'
+import cardifDesktop from '../../../public/assets/Services/Cases/cardif-desktop.jpg'
+import cibertecDesktop from '../../../public/assets/Services/Cases/card_cibertec.jpg'
+
 
 export const xdCases = [
+  {
+    type: 'Caso de éxito',
+    title: 'Natura logra un enfoque de governance efectivo para impulsar su crecimiento',
+    description:
+      'Descubre cómo Natura logró establecer un governance eficiente para la innovación mediante procesos específicos y definición de metodologías, además de elegir responsables para priorizar y ejecutar proyectos. Lee el caso completo y conoce los resultados.',
+    img: naturaDesktop,
+    imgMob: naturaDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/natura_diseno_governance_de_innovacion'
+  },
+  {
+    type: 'Caso de éxito',
+    title: 'BNP Paribas Cardif: Crecimiento de ecosistemas digitales',
+    description:
+      'Conoce cómo la compañía de seguros BNP Paribas Cardif logró optimizar la cantidad de registros de clientes en sus ecosistemas digitales.',
+    img: cardifDesktop,
+    imgMob: cardifDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/cardif_crecimiento_ecosistemas_digitales'
+  },
+  {
+    type: 'Caso de éxito',
+    title: 'Cibertec Perú revoluciona la educación con su innovadora plataforma web',
+    description:
+      'Descubre cómo Cibertec rediseñó su sitio web para lograr la mejor experiencia de usuario basada en estándares de usabilidad y conocimiento de sus usuarios.',
+    img: cibertecDesktop,
+    imgMob: cibertecDesktop,
+
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/cibertec_rediseno_web'
+  },
   {
     type: 'Caso de éxito',
     title: 'Inca Rail: Optimización en Experiencia de Usuario',
@@ -45,27 +79,5 @@ export const xdCases = [
     img: belcorpImg,
     imgMob: belcorpImgMob,
     url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/belcorp_automatizacion_de_modelos_predictivos'
-  },
-  {
-    type: 'Caso de éxito',
-    title:
-      'Aumento de tráfico orgánico en 695% y ventas orgánicas en 1409%',
-    description:
-      'El equipo de marketing performance de Entel junto con Neo Consulting realizaron un minucioso trabajo de SEO durante 2 años, donde plantearon objetivos de crecimiento, realizaron auditorías, keyword research, automatizaciones y acciones semanales con el fin de conseguir los resultados planteados al inicio del proyecto.',
-    img: entelDesktop,
-    imgMob: entelDesktop,
-
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/entel_auditoria_seo_aumento_trafico_organico'
-  },
-  {
-    type: 'Caso de éxito',
-    title:
-      'Ferreycorp incrementa el posicionamiento y tráfico orgánico de sus 3 marcas',
-    description:
-      'Ferreycorp en conjunto con NEO Consulting, logró incrementar el volumen de tráfico orgánico con estrategias de SEO en sus 3 marcas: Ferreyros, Unimaq y Soltrak gracias a la implementación y optimización de palabras clave, lineamientos técnicos e indicadores de performance.',
-    img: ferreycorpDesktop,
-    imgMob: ferreycorpDesktop,
-
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/ferreycorp_incrementa_posicionamiento_y_trafico'
   }
 ]
