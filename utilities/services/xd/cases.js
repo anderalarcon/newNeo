@@ -1,14 +1,11 @@
 import belcorpImg from '../../../public/assets/Services/Cases/belcorp.jpg'
 import belcorpImgMob from '../../../public/assets/Services/Cases/belcorp-mobile.jpg'
 import soksoDesktop from '../../../public/assets/Services/Cases/sokso-desktop.jpg'
-import entelDesktop from '../../../public/assets/Services/Cases/entel-desktop.jpg'
-import ferreycorpDesktop from '../../../public/assets/Services/Cases/ferreycorp-desktop.jpg'
 import incarailDesktop from '../../../public/assets/Services/Cases/incarail_desktop.jpg'
 import movilDesktop from '../../../public/assets/Services/Cases/mobil_desktop.jpg'
 import naturaDesktop from '../../../public/assets/Services/Cases/card_natura.jpg'
 import cardifDesktop from '../../../public/assets/Services/Cases/cardif-desktop.jpg'
 import cibertecDesktop from '../../../public/assets/Services/Cases/card_cibertec.jpg'
-
 
 export const xdCases = [
   {
@@ -49,7 +46,7 @@ export const xdCases = [
     img: incarailDesktop,
     imgMob: incarailDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/incarail_optimizacion_ux'
   },
   {
     type: 'Caso de éxito',
@@ -59,7 +56,7 @@ export const xdCases = [
     img: movilDesktop,
     imgMob: movilDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/mobil_estrategia_digital'
   },
   {
     type: 'Caso de éxito',
