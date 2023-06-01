@@ -1,0 +1,197 @@
+@import '../../styles/variables.module.scss';
+
+.componente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1400px;
+        // background-color: gray;
+        gap: 2rem;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        &_title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 2rem;
+
+            & h1{
+                font-family: "Tiempos Headline Medium";
+                font-weight: 600;
+                font-size: 1.5rem;
+                text-align: center;
+                max-width: 300px;
+                @include breakpoint(widescreen) {
+                    max-width: none;
+                    font-weight: 500;
+                    font-size: 3rem;
+                }
+            }
+            & h3{
+                max-width: 300px;
+                font-size: 1rem;
+                line-height: 20px;
+                max-width: 270px;
+                @include breakpoint(widescreen) {
+                    max-width: none;
+                    font-size: 1.3rem;
+                    line-height: 24px;
+                  }
+            }
+        }
+
+        &_content{
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+                @include breakpoint(widescreen) {
+                    flex-direction: row;
+                    gap: 3rem;
+                }
+
+            &_izq{
+                width: 280px;
+                height: 450px;
+                border: 0.5px solid #B3B3C2;
+                box-shadow: 0px 16px 24px rgba(0, 0, 51, 0.15);
+                border-radius: 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2.5rem 1.5rem;
+                text-align: center;
+                    @include breakpoint(widescreen) {
+                        padding: 3rem 4rem;
+                        width: 500px;
+                        height: 563px;
+                    }
+
+                & img{
+                    width: 250px;
+                    @include breakpoint(widescreen) {
+                        width: 375px;
+                    }
+                }
+                
+                & h3{
+                    font-size: 1rem;
+                    @include breakpoint(widescreen) {
+                        font-size: 18px;
+                    }
+                }
+
+                &_boton1{
+                    min-width: 200px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    font-family: "Montserrat Medium";
+                    font-weight: 600;
+                    padding: 0.6rem 0.4rem;
+                    border: 1px solid map-get($color, accent);
+                    border-radius: 4px;
+                    color: white;
+                    background-color: map-get($color, accent);
+                    &:hover{
+                      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                      font-weight: bold;
+                    }
+                        @include breakpoint(widescreen) {
+                            font-size: 1rem;
+                            padding: 0.8rem 1rem;
+                        }
+                    
+                    &_link{
+                      justify-content: center;
+                      align-items: center;
+                      padding: 0.1rem;
+                      display: flex;
+                      gap: 0.3rem;
+                    }
+                }
+            }
+
+            &_der{
+                width: 280px;
+                height: 450px;
+                border: 0.5px solid #B3B3C2;
+                box-shadow: 0px 16px 24px rgba(0, 0, 51, 0.15);
+                border-radius: 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                align-items: center;
+                padding: 2.5rem 1.5rem;
+                text-align: center;
+                    @include breakpoint(widescreen) {
+                        padding: 3rem 4rem;
+                        
+                        width: 500px;
+                        height: 563px;
+                    }
+
+                & img{
+                    // width: 250px;
+                    // @include breakpoint(widescreen) {
+                    //     width: 375px;
+                    // }
+                }
+                
+                & h3{
+                    font-size: 1rem;
+                    @include breakpoint(widescreen) {
+                        font-size: 2rem;
+                    }
+                }
+
+                &_boton1{
+                    min-width: 150px;
+                    cursor: pointer;
+                    font-size: 1rem;
+                    font-family: "Montserrat Medium";
+                    font-weight: 600;
+                    padding: 0.6rem 0.4rem;
+                    border: 1px solid map-get($color, black);
+                    border-radius: 4px;
+                    color: black;
+                    background-color: transparent;
+                    &:hover{
+                      box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px, rgba(0, 0, 0, 0.07) 0px 2px 4px, rgba(0, 0, 0, 0.07) 0px 4px 8px, rgba(0, 0, 0, 0.07) 0px 8px 16px, rgba(0, 0, 0, 0.07) 0px 16px 32px, rgba(0, 0, 0, 0.07) 0px 32px 64px;
+                      font-weight: bold;
+                    }
+                        @include breakpoint(widescreen) {
+                        font-size: 1rem;
+                        padding: 0.8rem 1rem;
+                        }
+                    
+                    &_link{
+                      justify-content: center;
+                      align-items: center;
+                      padding: 0.1rem;
+                      display: flex;
+                      gap: 0.3rem;
+                    }
+                }
+            }
+        }
+    }
+
+    
+}
