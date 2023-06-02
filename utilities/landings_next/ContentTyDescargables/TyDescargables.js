@@ -18,56 +18,56 @@ const MktTexto = 'Automatiza acciones, entrega contenido personalizado y fideliz
 
 export const ReporteEcommerceDescargable = {
   tituloDescargable: 'Reporte E-commerce Q1 - 2023',
-  linkDescargable: 'https://neoconsulting.ai/Reporte-E-commerce-Q1-2023',
-  ImgChapter: EcommerceSVG,
-  textoChapter: EcommerceTexto
-}
-
-export const ChatbotsDescargable = {
-  tituloDescargable: 'Experiencia de usuarios con chatbots',
-  linkDescargable: 'https://neoconsulting.ai/experiencia_de_usuarios_con_chatbots',
-  ImgChapter: CanalesSVG,
-  textoChapter: CanalesTexto
-}
-
-export const HerramientasAIDescargable1 = {
-  tituloDescargable: '21 herramientas de AI recomendadas por los Neos para este 2023',
-  linkDescargable: 'https://neoconsulting.ai/21_herramientas_de_ai/',
-  ImgChapter: DtsSVG,
-  textoChapter: DtsTexto
-}
-
-export const ColaboradorDescargable = {
-  tituloDescargable: 'Perfil del Colaborador del Futuro',
-  linkDescargable: 'https://neoconsulting.ai/perfil-colaborador-del-futuro',
-  ImgChapter: CrmSVG,
-  textoChapter: CrmTexto
-}
-
-export const AnalyticsDescargable = {
-  tituloDescargable: '',
-  linkDescargable: '',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables-web/reporte-ecommerce-Q1-2023.pdf',
   ImgChapter: AnalyticsSVG,
   textoChapter: AnalyticsTexto
 }
 
-export const XdDescargable1 = {
-  tituloDescargable: '',
-  linkDescargable: '',
+export const ChatbotsDescargable = {
+  tituloDescargable: 'Experiencia de usuarios con chatbots',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Estudio%20chatbots.pdf',
   ImgChapter: XdSVG,
   textoChapter: XdTexto
 }
 
-export const DadsDescargable1 = {
-  tituloDescargable: '',
-  linkDescargable: '',
-  ImgChapter: DadsSVG,
-  textoChapter: DadsTexto
+export const HerramientasAIDescargable = {
+  tituloDescargable: '21 herramientas de AI recomendadas por los Neos para este 2023',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/21%20herramientas%20de%20Ai.pdf',
+  ImgChapter: AnalyticsSVG,
+  textoChapter: AnalyticsTexto
 }
 
-export const MktDescargable1 = {
-  tituloDescargable: '',
-  linkDescargable: '',
-  ImgChapter: MktSVG,
-  textoChapter: MktTexto
+export const ColaboradorDescargable = {
+  tituloDescargable: 'Perfil del Colaborador del Futuro',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Perfil%20del%20Colaborador%20del%20Futuro.pdf',
+  ImgChapter: DtsSVG,
+  textoChapter: DtsTexto
 }
+
+export const ReporteRegionalDescargable = {
+  tituloDescargable: 'Reporte Regional E-commerce | Resumen 2022',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Reporte%20Regional%20Ecommerce%20Resumen%202022.pdf',
+  ImgChapter: AnalyticsSVG,
+  textoChapter: AnalyticsTexto
+}
+
+// export const XdDescargable1 = {
+//   tituloDescargable: '',
+//   linkDescargable: '',
+//   ImgChapter: XdSVG,
+//   textoChapter: XdTexto
+// }
+
+// export const DadsDescargable1 = {
+//   tituloDescargable: '',
+//   linkDescargable: '',
+//   ImgChapter: DadsSVG,
+//   textoChapter: DadsTexto
+// }
+
+// export const MktDescargable1 = {
+//   tituloDescargable: '',
+//   linkDescargable: '',
+//   ImgChapter: MktSVG,
+//   textoChapter: MktTexto
+// }

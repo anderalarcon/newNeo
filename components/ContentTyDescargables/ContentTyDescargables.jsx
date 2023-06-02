@@ -1,22 +1,9 @@
 import style from './ContentTyDescargables.module.scss'
-// import arrow from '../../public/assets/Crm/Hero/left_arrow.svg'
 import PropTypes from 'prop-types'
 import IMG1 from '../../public/assets/ContentTyDescargables/img_izq.png'
 import Link from 'next/link'
-// import uuid from 'react-uuid'
 
 const ContentTyDescargables = ({ data }) => {
-//   const {
-//     pretitle,
-//     title,
-//     subtitle,
-//     desc,
-//     service,
-//     solution,
-//     mainImg,
-//     certifications,
-//     descCert
-//   } = data
   return (
     <div className={style.componente}>
       <div className={style.componente_container}>

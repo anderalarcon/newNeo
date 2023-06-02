@@ -1,15 +1,15 @@
-import Breadscrumb from '../../components/Breadscrumb/Breadscrumb'
-import FormHeader from '../../components/Form/_children/FormHeader/FormHeader'
-import Hero from '../../components/Thanks/Hero/Hero'
-import Content from '../../components/Content/Content'
-import Footer from '../../components/Footer/Footer'
+import Header from '../../../components/Header/Header'
+import Footer from '../../../components/Footer/Footer'
 import Head from 'next/head'
 
-const Thanks = () => {
+import ContentTyDescargables from '../../../components/ContentTyDescargables/ContentTyDescargables'
+import { ReporteRegionalDescargable } from '../../../utilities/landings_next/ContentTyDescargables/TyDescargables'
+
+const ReporteRegionalDescargableThanks = () => {
   return (
     <>
       <Head>
-        <title>¡Gracias por contactarnos!</title>
+        <title>Ya puedes descargar</title>
 
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -23,17 +23,15 @@ const Thanks = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="¡Gracias por contactarnos!"
+          content="Ya puedes descargar"
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
       </Head>
-      <FormHeader />
-      <Breadscrumb value={'Gracias'} />
-      <Hero />
-      <Content/>
-      <Footer/>
+      <Header />
+      <ContentTyDescargables data={ReporteRegionalDescargable} />
+      <Footer />
     </>
   )
 }
 
-export default Thanks
+export default ReporteRegionalDescargableThanks
