@@ -26,7 +26,7 @@ const ContentTyDescargables = ({ data }) => {
             <div className={style.componente_container_content_der}>
                 <img src={data.ImgChapter.src} alt="gaaa" />
                 <h3>{data.textoChapter}</h3>
-                <Link href="http://localhost:3000/contact/?service=default&solution=default">
+                <Link href="https://neoconsulting.ai/contact/?service=default&solution=default">
                     <button className={style.componente_container_content_der_boton1}>
                         <div className={style.componente_container_content_der_boton1_link}>
                           Contáctanos

@@ -1,0 +1,323 @@
+@import '../../styles/variables.module.scss';
+
+.componente {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 1400px;
+        // background-color: gray;
+        gap: 2rem;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        &_title{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+
+            & h1{
+                font-family: "Tiempos Headline Medium";
+                font-weight: 600;
+                font-size: 1.5rem;
+                text-align: center;
+                max-width: 300px;
+                @include breakpoint(widescreen) {
+                    max-width: 900px;
+                    font-weight: 500;
+                    font-size: 3rem;
+                    margin-bottom: 2.5rem;
+                }
+            }
+        }
+
+        &_content{
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+                @include breakpoint(widescreen) {
+                    flex-direction: row;
+                    gap: 3rem;
+                }
+
+            &_izq{
+                width: 280px;
+                height: 185px;
+                // border: 0.5px solid #B3B3C2;
+                // box-shadow: 0px 16px 24px rgba(0, 0, 51, 0.15);
+                // border-radius: 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                    @include breakpoint(widescreen) {
+                        width: 600px;
+                        height: 390px;
+                    }
+
+                &_img1{
+                    position: absolute;
+                    width: 100%;
+                    animation: aparecer1 9s infinite;
+                    animation-timing-function: cubic-bezier(0.2, 0.5, 0.8, 0.5);
+                    @include breakpoint(widescreen) {
+                        width: 100%;
+                    }
+                }
+                &_img2{
+                    position: absolute;
+                    width: 100%;
+                    animation: aparecer2 9s infinite;
+                    animation-timing-function: cubic-bezier(0.2, 0.5, 0.8, 0.5);
+                    @include breakpoint(widescreen) {
+                        width: 100%;
+                    }
+                }
+                &_img3{
+                    position: absolute;
+                    width: 100%;
+                    animation: aparecer3 9s infinite;
+                    animation-timing-function: cubic-bezier(0.2, 0.5, 0.8, 0.5);
+                    @include breakpoint(widescreen) {
+                        width: 100%;
+                    }
+                }
+
+            }
+
+            &_der{
+                width: 280px;
+                height: 185px;
+                // border: 0.5px solid #B3B3C2;
+                // box-shadow: 0px 16px 24px rgba(0, 0, 51, 0.15);
+                // border-radius: 21px;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-around;
+                align-items: center;
+                position: relative;
+                padding: 1rem;
+                    @include breakpoint(widescreen) {
+                        width: 500px;
+                        height: 390px;
+                    }
+                
+                &_escala{
+                    display: flex;
+
+                    &_icon1{
+                        animation: desaparecer1 9s infinite;
+                        animation-timing-function: cubic-bezier(0.2, 0.5, 0.8, 0.5);
+                    }
+
+                    &_text1{
+                        font-family: "Montserrat Medium";
+                        animation: agrandar1mobile 9s infinite;
+                        animation-timing-function: cubic-bezier(0.1, 1, 0.9, 1);
+                        font-size: 0.8rem;
+                        margin-bottom: 1rem;
+
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 0rem;
+                            animation: agrandar1 9s infinite;
+                            font-size: 1.2rem;
+                            line-height: 150%;
+                        }
+                    }
+
+                    &_icon2{
+                        animation: desaparecer2 9s infinite;
+                        animation-timing-function: cubic-bezier(0.2, 0.5, 0.8, 0.5);
+                    }
+
+                    &_text2{
+                        font-family: "Montserrat Medium";
+                        animation: agrandar2mobile 9s infinite;
+                        animation-timing-function: cubic-bezier(0.1, 1, 0.9, 1);
+                        font-size: 0.8rem;
+                        margin-bottom: 1rem;
+
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 0rem;
+                            animation: agrandar2 9s infinite;
+                            font-size: 1.2rem;
+                            line-height: 150%;
+                        }
+                    }
+
+                    &_icon3{
+                        animation: desaparecer3 9s infinite;
+                        animation-timing-function: cubic-bezier(0.2, 0.5, 0.8, 0.5);
+                    }
+
+                    &_text3{
+                        font-family: "Montserrat Medium";
+                        animation: agrandar3mobile 9s infinite;
+                        animation-timing-function: cubic-bezier(0.1, 1, 0.9, 1);
+                        font-size: 0.8rem;
+                        margin-bottom: 1rem;
+
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 0rem;
+                            animation: agrandar3 9s infinite;
+                            font-size: 1.2rem;
+                            line-height: 150%;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    
+}
+
+
+@keyframes aparecer1 {
+    0%, 30%, 100% {
+        opacity: 0.1;
+    }
+
+    1%, 29% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer2 {
+    0%, 30%, 60%, 100% {
+        opacity: 0.1;
+    }
+
+    35%, 59% {
+        opacity: 1;
+    }
+}
+
+@keyframes aparecer3 {
+    0%, 60%, 99%, 100% {
+        opacity: 0.1;
+    }
+
+    65%, 98% {
+        opacity: 1;
+    }
+}
+
+
+
+
+@keyframes agrandar1 {
+    0%, 30%, 100% {
+        transform: scale(1);
+    }
+
+    10%, 20% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes agrandar2 {
+    0%, 30%, 60%, 100% {
+        transform: scale(1);
+    }
+
+    40%, 50% {
+        transform: scale(1.4);
+    }
+}
+
+@keyframes agrandar3 {
+    0%, 60%, 90%, 100% {
+        transform: scale(1);
+    }
+
+    70%, 80% {
+        transform: scale(1.4);
+    }
+}
+
+
+
+
+@keyframes agrandar1mobile {
+    0%, 30%, 100% {
+        transform: scale(1);
+    }
+
+    10%, 20% {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes agrandar2mobile {
+    0%, 30%, 60%, 100% {
+        transform: scale(1);
+    }
+
+    40%, 50% {
+        transform: scale(1.25);
+    }
+}
+
+@keyframes agrandar3mobile {
+    0%, 60%, 90%, 100% {
+        transform: scale(1);
+    }
+
+    70%, 80% {
+        transform: scale(1.25);
+    }
+}
+
+
+
+
+@keyframes desaparecer1 {
+    0%, 30%, 100% {
+        opacity: 1;
+    }
+
+    1%, 10%, 20%, 29% {
+        opacity: 0;
+    }
+}
+
+@keyframes desaparecer2 {
+    0%, 30%, 60%, 100% {
+        opacity: 1;
+    }
+
+    31%, 40%, 45%, 59% {
+        opacity: 0;
+    }
+}
+
+@keyframes desaparecer3 {
+    0%, 60%, 90%, 100% {
+        opacity: 1;
+    }
+
+    61%, 70%, 75%, 89% {
+        opacity: 0;
+    }
+}
+
+
+
+
