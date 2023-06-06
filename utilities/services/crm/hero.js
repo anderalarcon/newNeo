@@ -19,6 +19,7 @@ export const dataHero = {
   desc: 'Crea, desarrolla y mejora la relación con tus clientes.',
   descCert: 'Nuestros consultores de CRM están certificados en:',
   mainImg: hero.src,
+  eventName: 'interes_servicio_crm',
   certifications: [
     {
       src: sfcloud.src

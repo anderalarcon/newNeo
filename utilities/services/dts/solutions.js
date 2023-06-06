@@ -6,6 +6,7 @@ export const dtsSolutions = [
     urlcontact: '/contact/?service=digital-talent-solution&solution=headhunting',
     // urlpage: '/localized_files_2/es_pe/servicios/dts/head_hunting/'
     // urlcontact: '/contact/?service=digital-talent-solution&solution=default',
+    eventName: 'interes_servicio_headhunting',
     urlpage: '/pe/servicios/headhunting-y-mentoring/headhunting'
   },
   {
@@ -13,6 +14,7 @@ export const dtsSolutions = [
     description:
       'Evaluamos y capacitamos constantemente a los perfiles especializados mediante herramientas y evaluaciones especializadas.',
     urlcontact: '/contact/?service=digital-talent-solution&solution=outsourcing-y-mentoring',
+    eventName: 'interes_servicio_headhunting',
     urlpage: '/pe/servicios/headhunting-y-mentoring/mentoryOutsourcing'
   },
   {
@@ -22,6 +24,7 @@ export const dtsSolutions = [
     urlcontact: '/contact/?service=digital-talent-solution&solution=outsourcing',
     // urlpage: '/localized_files_2/es_pe/servicios/dts/outsourcing/'
     // urlcontact: '/contact/?service=digital-talent-solution&solution=default',
+    eventName: 'interes_servicio_headhunting',
     urlpage: '/pe/servicios/headhunting-y-mentoring/outsourcing'
   }
 ]

@@ -6,6 +6,7 @@ export const canalesSolutions = [
     urlcontact: '/contact/?service=canales-digitales&solution=marketing-de-contenidos',
     // urlpage: '/localized_files_2/es_pe/servicios/canales/marketing_contenidos/'
     // urlcontact: '/contact/?service=canales-digitales&solution=default',
+    eventName: 'interes_servicio_canales_digitales',
     urlpage: '/pe/servicios/canales-digitales-y-growth-hacking/marketing-de-contenidos'
   },
   {
@@ -15,6 +16,7 @@ export const canalesSolutions = [
     urlcontact: '/contact/?service=canales-digitales&solution=seo-rank-tracker',
     // urlpage: '/localized_files_2/es_pe/servicios/canales/seo_rank/'
     // urlcontact: '/contact/?service=canales-digitales&solution=default',
+    eventName: 'interes_servicio_canales_digitales',
     urlpage: '/pe/servicios/canales-digitales-y-growth-hacking/seo-rank-tracker'
   },
   {
@@ -24,6 +26,7 @@ export const canalesSolutions = [
     urlcontact: '/contact/?service=canales-digitales&solution=growth-hacking',
     // urlpage: '/localized_files_2/es_pe/servicios/canales/growth_hacking/'
     // urlcontact: '/contact/?service=canales-digitales&solution=default',
+    eventName: 'interes_servicio_canales_digitales',
     urlpage: '/pe/servicios/canales-digitales-y-growth-hacking/growth-hacking'
   },
   {
@@ -33,6 +36,7 @@ export const canalesSolutions = [
     urlcontact: '/contact/?service=digital-ads&solution=default',
     // urlpage: '/localized_files_2/es_pe/servicios/digital_ads/da/'
     // urlcontact: '/contact/?service=canales-digitales&solution=default',
+    eventName: 'interes_servicio_publicidad_digital',
     urlpage: '/pe/servicios/digital-advertising/'
   }
 ]

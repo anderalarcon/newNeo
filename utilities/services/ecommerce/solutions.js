@@ -6,6 +6,7 @@ export const ecommerceSolutions = [
     urlcontact: '/contact/?service=ecommerce&solution=desarrollo-de-modelo-ecommerce',
     // urlpage: '/localized_files_2/es_pe/servicios/ecommerce/desarrollo_modelo/'
     // urlcontact: '/contact/?service=ecommerce&solution=default',
+    eventName: 'interes_servicio_ecommerce',
     urlpage: '/pe/servicios/consultoria-ecommerce/desarrollo-modelo-ecommerce'
   },
   {
@@ -15,6 +16,7 @@ export const ecommerceSolutions = [
     urlcontact: '/contact/?service=ecommerce&solution=acompanamiento-ecommerce',
     // urlpage: '/localized_files_2/es_pe/servicios/ecommerce/acompanamiento_ecommerce/'
     // urlcontact: '/contact/?service=ecommerce&solution=default',
+    eventName: 'interes_servicio_ecommerce',
     urlpage: '/pe/servicios/consultoria-ecommerce/acompanamiento-ecommerce'
   },
   {
@@ -24,6 +26,7 @@ export const ecommerceSolutions = [
     urlcontact: '/contact/?service=ecommerce&solution=growth-y-analytics-para-ecommerce',
     // urlpage: '/localized_files_2/es_pe/servicios/ecommerce/growth_ecommerce/'
     // urlcontact: '/contact/?service=ecommerce&solution=default',
+    eventName: 'interes_servicio_ecommerce',
     urlpage: '/pe/servicios/consultoria-ecommerce/growth-analytics-para-ecommerce'
   }
 ]

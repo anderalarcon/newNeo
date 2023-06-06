@@ -23,6 +23,7 @@ export const dataHeromkt = {
   solution: 'default',
   desc: 'Automatiza acciones, entrega contenido personalizado y fideliza a los clientes con nuestras soluciones.',
   descCert: 'Nuestros analistas están certificados en:',
+  eventName: 'interes_servicio_marketing_automation',
   mainImg: mktHero.src,
   certifications: [
     {

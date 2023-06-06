@@ -14,6 +14,7 @@ export const dataHeroecommerce = {
   solution: 'default',
   desc: 'Desarrolla estrategias que impulsen tu e-commerce.',
   descCert: 'Nuestros analistas están certificados en:',
+  eventName: 'interes_servicio_ecommerce',
   mainImg: ecommerceHero.src,
   certifications: [
     {

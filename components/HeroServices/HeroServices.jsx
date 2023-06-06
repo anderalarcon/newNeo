@@ -5,13 +5,13 @@ import Link from 'next/link'
 import uuid from 'react-uuid'
 
 const Hero = ({ data, isSolution = false, urlHasUtm, router }) => {
-  const handleGTagEvent = (link) => {
+  const handleGTagEvent = () => {
     window.gtag('event', 'interes_contacto', {
       event_name: 'interes_contacto'
     })
   }
 
-  const handleGTagEvent2 = (link) => {
+  const handleGTagEvent2 = () => {
     window.gtag('event', eventName, {
       event_name: eventName
     })

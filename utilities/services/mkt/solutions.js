@@ -6,6 +6,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=reporting-roi-automatizado',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/reporting_roi/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: 'pe/servicios/marketing-automation/reporting-roi-automatizado-360-marketing-automation'
   },
   {
@@ -15,6 +16,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=automatizacion-de-leads-para-remarketing',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/automatizacion_leads/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/automatizacion-leads-remarketing-marketing-automation'
   },
   {
@@ -24,6 +26,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=personalizacion-ecommerce',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/personalizacion_ecommerce/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/personalizacion-ecommerce-marketing-automation'
   },
   {
@@ -31,6 +34,7 @@ export const mktSolutions = [
     description:
       'Genera contenido de forma automatizada y escalable con herramientas basadas en Inteligencia Artificial, mejora el posicionamiento en buscadores y ahorra tiempo.',
     urlcontact: '/contact/?service=mkt-automation&solution=automatizacion-de-contenido',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/localized_files_2/es_pe/servicios/mkt/automatizacion_contenido/'
   },
   {
@@ -40,6 +44,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=dashboard-seo',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/dashboard_seo/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/automatizacion-de-contenido-marketing-automation'
   },
   {
@@ -49,6 +54,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=chatbot-ecommerce',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/chatbot_ecommerce/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/chatbots-ecommerce-marketing-automation'
   },
   {
@@ -58,6 +64,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=planning-de-contenido-agil',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/planing_contenido/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/planning-contenido-agil-marketing-automation'
   },
   {
@@ -67,6 +74,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=lead-nurturing-automatizado',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/lead_nurturing/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/lead-nurturing-automatizado-marketing-automation'
   },
   {
@@ -76,6 +84,7 @@ export const mktSolutions = [
     urlcontact: '/contact/?service=mkt-automation&solution=centralizacion-de-insights',
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/centralizacion_insights/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
+    eventName: 'interes_servicio_marketing_automation',
     urlpage: '/pe/servicios/marketing-automation/centralizacion-insights-redes-sociales-marketing-automation'
   }
 ]

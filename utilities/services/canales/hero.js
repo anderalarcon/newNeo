@@ -15,6 +15,7 @@ export const dataHeroCanales = {
   solution: 'default',
   desc: 'Atrae a más clientes a través de Canales digitales y potencia tus resultados con Growth Hacking.',
   descCert: 'Nuestros analistas están certificados en:',
+  eventName: 'interes_servicio_canales_digitales',
   mainImg: canalesHero.src,
   certifications: [
     {

@@ -16,6 +16,7 @@ export const dataHeroxd = {
   solution: 'default',
   desc: 'Somos expertos en diseño de experiencia y transformación digital.',
   descCert: 'Nuestros analistas están certificados en:',
+  eventName: 'interes_servicio_esperience_design',
   mainImg: xdHero.src,
   certifications: [
     {

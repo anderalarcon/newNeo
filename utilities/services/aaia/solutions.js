@@ -9,6 +9,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=estrategia-data',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/workshop_estrategia/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/workshop-estrategia-marca'
       },
       {
@@ -18,6 +19,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=casos-de-uso-ml',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/machine_learning/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/caso-uso-machine-learning'
       }
     ]
@@ -32,6 +34,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=implementacion-o-migracion-a-ga4',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/migracion_ga4/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/implementacion-migracion-google-analytics-4'
       },
       {
@@ -41,6 +44,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=digital-advanced-analytics',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/advanced_analytics/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/digital-advanced-analytics'
       },
       {
@@ -50,6 +54,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=consultoria-analitica-digital',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/analitica_digital/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/consultoria-analitica-digital'
       }
     ]
@@ -64,6 +69,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=predictive-customer-analytics',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/predictive_analytics/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/predictive-customer-analytics'
       },
       {
@@ -73,6 +79,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=predictive-sales-analytics',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/predictive_sales/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/predictive-sales-product-analytics'
       },
       {
@@ -82,6 +89,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=chatbots-ai',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/chatbots_inteligencia/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/chatbots-inteligencia-artificial'
       },
       {
@@ -91,6 +99,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=sentiment-analysis-social-listening',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/sentiment_analysis/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/sentiment-analysis-social-listening'
       }
     ]
@@ -105,6 +114,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=integracion-fuente-de-datos',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/integracion_datos/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/integracion-fuentes-de-datos'
       },
       {
@@ -114,6 +124,7 @@ export const aaiaSolutions2 = [
         urlcontact: '/contact/?service=aaia&solution=automatizacion-reportes',
         // urlpage: '/localized_files_2/es_pe/servicios/aaia/automatizacion_reportes/'
         // urlcontact: '/contact/?service=aaia&solution=default',
+        eventName: 'interes_servicio_analítica_digital',
         urlpage: '/pe/servicios/analitica-digital-inteligencia-artificial/automatizacion_reportes'
       }
     ]

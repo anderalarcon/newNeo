@@ -15,6 +15,7 @@ export const dataHeroda = {
   solution: 'default',
   desc: 'Logra tus objetivos de negocio desde una estrategia rentable en medios digitales pagados.',
   descCert: 'Nuestros analistas están certificados en:',
+  eventName: 'interes_servicio_publicidad_digital',
   mainImg: daHero.src,
   certifications: [
     {

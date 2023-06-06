@@ -22,6 +22,7 @@ export const dataHeroaaia = {
   solution: 'default',
   desc: 'Mide, visualiza y capitaliza la data de tu empresa.',
   descCert: 'Nuestros analistas están certificados en:',
+  eventName: 'interes_servicio_analítica_digital',
   mainImg: aaiaHero.src,
   certifications: [
     {

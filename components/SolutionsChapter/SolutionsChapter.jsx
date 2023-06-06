@@ -5,7 +5,13 @@ import uuid from 'react-uuid'
 import { useEffect, useState } from 'react'
 import arrow from '../../public/assets/Swiper/right-arrow.svg'
 
-const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
+const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router, eventName }) => {
+  const handleGTagEvent = (link) => {
+    window.gtag('event', eventName, {
+      event_name: eventName
+    })
+  }
+
   const utmParams = {}
   if (urlHasUtm) {
     for (const key in router.query) {
@@ -128,6 +134,7 @@ const SolutionsChapter = ({ solutions, filter = false, urlHasUtm, router }) => {
                 {getLetsTalkBtn(urlcontact)}
                 <Link
                   className={style.solutions_container_solution_ctn_more}
+                  onClick={handleGTagEvent}
                   href={{
                     pathname: urlpage,
                     query: {
@@ -160,5 +167,6 @@ SolutionsChapter.propTypes = {
   solutions: PropTypes.array,
   filter: PropTypes.bool,
   urlHasUtm: PropTypes.bool,
-  router: PropTypes.object
+  router: PropTypes.object,
+  eventName: PropTypes.string
 }

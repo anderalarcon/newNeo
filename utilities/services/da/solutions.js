@@ -6,6 +6,7 @@ export const daSolutions = [
     urlcontact: '/contact/?service=digital-ads&solution=inhousing',
     // urlpage: '/localized_files_2/es_pe/servicios/digital_ads/inhousing/'
     // urlcontact: '/contact/?service=digital-ads&solution=default',
+    eventName: 'interes_servicio_publicidad_digital',
     urlpage: '/pe/servicios/digital-advertising/inhousing-publicidad-digital'
   },
   {
@@ -15,6 +16,7 @@ export const daSolutions = [
     urlcontact: '/contact/?service=digital-ads&solution=auditoria',
     // urlpage: '/localized_files_2/es_pe/servicios/digital_ads/auditoria/'
     // urlcontact: '/contact/?service=digital-ads&solution=default',
+    eventName: 'interes_servicio_publicidad_digital',
     urlpage: '/pe/servicios/digital-advertising/auditoria-publicidad-digital'
   }
 ]

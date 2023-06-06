@@ -69,6 +69,12 @@ const Form = () => {
     }
   }
 
+  const handleGTagEvent = (link) => {
+    window.gtag('event', 'formulario_completado', {
+      event_name: 'formulario_completado'
+    })
+  }
+
   const handleBack = (e) => {
     e.preventDefault()
     setStep(step - 1)
@@ -775,7 +781,9 @@ const Form = () => {
             onClick={handleSteps}
             className={style.form_container_form_btns_next}
           >
+            <a onClick={handleGTagEvent} >
             Enviar
+            </a>
           </button>
         )
       }

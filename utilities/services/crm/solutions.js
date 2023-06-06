@@ -7,6 +7,7 @@ export const crmSolutions = [
     // urlpage: '/localized_files_2/es_pe/servicios/crm/full_service/'
     // urlcontact: '/contact/?service=crm&solution=full-service-crm',
     // urlcontact: '/contact/?service=crm&solution=default',
+    eventName: 'interes_servicio_crm',
     urlpage: '/pe/servicios/consultoria-customer-relationship-management/full-service-crm'
   },
   {
@@ -17,6 +18,7 @@ export const crmSolutions = [
     // urlpage: '/localized_files_2/es_pe/servicios/crm/accelerator/'
     // urlcontact: '/contact/?service=crm&solution=accelerator'
     // urlcontact: '/contact/?service=crm&solution=default',
+    eventName: 'interes_servicio_crm',
     urlpage: '/pe/servicios/consultoria-customer-relationship-management/accelerator'
   },
   {
@@ -27,6 +29,7 @@ export const crmSolutions = [
     // urlpage: '/localized_files_2/es_pe/servicios/crm/quick_start/'
     // urlcontact: '/contact/?service=crm&solution=quick-start',
     // urlcontact: '/contact/?service=crm&solution=default',
+    eventName: 'interes_servicio_crm',
     urlpage: '/pe/servicios/consultoria-customer-relationship-management/quick-start-crm'
   },
   // {
@@ -43,6 +46,7 @@ export const crmSolutions = [
       'Responde y captura datos de tus leads de manera rápida y eficiente, a través de una misma comunicación en distintos canales. Luego, recibe la información en tu CRM de forma inmediata.',
     // urlcontact: '/contact/?service=crm&solution=quick-start',
     urlcontact: '/contact/?service=crm&solution=default',
+    eventName: 'interes_servicio_crm',
     urlpage: '/contact/?service=crm&solution=default'
   },
   {
@@ -51,6 +55,7 @@ export const crmSolutions = [
       'Evalúa tus leads al momento de capturarlos para determinar su grado de afinidad con la propuesta de valor de tu empresa. Además, a través de machine learning (ML), se utilizan modelos predictivos para analizar datos de clientes actuales a partir de interacciones previas, para predecir los comportamientos futuros.',
     // urlcontact: '/contact/?service=crm&solution=quick-start',
     urlcontact: '/contact/?service=crm&solution=default',
+    eventName: 'interes_servicio_crm',
     urlpage: '/contact/?service=crm&solution=default'
   }
 ]
