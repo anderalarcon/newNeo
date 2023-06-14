@@ -30,6 +30,15 @@ const Header = ({ urlHasUtm, router }) => {
     })
   }
 
+  const handleGTagEvent2 = (e, link, eventName) => {
+    e.preventDefault()
+    window.gtag('event', eventName, {
+      event_label: link,
+      transport_type: 'beacon',
+      event_callback: function () { document.location = link }
+    })
+  }
+
   const utmParams = {}
   if (urlHasUtm) {
     for (const key in router.query) {
@@ -78,7 +87,12 @@ const Header = ({ urlHasUtm, router }) => {
                     key={uuid()}
                   >
                     <img src={item.icon} alt={item.text} />
-                    <a href={item.link}>{item.text}</a>
+                    <a
+                      href={item.link}
+                      onClick={(e) => handleGTagEvent2(e, item.link, item.eventName)}
+                    >
+                      {item.text}
+                    </a>
                   </li>
                 ))}
               </ul>

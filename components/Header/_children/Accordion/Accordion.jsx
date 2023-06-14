@@ -6,6 +6,14 @@ import uuid from 'react-uuid'
 import PropTypes from 'prop-types'
 
 const Accordion = ({ data }) => {
+  const handleGTagEvent = (e, link, eventName) => {
+    e.preventDefault()
+    window.gtag('event', eventName, {
+      event_label: link,
+      transport_type: 'beacon',
+      event_callback: function () { document.location = link }
+    })
+  }
   const [selected, setSelected] = useState(0)
   const toggle = (i) => {
     if (selected === i) {
@@ -63,6 +71,7 @@ const Accordion = ({ data }) => {
                   className={style.accordion_container_menu_item_icon}
                 />
                 <a
+                  onClick={(e) => handleGTagEvent(e, li.link, li.eventName)}
                   href={li.link}
                   className={style.accordion_container_menu_item_link}
                 >
