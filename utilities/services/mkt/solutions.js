@@ -7,7 +7,7 @@ export const mktSolutions = [
     // urlpage: '/localized_files_2/es_pe/servicios/mkt/reporting_roi/'
     // urlcontact: '/contact/?service=mkt-automation&solution=default',
     eventName: 'interes_servicio_marketing_automation',
-    urlpage: 'pe/servicios/marketing-automation/reporting-roi-automatizado-360-marketing-automation'
+    urlpage: '/pe/servicios/marketing-automation/reporting-roi-automatizado-360-marketing-automation'
   },
   {
     solution: 'Automatización de leads para Remarketing',

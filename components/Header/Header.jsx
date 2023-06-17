@@ -13,29 +13,9 @@ import PropTypes from 'prop-types'
 // import TagManager from 'react-gtm-module'
 
 const Header = ({ urlHasUtm, router }) => {
-  // function handleButtonClick () {
-  //   window.dataLayer = window.dataLayer || []
-  //   window.dataLayer.push({
-  //     event: 'interes_contacto',
-  //     // buttonName: 'myButton'
-  //     event_name: 'interes_contacto'
-  //   })
-
-  //   console.log('evnet firesd')
-  // }
-
   const handleGTagEvent = (link) => {
     window.gtag('event', 'interes_contacto', {
       event_name: 'interes_contacto'
-    })
-  }
-
-  const handleGTagEvent2 = (e, link, eventName) => {
-    e.preventDefault()
-    window.gtag('event', eventName, {
-      event_label: link,
-      transport_type: 'beacon',
-      event_callback: function () { document.location = link }
     })
   }
 
@@ -89,7 +69,6 @@ const Header = ({ urlHasUtm, router }) => {
                     <img src={item.icon} alt={item.text} />
                     <a
                       href={item.link}
-                      onClick={(e) => handleGTagEvent2(e, item.link, item.eventName)}
                     >
                       {item.text}
                     </a>

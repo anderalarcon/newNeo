@@ -21,50 +21,42 @@ export const AccordionData = [
       {
         link: '/pe/servicios/canales-digitales-y-growth-hacking',
         text: 'Canales digitales y Growth Hacking',
-        icon: laptop.src,
-        eventName: 'interes_servicio_canales_digitales'
+        icon: laptop.src
       },
       {
         link: '/pe/servicios/consultoria-ecommerce',
         text: 'E-commerce',
-        icon: basket.src,
-        eventName: 'interes_servicio_ecommerce'
+        icon: basket.src
       },
       {
         link: '/pe/servicios/headhunting-y-mentoring',
         text: 'Headhunting y Mentoring',
-        icon: nodeUser.src,
-        eventName: 'interes_servicio_headhunting'
+        icon: nodeUser.src
       },
       {
         link: '/pe/servicios/consultoria-customer-relationship-management',
         text: 'Consultoría CRM',
-        icon: consult.src,
-        eventName: 'interes_servicio_crm'
+        icon: consult.src
       },
       {
         link: '/pe/servicios/analitica-digital-inteligencia-artificial',
         text: 'Analítica Digital e Inteligencia Artificial',
-        icon: rise.src,
-        eventName: 'interes_servicio_analítica_digital'
+        icon: rise.src
       },
       {
         link: '/pe/servicios/experience-design',
         text: 'Diseño de experiencia',
-        icon: sync.src,
-        eventName: 'interes_servicio_esperience_design'
+        icon: sync.src
       },
       {
         link: '/pe/servicios/digital-advertising',
         text: 'Publicidad Digital',
-        icon: stats.src,
-        eventName: 'interes_servicio_publicidad_digital'
+        icon: stats.src
       },
       {
         link: '/pe/servicios/marketing-automation',
         text: 'Marketing Automation',
-        icon: techInfo.src,
-        eventName: 'interes_servicio_marketing_automation'
+        icon: techInfo.src
       }
     ]
   },
