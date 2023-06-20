@@ -26,7 +26,7 @@ const Bcorp = () => {
             la sociedad y las personas, junto a un equipo que comparte los
             mismos valores.
           </p>
-          <Link className={style.bcorp_container_left_link} target='_blank' href={'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Reporte%20de%20sostenibilidad%20NEO%202022.pdf'}>
+          <Link className={style.bcorp_container_left_link} target='_blank' href={'https://neoconsulting.ai/reportes-de-sostenibilidad'}>
             Descarga informe de impacto <img src={arrow.src} width={'20'} height={'20'} />
           </Link>
         </div>

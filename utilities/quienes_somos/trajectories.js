@@ -12,7 +12,6 @@ export const trajectoriesHome = [
     text: 'empresas en más de 15 sectores distintos'
   },
   {
-    // stat: 800,
     stat: 700,
     text: 'proyectos ejecutados en los últimos 5 años'
   }

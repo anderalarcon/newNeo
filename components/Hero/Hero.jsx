@@ -245,18 +245,15 @@ const Hero = ({ urlHasUtm, router }) => {
                   <h1
                     className={`${style.hero_container_view_title} ${style.hero_container_view_second_title}`}
                   >
-                    Reporte Regional Ecommerce | Resumen 2022
+                    Reporte E-commerce Q1 - 2023
                   </h1>
                   <p className={style.hero_container_view_second_left_desc}>
-                    Nuestro Reporte te trae un análisis de los más importantes
-                    indicadores digitales y de Ecommerce en latinoamérica, así
-                    como de las tendencias en comercio electrónico. Descarga el
-                    reporte y revisa la información completa.
+                    Este 2023 ha comenzado con la búsqueda de eficiencia en las empresas y proyecciones sumamente optimistas frente al crecimiento del mercado. Nuestro “Reporte Regional de E-commerce 2023” te trae el análisis de la industria y las tendencias de comercio electrónico que marcarán el resto del año. Descarga el reporte y revisa la información completa.
                   </p>
                   <Link
                     className={style.hero_container_view_buttons_contact}
                     href={
-                      'https://neoconsulting.ai/reporte_regional_ecommerce_2022'
+                      'https://neoconsulting.ai/Reporte-E-commerce-Q1-2023'
                     }
                   >
                     Descargar gratis

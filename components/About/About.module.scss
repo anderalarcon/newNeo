@@ -98,7 +98,7 @@
           width: 200%;
           padding-top: 64px;
           position: absolute;
-          animation: marquee 16s linear infinite;
+          animation: marquee 70s linear infinite;
         }
 
         &_part {
@@ -119,6 +119,6 @@
     left: 0;
   }
   100% {
-    left: -100%;
+    left: -400%;
   }
 }

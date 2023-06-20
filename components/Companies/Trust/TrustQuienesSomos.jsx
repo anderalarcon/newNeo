@@ -13,10 +13,10 @@ const Partners = () => {
   return (
     // Seccion de prueba
     <div className={style.companies2}>
-        <h2 className={style.companies_title}>
+        <h2 className={style.companies2_title}>
           Neos en el mundo
         </h2>
-        <p className={style.companies_subtitle}>
+        <p className={style.companies2_subtitle}>
           Contamos con un equipo humano especialista en digital trabajando desde diferentes ciudades del mundo.
         </p>
       <div className={style.sliderrr}>

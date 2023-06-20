@@ -7,6 +7,8 @@ const Stats = ({ trajectory }) => {
   const intervalIdRef = useRef(null)
   const counterRef = useRef(null)
 
+  const incrementValue = trajectory.stat > 500 ? 10 : 1
+
   // Start the counter only when the component comes into view
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -14,8 +16,8 @@ const Stats = ({ trajectory }) => {
         if (entry.isIntersecting) {
           if (count < parseInt(trajectory.stat)) {
             intervalIdRef.current = setInterval(() => {
-              setCount((count) => count + 1)
-            }, 20)
+              setCount((count) => count + incrementValue)
+            }, Math.max(5, (2000 / trajectory.stat)))
           }
         } else {
           clearInterval(intervalIdRef.current)
@@ -47,5 +49,5 @@ const Stats = ({ trajectory }) => {
 
 export default Stats
 Stats.propTypes = {
-  trajectory: PropTypes.array
+  trajectory: PropTypes.object.isRequired
 }

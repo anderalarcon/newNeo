@@ -42,7 +42,7 @@ const Footer = () => {
       title: 'Somos NEO',
       ul: [
         { link: 'https://neoconsulting.ai/quienes-somos', text: 'Sobre nosotros' },
-        { link: 'https://neo-consulting-s-a-c.breezy.hr/', text: 'Bolsa de trabajo' },
+        { link: 'https://neo-consulting-s-a-c.breezy.hr/', text: 'Trabaja en NEO' },
         { link: 'https://wordpress.neoconsulting.ai/wp-content/uploads/2022/06/Reporte-de-Sostenibilidad-2021-Neo-Consulting.pdf', text: 'Guía Bcorp' }
       ]
     },

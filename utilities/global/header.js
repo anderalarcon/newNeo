@@ -19,9 +19,24 @@ export const AccordionData = [
     title: 'Servicios',
     ul: [
       {
+        link: '/pe/servicios/analitica-digital-inteligencia-artificial',
+        text: 'Analítica Digital e Inteligencia Artificial',
+        icon: rise.src
+      },
+      {
         link: '/pe/servicios/canales-digitales-y-growth-hacking',
         text: 'Canales digitales y Growth Hacking',
         icon: laptop.src
+      },
+      {
+        link: '/pe/servicios/consultoria-customer-relationship-management',
+        text: 'Consultoría CRM',
+        icon: consult.src
+      },
+      {
+        link: '/pe/servicios/experience-design',
+        text: 'Diseño de experiencia y transformación digital',
+        icon: sync.src
       },
       {
         link: '/pe/servicios/consultoria-ecommerce',
@@ -34,29 +49,14 @@ export const AccordionData = [
         icon: nodeUser.src
       },
       {
-        link: '/pe/servicios/consultoria-customer-relationship-management',
-        text: 'Consultoría CRM',
-        icon: consult.src
-      },
-      {
-        link: '/pe/servicios/analitica-digital-inteligencia-artificial',
-        text: 'Analítica Digital e Inteligencia Artificial',
-        icon: rise.src
-      },
-      {
-        link: '/pe/servicios/experience-design',
-        text: 'Diseño de experiencia',
-        icon: sync.src
+        link: '/pe/servicios/marketing-automation',
+        text: 'Marketing Automation',
+        icon: techInfo.src
       },
       {
         link: '/pe/servicios/digital-advertising',
         text: 'Publicidad Digital',
         icon: stats.src
-      },
-      {
-        link: '/pe/servicios/marketing-automation',
-        text: 'Marketing Automation',
-        icon: techInfo.src
       }
     ]
   },
@@ -84,7 +84,7 @@ export const AccordionData = [
     title: 'Recursos',
     ul: [
       {
-        link: 'https://neoconsulting.ai/recursos-digitales/',
+        link: 'https://neoconsulting.ai/descargables/',
         text: 'Descargables',
         icon: download.src
       },
@@ -105,11 +105,11 @@ export const AccordionData = [
       },
       {
         link: 'https://neo-consulting-s-a-c.breezy.hr/',
-        text: 'Trabaja con nosotros',
+        text: 'Trabaja en NEO',
         icon: trabaja.src
       },
       {
-        link: 'https://wordpress.neoconsulting.ai/wp-content/uploads/2022/06/Reporte-de-Sostenibilidad-2021-Neo-Consulting.pdf',
+        link: 'https://neoconsulting.ai/reportes-de-sostenibilidad',
         text: 'Reporte Bcorp',
         icon: bcorp.src
       }
