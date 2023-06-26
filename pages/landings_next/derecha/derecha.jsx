@@ -6,9 +6,9 @@ import Trust from '../../../components/Companies/Trust/Trust'
 import Footer from '../../../components/Footer/Footer'
 import Der from '../../../components/IzqDer/Der'
 
-import Hero from '../../../components/HeoLandingsSeparate/Heroizq'
+import Hero from '../../../components/HeoLandingsSeparate/Heroder'
 
-import { dataHeroAws } from '../../../utilities/landings_next/izq/hero'
+import { dataHeroAws } from '../../../utilities/landings_next/der/hero'
 import { trajectoriesHome } from '../../../utilities/quienes_somos/trajectories'
 import { canalesCases } from '../../../utilities/services/canales/cases'
 
@@ -16,10 +16,10 @@ const derecha = () => {
   return (
     <>
     <Head>
-        <title>Quienes Somos</title>
+        <title>Soluciones en diseño de experiencia I Neo Consulting</title>
         <meta
           name="description"
-          content="Descrubre mas sobre nosotros"
+          content="Soluciones en diseño de experiencia I Neo Consulting"
         />
 
         <meta charset="utf-8" />
@@ -29,15 +29,20 @@ const derecha = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Quienes Somos"
+          content="Soluciones en diseño de experiencia I Neo Consulting"
         />
         <meta
           property="og:description"
-          content="Descrubre mas sobre nosotros"
+          content="Soluciones en diseño de experiencia I Neo Consulting"
         />
         <script defer src="/js/gtm.js"></script>
         <script defer src="/js/hotjar.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+        <meta
+          property="og:image"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/06/der.png"
+        />
     </Head>
     <Header />
     <Hero data={dataHeroAws} />

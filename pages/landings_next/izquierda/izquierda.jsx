@@ -16,10 +16,10 @@ const izquierda = () => {
   return (
     <>
     <Head>
-        <title>Quienes Somos</title>
+        <title>Soluciones en data e inteligencia artificial I Neo Consulting</title>
         <meta
           name="description"
-          content="Descrubre mas sobre nosotros"
+          content="Soluciones en data e inteligencia artificial I Neo Consulting"
         />
 
         <meta charset="utf-8" />
@@ -29,15 +29,20 @@ const izquierda = () => {
         <meta property="og:type" content="website" />
         <meta
           property="og:title"
-          content="Quienes Somos"
+          content="Soluciones en data e inteligencia artificial I Neo Consulting"
         />
         <meta
           property="og:description"
-          content="Descrubre mas sobre nosotros"
+          content="Soluciones en data e inteligencia artificial I Neo Consulting"
         />
         <script defer src="/js/gtm.js"></script>
         <script defer src="/js/hotjar.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
+
+        <meta
+          property="og:image"
+          content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/06/izq.png"
+        />
     </Head>
     <Header />
     <Hero data={dataHeroAws} />
