@@ -1,0 +1,141 @@
+@import '../../styles/mixins.module.scss';
+@import '../../styles/variables.module.scss';
+
+.section {
+  padding: 0px 16px;
+  @media screen and (min-width: 1538px) {
+    padding: 0px 143px;
+  }
+}
+
+.hero_nds {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 48px;
+  align-items: center;
+  @media screen and (min-width: 1024px) {
+    margin-top: 0px;
+    gap: 4%;
+  }
+  &_left {
+    @media screen and (min-width: 1024px) {
+      width: 48%;
+    }
+    &_title {
+      font-family: "Montserrat Bold";
+      font-size: 28px;
+      line-height: 34px;
+      text-align: center;
+      margin-bottom: 8px;
+      @media screen and (min-width: 1024px) {
+        font-size: 64px;
+        text-align: start;
+        line-height: 76px;
+      }
+    }
+    &_subtitle {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      text-align: center;
+      margin-bottom: 16px;
+      @media screen and (min-width: 1024px) {
+        font-size: 18px;
+        text-align: start;
+      }
+    }
+    &_description {
+      text-align: center;
+      margin-bottom: 24px;
+      @media screen and (min-width: 1024px) {
+        font-size: 18px;
+        text-align: start;
+      }
+    }
+    &_container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      @media screen and (min-width: 1024px) {
+        justify-content: start;
+      }
+      &_anchor {
+        display: block;
+        @media screen and (min-width: 1024px) {
+          display: none;
+        }
+      }
+
+      &_button_1 {
+        font-family: "Montserrat Bold";
+        font-size: 14px;
+        color: white;
+        width: 162px;
+        height: 32px;
+        background-color: #009ad1;
+        border-radius: 8px;
+        border: none;
+        cursor: pointer;
+        @media screen and (min-width: 1024px) {
+          font-size: 18px;
+          width: 199px;
+          height: 56px;
+        }
+      }
+      &_button_2 {
+        font-size: 14px;
+        line-height: 16px;
+        font-family: "Montserrat Bold";
+        background-color: white;
+        font-size: 14px;
+        width: 162px;
+        height: 32px;
+        border-radius: 8px;
+        border: 1px solid #000033;
+        cursor: pointer;
+
+        @media screen and (min-width: 1024px) {
+          font-size: 18px;
+          width: 199px;
+          height: 56px;
+        }
+      }
+    }
+    &_image {
+      margin-top: 42px;
+      text-align: center;
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+      &_img {
+        width: 100%;
+        max-width: 100%;
+        @media screen and (min-width: 768px) {
+          width: 50%;
+        }
+      }
+    }
+  }
+  &_right {
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    @media screen and (min-width: 1024px) {
+      width: 48%;
+      display: block;
+    }
+  }
+  &_right-2 {
+    display: none;
+    margin: 3rem auto;
+    border-radius: 16px;
+    padding: 1.5rem;
+    color: white;
+    box-shadow: 0px 36px 64px rgba(0, 0, 51, 0.2);
+    @media screen and (min-width: 1024px) {
+      width: 48%;
+      display: block;
+    }
+  }
+}
