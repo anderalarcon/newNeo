@@ -72,8 +72,7 @@ const Hero = ({ urlHasUtm, router }) => {
                 </span>
               </div>
               <h1 className={style.hero_container_view_title}>
-                Unimos la data y el diseño centrado en el usuario para obtener
-                resultados de negocio
+                Aumentamos tus ventas digitales utilizando data e inteligencia artificial.
               </h1>
               <div className={style.hero_container_view_buttons}>
                 <Link

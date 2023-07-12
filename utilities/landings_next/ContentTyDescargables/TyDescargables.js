@@ -51,6 +51,13 @@ export const ReporteRegionalDescargable = {
   textoChapter: AnalyticsTexto
 }
 
+export const ReporteDesempenoMarketplace = {
+  tituloDescargable: 'Reporte Desempeño digital de los Marketplaces en Perú',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Julio%202023_Reporte%20Marketplaces_NEO%20CONSULTING.pdf',
+  ImgChapter: AnalyticsSVG,
+  textoChapter: AnalyticsTexto
+}
+
 // export const XdDescargable1 = {
 //   tituloDescargable: '',
 //   linkDescargable: '',
