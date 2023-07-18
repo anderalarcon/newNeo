@@ -11,7 +11,7 @@ export const daCases = [
       'Descubre cómo la compañía de Seguros Rímac incrementó la venta de su producto SOAT en 3.63% con una reducción de inversión en publicidad digital junto al equipo de Neo Consulting.',
     img: rimacImg,
     imgMob: rimacImg,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/rimac_seguros_ventas_soat'
   },
   {
     type: 'Caso de éxito',
@@ -20,7 +20,7 @@ export const daCases = [
       'Belcorp, en el año 2019, construyó junto a Neo Consulting la nueva app, Gana+, una plataforma con diseño UX de altos estándares que les permitiera levantar insights de sus consultoras.',
     img: belcorpImg,
     imgMob: belcorpImgMob,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/belcorp_automatizacion_de_modelos_predictivos'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/belcorp_automatizacion_de_modelos_predictivos'
   },
   {
     type: 'Caso de éxito',
@@ -31,7 +31,7 @@ export const daCases = [
     img: entelDesktop,
     imgMob: entelDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/entel_auditoria_seo_aumento_trafico_organico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/entel_auditoria_seo_aumento_trafico_organico'
   },
   {
     type: 'Caso de éxito',
@@ -42,6 +42,6 @@ export const daCases = [
     img: ferreycorpDesktop,
     imgMob: ferreycorpDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/ferreycorp_incrementa_posicionamiento_y_trafico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/ferreycorp_incrementa_posicionamiento_y_trafico'
   }
 ]

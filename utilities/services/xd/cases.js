@@ -16,7 +16,7 @@ export const xdCases = [
     img: naturaDesktop,
     imgMob: naturaDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/natura_diseno_governance_de_innovacion'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/natura_diseno_governance_de_innovacion'
   },
   {
     type: 'Caso de éxito',
@@ -26,7 +26,7 @@ export const xdCases = [
     img: cardifDesktop,
     imgMob: cardifDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/cardif_crecimiento_ecosistemas_digitales'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/cardif_crecimiento_ecosistemas_digitales'
   },
   {
     type: 'Caso de éxito',
@@ -36,7 +36,7 @@ export const xdCases = [
     img: cibertecDesktop,
     imgMob: cibertecDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/cibertec_rediseno_web'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/cibertec_rediseno_web'
   },
   {
     type: 'Caso de éxito',
@@ -46,7 +46,7 @@ export const xdCases = [
     img: incarailDesktop,
     imgMob: incarailDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/incarail_optimizacion_ux'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/incarail_optimizacion_ux'
   },
   {
     type: 'Caso de éxito',
@@ -56,7 +56,7 @@ export const xdCases = [
     img: movilDesktop,
     imgMob: movilDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/mobil_estrategia_digital'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/mobil_estrategia_digital'
   },
   {
     type: 'Caso de éxito',
@@ -66,7 +66,7 @@ export const xdCases = [
     img: soksoDesktop,
     imgMob: soksoDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/transformacion_digital_sokso'
   },
   {
     type: 'Caso de éxito',
@@ -75,6 +75,6 @@ export const xdCases = [
       'Belcorp, en el año 2019, construyó junto a Neo Consulting la nueva app, Gana+, una plataforma con diseño UX de altos estándares que les permitiera levantar insights de sus consultoras.',
     img: belcorpImg,
     imgMob: belcorpImgMob,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/belcorp_automatizacion_de_modelos_predictivos'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/belcorp_automatizacion_de_modelos_predictivos'
   }
 ]

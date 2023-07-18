@@ -11,7 +11,7 @@ export const mktCases = [
       'Belcorp, en el año 2019, construyó junto a Neo Consulting la nueva app, Gana+, una plataforma con diseño UX de altos estándares que les permitiera levantar insights de sus consultoras.',
     img: belcorpImg,
     imgMob: belcorpImgMob,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/belcorp_automatizacion_de_modelos_predictivos'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/belcorp_automatizacion_de_modelos_predictivos'
   },
   {
     type: 'Caso de éxito',
@@ -22,7 +22,7 @@ export const mktCases = [
     img: entelDesktop,
     imgMob: entelDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/entel_auditoria_seo_aumento_trafico_organico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/entel_auditoria_seo_aumento_trafico_organico'
   },
   {
     type: 'Caso de éxito',
@@ -33,7 +33,7 @@ export const mktCases = [
     img: ferreycorpDesktop,
     imgMob: ferreycorpDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/ferreycorp_incrementa_posicionamiento_y_trafico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/ferreycorp_incrementa_posicionamiento_y_trafico'
   },
   {
     type: 'Caso de éxito',
@@ -43,6 +43,6 @@ export const mktCases = [
     img: soksoDesktop,
     imgMob: soksoDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/transformacion_digital_sokso'
   }
 ]

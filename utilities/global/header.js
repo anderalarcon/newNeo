@@ -117,7 +117,7 @@ export const AccordionData = [
   },
   {
     title: 'Casos de éxito',
-    link: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/'
+    link: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/'
   },
   { title: 'Blog', link: 'https://neoconsulting.ai/blog-neo' }
 ]

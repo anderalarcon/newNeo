@@ -37,7 +37,7 @@ const Content404 = () => {
               </div>
             </button>
           </Link>
-          <Link href="https://neoconsulting.ai/casos-de-exito-neo-consulting/">
+          <Link href="https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/">
             <button className={style.content_container_botones_boton2}>
               <div className={style.content_container_botones_boton1_link} href="google.com">
                 <img src={icon3.src} width={25} alt="" />

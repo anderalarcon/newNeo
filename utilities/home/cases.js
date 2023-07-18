@@ -17,7 +17,7 @@ export const peruCases = [
     img: naturaDesktop,
     imgMob: naturaDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/natura_diseno_governance_de_innovacion'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/natura_diseno_governance_de_innovacion'
   },
   {
     type: 'Caso de éxito',
@@ -28,7 +28,7 @@ export const peruCases = [
     img: shopstarDesktop,
     imgMob: shopstarDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/shopstar_integracion_arquitectura_de_datos_GCP'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/shopstar_integracion_arquitectura_de_datos_GCP'
   },
   {
     type: 'Caso de éxito',
@@ -39,7 +39,7 @@ export const peruCases = [
     img: roasDesktop,
     imgMob: roasDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_incremento_ventas_polizas'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/rimac_seguros_incremento_ventas_polizas'
   },
   {
     type: 'Caso de éxito',
@@ -50,7 +50,7 @@ export const peruCases = [
     img: rimacDesktop,
     imgMob: rimacDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/rimac_seguros_ventas_soat'
   },
   {
     type: 'Caso de éxito',
@@ -59,7 +59,7 @@ export const peruCases = [
       'Belcorp, en el año 2019, construyó junto a Neo Consulting la nueva app, Gana+, una plataforma con diseño UX de altos estándares que les permitiera levantar insights de sus consultoras.',
     img: belcorpImg,
     imgMob: belcorpImgMob,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/belcorp_automatizacion_de_modelos_predictivos'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/belcorp_automatizacion_de_modelos_predictivos'
   },
   {
     type: 'Caso de éxito',
@@ -69,7 +69,7 @@ export const peruCases = [
     img: soksoDesktop,
     imgMob: soksoDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/transformacion_digital_sokso'
   },
   {
     type: 'Caso de éxito',
@@ -80,6 +80,6 @@ export const peruCases = [
     img: alicorpDesktop,
     imgMob: alicorpDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/alicorp_implementacion_GMP_GCP'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/alicorp_implementacion_GMP_GCP'
   }
 ]

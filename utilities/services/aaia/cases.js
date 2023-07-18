@@ -10,7 +10,7 @@ export const aaiaCases = [
       'Explora cómo Neo Consulting creó una solución automatizada para que la entidad bancaria pueda tomar desiciones en base al sentiment analysis del cliente y personalizar sus respuestas en base a la satisfacción.',
     img: bcpDesktop,
     imgMob: bcpDesktop,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/bcp_user_feedback_analysis'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/bcp_user_feedback_analysis'
   },
   {
     type: 'Caso de éxito',
@@ -21,7 +21,7 @@ export const aaiaCases = [
     img: entelDesktop,
     imgMob: entelDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/entel_auditoria_seo_aumento_trafico_organico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/entel_auditoria_seo_aumento_trafico_organico'
   },
   {
     type: 'Caso de éxito',
@@ -32,7 +32,7 @@ export const aaiaCases = [
     img: ferreycorpDesktop,
     imgMob: ferreycorpDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/ferreycorp_incrementa_posicionamiento_y_trafico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/ferreycorp_incrementa_posicionamiento_y_trafico'
   },
   {
     type: 'Caso de éxito',
@@ -42,6 +42,6 @@ export const aaiaCases = [
     img: soksoDesktop,
     imgMob: soksoDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/transformacion_digital_sokso'
   }
 ]

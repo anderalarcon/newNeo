@@ -16,7 +16,7 @@ export const recommendations = [
     logoClient: diegoNasra.src,
     nameClient: 'Diego Nasra',
     chargeClient: 'Product Owner, BCP',
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/bcp_aumenta_15_veces_ventas_digitales_one_click_cross_sell'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/bcp_aumenta_15_veces_ventas_digitales_one_click_cross_sell'
   },
   {
     logoCompany: logoRimac.src,
@@ -25,7 +25,7 @@ export const recommendations = [
     logoClient: nataliaOrtis.src,
     nameClient: 'Natalia Ortiz Velásquez',
     chargeClient: 'Líder de Venta Digital',
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/rimac_seguros_ventas_soat'
   },
   {
     logoCompany: logoProtecta.src,
@@ -34,6 +34,6 @@ export const recommendations = [
     logoClient: rocioMerino.src,
     nameClient: 'Rocío Merino Loredo',
     chargeClient: 'Subgerente de Marketing y CX, Protecta',
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/protecta_aumenta_venta_de_soats'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/protecta_aumenta_venta_de_soats'
   }
 ]

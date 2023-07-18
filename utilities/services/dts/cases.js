@@ -11,7 +11,7 @@ export const dtsCases = [
       'Descubre cómo la compañía de Seguros Rímac incrementó la venta de su producto SOAT en 3.63% con una reducción de inversión en publicidad digital junto al equipo de Neo Consulting.',
     img: rimacImg,
     imgMob: rimacImg,
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/rimac_seguros_ventas_soat'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/rimac_seguros_ventas_soat'
   },
   {
     type: 'Caso de éxito',
@@ -22,7 +22,7 @@ export const dtsCases = [
     img: entelDesktop,
     imgMob: entelDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/entel_auditoria_seo_aumento_trafico_organico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/entel_auditoria_seo_aumento_trafico_organico'
   },
   {
     type: 'Caso de éxito',
@@ -33,7 +33,7 @@ export const dtsCases = [
     img: ferreycorpDesktop,
     imgMob: ferreycorpDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/ferreycorp_incrementa_posicionamiento_y_trafico'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/ferreycorp_incrementa_posicionamiento_y_trafico'
   },
   {
     type: 'Caso de éxito',
@@ -43,6 +43,6 @@ export const dtsCases = [
     img: soksoDesktop,
     imgMob: soksoDesktop,
 
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting/transformacion_digital_sokso'
+    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/transformacion_digital_sokso'
   }
 ]
