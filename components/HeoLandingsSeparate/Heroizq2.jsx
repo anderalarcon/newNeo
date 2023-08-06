@@ -69,7 +69,7 @@ const Hero = ({ data, isSolution = false }) => {
             <h3 className={style.hero_container_right_img_title}>Déjanos tus datos</h3>
           <Form
             portalId={'21198826'}
-            formId={'f3c16fee-044e-42c5-8985-c9ea4d7f7c20'}
+            formId={'ba176b65-93d1-4003-98e5-bbd510076c65'}
           />
           </div>
         </div>

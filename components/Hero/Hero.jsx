@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import style from './Hero.module.scss'
 import view1Desk from '../../public/assets/Hero/view-1-desktoppp.png'
-import view2Desk from '../../public/assets/Hero/view-2-desktop.png'
+import view2Desk from '../../public/assets/Hero/banner_desempeno.png'
 import arrowRight from '../../public/assets/Hero/arrow-right-white.svg'
 import { Navigation, Pagination, A11y } from 'swiper'
 import PropTypes from 'prop-types'
@@ -244,15 +244,15 @@ const Hero = ({ urlHasUtm, router }) => {
                   <h1
                     className={`${style.hero_container_view_title} ${style.hero_container_view_second_title}`}
                   >
-                    Reporte E-commerce Q1 - 2023
+                    Reporte Desempeño digital de los Marketplaces en Perú
                   </h1>
                   <p className={style.hero_container_view_second_left_desc}>
-                    Este 2023 ha comenzado con la búsqueda de eficiencia en las empresas y proyecciones sumamente optimistas frente al crecimiento del mercado. Nuestro “Reporte Regional de E-commerce 2023” te trae el análisis de la industria y las tendencias de comercio electrónico que marcarán el resto del año. Descarga el reporte y revisa la información completa.
+                    Este reporte proporciona un análisis del desempeño digital de los principales marketplaces y comercios electrónicos en Perú. Así como también brinda insights de los factores que impulsan su crecimiento, los desafíos que enfrentan y las oportunidades existentes para potenciar su expansión.
                   </p>
                   <Link
                     className={style.hero_container_view_buttons_contact}
                     href={
-                      'https://neoconsulting.ai/Reporte-E-commerce-Q1-2023'
+                      'https://neoconsulting.ai/reporte-desempeno-digital-marketplaces-peru-2023'
                     }
                   >
                     Descargar gratis

@@ -1,0 +1,203 @@
+@import "../../styles/variables.module.scss";
+@import "../../styles/mixins.module.scss";
+
+.section{
+    margin: 0rem auto;
+    max-width: 100%;
+    @include breakpoint(widescreen) {
+        max-width: 1900px;
+    }
+
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        @include breakpoint(widescreen) {
+            gap: 7rem;
+        }
+
+        &_pa1{
+            background: var(--500-bg-page, #F4F2FA);
+            padding: 4rem 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            @include breakpoint(widescreen) {
+                gap: 3rem;
+            }
+
+            &_titulo{
+                font-family: "Tiempos Headline Medium";
+                font-size: 2rem;
+                @include breakpoint(widescreen){
+                    font-size: 3rem;
+                    max-width: 65rem;
+                }
+            }
+            &_dedicatoria{
+                font-family: "Montserrat Regular";
+                font-size: 1.5rem;
+                @include breakpoint(widescreen){
+                    font-size: 2rem;
+                    max-width: 65rem;
+                }
+            }
+            &_subtitulo{
+                font-family: "Montserrat Regular";
+                font-size: 1rem;
+                color: var(--primary-600-secondary, #4D4D70);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                @include breakpoint(widescreen){
+                    font-size: 1.5rem;
+                    max-width: 50rem;
+                    line-height: 150%
+                }
+            }
+            &_boton{
+                border-radius: 0.49106rem;
+                background: var(--accent-500-base, #05058C);
+                padding: 0.5rem 2rem;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 600;
+                text-decoration-line: underline;
+                cursor: pointer;
+                @include breakpoint(widescreen){
+                    font-size: 1.5rem;
+                    padding: 0.8rem 2rem;
+                }            
+            }  
+        }
+
+        &_pa2{
+            padding: 0rem 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            @include breakpoint(widescreen) {
+                gap: 3rem;
+            }
+            &_titulo{
+                font-family: "Tiempos Headline Regular";
+                font-size: 1.5rem;
+                @include breakpoint(widescreen){
+                    font-size: 2.5rem;
+                    max-width: 50rem;
+                }
+            }
+
+            &_imagen{
+                width: 90%;
+                @include breakpoint(widescreen){
+                    width: 50%;
+                }
+            }
+        }
+
+        &_pa3{
+            padding: 0rem 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+            @include breakpoint(widescreen) {
+                margin-bottom: 6rem;
+                gap: 3rem;
+            }
+            &_titulo{
+                font-family: "Montserrat Regular";
+                font-size: 0.8rem;
+                @include breakpoint(widescreen){
+                    font-size: 1.5rem;
+                    max-width: 65rem;
+                }
+            }
+            &_imagen{
+                width: 90%;
+                @include breakpoint(widescreen){
+                    width: 50%;
+                }
+            }
+        }
+
+        &_pafinal{
+            background: var(--500-bg-page, #F4F2FA);
+            margin-top: -2rem;
+            margin-bottom: 3rem;
+            padding: 4rem 1rem;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            gap: 1.5rem;
+            @include breakpoint(widescreen) {
+                gap: 3rem;
+            }
+
+            &_titulo{
+                font-family: "Tiempos Headline Medium";
+                font-size: 2rem;
+                @include breakpoint(widescreen){
+                    font-size: 3rem;
+                    max-width: 65rem;
+                }
+            }
+            &_dedicatoria{
+                font-family: "Montserrat Regular";
+                font-size: 1.5rem;
+                @include breakpoint(widescreen){
+                    font-size: 2rem;
+                    max-width: 65rem;
+                }
+            }
+            &_subtitulo{
+                font-family: "Montserrat Regular";
+                font-size: 1rem;
+                color: var(--primary-600-secondary, #4D4D70);
+                text-align: center;
+                font-feature-settings: 'clig' off, 'liga' off;
+                @include breakpoint(widescreen){
+                    font-size: 1.5rem;
+                    max-width: 50rem;
+                    line-height: 150%
+                }
+            }
+            &_boton{
+                border-radius: 0.49106rem;
+                background: var(--accent-500-base, #05058C);
+                padding: 0.5rem 2rem;
+                color: #FFF;
+                font-family: Montserrat;
+                font-size: 1.2rem;
+                font-style: normal;
+                font-weight: 600;
+                text-decoration-line: underline;
+                cursor: pointer;
+                @include breakpoint(widescreen){
+                    font-size: 1.5rem;
+                    padding: 0.8rem 2rem;
+                }            
+            }  
+        }
+
+    }
+}

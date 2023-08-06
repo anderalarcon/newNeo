@@ -53,9 +53,16 @@ export const ReporteRegionalDescargable = {
 
 export const ReporteDesempenoMarketplace = {
   tituloDescargable: 'Reporte Desempeño digital de los Marketplaces en Perú',
-  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Julio%202023_Reporte%20Marketplaces_NEO%20CONSULTING.pdf',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/Descargables%20Neo%20Consulting/Reporte%20de%20marketplaces-27-07-2023.pdf',
   ImgChapter: AnalyticsSVG,
   textoChapter: AnalyticsTexto
+}
+
+export const DaleNombreNats = {
+  tituloDescargable: 'Inteligencia Artificial Generativa para organizaciones públicas',
+  linkDescargable: 'https://www.neoconsulting.ai/hubfs/IA%20Generativa%20para%20Organizaciones%20P%C3%BAblicas.pdf',
+  ImgChapter: AnalyticsSVG,
+  textoChapter: 'Descubre las ventajas del uso de la IA Generativa y como implementarla de forma exitosa'
 }
 
 // export const XdDescargable1 = {

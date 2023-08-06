@@ -66,7 +66,7 @@ const Hero = ({ data, isSolution = false }) => {
         </div>
         <div className={style.hero_container_right}>
           <div className={style.hero_container_right_img}>
-            <h3 className={style.hero_container_right_img_title}>Desarrollamos estrategias optimizadas para lograr conversiones en web o app.</h3>
+            <h3 className={style.hero_container_right_img_title}>Déjanos tus datos</h3>
           <Form
             portalId={'21198826'}
             formId={'ab6bc27f-764c-4b68-a251-d1b7f763ce3e'}
