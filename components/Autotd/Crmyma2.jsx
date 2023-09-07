@@ -9,7 +9,7 @@ const Crmyma2 = () => {
                     <h3 className={style.section_container_pafinal_subtitulo}>
                     Incrementa la proactividad, impulsa la innovación y mejora la experiencia de tus clientes.
                     </h3>
-                    <a target="_blank" href="" rel="noreferrer" >
+                    <a target="_blank" href="https://survey.alchemer.com/s3/7468944/Encuesta-Transformaci-n-Digital" rel="noreferrer" >
                       <button className={style.section_container_pafinal_boton}>
                         Iniciar test
                       </button>

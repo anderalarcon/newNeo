@@ -36,7 +36,7 @@ const Clients = ({ recommendations }) => {
         viewport={{ once: true, amount: 0.1 }}
         variants={fadeIn('up', 'tween', 0, 1)}
       >
-      <h1 className={style.clients_title}>Nuestros clientes nos recomiendan</h1>
+      <h2 className={style.clients_title}>Nuestros clientes nos recomiendan</h2>
       <div className={style.clients_container}>
         <div
           className={`${style.clients_container_swiper_button} ${style.swiper_button_next_cases}`}

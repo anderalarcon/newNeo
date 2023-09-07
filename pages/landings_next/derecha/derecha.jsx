@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import Header from '../../../components/Header/Header'
+import Header from '../../../components/HeaderSimple/Header'
 import Trajectory from '../../../components/Trajectory/Trajectory'
 import SuccessCase from '../../../components/SuccessCase/SuccessCase'
 import Trust from '../../../components/Companies/Trust/Trust'

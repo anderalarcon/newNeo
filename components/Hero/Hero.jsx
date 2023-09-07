@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import style from './Hero.module.scss'
 import view1Desk from '../../public/assets/Hero/view-1-desktoppp.png'
-import view2Desk from '../../public/assets/Hero/banner_desempeno.png'
+import view2Desk from '../../public/assets/Hero/guia_banner.png'
 import arrowRight from '../../public/assets/Hero/arrow-right-white.svg'
 import { Navigation, Pagination, A11y } from 'swiper'
 import PropTypes from 'prop-types'
@@ -72,7 +72,7 @@ const Hero = ({ urlHasUtm, router }) => {
                 </span>
               </div>
               <h1 className={style.hero_container_view_title}>
-                Aumentamos tus ventas digitales utilizando data e inteligencia artificial.
+              Incrementamos tus ventas digitales utilizando data e inteligencia artificial.
               </h1>
               <div className={style.hero_container_view_buttons}>
                 <Link
@@ -241,18 +241,18 @@ const Hero = ({ urlHasUtm, router }) => {
               </div>
               <div className={style.hero_container_view_second}>
                 <div className={style.hero_container_view_second_left}>
-                  <h1
+                  <h4
                     className={`${style.hero_container_view_title} ${style.hero_container_view_second_title}`}
                   >
-                    Reporte Desempeño digital de los Marketplaces en Perú
-                  </h1>
+                    Guía: Política Nacional de Transformación Digital 2030
+                  </h4>
                   <p className={style.hero_container_view_second_left_desc}>
-                    Este reporte proporciona un análisis del desempeño digital de los principales marketplaces y comercios electrónicos en Perú. Así como también brinda insights de los factores que impulsan su crecimiento, los desafíos que enfrentan y las oportunidades existentes para potenciar su expansión.
+                    La Política Nacional de Transformación Digital 2030 propone un Perú más digitalizado y conectado. Conoce más sobre su impacto y cómo promover la digitalización en tu organización con nuestra guía.
                   </p>
                   <Link
                     className={style.hero_container_view_buttons_contact}
                     href={
-                      'https://neoconsulting.ai/reporte-desempeno-digital-marketplaces-peru-2023'
+                      'https://neoconsulting.ai/guia-politica-nacional-2030'
                     }
                   >
                     Descargar gratis

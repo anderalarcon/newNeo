@@ -27,7 +27,7 @@ const Case = ({ type, title, description, img, imgMob, url }) => {
         </div>
         <div className={style.case_container_right}>
           <p className={style.case_container_right_type}>{type}</p>
-          <h2 className={style.case_container_right_title}>{title}</h2>
+          <h3 className={style.case_container_right_title}>{title}</h3>
           <p className={style.case_container_right_description}>
             {description}
           </p>

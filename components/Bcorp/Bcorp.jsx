@@ -17,9 +17,9 @@ const Bcorp = () => {
       >
       <div className={style.bcorp_container}>
         <div className={style.bcorp_container_left}>
-          <h1 className={style.bcorp_container_left_title}>
+          <h2 className={style.bcorp_container_left_title}>
             Nuestro compromiso como B CORP
-          </h1>
+          </h2>
           <p className={style.bcorp_container_left_desc}>
             Usamos el poder de los negocios para desarrollar una economía
             inclusiva y sostenible; generando un triple impacto: en el ambiente,

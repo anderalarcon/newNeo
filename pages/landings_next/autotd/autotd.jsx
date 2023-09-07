@@ -28,7 +28,7 @@ const autotd = () => {
       /> */}
       <meta
         property="og:image"
-        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/05/meta_home.png"
+        content="https://wordpress.neoconsulting.ai/wp-content/uploads/2023/08/transformeta.png"
       />
       <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
     </Head>

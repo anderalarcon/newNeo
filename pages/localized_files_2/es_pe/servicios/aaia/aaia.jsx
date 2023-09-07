@@ -48,7 +48,7 @@ const aaia = () => {
     <Hero data={dataHeroaaia} urlHasUtm={urlHasUtm} router={router} />
     <Vision visions={aaiaVisions} desc='Nuestro diferencial viene de la consultoría y entendimiento del negocio.'/>
     <SolutionsChapter solutions={aaiaSolutions2} filter={true} urlHasUtm={urlHasUtm} router={router} />
-    <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {1} />
+    <Team team={team} chapter={'en Analítica e inteligencia artificial'} startAt = {0} />
     <SuccessCase cases={aaiaCases} />
     <Questions questions={questionsaaia} />
     <Contact service={'aaia'} urlHasUtm={urlHasUtm} router={router} />

@@ -283,7 +283,7 @@
                 &_title{
                     @include breakpoint(widescreen) {
                         margin-bottom: 46px;
-
+                        width: 650px;
                     }
                 }
                 &_left {
@@ -297,7 +297,7 @@
                         @include breakpoint(widescreen) {
                             margin-bottom: 46px;
                             font-size: 20px;
-line-height: 24px;
+                            line-height: 24px;
                         }
                     }
                 }
@@ -319,8 +319,8 @@ line-height: 24px;
                             }
 
                             @include breakpoint(widescreen) {
-                                width: 100%;
-                                max-width: 100%;
+                                width: 120%;
+                                max-width: 120%;
                             }
 
                         }

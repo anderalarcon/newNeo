@@ -5,29 +5,38 @@ import card3 from '../../public/assets/Content/card3.png'
 export const contentHome = [
   {
     img: card1.src,
-    subtitle: 'Experience Design',
-    title: 'Reporte E-commerce  Q1 - 2023',
+    // subtitle: 'Experience Design',
+    title: 'Guía: Política Nacional de Transformación Digital 2030',
     description:
-      'Descarga nuestro "Reporte Regional de E-commerce 2023" para conocer las tendencias y análisis de la industria del comercio electrónico que impactarán el resto del año.',
+      'La Política Nacional de Transformación Digital 2030 propone un Perú más digitalizado y conectado. Conoce más sobre su impacto y cómo promover la digitalización en tu organización con nuestra guía.',
     tags: ['tag'],
-    url: 'https://neoconsulting.ai/Reporte-E-commerce-Q1-2023'
+    url: 'https://neoconsulting.ai/guia-politica-nacional-2030'
   },
   {
     img: card2.src,
     // subtitle: 'Experience Design',
-    title: 'Experiencia de usuarios con chatbots',
+    title: 'Inteligencia Artificial Generativa para organizaciones públicas',
     description:
-    'Con este documento queremos que puedas comprender las necesidades y expectativas de los usuarios peruanos con respecto al uso de los chatbots, así como también conocer y evaluar la tecnología existente.',
+      'Descubre las principales herramientas recomendadas por nuestros expertos para crear texto e imágenes. Además, las ventajas del uso de la IA Generativa y los casos de éxito en las organizaciones públicas y cómo implementarla de forma exitosa.',
     tags: ['tag'],
-    url: 'https://neoconsulting.ai/experiencia_de_usuarios_con_chatbots'
+    url: 'https://neoconsulting.ai/Descargable-IA-generativa-para-organizaciones-publicas'
   },
   {
     img: card3.src,
     // subtitle: 'Experience Design',
-    title: '21 herramientas de AI recomendadas por los Neos para este 2023',
+    title: 'Reporte Desempeño digital de los Marketplaces en Perú',
     description:
-      'Conoce las herramientas de AI que nuestros expertos utilizan en su día a día para optimizar y potenciar su trabajo. Conocer las herramientas de AI adecuadas para cada tarea y utilizarlas de manera correcta puede marcar la diferencia en la calidad y el éxito del trabajo realizado.',
+    'Conoce el desempeño digital de los principales comercios electrónicos en Perú y descubre los factores que llevaron a falabella.com y Mercado Libre a posicionarse como dos de los marketplaces líderes a nivel nacional.',
     tags: ['tag'],
-    url: 'https://neoconsulting.ai/21_herramientas_de_ai/'
+    url: 'https://neoconsulting.ai/reporte-desempeno-digital-marketplaces-peru-2023'
   }
+  // {
+  //   img: card3.src,
+  //   // subtitle: 'Experience Design',
+  //   title: 'Reporte E-commerce  Q1 - 2023',
+  //   description:
+  //     'Descarga nuestro "Reporte Regional de E-commerce 2023" para conocer las tendencias y análisis de la industria del comercio electrónico que impactarán el resto del año.',
+  //   tags: ['tag'],
+  //   url: 'https://neoconsulting.ai/Reporte-E-commerce-Q1-2023'
+  // }
 ]

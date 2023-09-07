@@ -15,9 +15,9 @@ const Accordion = ({ questions }) => {
   return (
     <div className={style.accordion}>
       <div className={style.accordion_container}>
-        <h2 className={style.accordion_container_title}>
+        <h3 className={style.accordion_container_title}>
           Preguntas frecuentes
-        </h2>
+        </h3>
         <p className={style.accordion_container_desc}>
           Aclara todas tus dudas acerca de nuestras soluciones y cartera de
           servicios.

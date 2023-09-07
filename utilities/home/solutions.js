@@ -11,7 +11,7 @@ export const solutionsPeru = [
   {
     eventName: 'interes_servicio_canales_digitales',
     iconSrc: iconCanales,
-    service: 'Canales digitales y Growth Hacking',
+    service: 'Canales Digitales y Growth Hacking',
     description: 'Atrae más clientes a través de Canales Digitales',
     url: '/pe/servicios/canales-digitales-y-growth-hacking'
   },
@@ -47,7 +47,7 @@ export const solutionsPeru = [
   {
     eventName: 'interes_servicio_esperience_design',
     iconSrc: iconXd,
-    service: 'Diseño de experiencia y Transformación Digital',
+    service: 'Diseño de Experiencia y Transformación Digital',
     description:
       'Conoce y mejora la experiencia de los usuarios en mis activos digitales.',
     url: '/pe/servicios/experience-design'
@@ -55,7 +55,7 @@ export const solutionsPeru = [
   {
     eventName: 'interes_servicio_publicidad_digital',
     iconSrc: iconPublicidad,
-    service: 'Publicidad digital',
+    service: 'Publicidad Digital',
     description:
       'Logra tus objetivos de negocio usando medios digitales pagados.',
     url: '/pe/servicios/digital-advertising'

@@ -14,7 +14,7 @@ const Content = () => {
         viewport={{ once: true, amount: 0.1 }}
         variants={fadeIn('up', 'tween', 0, 1)}
       >
-      <h1 className={style.content_heading}>Contenido para ti</h1>
+      <h2 className={style.content_heading}>Contenido para ti</h2>
 
       <div className={style.content_container}>
         {contentHome.map((content, i) => {

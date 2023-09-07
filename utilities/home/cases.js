@@ -2,7 +2,7 @@ import belcorpImg from '../../public/assets/Services/Cases/belcorp.jpg'
 import belcorpImgMob from '../../public/assets/Services/Cases/belcorp-mobile.jpg'
 import soksoDesktop from '../../public/assets/Services/Cases/sokso-desktop.jpg'
 import rimacDesktop from '../../public/assets/Services/Cases/rimac-desktop.jpg'
-import alicorpDesktop from '../../public/assets/Services/Cases/alicorp-desktop.jpg'
+// import alicorpDesktop from '../../public/assets/Services/Cases/alicorp-desktop.jpg'
 import naturaDesktop from '../../public/assets/Services/Cases/card_natura.jpg'
 import shopstarDesktop from '../../public/assets/Services/Cases/shopstar_card.jpg'
 import roasDesktop from '../../public/assets/Services/Cases/roas_card.jpg'
@@ -44,7 +44,7 @@ export const peruCases = [
   {
     type: 'Caso de éxito',
     title:
-      'RIMAC Seguros incrementa la venta de producto SOAT con una reducción de inversión en publicidad digital',
+      'RIMAC Seguros incrementa la venta SOAT con una reducción de inversión en publicidad digital',
     description:
       'Descubre cómo la compañía de Seguros Rímac incrementó la venta de su producto SOAT en 3.63% con una reducción de inversión en publicidad digital junto al equipo de Neo Consulting.',
     img: rimacDesktop,
@@ -70,16 +70,5 @@ export const peruCases = [
     imgMob: soksoDesktop,
 
     url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/transformacion_digital_sokso'
-  },
-  {
-    type: 'Caso de éxito',
-    title:
-      'Alicorp redujo en 88% el tiempo del seguimiento del instock en su Ecommerce B2B Insuma usando herramientas de GCP y GMP',
-    description:
-      'Con la implementación y automatización de herramientas de Google Cloud Platform y Google Marketing Platform, Alicorp redució el tiempo de seguimiento del instock diario y mejorar la visualización de KPIS en su Ecommerce B2B.',
-    img: alicorpDesktop,
-    imgMob: alicorpDesktop,
-
-    url: 'https://neoconsulting.ai/casos-de-exito-neo-consulting-ai/alicorp_implementacion_GMP_GCP'
   }
 ]

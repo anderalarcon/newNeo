@@ -65,6 +65,20 @@ export const DaleNombreNats = {
   textoChapter: 'Descubre las ventajas del uso de la IA Generativa y como implementarla de forma exitosa'
 }
 
+export const GuiaPolíticaNacional = {
+  tituloDescargable: 'Guía: Política Nacional de Transformación Digital 2030',
+  linkDescargable: 'https://21198826.fs1.hubspotusercontent-na1.net/hubfs/21198826/Descargables%20Neo%20Consulting/Gu%C3%ADa%20PNTD2023.pdf',
+  ImgChapter: AnalyticsSVG,
+  textoChapter: AnalyticsTexto
+}
+
+export const CustomerResearch = {
+  tituloDescargable: 'White Paper: El Futuro del Customer Research',
+  linkDescargable: 'https://21198826.fs1.hubspotusercontent-na1.net/hubfs/21198826/Descargables-web/El%20Futuro%20del%20Customer%20Research-El%20uso%20de%20la%20IA%20en%20la%20investigaci%C3%B3n%20cualitativa.pdf',
+  ImgChapter: AnalyticsSVG,
+  textoChapter: AnalyticsTexto
+}
+
 // export const XdDescargable1 = {
 //   tituloDescargable: '',
 //   linkDescargable: '',

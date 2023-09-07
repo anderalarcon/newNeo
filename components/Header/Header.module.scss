@@ -8,7 +8,7 @@
   padding: map-get($padding, mobile);
   background-color: map-get($color, white);
   color: map-get($color, primary);
-  z-index: 5;
+  z-index: 10000;
 
   .header-scrolled{
     background-color: red;

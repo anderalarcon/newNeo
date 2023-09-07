@@ -19,7 +19,7 @@ const Crmyma = () => {
                     <h3 className={style.section_container_pa1_subtitulo}>
                     Evalúa integralmente las 6 dimensiones de la Transformación Digital en tu organización.
                     </h3>
-                    <a target="_blank" href="" rel="noreferrer" >
+                    <a target="_blank" href="https://survey.alchemer.com/s3/7468944/Encuesta-Transformaci-n-Digital" rel="noreferrer" >
                       <button className={style.section_container_pa1_boton}>
                         Iniciar test
                       </button>

@@ -41,7 +41,7 @@ const Header = ({ urlHasUtm, router }) => {
           <a href='/'>
             <img
               src={logoSvg.src}
-              alt='neo'
+              alt='Neo Consulting'
               className={style.header_base_left_logo}
             />
           </a>
@@ -122,7 +122,7 @@ const Header = ({ urlHasUtm, router }) => {
           <img
             className={style.header_mobile_active_head_logo}
             src={logoBlack.src}
-            alt='neo'
+            alt='Neo Consulting'
           />
 
           <button

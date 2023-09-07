@@ -1,4 +1,4 @@
-import aws from '../../../public/assets/Partners/aws.png'
+// import aws from '../../../public/assets/Partners/aws.png'
 import googleCloud from '../../../public/assets/Partners/google-cloud.png'
 import googleMarkettingPlatform from '../../../public/assets/Partners/google-marketing-platform.png'
 import hubspot from '../../../public/assets/Partners/hubspot.png'
@@ -19,9 +19,9 @@ const Partners = () => {
       <h2 className={style.companies_title}>Somos Partners</h2>
 
       <div className={style.companies_container}>
-        <div className={style.companies_container_img}>
+        {/* <div className={style.companies_container_img}>
           <img src={aws.src} alt='aws' />
-        </div>
+        </div> */}
         <div className={style.companies_container_img}>
           <img src={googleCloud.src} alt='googleCloud' />
         </div>

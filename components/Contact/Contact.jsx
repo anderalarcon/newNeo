@@ -29,7 +29,7 @@ const Contact = ({ service = 'default', solution = 'default', urlHasUtm, router 
               Estamos listos para conversar contigo
             </h2>
             <p className={style.contact_container_left_description}>
-              Nuestros consultores te ayudarán a llevar tu a tu organización al
+              Nuestros consultores te ayudarán a llevar tu organización al
               siguiente nivel.
             </p>
             <div className={style.contact_container_left_button}>
@@ -67,7 +67,7 @@ const Contact = ({ service = 'default', solution = 'default', urlHasUtm, router 
               <img
                 className={style.contact_container_right_image_img}
                 src={contactImg.src}
-                alt='Contáctanos Neo Consulting'
+                alt='Consultores de NEO Consulting'
               />
             </div>
           </div>

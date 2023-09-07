@@ -45,7 +45,7 @@ const index = () => {
           content="Consultoria en Marketing Digital y Estrategia Digital. En NEO por más de 20 años brindamos consultorías en eCommerce, Estrategia y Transformación Digital"
         />
         <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico"/>
-      </Head>
+    </Head>
     <Header />
     <Hero />
     <Solutions solutions={solutionsPeru} />

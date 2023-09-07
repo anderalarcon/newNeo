@@ -8,11 +8,11 @@ import rise from '../../public/assets/Header/Rise.svg'
 import stats from '../../public/assets/Header/stats.svg'
 import sync from '../../public/assets/Header/Sync.svg'
 import techInfo from '../../public/assets/Header/tech-info.svg'
-import aws from '../../public/assets/Header/aws.svg'
+// import aws from '../../public/assets/Header/aws.svg'
 import quienes from '../../public/assets/Header/quienes.svg'
 import trabaja from '../../public/assets/Header/trabaja.svg'
 import bcorp from '../../public/assets/Header/bcorp.svg'
-import videoChat from '../../public/assets/Header/video-chat-line.svg'
+// import videoChat from '../../public/assets/Header/video-chat-line.svg'
 
 export const AccordionData = [
   {
@@ -25,7 +25,7 @@ export const AccordionData = [
       },
       {
         link: '/pe/servicios/canales-digitales-y-growth-hacking',
-        text: 'Canales digitales y Growth Hacking',
+        text: 'Canales Digitales y Growth Hacking',
         icon: laptop.src
       },
       {
@@ -35,7 +35,7 @@ export const AccordionData = [
       },
       {
         link: '/pe/servicios/experience-design',
-        text: 'Diseño de experiencia y transformación digital',
+        text: 'Diseño de Experiencia y Transformación Digital',
         icon: sync.src
       },
       {
@@ -70,16 +70,16 @@ export const AccordionData = [
       }
     ]
   },
-  {
-    title: 'Partners',
-    ul: [
-      {
-        link: 'https://neoconsulting.ai/servicios-aws/',
-        text: 'Soluciones cloud con AWS',
-        icon: aws.src
-      }
-    ]
-  },
+  // {
+  //   title: 'Partners',
+  //   ul: [
+  //     {
+  //       link: 'https://neoconsulting.ai/servicios-aws/',
+  //       text: 'Soluciones cloud con AWS',
+  //       icon: aws.src
+  //     }
+  //   ]
+  // },
   {
     title: 'Recursos',
     ul: [
@@ -88,10 +88,15 @@ export const AccordionData = [
         text: 'Descargables',
         icon: download.src
       },
+      // {
+      //   link: 'https://neoconsulting.ai/recursos-digitales/#webinars',
+      //   text: 'webinars',
+      //   icon: videoChat.src
+      // },
       {
-        link: 'https://neoconsulting.ai/recursos-digitales/#webinars',
-        text: 'webinars',
-        icon: videoChat.src
+        link: 'https://neoconsulting.ai/soluciones/assessments',
+        text: 'Assessments',
+        icon: laptop.src
       }
     ]
   },
@@ -100,7 +105,7 @@ export const AccordionData = [
     ul: [
       {
         link: 'https://neoconsulting.ai/quienes_somos',
-        text: '¿Quienes Somos?',
+        text: '¿Quiénes Somos?',
         icon: quienes.src
       },
       {

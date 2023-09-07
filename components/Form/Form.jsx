@@ -29,6 +29,7 @@ const Form = () => {
     company: '',
     charge: '',
     employees: '',
+    plazo: '',
     area: '',
     details: '',
     knowing: ''
@@ -147,7 +148,9 @@ const Form = () => {
     if (!values.area && step === 3) {
       errors.area = 'Area es requerida'
     }
-
+    if (!values.plazo && step === 4) {
+      errors.plazo = 'Plazo limite es requerido'
+    }
     if (!values.details && step === 4) {
       errors.details = 'Detalle es requerido'
     }
@@ -310,6 +313,7 @@ const Form = () => {
           company: formValues.company,
           cargo: formValues.charge,
           cantidad_de_empleados: formValues.employees,
+          plazo_limite: formValues.plazo,
           area: formValues.area,
           detalle_proyecto: formValues.details,
           p_gina_de_origen__c: data?.title,
@@ -693,6 +697,40 @@ const Form = () => {
             onChange={handleChange}
             placeholder='Quiero...'
           />
+                      {/* probamos */}
+          <div className={style.form_container_form_second_inputs_input}>
+            <label
+              className={style.form_container_form_second_inputs_input_label}
+              htmlFor=''
+            >
+              Plazo límite para la ejecución de tu proyecto
+            </label>
+            <select
+              className={style.form_container_form_second_inputs_input_text}
+              required
+              name='plazo'
+              value={formValues.plazo}
+              onChange={handleChange}
+            >
+              <option value=''>Seleccione</option>
+              <option value='hasta 1 mes'>hasta 1 mes</option>
+              <option value='de 1 mes a 3 meses'>de 1 mes a 3 meses</option>
+              <option value='de 3 meses a 6 meses'>
+                de 3 meses a 6 meses
+              </option>
+              <option value='de 6 meses a 1 año'>
+                de 6 meses a 1 año
+              </option>
+              <option value='más de un año'>
+                más de un año
+              </option>
+              <option value='no tengo un plazo definido'>
+                no tengo un plazo definido
+              </option>
+            </select>
+            <p>{formErrors.plazo}</p>
+          </div>
+                      {/* probamos */}
           <div className={style.form_container_form_third_input_checkbox}>
             <input
               type='checkbox'

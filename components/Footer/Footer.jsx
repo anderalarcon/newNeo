@@ -9,7 +9,7 @@ import yt from '../../public/assets/Footer/yt.svg'
 import eccom2020 from '../../public/assets/Awards/eccom-award-2020.png'
 import eccom2021 from '../../public/assets/Awards/eccom-award-2021.png'
 import empresa from '../../public/assets/Awards/empresa.png'
-import aws from '../../public/assets/Partners/aws.png'
+// import aws from '../../public/assets/Partners/aws.png'
 import googleCloud from '../../public/assets/Partners/google-cloud.png'
 import googleMarketingPlatform from '../../public/assets/Partners/google-marketing-platform.png'
 import hubspot from '../../public/assets/Partners/hubspot.png'
@@ -29,9 +29,9 @@ const Footer = () => {
           link: '/pe/servicios/analitica-digital-inteligencia-artificial',
           text: 'Analítica Digital e Inteligencia Artificial'
         },
-        { link: '/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales digitales y Growth Hacking' },
+        { link: '/pe/servicios/canales-digitales-y-growth-hacking', text: 'Canales Digitales y Growth Hacking' },
         { link: '/pe/servicios/consultoria-customer-relationship-management', text: 'Consultoría CRM' },
-        { link: '/pe/servicios/experience-design', text: 'Diseño de experiencia' },
+        { link: '/pe/servicios/experience-design', text: 'Diseño de Experiencia' },
         { link: '/pe/servicios/consultoria-ecommerce', text: 'E-commerce' },
         { link: '/pe/servicios/headhunting-y-mentoring', text: 'Headhunting y Mentoring' },
         { link: '/pe/servicios/marketing-automation', text: 'Marketing Automation' },
@@ -62,8 +62,8 @@ const Footer = () => {
       title: 'Recursos',
       ul: [
         { link: 'https://neoconsulting.ai/blog-neo', text: 'Blog' },
-        { link: 'https://neoconsulting.ai/descargables/', text: 'Descargables' },
-        { link: 'https://www.youtube.com/@neoconsulting/videos', text: 'Webinars' }
+        { link: 'https://neoconsulting.ai/descargables/', text: 'Descargables' }
+        // { link: 'https://www.youtube.com/@neoconsulting/videos', text: 'Webinars' }
       ]
     }
   ]
@@ -117,7 +117,7 @@ const Footer = () => {
             />
             <img src={salesforce.src} alt='salesforce' />
             <img src={hubspot.src} alt='hubspot' />
-            <img src={aws.src} alt='aws' />
+            {/* <img src={aws.src} alt='aws' /> */}
             <img src={googleCloud.src} alt='googleCloud' />
           </div>
         </div>
@@ -129,13 +129,13 @@ const Footer = () => {
         <div className={style.footer_bottom_images}>
           <img src={logoNeo.src} alt='neo' />
           <p>
-            © 2022 NEO Consulting - Todos los derechos reservados | Política de
-            privacidad | Terminos de uso | Política de Cookies
+            © 2023 NEO Consulting - Todos los derechos reservados | <span><a href="https://neoconsulting.ai/politica-de-privacidad">Política de
+            privacidad</a></span> | <span><a href="https://neoconsulting.ai/politicas-cookies">Política de Cookies</a></span>
           </p>
           <img src={complaintsBook.src} alt='complaintsBook' />
         </div>
         <p>
-          © 2022 NEO Consulting - Todos los derechos reservados | Política de
+          © 2023 NEO Consulting - Todos los derechos reservados | Política de
           privacidad | Terminos de uso | Política de Cookies
         </p>
       </div>

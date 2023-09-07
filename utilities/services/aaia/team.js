@@ -11,13 +11,13 @@ export const team = [
     linkedin: 'https://www.linkedin.com/in/daniel-vicente-romero/',
     img: daniel.src
   },
-  {
-    fullname: 'Joao Negrini',
-    charge: 'Gerente de Consultoría AA&AI',
-    bio: 'Experiencia en consultoría y proyectos de estrategia, venta digital, SEO, growth y analítica digital.',
-    linkedin: 'https://www.linkedin.com/in/joao-negrini/',
-    img: joao.src
-  },
+  // {
+  //   fullname: 'Joao Negrini',
+  //   charge: 'Gerente de Consultoría AA&AI',
+  //   bio: 'Experiencia en consultoría y proyectos de estrategia, venta digital, SEO, growth y analítica digital.',
+  //   linkedin: 'https://www.linkedin.com/in/joao-negrini/',
+  //   img: joao.src
+  // },
   {
     fullname: 'Jorge Ramirez',
     charge: 'Consultor Sr. Advanced Analytics & AI',

@@ -64,7 +64,7 @@ const Partners = () => {
       viewport={{ once: true, amount: 'full' }}
     >
       <h2 className={style.companies_title}>
-        Más de 100 empresas que ya confían en nosotros
+        Más de 100 empresas confían en nosotros
      </h2>
      <motion.div
               className={style.companies_container_img}
@@ -73,52 +73,52 @@ const Partners = () => {
       <div className={style.sliderrr}>
         <div className={style.sliderrr_track}>
           <div className={style.sliderrr_track_imagen}>
-            <img src={rci.src} alt='rci' />
+            <img src={rci.src} alt='cliente rci' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={incarail.src} alt='incarail' />
+            <img src={incarail.src} alt='cliente incarail' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={sanfernando.src} alt='sanfernando' />
+            <img src={sanfernando.src} alt='cliente sanfernando' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={astrid.src} alt='astrid' />
+            <img src={astrid.src} alt='cliente astrid' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={cajapiura.src} alt='cajapiura' />
+            <img src={cajapiura.src} alt='cliente cajapiura' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={pacasmayo.src} alt='pacasmayo' />
+            <img src={pacasmayo.src} alt='cliente pacasmayo' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={oncosalud.src} alt='oncosalud' />
+            <img src={oncosalud.src} alt='cliente oncosalud' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={toulouse.src} alt='toulouse' />
+            <img src={toulouse.src} alt='cliente toulouse' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={cibertec.src} alt='cibertec' />
+            <img src={cibertec.src} alt='cliente cibertec' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={pacifico.src} alt='pacifico' />
+            <img src={pacifico.src} alt='cliente pacifico' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={belcorp.src} alt='belcorp' />
+            <img src={belcorp.src} alt='cliente belcorp' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={shopstart.src} alt='shopstart' />
+            <img src={shopstart.src} alt='cliente shopstart' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={semana.src} alt='semana' />
+            <img src={semana.src} alt='cliente semana' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={tiendapet.src} alt='tiendapet' />
+            <img src={tiendapet.src} alt='cliente tiendapet' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={scotiabank.src} alt='scotiabank' />
+            <img src={scotiabank.src} alt='cliente scotiabank' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={cuidafarmacia.src} alt='cuidafarmacia' />
+            <img src={cuidafarmacia.src} alt='cliente cuidafarmacia' />
           </div>
 
         </div>
@@ -127,52 +127,52 @@ const Partners = () => {
       <div className={style.sliderrr2}>
         <div className={style.sliderrr2_track}>
           <div className={style.sliderrr_track_imagen}>
-            <img src={bcp.src} alt='bcp' />
+            <img src={bcp.src} alt='cliente bcp' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={bbva.src} alt='bbva' />
+            <img src={bbva.src} alt='cliente bbva' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={bfalabella.src} alt='bfalabella' />
+            <img src={bfalabella.src} alt='cliente bfalabella' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={nestle.src} alt='nestle' />
+            <img src={nestle.src} alt='cliente nestle' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={abbott.src} alt='abbott' />
+            <img src={abbott.src} alt='cliente abbott' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={auna.src} alt='auna' />
+            <img src={auna.src} alt='cliente auna' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={yanbal.src} alt='yanbal' />
+            <img src={yanbal.src} alt='cliente yanbal' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={cineplanet.src} alt='cineplanet' />
+            <img src={cineplanet.src} alt='cliente cineplanet' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={entel.src} alt='entel' />
+            <img src={entel.src} alt='cliente entel' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={claro.src} alt='claro' />
+            <img src={claro.src} alt='cliente claro' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={rimac.src} alt='rimac' />
+            <img src={rimac.src} alt='cliente rimac' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={bnp.src} alt='bnp' />
+            <img src={bnp.src} alt='cliente bnp' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={protecta.src} alt='protecta' />
+            <img src={protecta.src} alt='cliente protecta' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={alicorp.src} alt='alicorp' />
+            <img src={alicorp.src} alt='cliente alicorp' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={upc.src} alt='upc' />
+            <img src={upc.src} alt='cliente upc' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={interseguro.src} alt='interseguro' />
+            <img src={interseguro.src} alt='cliente interseguro' />
           </div>
 
         </div>
@@ -181,52 +181,52 @@ const Partners = () => {
       <div className={style.sliderrr}>
         <div className={style.sliderrr_track}>
           <div className={style.sliderrr_track_imagen}>
-            <img src={cencosud.src} alt='cencosud' />
+            <img src={cencosud.src} alt='cliente cencosud' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={grandvision.src} alt='grandvision' />
+            <img src={grandvision.src} alt='cliente grandvision' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={sodimac.src} alt='sodimac' />
+            <img src={sodimac.src} alt='cliente sodimac' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={ripley.src} alt='ripley' />
+            <img src={ripley.src} alt='cliente ripley' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={falabella.src} alt='falabella' />
+            <img src={falabella.src} alt='cliente falabella' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={telefonica.src} alt='telefonica' />
+            <img src={telefonica.src} alt='cliente telefonica' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={equifax.src} alt='equifax' />
+            <img src={equifax.src} alt='cliente equifax' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={canon.src} alt='canon' />
+            <img src={canon.src} alt='cliente canon' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={gerardu.src} alt='gerardu' />
+            <img src={gerardu.src} alt='cliente gerardu' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={mobil.src} alt='mobil' />
+            <img src={mobil.src} alt='cliente mobil' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={laureate.src} alt='laureate' />
+            <img src={laureate.src} alt='cliente laureate' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={loreal.src} alt='loreal' />
+            <img src={loreal.src} alt='cliente loreal' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={gildemeister.src} alt='gildemeister' />
+            <img src={gildemeister.src} alt='cliente gildemeister' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={ferreycorp.src} alt='ferreycorp' />
+            <img src={ferreycorp.src} alt='cliente ferreycorp' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={utp.src} alt='utp' />
+            <img src={utp.src} alt='cliente utp' />
           </div>
           <div className={style.sliderrr_track_imagen}>
-            <img src={mibanco.src} alt='mibanco' />
+            <img src={mibanco.src} alt='cliente mibanco' />
           </div>
 
         </div>
@@ -243,19 +243,19 @@ const Partners = () => {
   //   </h2>
   //   <div className={style.companies_container}>
   //     <div className={style.companies_container_img}>
-  //       <img src={rimac.src} alt='rimac' />
+  //       <img src={rimac.src} alt='cliente rimac' />
   //     </div>
   //     <div className={style.companies_container_img}>
-  //       <img src={protecta.src} alt='protecta' />
+  //       <img src={protecta.src} alt='cliente protecta' />
   //     </div>
   //     <div className={style.companies_container_img}>
-  //       <img src={abbott.src} alt='abbott' />
+  //       <img src={abbott.src} alt='cliente abbott' />
   //     </div>
   //     <div className={style.companies_container_img}>
-  //       <img src={semana.src} alt='semana' />
+  //       <img src={semana.src} alt='cliente semana' />
   //     </div>
   //     <div className={style.companies_container_img}>
-  //       <img src={intersegura.src} alt='intersegura' />
+  //       <img src={intersegura.src} alt='cliente intersegura' />
   //     </div>
   //   </div>
   // </div>
