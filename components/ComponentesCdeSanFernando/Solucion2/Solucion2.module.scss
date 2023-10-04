@@ -1,0 +1,246 @@
+@import '../../../styles/variables.module.scss';
+
+.solucion{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    @include breakpoint(widescreen){
+        margin-bottom: 6rem;
+    }
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1.5rem;
+        gap: 2rem;
+        @include breakpoint(widescreen){
+        }
+
+        &_titulo{
+            text-align: center;
+            font-family: "Tiempos Headline Medium";
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.75rem;
+            @include breakpoint(widescreen){
+                width: 90%;
+                text-align: center;
+                font-size: 2.8rem;
+                line-height: 3.5rem
+            }
+        }
+
+        &_texto{
+            text-align: center;
+            font-family: "Montserrat Medium";
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25rem;
+            max-width: 750px;
+            margin-bottom: 2rem;
+            @include breakpoint(widescreen){
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.6rem;
+                margin-bottom: 3rem;
+            }
+        }
+
+        &_imagenes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Montserrat Regular";
+            &_container{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                @include breakpoint(widescreen){
+                    width: 100%;
+                    flex-direction: row;
+                }
+                &_box{
+                    width: 280px;
+                    height: 160px;
+                    background: var(--500---BG-page, #F4F2FA);
+                    z-index: 2;
+                    padding: 1rem;
+                    display: flex;
+                    gap: 1rem;
+                    border-radius: 1rem;
+                    @include breakpoint(widescreen){
+                        width: 22rem;
+                        height: 11.5rem;
+                        padding: 1.5rem;
+                    }
+                    &_derecha{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        gap: 0.5rem;
+                        @include breakpoint(widescreen){
+                            gap: 0.8rem;
+                        }
+                        &_icotitu{
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+                            &_ico{
+                                width: 1.5rem;
+                            }
+                            &_titu{
+                                font-weight: bold;
+                                @include breakpoint(widescreen){
+                                    font-size: 1.25rem;
+                                }
+                            }
+                        }
+                        &_descrip{
+                            font-size: 0.9rem;
+                            @include breakpoint(widescreen){
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                &_separador{
+                    @include breakpoint(widescreen){
+                    }
+                    &_izq{
+                        margin-top: 3.5rem;
+                        display: none;
+                        @include breakpoint(widescreen){
+                        display: block;
+                        }
+                        margin-left: 8rem;
+                    }
+                    &_der{
+                        margin-top: 3.5rem;
+                        display: none;
+                        @include breakpoint(widescreen){
+                        display: block;
+                        }
+                    }
+                    &_especial{
+                        margin-top: 3.5rem;
+                        display: none;
+                        @include breakpoint(widescreen){
+                            display: block;
+                        }
+                        margin-left: 36rem;
+                    }
+                    &_movil{
+                        margin: 0 auto;
+                        width: 30px;
+                        height: 80px;
+                        display: block;
+                        @include breakpoint(widescreen){
+                            display: none;
+                        }
+                    }
+                }
+            }
+
+            &_container2{
+                width: 100%;
+                display: flex;
+                flex-direction: column-reverse;
+                @include breakpoint(widescreen){
+                    width: 100%;
+                    flex-direction: row;
+                }
+                &_box{
+                    width: 280px;
+                    height: 160px;
+                    background: var(--500---BG-page, #F4F2FA);
+                    z-index: 2;
+                    padding: 1rem;
+                    display: flex;
+                    gap: 1rem;
+                    border-radius: 1rem;
+                    @include breakpoint(widescreen){
+                        width: 22rem;
+                        height: 11.5rem;
+                        padding: 1.5rem;
+                    }
+                    &_derecha{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-evenly;
+                        gap: 0.5rem;
+                        @include breakpoint(widescreen){
+                            gap: 0.8rem;
+                        }
+                        &_icotitu{
+                            display: flex;
+                            align-items: center;
+                            gap: 0.5rem;
+                            &_ico{
+                                width: 1.5rem;
+                            }
+                            &_titu{
+                                font-weight: bold;
+                                @include breakpoint(widescreen){
+                                    font-size: 1.25rem;
+                                }
+                            }
+                        }
+                        &_descrip{
+                            font-size: 0.9rem;
+                            @include breakpoint(widescreen){
+                                font-size: 1.1rem;
+                            }
+                        }
+                    }
+                }
+                &_separador{
+                    @include breakpoint(widescreen){
+                    }
+                    &_izq{
+                        margin-top: 3.5rem;
+                        display: none;
+                        @include breakpoint(widescreen){
+                        display: block;
+                        }
+                        margin-left: 8rem;
+                    }
+                    &_der{
+                        margin-top: 3.5rem;
+                        display: none;
+                        @include breakpoint(widescreen){
+                        display: block;
+                        }
+                    }
+                    &_especial{
+                        margin-top: 3.5rem;
+                        display: none;
+                        @include breakpoint(widescreen){
+                            display: block;
+                        }
+                        margin-left: 36rem;
+                    }
+                    &_movil{
+                        margin: 0 auto;
+                        width: 30px;
+                        height: 80px;
+                        display: block;
+                        @include breakpoint(widescreen){
+                            display: none;
+                        }
+                    }
+                }
+            }
+            
+        }
+        
+        
+
+    }
+}

@@ -181,11 +181,11 @@ export const perksPredictiveAnalytics = {
   title: '¿Qué podrás lograr con este servicio?',
   perks: [
     {
-      text: 'Aumentar la taza de retención identificando a los clientes con mayor probabilidad de abandono.',
+      text: 'Aumentar la tasa de retención identificando a los clientes con mayor probabilidad de abandono.',
       icon: perkIcon1PredictiveAnalytics
     },
     {
-      text: 'Aumentar la taza de conversión identificando clientes con características comunes para personalizar su experiencia.',
+      text: 'Aumentar la tasa de conversión identificando clientes con características comunes para personalizar su experiencia.',
       icon: perkIcon2PredictiveAnalytics
     },
     {

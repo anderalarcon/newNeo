@@ -1,12 +1,12 @@
 import style from './Vwocomp4.module.scss'
 // import Link from 'next/link'
-import flecha from '../../public/assets/Landings_next/vwo/Vwocomp4/flecha.svg'
-import icon1 from '../../public/assets/Landings_next/vwo/Vwocomp4/icon_1.svg'
-import icon2 from '../../public/assets/Landings_next/vwo/Vwocomp4/icon_2.svg'
-import icon3 from '../../public/assets/Landings_next/vwo/Vwocomp4/icon_3.svg'
-import icon4 from '../../public/assets/Landings_next/vwo/Vwocomp4/icon_4.svg'
-import icon5 from '../../public/assets/Landings_next/vwo/Vwocomp4/icon_5.svg'
-import icon6 from '../../public/assets/Landings_next/vwo/Vwocomp4/icon_6.svg'
+import flecha from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/flecha.svg'
+import icon1 from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/icon_1.svg'
+import icon2 from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/icon_2.svg'
+import icon3 from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/icon_3.svg'
+import icon4 from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/icon_4.svg'
+import icon5 from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/icon_5.svg'
+import icon6 from '../../public/assets/Landings_next/BlogNeo/homeBlog/HomeComp3/icon_6.svg'
 
 const Vwocomp4 = () => {
   return (

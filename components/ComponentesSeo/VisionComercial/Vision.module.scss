@@ -1,0 +1,220 @@
+@import "../../../styles/variables.module.scss";
+
+.vision {
+    margin-bottom: map-get($margin , mobile);
+
+    @include breakpoint(widescreen) {
+        margin-bottom: map-get($margin , widescreen);
+    }
+    &_container {
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+        display: flex;
+        flex-direction: column;
+
+        @include breakpoint(widescreen) {
+            flex-direction: row;
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            align-items: center;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: map-get($breakpoint, max);
+            gap: 4%;
+        }
+
+        &_title {
+            font-family: "Tiempos Headline Medium";
+            font-size: 20px;
+            line-height: 24px;
+            text-align: center;
+
+            @include breakpoint(widescreen) {
+                font-size: 40px;
+                line-height: 48px;
+            }
+
+        }
+
+        &_subtitle {
+            font-family: "Montserrat Medium";
+            text-align: center;
+            font-size: 14px;
+            line-height: 20px;
+            margin-top: 28px;
+
+            @include breakpoint(widescreen) {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+        }
+
+        &_left {
+            @include breakpoint(widescreen) {
+                width: 48%;
+                margin-top: 76px;
+            }
+
+            &_ctn {
+                margin-top: 28px;
+                text-align: center;
+
+                &_1 {
+                    svg {
+                        width: 73.17px;
+                        height: 61.76px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 9px;
+                            width: 109px;
+                            height: 92px;
+                        }
+                    }
+                }
+
+                &_2 {
+                    svg {
+                        width: 144.34px;
+                        height: 63.1px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 9px;
+                            width: 215px;
+                            height: 94px;
+                        }
+                    }
+                }
+
+                &_3 {
+                    svg {
+                        width: 216.84px;
+                        height: 62.43px;
+                        margin-bottom: 5px;
+                        cursor: pointer;
+
+                        @include breakpoint(widescreen) {
+                            margin-bottom: 9px;
+                            width: 323px;
+                            height: 93px;
+                        }
+                    }
+                }
+
+                &_4 {
+                    svg {
+                        width: 288px;
+                        height: 61.76px;
+                        cursor: pointer;
+
+                        @include breakpoint(widescreen) {
+                            width: 429px;
+                            height: 92px;
+                        }
+                    }
+                }
+            }
+        }
+
+        &_right {
+            @include breakpoint(widescreen) {
+                width: 48%;
+            }
+
+            &_title {
+                font-family: "Tiempos Headline Medium";
+                font-size: 32px;
+                line-height: 40px;
+                text-align: center;
+                margin-top: 76px;
+                margin-bottom: 32px;
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    font-size: 36px;
+                    line-height: 44px;
+                }
+
+            }
+
+            &_description {
+                font-family: "Montserrat Medium";
+                text-align: center;
+                font-size: 16px;
+                line-height: 20px;
+
+                @include breakpoint(widescreen) {
+                    text-align: start;
+                    width: 507px;
+                    font-size: 20px;
+                    line-height: 24px;
+
+                }
+
+            }
+
+            &_link {
+
+                &_lnk {
+                    background-color: map-get($color , accent);
+                    color: map-get($color , white);
+                    width: 129px;
+                    height: 36px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 4px;
+                    padding: 8px 16px;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-top: 32px;
+
+                    @include breakpoint(widescreen) {
+                        margin-left: 0;
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: 158px;
+                        height: 56px;
+                    }
+
+
+                }
+            }
+        }
+    }
+
+    &_ctn{
+        display: flex;
+        overflow: scroll;
+        gap: 8px;
+        padding-left: map-get($padding, mobile);
+        padding-right: map-get($padding, mobile);
+        margin-top: 31px;
+        height: 170px;
+        @include breakpoint(tablet) {
+            overflow: initial;
+            justify-content: center;
+            height: auto;
+          }
+        @include breakpoint(widescreen) { 
+            padding-left: map-get($padding, widescreen);
+            padding-right: map-get($padding, widescreen);
+            justify-content: center;
+            margin-top: 72px;
+            gap: 24px;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: map-get($breakpoint, max);
+
+        }
+    }
+}
+
+.fill {
+    svg {
+        fill: map-get($color , accent)
+    }
+}

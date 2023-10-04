@@ -1,0 +1,111 @@
+@import '../../../styles/variables.module.scss';
+
+.prefooter{
+    width: 100%;
+    background: var(--500-bg-page, #F4F2FA);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3rem 0rem;
+    margin-bottom: 3rem;
+    &_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5rem; //Espaceio entre derecha e iz
+        @include breakpoint(widescreen){
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        &_left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            width: 90%;
+            @include breakpoint(widescreen){
+                max-width: 600px;
+            }
+
+            &_titulo{
+                width: 95%;
+                text-align: center;
+                font-family: "Tiempos Headline Medium";
+                font-size: 1.6rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.75rem;
+                @include breakpoint(widescreen){
+                    width: 90%;
+                    align-self: start;
+                    text-align: start;
+                    font-size: 2.8rem;
+                    line-height: 3.5rem
+                }
+            }
+
+            &_texto{
+                text-align: center;
+                font-family: "Montserrat Medium";
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.25rem;
+                max-width: 950px;
+                @include breakpoint(widescreen){
+                    max-width: 500px;
+                    text-align: start;
+                    align-self: flex-start;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 1.6rem;
+                }
+            }
+
+            &_a{
+                align-self: center;
+                @include breakpoint(widescreen){
+                    align-self: start;
+                }
+                &_button{
+                    background-color: map-get($color, accent);
+                    color: map-get($color, white);
+                    width: 150px;
+                    height: 38px;
+                    border-radius: 4px;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    border-radius: 4px;
+                    border: 1px solid var(--primary-900-base, #003);
+                    @include breakpoint(widescreen) {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: 280px;
+                        height: 50px;
+                    }
+                }
+            }
+            
+        }
+
+        &_right{
+            display: flex;
+            justify-content: center;
+            &_img{
+                width: 90%;
+                max-width: 400px;
+                @include breakpoint(widescreen){
+                    width: 90%;
+                    max-width: 500px;
+                }
+            }
+        }
+    }
+}

@@ -12,28 +12,28 @@ export const solutionsPeru = [
     eventName: 'interes_servicio_canales_digitales',
     iconSrc: iconCanales,
     service: 'Canales Digitales y Growth Hacking',
-    description: 'Atrae más clientes a través de Canales Digitales',
+    description: 'Acelera tu crecimiento a través de estrategias digitales',
     url: '/pe/servicios/canales-digitales-y-growth-hacking'
   },
   {
     eventName: 'interes_servicio_ecommerce',
     iconSrc: iconEcommerce,
     service: 'E-commerce',
-    description: 'Desarrolla estrategias que impulsen tu tienda virtual',
+    description: 'Potencia tu tienda virtual con tácticas innovadoras',
     url: '/pe/servicios/consultoria-ecommerce'
   },
   {
     eventName: 'interes_servicio_headhunting',
     iconSrc: iconHh,
     service: 'Headhunting y Mentoring',
-    description: 'Recluta y forma talento digital de alto performace.',
+    description: 'Captura y moldea el talento digital destacado.',
     url: '/pe/servicios/headhunting-y-mentoring'
   },
   {
     eventName: 'interes_servicio_crm',
     iconSrc: iconCrm,
     service: 'Consultoría CRM',
-    description: 'Crea, desarrolla y mejora la relación con tus clientes.',
+    description: 'Fortalece vínculos efectivos con tus clientes',
     url: '/pe/servicios/consultoria-customer-relationship-management'
 
   },
@@ -41,7 +41,7 @@ export const solutionsPeru = [
     eventName: 'interes_servicio_analítica_digital',
     iconSrc: iconAnalitica,
     service: 'Analítica Digital e Inteligencia Artificial',
-    description: 'Mide, visualiza y capitaliza la data de tu empresa.',
+    description: 'Decodifica y rentabiliza la data empresarial',
     url: '/pe/servicios/analitica-digital-inteligencia-artificial'
   },
   {
@@ -49,7 +49,7 @@ export const solutionsPeru = [
     iconSrc: iconXd,
     service: 'Diseño de Experiencia y Transformación Digital',
     description:
-      'Conoce y mejora la experiencia de los usuarios en mis activos digitales.',
+      'Optimiza la experiencia digital de tus usuarios',
     url: '/pe/servicios/experience-design'
   },
   {
@@ -57,7 +57,7 @@ export const solutionsPeru = [
     iconSrc: iconPublicidad,
     service: 'Publicidad Digital',
     description:
-      'Logra tus objetivos de negocio usando medios digitales pagados.',
+      'Cumple metas con efectiva publicidad online',
     url: '/pe/servicios/digital-advertising'
   },
   {
@@ -65,7 +65,7 @@ export const solutionsPeru = [
     iconSrc: iconMkt,
     service: 'Marketing Automation',
     description:
-      'Automatiza acciones de marketing, fidelización en la venta y postventa.',
+      'Automatiza, fideliza y potencia el ciclo del cliente',
     url: '/pe/servicios/marketing-automation'
   }
 ]

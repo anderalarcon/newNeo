@@ -12,7 +12,7 @@ export const recommendations = [
   {
     logoCompany: logoBcp.src,
     quote:
-      '“Logramos reducir la información que debe ingresar el usuario a un solo campo, sin alterar su navegación. Menos pasos en el proceso de compra incrementan el ratio de conversión significativamente.”',
+    'Gracias a un refinamiento en el diseño, logramos consolidar la información que el usuario debe ingresar a un solo campo. Esto ha mejorado la experiencia de navegación y reducido los pasos en el proceso de compra. Sin duda, estas modificaciones han llevado a un aumento significativo en nuestro ratio de conversión.',
     logoClient: diegoNasra.src,
     nameClient: 'Diego Nasra',
     chargeClient: 'Product Owner, BCP',
@@ -21,7 +21,7 @@ export const recommendations = [
   {
     logoCompany: logoRimac.src,
     quote:
-      '“La continua y oportuna optimización de las campañas influyó directamente en el crecimiento sostenido de las ventas, permitiéndonos obtener un alto nivel de performance en los resultados con una menor inversión. Las acciones concretas centradas en la visión del negocio y la comunicación con el equipo NEO permitieron alcanzar los resultados.”',
+    'Las constantes optimizaciones que hemos llevado a cabo en nuestras campañas, en conjunto con el equipo NEO, han influido directamente en un crecimiento sostenido de nuestras ventas. Hemos conseguido un rendimiento excepcional en los resultados, logrando más con una inversión reducida. La focalización en la visión del negocio y la sinergia con NEO han sido cruciales para alcanzar estos logros.',
     logoClient: nataliaOrtis.src,
     nameClient: 'Natalia Ortiz Velásquez',
     chargeClient: 'Líder de Venta Digital',
@@ -30,7 +30,7 @@ export const recommendations = [
   {
     logoCompany: logoProtecta.src,
     quote:
-      '“Trabajar de la mano con Neo, nos permite alinear la estrategia digital de la marca con los objetivos de negocio, planteándonos metas cada vez más retadoras”',
+    'La colaboración estrecha con NEO ha sido invaluable. Nos ha permitido alinear de manera eficiente la estrategia digital de nuestra marca con nuestros objetivos más amplios de negocio. Juntos, nos planteamos metas cada vez más altas y desafiantes, asegurando que estemos siempre en la vanguardia.',
     logoClient: rocioMerino.src,
     nameClient: 'Rocío Merino Loredo',
     chargeClient: 'Subgerente de Marketing y CX, Protecta',

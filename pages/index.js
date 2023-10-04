@@ -16,6 +16,7 @@ import Footer from '../components/Footer/Footer'
 import { solutionsPeru } from '../utilities/home/solutions'
 import { peruCases } from '../utilities/home/cases'
 import Head from 'next/head'
+
 const index = () => {
   return (
     <>

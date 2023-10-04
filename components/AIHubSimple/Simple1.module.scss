@@ -1,0 +1,224 @@
+@import "../../styles/variables.module.scss";
+
+.simple1 {
+  width: 100%;
+  position: relative;
+  padding: 3.5rem map-get($padding, mobile);
+  background-color: #002;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  @include breakpoint(widescreen) {
+    padding: 6rem map-get($padding, widescreen);
+  }
+
+  &_cuadrito1{
+    display: none;
+    @include breakpoint(widescreen) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 35rem;
+      left: 0rem;
+    }
+  }
+
+  &_cuadrito2{
+    display: none;
+    @include breakpoint(widescreen) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 45rem;
+      right: 0rem;
+    }
+  }
+
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 2rem;
+
+    @include breakpoint(widescreen) {
+      flex-direction: row;
+      max-width: 1400px;
+      margin: auto;
+      gap: 10rem;
+    }
+
+    &_left{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 1rem;
+
+      @include breakpoint(widescreen) {
+        gap: 3rem;
+      }
+
+      &_title{
+        color: white;
+        font-family: "Tiempos Headline Regular";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        @include breakpoint(widescreen) {
+          font-size: 3rem;
+        }
+      }
+
+      &_title2{
+        color: white;
+        font-family: "Tiempos Headline Regular";
+        font-size: 1.5rem;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        text-align: center;
+        margin-top: 6rem;
+        @include breakpoint(widescreen) {
+          margin-top: 10rem;
+          font-size: 3rem;
+          width: 1000px;
+        }
+      }
+
+      &_button {
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 1rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        background-color: none;
+        border-radius: 2rem;
+        background: var(--accent-600-click, #0A29CD);
+        box-shadow: 0px 0px 40px 0px #0A29CD;
+        display: none;
+        @include breakpoint(widescreen) {
+          display: block;
+          align-self: flex-start;
+        }
+        &_texto{
+          color: var(--primary-white, #FFF);
+          font-family: "Montserrat Regular";
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1.5rem;
+          padding: 0.8rem 1.5rem;
+          display: none;
+            @include breakpoint(widescreen) {
+              font-size: 1.125rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 1.5rem;
+              padding: 0.8rem 4rem;
+              display: block;
+              align-self: flex-start;
+            }
+        }
+      }
+    }
+
+    &_right{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      gap: 3rem;
+
+      &_imagenes{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 1rem;
+        width: 300px;
+        @include breakpoint(widescreen) {
+          width: 700px;
+          gap: 1rem;
+        }
+
+        &_img{
+          @include breakpoint(widescreen) {
+            width: 200px;
+          }
+        }
+      }
+
+      &_button {
+        scroll-behavior: smooth;
+        display: flex;
+        gap: 1rem;
+        font-size: 0.8rem;
+        cursor: pointer;
+        background-color: none;
+        border-radius: 2rem;
+        background: var(--accent-600-click, #0A29CD);
+        box-shadow: 0px 0px 40px 0px #0A29CD;
+        display: block;
+        @include breakpoint(widescreen) {
+          display: none;
+        }
+        &_texto{
+          color: var(--primary-white, #FFF);
+          font-family: "Montserrat Regular";
+          font-size: 1rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1.5rem;
+          padding: 0.8rem 1.5rem;
+          display: block;
+            @include breakpoint(widescreen) {
+              font-size: 1.125rem;
+              font-style: normal;
+              font-weight: 600;
+              line-height: 1.5rem;
+              padding: 0.8rem 4rem;
+              display: none;
+            }
+        }
+      }
+    }
+  }
+
+  &_button {
+    margin-top: 2rem;
+    scroll-behavior: smooth;
+    display: flex;
+    gap: 1rem;
+    font-size: 0.8rem;
+    cursor: pointer;
+    background-color: none;
+    border-radius: 2rem;
+    background: var(--accent-600-click, #0A29CD);
+    box-shadow: 0px 0px 40px 0px #0A29CD;
+    @include breakpoint(widescreen) {
+      margin-top: 5rem;
+    }
+    &_texto{
+      color: var(--primary-white, #FFF);
+      font-family: "Montserrat Regular";
+      font-size: 1rem;
+      font-style: normal;
+      font-weight: 600;
+      line-height: 1.5rem;
+      padding: 0.8rem 1.5rem;
+        @include breakpoint(widescreen) {
+          font-size: 1.125rem;
+          font-style: normal;
+          font-weight: 600;
+          line-height: 1.5rem;
+          padding: 0.8rem 4rem;
+        }
+    }
+  }
+}

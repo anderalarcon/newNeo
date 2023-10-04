@@ -70,6 +70,8 @@
         align-items: flex-start;
         justify-content: center;
         gap: 0.3rem;
+        flex-wrap: wrap;
+        gap: 1rem;
 
         & img {
           height: 97.34px;

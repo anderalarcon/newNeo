@@ -1,0 +1,65 @@
+@import "../../styles/variables.module.scss";
+
+.section {
+  width: 100%;
+  padding: 0 map-get($padding, mobile);
+  margin: 2rem auto;
+  @include breakpoint(widescreen) {
+    margin: 4rem auto;
+  }
+
+  &_hr{
+    margin: 3rem auto;
+    width: 18rem;
+    height: 0.1rem;
+    opacity: 0.5;
+    flex-shrink: 0;
+    stroke-width: 1px;
+    color: #9999AD;
+    background-color: #9999AD;
+    @include breakpoint(widescreen) {
+        margin: 4rem auto;
+        width: 58.78125rem;
+      }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin: 0 auto;
+    padding: 2rem 2rem;
+    width: 100%;
+    background-color: #F4F2FA;
+    border-radius: 2rem;
+    @include breakpoint(widescreen) {
+      gap: 1rem;
+      width: 80%;
+      max-width: 900px;
+      padding: 3rem 4rem;
+    }
+
+    &_text1{
+        color: var(--primary-600-secondary, #4D4D70);
+        font-family: "Montserrat Bold";
+        font-size: 1rem;
+        line-height: 150%;
+        @include breakpoint(widescreen) {
+            font-size: 1.25rem;
+        }
+    }
+
+    &_text2{
+        margin-top: 1rem;
+        color: var(--primary-600-secondary, #4D4D70);
+        font-family: "Montserrat Regular";
+        font-size: 1rem;
+        @include breakpoint(widescreen) {
+            font-size: 1.25rem;
+        }
+    }
+
+
+  }
+}
+

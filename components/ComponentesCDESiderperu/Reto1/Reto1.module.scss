@@ -1,0 +1,84 @@
+@import '../../../styles/variables.module.scss';
+
+.reto{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    &_container{
+        background: var(--500-bg-page, #F4F2FA);
+        margin: 0 1rem;
+        padding: 2rem 0rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2.5rem; //Espaceio entre derecha e iz
+        @include breakpoint(widescreen){
+            padding: 2rem;
+            flex-direction: row;
+            gap: 1rem;
+        }
+
+        &_left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            width: 90%;
+            @include breakpoint(widescreen){
+                max-width: 600px;
+            }
+
+            &_titulo{
+                width: 95%;
+                text-align: center;
+                font-family: "Tiempos Headline Medium";
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.75rem;
+                @include breakpoint(widescreen){
+                    width: 90%;
+                    align-self: start;
+                    text-align: start;
+                    font-size: 2.8rem;
+                    line-height: 3.5rem
+                }
+            }
+
+            &_descripcion{
+                font-family: "Montserrat Medium";
+                text-align: center;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.25rem;
+                @include breakpoint(widescreen){
+                    text-align: start;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                }
+            }
+
+        }
+
+        &_right{
+            display: flex;
+            justify-content: center;
+            &_img{
+                width: 90%;
+                max-width: 400px;
+                @include breakpoint(widescreen){
+                    width: 90%;
+                    max-width: 600px;
+                }
+            }
+        }
+    }
+}

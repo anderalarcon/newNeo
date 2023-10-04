@@ -10,9 +10,9 @@ const Embedform = () => {
     <div className={`${style.hubspot_form_container}`}>
       {/* <h3 className={`${style.hubspot_pre_title}`}>Conversemos</h3> */}
       <h2 className={`${style.hubspot_title}`}>
-        Empieza a mejorar tu estrategia SEO
+      ¡Reinventa la manera de crear contenido, diseñar productos y conectar con tus clientes!
       </h2>
-      <h4 className={`${style.hubspot_post_title}`}>No esperes más para descubrir lo que nuestro producto puede hacer por ti. Agenda una reunión con nuestro equipo y juntos exploraremos cómo podemos ayudarte a alcanzar tus objetivos.</h4>
+      {/* <h4 className={`${style.hubspot_post_title}`}>No esperes más para descubrir lo que nuestro producto puede hacer por ti. Agenda una reunión con nuestro equipo y juntos exploraremos cómo podemos ayudarte a alcanzar tus objetivos.</h4> */}
 
       <div className="">
       <HubspotForm

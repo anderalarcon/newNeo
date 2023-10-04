@@ -1,0 +1,149 @@
+@import "../../styles/variables.module.scss";
+
+.wp {
+  width: 100%;
+  position: relative;
+  padding: 3.5rem map-get($padding, mobile);
+  background-color: #002;
+
+  @include breakpoint(widescreen) {
+    padding: 6rem map-get($padding, widescreen);
+  }
+
+  &_cuadrito1{
+    display: none;
+    @include breakpoint(widescreen) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: -25rem;
+      right: 0rem;  
+    }
+  }
+
+  &_cuadrito2{
+    display: none;
+    @include breakpoint(widescreen) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 38rem;
+      right: 7rem;  
+    }
+  }
+
+  &_cuadrito3{
+    display: none;
+    @include breakpoint(widescreen) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 30rem;
+      left: 0rem;  
+    }
+  }
+
+  &_cuadrito4{
+    display: none;
+    @include breakpoint(widescreen) {
+      display: block;
+      position: absolute;
+      z-index: 2;
+      top: 3rem;
+      left: 3rem;  
+    }
+  }
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    gap: 32px;
+
+    @include breakpoint(widescreen) {
+      max-width: 800px;
+      margin: auto;
+      align-items: flex-start;
+      gap: 56px;
+    }
+
+    &_title {
+      font-family: "Tiempos Headline Regular";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 28px;
+      text-align: center;
+      align-self: center;
+      color: map-get($color, white);
+
+      @include breakpoint(widescreen) {
+        font-size: 48px;
+        line-height: 56px;
+      }
+    }
+
+    &_desc {
+      display: none;
+
+      @include breakpoint(widescreen) {
+        font-family: "Montserrat Regular";
+        font-style: normal;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 24px;
+        text-align: center;
+        align-self: center;
+        color: map-get($color, white);
+        display: block;
+        max-width: 600px;
+      }
+    }
+
+    &_process {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      padding: 0px;
+      gap: 16px;
+
+      &_icon {
+        width: 40px;
+        height: 40px;
+        background: map-get($color, white);
+      }
+
+      &_content {
+        & h3 {
+          font-family: "Montserrat Medium";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 16px;
+          line-height: 20px;
+          color: map-get($color, white);
+          margin-bottom: 8px;
+
+          @include breakpoint(widescreen) {
+            font-size: 20px;
+            line-height: 24px;
+          }
+        }
+
+        & p {
+          font-family: "Montserrat Regular";
+          font-style: normal;
+          font-weight: 500;
+          font-size: 14px;
+          line-height: 20px;
+          color: map-get($color, white);
+
+          @include breakpoint(widescreen) {
+            font-size: 18px;
+            line-height: 24px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -8,6 +8,7 @@ import afiliation from '../../public/assets/Footer/afiliation.png'
 import yt from '../../public/assets/Footer/yt.svg'
 import eccom2020 from '../../public/assets/Awards/eccom-award-2020.png'
 import eccom2021 from '../../public/assets/Awards/eccom-award-2021.png'
+import eccom2022 from '../../public/assets/Awards/Sello-Ganador-2023.png'
 import empresa from '../../public/assets/Awards/empresa.png'
 // import aws from '../../public/assets/Partners/aws.png'
 import googleCloud from '../../public/assets/Partners/google-cloud.png'
@@ -97,6 +98,7 @@ const Footer = () => {
           <div className={style.footer_top_awards_images}>
             <img src={eccom2020.src} alt='eccom2020' />
             <img src={eccom2021.src} alt='eccom2021' />
+            <img src={eccom2022.src} alt='eccom2021' />
             <img src={empresa.src} alt='empresa' />
           </div>
         </div>

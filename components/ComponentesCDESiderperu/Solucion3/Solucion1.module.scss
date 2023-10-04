@@ -1,0 +1,66 @@
+@import '../../../styles/variables.module.scss';
+
+.solucion{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1.5rem;
+        gap: 2rem;
+        @include breakpoint(widescreen){
+        }
+
+        &_titulo{
+            text-align: center;
+            font-family: "Tiempos Headline Medium";
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.75rem;
+            @include breakpoint(widescreen){
+                width: 90%;
+                text-align: center;
+                font-size: 2.8rem;
+                line-height: 3.5rem
+            }
+        }
+
+        &_texto{
+            text-align: center;
+            font-family: "Montserrat Medium";
+            font-size: 0.875rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.25rem;
+            max-width: 950px;
+            @include breakpoint(widescreen){
+                font-size: 1.125rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.6rem;
+            }
+        }
+
+        &_imagenes {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            & img{
+                width: 100%;
+                @include breakpoint(widescreen){
+                    width: 100%;
+                }
+            }
+        }
+        
+        
+
+    }
+}

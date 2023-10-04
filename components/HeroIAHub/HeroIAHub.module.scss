@@ -1,0 +1,122 @@
+@import "../../styles/variables.module.scss";
+
+.hero {
+  width: 100%;
+  position: relative;
+  padding: 0 map-get($padding, mobile);
+  background-color: #002;
+  background-image: url('../../public/assets/Landings_next/iahub/bgimage2.png');
+  background-size: cover;
+
+  &_container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    gap: 3rem;
+    margin: 0 auto;
+    padding: 16px 0;
+    width: 100%;
+    height: 430px;
+    
+    @include breakpoint(widescreen) {
+      gap: 5rem;
+      max-width: 1600px;
+      height: 700px;
+    }
+
+    &_title {
+      font-family: "Tiempos Headline Medium";
+      font-size: 1.75rem;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+      text-align: center;
+
+      @include breakpoint(widescreen) {
+        font-size: 3.8rem;
+        line-height: 150%;
+        max-width: 59.25rem;
+      }
+    }
+
+    &_swiperWrapper {
+      width: 100%;
+      max-width: 960px; // This width is an estimate. Adjust to your desired total width for 3 boxes.
+
+      &_opac{
+        opacity: 1 !important;
+        &_box {
+          display: flex;
+          flex-direction: column;
+          gap: 1.5rem;
+          width: 100%;
+          margin: 0 auto;
+          text-align: center;
+          justify-content: center;
+          align-items: center;
+          color: white !important; 
+          opacity: 1 !important;
+          @include breakpoint(widescreen) {
+            width: 300px;
+          }
+  
+          &_titulonimagen{
+            font-family: "Montserrat Regular";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.5rem;
+            display: flex;
+            gap: 1rem;
+            @include breakpoint(widescreen) {
+              font-size: 1.2rem;
+            }
+          }
+          &_texto{
+            font-family: "Montserrat Regular";
+            font-size: 1rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.5rem;
+            color: white !important;
+            opacity: 1 !important;
+            @include breakpoint(widescreen) {
+              font-size: 1.05rem;
+            }
+          }
+        }
+      }
+      
+    }
+    
+    &_button {
+      scroll-behavior: smooth;
+      display: flex;
+      gap: 1rem;
+      font-size: 0.8rem;
+      cursor: pointer;
+      background-color: none;
+      border-radius: 2rem;
+      background: var(--accent-600-click, #0A29CD);
+      box-shadow: 0px 0px 40px 0px #0A29CD;
+      &_texto{
+        color: var(--primary-white, #FFF);
+        font-family: "Montserrat Regular";
+        font-size: 1rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 1.5rem;
+        padding: 0.8rem 1.5rem;
+          @include breakpoint(widescreen) {
+            font-size: 1.125rem;
+            font-style: normal;
+            font-weight: 600;
+            line-height: 1.5rem;
+            padding: 0.8rem 4rem;
+          }
+      }
+    }
+  }
+}
+

@@ -83,10 +83,10 @@ const Form = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target
-    setFormValues({
-      ...formValues,
+    setFormValues(prevValues => ({
+      ...prevValues,
       [name]: value
-    })
+    }))
   }
 
   const handleCheckboxes = (e) => {
@@ -122,9 +122,9 @@ const Form = () => {
     if (!values.phone) {
       errors.phone = 'Celular es requerido'
     }
-    if (!values.country) {
-      errors.country = 'País es requerido'
-    }
+    // if (!values.country) {
+    //   errors.country = 'País es requerido'
+    // }
     if (!values.email) {
       errors.email = 'Email es requerido'
     }
@@ -294,6 +294,12 @@ const Form = () => {
 
   const handleSubmit = (e) => {
     e?.preventDefault()
+    if (!formValues.country) {
+      setFormValues(prevValues => ({
+        ...prevValues,
+        country: detectedCountry
+      }))
+    }
     if (!isHandle) {
       setIsLoading(true)
       searchContact({ email: formValues.email })
@@ -465,7 +471,7 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_text}
               required
               name='country'
-              value={formValues.country}
+              value={formValues.country || detectedCountry}
               onChange={handleChange}
             >
               <option value=''>Seleccione</option>
@@ -495,7 +501,7 @@ const Form = () => {
               value={formValues.email}
               onChange={handleChange}
             />
-            <p>{formErrors.email}</p>
+            {/* <p>{formErrors.email}</p> */}
           </div>
 
           <div className={style.form_container_form_second_inputs_input}>
@@ -503,7 +509,7 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_label}
               htmlFor=''
             >
-              ¿Cómo supiste de Neo Consulting?
+              Como conociste NEO
             </label>
             <select
               className={style.form_container_form_second_inputs_input_text}
@@ -703,7 +709,7 @@ const Form = () => {
               className={style.form_container_form_second_inputs_input_label}
               htmlFor=''
             >
-              Plazo límite para la ejecución de tu proyecto
+              ¿Tienes un plazo límite para la ejecución de tu proyecto?
             </label>
             <select
               className={style.form_container_form_second_inputs_input_text}
@@ -713,19 +719,19 @@ const Form = () => {
               onChange={handleChange}
             >
               <option value=''>Seleccione</option>
-              <option value='hasta 1 mes'>hasta 1 mes</option>
-              <option value='de 1 mes a 3 meses'>de 1 mes a 3 meses</option>
+              <option value='hasta 1 mes'>Hasta 1 mes</option>
+              <option value='de 1 mes a 3 meses'>De 1 mes a 3 meses</option>
               <option value='de 3 meses a 6 meses'>
-                de 3 meses a 6 meses
+                De 3 meses a 6 meses
               </option>
               <option value='de 6 meses a 1 año'>
-                de 6 meses a 1 año
+                De 6 meses a 1 año
               </option>
               <option value='más de un año'>
-                más de un año
+                Más de un año
               </option>
               <option value='no tengo un plazo definido'>
-                no tengo un plazo definido
+                No tengo un plazo definido
               </option>
             </select>
             <p>{formErrors.plazo}</p>
@@ -950,6 +956,31 @@ const Form = () => {
       handleSubmit()
     }
   }, [isContact, isNewContact])
+
+  const [detectedCountry, setDetectedCountry] = useState('')
+  useEffect(() => {
+    const fetchCountry = async () => {
+      try {
+        const response = await axios.get('https://ipinfo.io/json?token=4aeed05c130adb')
+        const data = response.data
+        const countryValue = countryMapping[data.country] || 'Otros'
+        setDetectedCountry(countryValue)
+      } catch (error) {
+        console.error('Error fetching the country data: ', error)
+      }
+    }
+
+    fetchCountry()
+  }, [])
+  const countryMapping = {
+    PE: 'Perú',
+    CL: 'Chile',
+    CO: 'Colombia',
+    EC: 'Ecuador',
+    MX: 'México',
+    US: 'Estados Unidos'
+    // add other mappings as necessary
+  }
 
   return (
     <div className={style.form}>

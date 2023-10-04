@@ -1,0 +1,49 @@
+@import '../../../styles/variables.module.scss';
+
+.resultado{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    &_container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 1.5rem;
+        gap: 2rem;
+        @include breakpoint(widescreen){
+        }
+
+        &_titulo{
+            text-align: center;
+            font-family: "Tiempos Headline Medium";
+            font-size: 1.5rem;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 1.75rem;
+            @include breakpoint(widescreen){
+                width: 90%;
+                text-align: center;
+                font-size: 2.8rem;
+                line-height: 3.5rem;
+                margin-bottom: 1rem;
+            }
+        }
+
+        &_imagenes {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 2rem;
+            @include breakpoint(widescreen){
+                gap: 6.5rem;
+            }
+        }
+        
+        
+
+    }
+}

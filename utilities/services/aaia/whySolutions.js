@@ -54,7 +54,7 @@ export const whySolPredictiveAnalytics = {
   reasons: [
     'El tiempo de conversiónde tus leads son muy largos.',
     'Quieres predecir el valor total de vida de tus clientes.',
-    'Quieres reducir la taza de abandono o churn de tus clientes.'
+    'Quieres reducir la tasa de abandono o churn de tus clientes.'
   ]
 }
 

@@ -1,0 +1,99 @@
+@import '../../../styles/variables.module.scss';
+
+.reto{
+    width: 100%;    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    &_container{
+        background: var(--500-bg-page, #F4F2FA);
+        margin: 0 1rem;
+        padding: 2rem 1.5rem;
+        border-radius: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 1.5rem; //Espaceio entre derecha e iz
+        @include breakpoint(widescreen){
+            padding: 2rem;
+            flex-direction: row;
+            gap: 15rem;
+        }
+
+        &_left{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            width: 90%;
+            @include breakpoint(widescreen){
+                max-width: 600px;
+            }
+
+            &_titulo{
+                width: 95%;
+                text-align: center;
+                font-family: "Tiempos Headline Medium";
+                font-size: 1.5rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.75rem;
+                @include breakpoint(widescreen){
+                    width: 90%;
+                    align-self: start;
+                    text-align: start;
+                    font-size: 2.8rem;
+                    line-height: 3.5rem
+                }
+            }
+
+            &_descripcion{
+                font-family: "Montserrat Medium";
+                text-align: center;
+                font-size: 0.875rem;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 1.25rem;
+                @include breakpoint(widescreen){
+                    text-align: start;
+                    font-size: 1.125rem;
+                    font-style: normal;
+                    font-weight: 500;
+                    line-height: 150%;
+                }
+            }
+
+        }
+
+        &_right{
+            &_a{
+                align-self: center;
+                @include breakpoint(widescreen){
+                    align-self: start;
+                }
+                &_button{
+                    background-color: map-get($color, accent);
+                    color: map-get($color, white);
+                    width: 230px;
+                    height: 38px;
+                    border-radius: 1rem;
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 20px;
+                    cursor: pointer;
+                    border: 1px solid var(--primary-900-base, #003);
+                    @include breakpoint(widescreen) {
+                        font-weight: 500;
+                        font-size: 18px;
+                        line-height: 24px;
+                        width: 280px;
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+}
