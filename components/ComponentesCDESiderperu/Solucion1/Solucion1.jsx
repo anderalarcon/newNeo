@@ -11,7 +11,7 @@ const Solucion1 = () => {
           Contexto
         </h2>
         <p className={style.solucion_container_texto}>
-          En 2019, Siderperú buscaba agilizar su proceso de transformación digital. Para ello, optaron por una consultoría que desarrolle las capacidades necesarias y establezca una estructura de gestión interna que la sostenga a largo plazo.
+        Un laboratorio global con sucursales en 160 países y 5 regiones enfrenta variaciones en su reporting de ventas y distribución debido a diferencias culturales y socioeconómicas. Buscando evaluar uniformemente la madurez de Ecommerce de las sucursales, intentaron 3 modelos sin éxito. Ninguno se adaptaba plenamente o era demasiado complicado.
         </p>
         {/* <div className={style.solucion_container_imagenes}>
           <img src={solPacasmayo1.src} alt="solucion pacasmayo" />
